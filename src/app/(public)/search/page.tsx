@@ -7,10 +7,10 @@ import { Search, TrendingUp } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
 import type { Metadata } from "next";
 
-interface Props { searchParams: { q?: string; page?: string } }
+interface Props { searchParams: Promise<{ q?: string; page?: string }> }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
-  const q = searchParams.q;
+  const { q } = await searchParams;
   return { title: q ? `Search results for "${q}"` : "Search" };
 }
 
@@ -49,8 +49,9 @@ async function getTrending() {
 }
 
 export default async function SearchPage({ searchParams }: Props) {
-  const q = searchParams.q?.trim() || "";
-  const page = parseInt(searchParams.page || "1");
+  const { q: rawQ, page: rawPage } = await searchParams;
+  const q = rawQ?.trim() || "";
+  const page = parseInt(rawPage || "1");
   const [{ posts, total }, trending] = await Promise.all([searchPosts(q, page), getTrending()]);
 
   return (
