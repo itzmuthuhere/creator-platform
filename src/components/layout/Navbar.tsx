@@ -62,7 +62,7 @@ export default function Navbar() {
           <nav className="hidden items-center gap-6 lg:flex">
             {CATEGORIES.map((cat) => (
               <Link
-                key={cat}
+                key={cat.slug}
                 href={`/category/${cat.slug}`}
                 className="text-sm font-medium text-gray-600 transition hover:text-violet-600 dark:text-gray-400 dark:hover:text-violet-400"
               >
@@ -129,7 +129,7 @@ export default function Navbar() {
           <div className="border-t border-gray-100 py-4 dark:border-gray-800 lg:hidden">
             {CATEGORIES.map((cat) => (
               <Link
-                key={cat}
+                key={cat.slug}
                 href={`/category/${cat.slug}`}
                 className="block py-2 text-sm font-medium text-gray-700 dark:text-gray-300"
                 onClick={() => setOpen(false)}
