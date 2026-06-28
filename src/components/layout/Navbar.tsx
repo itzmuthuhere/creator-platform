@@ -60,6 +60,7 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden items-center gap-6 lg:flex">
+            <Link href="/" className="text-sm font-medium text-violet-600 dark:text-violet-400">Home</Link>
             {categories.map((cat) => (
               <Link
                 key={cat.slug}
