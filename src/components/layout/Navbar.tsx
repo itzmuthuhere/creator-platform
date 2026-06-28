@@ -60,7 +60,7 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden items-center gap-6 lg:flex">
-            {CATEGORIES.map((cat) => (
+            {categories.map((cat) => (
               <Link
                 key={cat.slug}
                 href={`/category/${cat.slug}`}
@@ -127,7 +127,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {open && (
           <div className="border-t border-gray-100 py-4 dark:border-gray-800 lg:hidden">
-            {CATEGORIES.map((cat) => (
+            {categories.map((cat) => (
               <Link
                 key={cat.slug}
                 href={`/category/${cat.slug}`}
