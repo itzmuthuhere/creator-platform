@@ -52,12 +52,16 @@ const CATEGORY_ICONS: Record<string, string> = {
 };
 
 export default async function HomePage() {
-  let featured: any[] = [], latest: any[] = [], trending: any[] = [], categories: any[] = [];
+  let featured: any[] = [], latest: any[] = [], trending: any[] = [], categories: any[] = [], topSearches: any[] = [];
   try {
     ({ featured, latest, trending, categories } = await getPosts());
+    topSearches = await prisma.searchQuery.findMany({ orderBy: { count: "desc" }, take: 5 });
   } catch (e) {
     // DB unavailable — show empty state
   }
+  const heroTags = topSearches.length > 0
+    ? topSearches.map((s: any) => s.query)
+    : ["Smartphones", "AI Tools", "Best Laptops", "Power Bank", "Free Tools"];
 
   return (
     <div className="min-h-screen">
@@ -85,7 +89,7 @@ export default async function HomePage() {
             <SearchBar size="hero" placeholder="Search reviews, AI tools, tutorials…" />
           </div>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
-            {["ChatGPT", "Best Laptops", "AI Courses", "Power Bank", "Free Tools"].map((tag) => (
+            {heroTags.map((tag) => (
               <Link key={tag} href={`/search?q=${encodeURIComponent(tag)}`}
                 className="rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm text-violet-200 transition hover:bg-white/20 hover:text-white">
                 {tag}
