@@ -1,12 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Plus, Tag, Trash2 } from "lucide-react";
+import { Plus, Tag, Trash2, Pencil, X, Check } from "lucide-react";
 import { useSession } from "next-auth/react";
-import { redirect } from "next/navigation";
 
 interface Category {
   id: string; name: string; slug: string; description?: string; color?: string;
@@ -14,14 +12,22 @@ interface Category {
 }
 
 export default function CategoriesPage() {
-  const { data: session, status } = useSession();
+  const { status } = useSession();
   const [categories, setCategories] = useState<Category[]>([]);
   const [form, setForm] = useState({ name: "", description: "", color: "#7c3aed" });
   const [saving, setSaving] = useState(false);
+  const [editId, setEditId] = useState<string | null>(null);
+  const [editForm, setEditForm] = useState({ name: "", description: "", color: "#7c3aed" });
+  const [deletingId, setDeletingId] = useState<string | null>(null);
 
   useEffect(() => {
     fetch("/api/categories").then((r) => r.json()).then(setCategories);
   }, []);
+
+  if (status === "unauthenticated") {
+    window.location.href = "/admin/login";
+    return null;
+  }
 
   const handleCreate = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,10 +45,35 @@ export default function CategoriesPage() {
     setSaving(false);
   };
 
-  if (status === "unauthenticated") {
-    window.location.href = "/admin/login";
-    return null;
-  }
+  const startEdit = (cat: Category) => {
+    setEditId(cat.id);
+    setEditForm({ name: cat.name, description: cat.description || "", color: cat.color || "#7c3aed" });
+  };
+
+  const handleEdit = async (id: string) => {
+    const res = await fetch("/api/categories", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id, ...editForm }),
+    });
+    if (res.ok) {
+      const updated = await res.json();
+      setCategories((prev) => prev.map((c) => c.id === id ? { ...c, ...updated } : c));
+      setEditId(null);
+    }
+  };
+
+  const handleDelete = async (id: string) => {
+    if (!confirm("Delete this category? Posts in this category will be uncategorized.")) return;
+    setDeletingId(id);
+    const res = await fetch("/api/categories", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id }),
+    });
+    if (res.ok) setCategories((prev) => prev.filter((c) => c.id !== id));
+    setDeletingId(null);
+  };
 
   return (
     <AdminLayout>
@@ -85,12 +116,48 @@ export default function CategoriesPage() {
           </div>
           <div className="divide-y divide-gray-100 dark:divide-gray-800">
             {categories.map((cat) => (
-              <div key={cat.id} className="flex items-center gap-3 px-5 py-3">
-                <div className="h-4 w-4 rounded-full" style={{ backgroundColor: cat.color || "#7c3aed" }} />
-                <div className="flex-1">
-                  <p className="font-medium text-gray-900 dark:text-white">{cat.name}</p>
-                  <p className="text-xs text-gray-500">{cat._count.posts} posts · /{cat.slug}</p>
-                </div>
+              <div key={cat.id} className="px-5 py-3">
+                {editId === cat.id ? (
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <input type="color" value={editForm.color}
+                        onChange={(e) => setEditForm({ ...editForm, color: e.target.value })}
+                        className="h-8 w-10 cursor-pointer rounded border border-gray-300" />
+                      <Input value={editForm.name}
+                        onChange={(e) => setEditForm({ ...editForm, name: e.target.value })}
+                        className="h-8 flex-1" placeholder="Name" />
+                    </div>
+                    <Input value={editForm.description}
+                      onChange={(e) => setEditForm({ ...editForm, description: e.target.value })}
+                      className="h-8" placeholder="Description" />
+                    <div className="flex gap-2">
+                      <Button size="sm" onClick={() => handleEdit(cat.id)} className="h-7 gap-1 px-3">
+                        <Check className="h-3 w-3" /> Save
+                      </Button>
+                      <Button size="sm" variant="ghost" onClick={() => setEditId(null)} className="h-7 gap-1 px-3">
+                        <X className="h-3 w-3" /> Cancel
+                      </Button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-3">
+                    <div className="h-4 w-4 shrink-0 rounded-full" style={{ backgroundColor: cat.color || "#7c3aed" }} />
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-gray-900 dark:text-white">{cat.name}</p>
+                      <p className="text-xs text-gray-500">{cat._count.posts} posts · /{cat.slug}</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => startEdit(cat)}>
+                        <Pencil className="h-3.5 w-3.5 text-gray-500" />
+                      </Button>
+                      <Button variant="ghost" size="icon" className="h-8 w-8"
+                        disabled={deletingId === cat.id}
+                        onClick={() => handleDelete(cat.id)}>
+                        <Trash2 className="h-3.5 w-3.5 text-red-500" />
+                      </Button>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
             {categories.length === 0 && (

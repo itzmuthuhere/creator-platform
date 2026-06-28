@@ -27,3 +27,22 @@ export async function POST(req: NextRequest) {
 
   return NextResponse.json(category, { status: 201 });
 }
+
+export async function PUT(req: NextRequest) {
+  const session = await getServerSession(authOptions);
+  if (!session?.user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+
+  const { id, name, description, color } = await req.json();
+  const slug = slugify(name);
+  const category = await prisma.category.update({ where: { id }, data: { name, slug, description, color } });
+  return NextResponse.json(category);
+}
+
+export async function DELETE(req: NextRequest) {
+  const session = await getServerSession(authOptions);
+  if (!session?.user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+
+  const { id } = await req.json();
+  await prisma.category.delete({ where: { id } });
+  return NextResponse.json({ ok: true });
+}
