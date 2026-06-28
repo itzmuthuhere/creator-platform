@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Zap, Share2, Camera, Play, Users } from "lucide-react";
+import { Zap } from "lucide-react";
 
 export default function Footer() {
   const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "Techpulzo";
@@ -29,19 +29,6 @@ export default function Footer() {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-gray-500 dark:text-gray-400">
               In-depth articles on technology, career, finance, and productivity. Written for curious, ambitious people.
             </p>
-            <div className="mt-6 flex gap-3">
-              {[
-                { icon: Share2, href: "#", label: "Twitter" },
-                { icon: Camera, href: "#", label: "Instagram" },
-                { icon: Play, href: "#", label: "YouTube" },
-                { icon: Users, href: "#", label: "LinkedIn" },
-              ].map(({ icon: Icon, href, label }) => (
-                <a key={label} href={href} aria-label={label}
-                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-gray-200 text-gray-500 transition hover:border-violet-400 hover:text-violet-600 dark:border-gray-700 dark:text-gray-400 dark:hover:border-violet-500 dark:hover:text-violet-400">
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Topics */}
