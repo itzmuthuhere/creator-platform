@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Zap, Twitter, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Zap, Twitter, Instagram, Play, Linkedin } from "lucide-react";
 
 export default function Footer() {
   const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "TechPulse";
@@ -33,7 +33,7 @@ export default function Footer() {
               {[
                 { icon: Twitter, href: "#", label: "Twitter" },
                 { icon: Instagram, href: "#", label: "Instagram" },
-                { icon: Youtube, href: "#", label: "YouTube" },
+                { icon: Play, href: "#", label: "YouTube" },
                 { icon: Linkedin, href: "#", label: "LinkedIn" },
               ].map(({ icon: Icon, href, label }) => (
                 <a key={label} href={href} aria-label={label}
