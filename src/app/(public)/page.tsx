@@ -4,7 +4,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import PostCard from "@/components/posts/PostCard";
 import SearchBar from "@/components/posts/SearchBar";
-import { TrendingUp, Flame, Star, Grid3X3, ArrowRight, BookOpen, PenLine } from "lucide-react";
+import { TrendingUp, Flame, Star, Grid3X3, ArrowRight, PenLine } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
 
 async function getPosts() {
@@ -182,23 +182,6 @@ export default async function HomePage() {
         </section>
       )}
 
-      {/* Newsletter CTA */}
-      <section className="bg-violet-600 py-16 dark:bg-violet-900">
-        <div className="mx-auto max-w-2xl px-4 text-center">
-          <BookOpen className="mx-auto mb-4 h-10 w-10 text-violet-200" />
-          <h2 className="text-2xl font-bold text-white sm:text-3xl">Stay in the loop</h2>
-          <p className="mt-3 text-violet-200">Get the best articles delivered to your inbox, weekly.</p>
-          <form className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <input type="email" placeholder="your@email.com"
-              className="w-full rounded-lg border-0 px-4 py-3 text-sm text-gray-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-white sm:w-72" />
-            <button type="submit"
-              className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-violet-700 shadow-sm transition hover:bg-violet-50">
-              Subscribe
-            </button>
-          </form>
-          <p className="mt-3 text-xs text-violet-300">No spam. Unsubscribe anytime.</p>
-        </div>
-      </section>
 
       {/* Empty State */}
       {latest.length === 0 && featured.length === 0 && (
