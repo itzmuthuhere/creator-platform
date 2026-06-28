@@ -20,10 +20,8 @@ export const authOptions: NextAuthOptions = {
   ],
   callbacks: {
     async signIn({ user }) {
-      // Only allow the admin email
-      if (user.email !== process.env.ADMIN_EMAIL) {
-        return false;
-      }
+      const allowed = (process.env.ADMIN_EMAIL || "").split(",").map(e => e.trim());
+      if (!allowed.includes(user.email || "")) return false;
       return true;
     },
     async session({ session, user }) {
