@@ -14,6 +14,7 @@ import ShareButtons from "@/components/posts/ShareButtons";
 import { Clock, Eye, Calendar, ArrowLeft } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
 import AdUnit from "@/components/ads/AdUnit";
+import PageEnhancements from "@/components/layout/PageEnhancements";
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -83,6 +84,7 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <article className="min-h-screen">
+      <PageEnhancements showProgress={true} />
       {post.coverImage && (
         <div className="relative h-64 w-full sm:h-80 md:h-96 lg:h-[480px]">
           <Image src={post.coverImage} alt={post.title} fill className="object-cover" priority />

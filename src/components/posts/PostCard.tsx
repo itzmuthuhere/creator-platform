@@ -34,7 +34,7 @@ export default function PostCard({ post, variant = "default" }: PostCardProps) {
 
   if (variant === "horizontal") {
     return (
-      <Link href={`/${post.slug}`} className="group flex gap-4 rounded-xl border border-gray-200 bg-white p-4 transition hover:border-violet-300 hover:shadow-md dark:border-gray-700 dark:bg-gray-900">
+      <Link href={`/${post.slug}`} className="group card-hover flex gap-4 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-900">
         {post.coverImage && (
           <div className="relative h-24 w-36 flex-shrink-0 overflow-hidden rounded-lg">
             <Image src={post.coverImage} alt={post.title} fill className="object-cover" />
@@ -92,10 +92,10 @@ export default function PostCard({ post, variant = "default" }: PostCardProps) {
   }
 
   return (
-    <Link href={`/${post.slug}`} className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white transition hover:border-violet-300 hover:shadow-lg dark:border-gray-700 dark:bg-gray-900">
+    <Link href={`/${post.slug}`} className="group card-hover flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900">
       <div className="relative aspect-[16/9] overflow-hidden">
         {post.coverImage ? (
-          <Image src={post.coverImage} alt={post.title} fill className="object-cover transition duration-300 group-hover:scale-105" />
+          <Image src={post.coverImage} alt={post.title} fill className="object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
         ) : (
           <div className="h-full w-full bg-gradient-to-br from-violet-100 to-indigo-100 dark:from-violet-900/30 dark:to-indigo-900/30" />
         )}
