@@ -54,7 +54,7 @@ export default function Navbar() {
               <Zap className="h-5 w-5 text-white" />
             </div>
             <span className="text-xl font-bold text-gray-900 dark:text-white">
-              {process.env.NEXT_PUBLIC_SITE_NAME || "TechPulse"}
+              {process.env.NEXT_PUBLIC_SITE_NAME || "Techpulzo"}
             </span>
           </Link>
 

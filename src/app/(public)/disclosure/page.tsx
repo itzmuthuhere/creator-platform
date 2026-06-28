@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 export default function DisclosurePage() {
-  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "TechPulse";
+  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "Techpulzo";
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">

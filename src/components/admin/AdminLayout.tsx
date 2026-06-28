@@ -33,7 +33,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-violet-600">
               <Zap className="h-4 w-4 text-white" />
             </div>
-            <span className="font-bold text-white text-sm">TechPulse Admin</span>
+            <span className="font-bold text-white text-sm">Techpulzo Admin</span>
           </Link>
           <button className="text-gray-400 lg:hidden" onClick={() => setSidebarOpen(false)}>
             <X className="h-5 w-5" />

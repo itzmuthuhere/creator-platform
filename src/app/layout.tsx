@@ -7,7 +7,7 @@ import SessionProvider from "@/components/layout/SessionProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "TechPulse";
+const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "Techpulzo";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@techpulse",
+    site: "@techpulzo",
   },
   robots: { index: true, follow: true },
 };

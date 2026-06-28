@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Zap, Share2, Camera, Play, Users } from "lucide-react";
 
 export default function Footer() {
-  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "TechPulse";
+  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "Techpulzo";
   const [categories, setCategories] = useState<{ name: string; slug: string }[]>([]);
 
   useEffect(() => {
