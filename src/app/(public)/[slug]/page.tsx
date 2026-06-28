@@ -13,6 +13,7 @@ import QRCodeSection from "@/components/posts/QRCodeSection";
 import ShareButtons from "@/components/posts/ShareButtons";
 import { Clock, Eye, Calendar, ArrowLeft } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
+import AdUnit from "@/components/ads/AdUnit";
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -89,6 +90,11 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       )}
 
+      {/* Ad — below cover image */}
+      <div className="mx-auto max-w-4xl px-4 pt-6 sm:px-6 lg:px-8">
+        <AdUnit slot="5555555555" format="horizontal" className="h-24 sm:h-28" />
+      </div>
+
       <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
         <Link href="/" className="mb-6 inline-flex items-center gap-2 text-sm text-gray-500 hover:text-violet-600">
           <ArrowLeft className="h-4 w-4" /> Back to Home
@@ -136,6 +142,11 @@ export default async function ArticlePage({ params }: Props) {
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 
+            {/* Ad — mid-article */}
+            <div className="my-8">
+              <AdUnit slot="6666666666" format="rectangle" className="min-h-[250px]" />
+            </div>
+
             {post.affiliateLinks.length > 0 && (
               <AffiliateSection links={post.affiliateLinks} />
             )}
@@ -144,14 +155,20 @@ export default async function ArticlePage({ params }: Props) {
               <strong>Affiliate Disclosure:</strong> This article contains affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you.
             </div>
 
+            {/* Ad — end of article */}
+            <div className="mt-8">
+              <AdUnit slot="7777777777" format="horizontal" className="h-24 sm:h-28" />
+            </div>
+
             <ShareButtons url={articleUrl} title={post.title} />
           </div>
 
           <aside className="space-y-6">
             <QRCodeSection slug={post.slug} url={articleUrl} />
 
-            <div className="flex h-48 items-center justify-center rounded-xl border border-dashed border-gray-300 bg-gray-50 text-xs text-gray-400 dark:border-gray-700 dark:bg-gray-900">
-              Advertisement
+            <AdUnit slot="8888888888" format="vertical" className="min-h-[600px]" />
+            <div className="mt-4">
+              <AdUnit slot="9999999999" format="rectangle" className="min-h-[250px]" />
             </div>
 
             {post.tags.length > 0 && (
@@ -171,12 +188,21 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       </div>
 
+      {/* Ad — before related posts */}
+      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <AdUnit slot="1010101010" format="horizontal" className="h-24 sm:h-28" />
+      </div>
+
       {related.length > 0 && (
         <section className="bg-gray-50 py-14 dark:bg-gray-900/50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Related Posts</h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((p) => <PostCard key={p.id} post={p as PostCardType} />)}
+            </div>
+            {/* Ad — after related posts */}
+            <div className="mt-10">
+              <AdUnit slot="1122334455" format="horizontal" className="h-24 sm:h-28" />
             </div>
           </div>
         </section>

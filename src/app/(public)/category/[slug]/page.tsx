@@ -5,6 +5,7 @@ import { prisma } from "@/lib/prisma";
 import PostCard from "@/components/posts/PostCard";
 import { Metadata } from "next";
 import type { PostCard as PostCardType } from "@/types";
+import AdUnit from "@/components/ads/AdUnit";
 
 interface Props { params: Promise<{ slug: string }>; searchParams: Promise<{ page?: string }> }
 
@@ -53,9 +54,22 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         <p className="mt-1 text-sm text-gray-500">{total} articles</p>
       </div>
 
+      {/* Ad — below category header */}
+      <div className="mb-8">
+        <AdUnit slot="4455667788" format="horizontal" className="h-24 sm:h-28" />
+      </div>
+
       {posts.length > 0 ? (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {posts.map((p) => <PostCard key={p.id} post={p as PostCardType} />)}
+          {posts.slice(0, 8).map((p) => <PostCard key={p.id} post={p as PostCardType} />)}
+          {posts.length > 8 && (
+            <>
+              <div className="col-span-full">
+                <AdUnit slot="5566778899" format="rectangle" className="min-h-[250px]" />
+              </div>
+              {posts.slice(8).map((p) => <PostCard key={p.id} post={p as PostCardType} />)}
+            </>
+          )}
         </div>
       ) : (
         <div className="py-20 text-center">

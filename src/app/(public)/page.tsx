@@ -6,6 +6,7 @@ import PostCard from "@/components/posts/PostCard";
 import SearchBar from "@/components/posts/SearchBar";
 import { TrendingUp, Flame, Star, Grid3X3, ArrowRight, PenLine } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
+import AdUnit from "@/components/ads/AdUnit";
 
 async function getPosts() {
   const [featured, latest, trending, categories] = await Promise.all([
@@ -98,6 +99,11 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Ad — below hero */}
+      <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
+        <AdUnit slot="1111111111" format="horizontal" className="h-24 sm:h-28" />
+      </div>
+
       {/* Stats bar */}
       {totalPosts > 0 && (
         <div className="border-b border-gray-100 bg-gray-50 dark:border-gray-800 dark:bg-gray-900/50">
@@ -131,6 +137,11 @@ export default async function HomePage() {
         </section>
       )}
 
+      {/* Ad — between featured and categories */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <AdUnit slot="2222222222" format="horizontal" className="h-24 sm:h-28" />
+      </div>
+
       {/* Categories */}
       {categories.length > 0 && (
         <section className="border-y border-gray-100 bg-gray-50 py-14 dark:border-gray-800 dark:bg-gray-900/30">
@@ -150,6 +161,11 @@ export default async function HomePage() {
         </section>
       )}
 
+      {/* Ad — between categories and trending */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <AdUnit slot="3333333333" format="rectangle" className="min-h-[250px]" />
+      </div>
+
       {/* Trending */}
       {trending.length > 0 && (
         <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
@@ -161,6 +177,11 @@ export default async function HomePage() {
           </div>
         </section>
       )}
+
+      {/* Ad — between trending and latest */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <AdUnit slot="4444444444" format="horizontal" className="h-24 sm:h-28" />
+      </div>
 
       {/* Latest Posts */}
       {latest.length > 0 && (

@@ -6,6 +6,7 @@ import SearchBar from "@/components/posts/SearchBar";
 import { Search, TrendingUp } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
 import type { Metadata } from "next";
+import AdUnit from "@/components/ads/AdUnit";
 
 interface Props { searchParams: Promise<{ q?: string; page?: string }> }
 
@@ -86,9 +87,22 @@ export default async function SearchPage({ searchParams }: Props) {
         </p>
       )}
 
+      {/* Ad — top of results */}
+      <div className="mb-8">
+        <AdUnit slot="2233445566" format="horizontal" className="h-24 sm:h-28" />
+      </div>
+
       {posts.length > 0 ? (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {posts.map((p) => <PostCard key={p.id} post={p as PostCardType} />)}
+          {posts.slice(0, 8).map((p) => <PostCard key={p.id} post={p as PostCardType} />)}
+          {posts.length > 8 && (
+            <>
+              <div className="col-span-full">
+                <AdUnit slot="3344556677" format="horizontal" className="h-24 sm:h-28" />
+              </div>
+              {posts.slice(8).map((p) => <PostCard key={p.id} post={p as PostCardType} />)}
+            </>
+          )}
         </div>
       ) : q ? (
         <div className="py-20 text-center">
