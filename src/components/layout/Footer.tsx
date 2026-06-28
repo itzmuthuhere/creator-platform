@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Zap, Twitter, Instagram, Play, Linkedin } from "lucide-react";
+import { Zap, Share2, Camera, Play, Users } from "lucide-react";
 
 export default function Footer() {
   const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "TechPulse";
@@ -31,10 +31,10 @@ export default function Footer() {
             </p>
             <div className="mt-6 flex gap-3">
               {[
-                { icon: Twitter, href: "#", label: "Twitter" },
-                { icon: Instagram, href: "#", label: "Instagram" },
+                { icon: Share2, href: "#", label: "Twitter" },
+                { icon: Camera, href: "#", label: "Instagram" },
                 { icon: Play, href: "#", label: "YouTube" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
+                { icon: Users, href: "#", label: "LinkedIn" },
               ].map(({ icon: Icon, href, label }) => (
                 <a key={label} href={href} aria-label={label}
                   className="flex h-9 w-9 items-center justify-center rounded-lg border border-gray-200 text-gray-500 transition hover:border-violet-400 hover:text-violet-600 dark:border-gray-700 dark:text-gray-400 dark:hover:border-violet-500 dark:hover:text-violet-400">
