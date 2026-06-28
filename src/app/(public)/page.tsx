@@ -55,7 +55,7 @@ export default async function HomePage() {
   let featured: any[] = [], latest: any[] = [], trending: any[] = [], categories: any[] = [], topSearches: any[] = [];
   try {
     ({ featured, latest, trending, categories } = await getPosts());
-    topSearches = await prisma.searchQuery.findMany({ orderBy: { count: "desc" }, take: 5 });
+    topSearches = await prisma.searchQuery.findMany({ where: { count: { gte: 3 } }, orderBy: { count: "desc" }, take: 5 });
   } catch (e) {
     // DB unavailable — show empty state
   }
