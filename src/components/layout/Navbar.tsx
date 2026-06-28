@@ -7,18 +7,23 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useTheme } from "next-themes";
 
-const CATEGORIES = [
-  "Tech", "AI Tools", "Reviews", "Tutorials", "Finance", "Career", "Productivity",
-];
+const CATEGORIES: { name: string; slug: string }[] = [];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState<string[]>([]);
+  const [categories, setCategories] = useState<{ name: string; slug: string }[]>([]);
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const searchRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    fetch("/api/categories").then(r => r.json()).then(data => {
+      if (Array.isArray(data)) setCategories(data.slice(0, 7));
+    }).catch(() => {});
+  }, []);
 
   useEffect(() => {
     if (query.length < 2) { setSuggestions([]); return; }
@@ -58,10 +63,10 @@ export default function Navbar() {
             {CATEGORIES.map((cat) => (
               <Link
                 key={cat}
-                href={`/category/${cat.toLowerCase().replace(/ /g, "-")}`}
+                href={`/category/${cat.slug}`}
                 className="text-sm font-medium text-gray-600 transition hover:text-violet-600 dark:text-gray-400 dark:hover:text-violet-400"
               >
-                {cat}
+                {cat.name}
               </Link>
             ))}
           </nav>
@@ -125,11 +130,11 @@ export default function Navbar() {
             {CATEGORIES.map((cat) => (
               <Link
                 key={cat}
-                href={`/category/${cat.toLowerCase().replace(/ /g, "-")}`}
+                href={`/category/${cat.slug}`}
                 className="block py-2 text-sm font-medium text-gray-700 dark:text-gray-300"
                 onClick={() => setOpen(false)}
               >
-                {cat}
+                {cat.name}
               </Link>
             ))}
           </div>

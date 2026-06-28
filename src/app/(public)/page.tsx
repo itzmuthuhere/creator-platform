@@ -52,7 +52,12 @@ const CATEGORY_ICONS: Record<string, string> = {
 };
 
 export default async function HomePage() {
-  const { featured, latest, trending, categories } = await getPosts();
+  let featured: any[] = [], latest: any[] = [], trending: any[] = [], categories: any[] = [];
+  try {
+    ({ featured, latest, trending, categories } = await getPosts());
+  } catch (e) {
+    // DB unavailable — show empty state
+  }
 
   return (
     <div className="min-h-screen">
