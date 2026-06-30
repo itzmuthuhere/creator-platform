@@ -61,6 +61,7 @@ export async function PUT(
     title, subtitle, content, excerpt, coverImage, images,
     categoryId, tags, status, featured, sponsored, sponsoredLabel,
     seoTitle, metaDescription, keywords, ogImage, scheduledAt, affiliateLinks,
+    seriesId, seriesOrder, faqItems,
   } = body;
 
   const post = await prisma.post.findUnique({ where: { slug } });
@@ -107,6 +108,9 @@ export async function PUT(
       publishedAt,
       scheduledAt: scheduledAt ? new Date(scheduledAt) : null,
       categoryId: categoryId || null,
+      seriesId: seriesId || null,
+      seriesOrder: seriesOrder || null,
+      faqItems: faqItems || null,
       tags: { set: tagConnections },
       affiliateLinks: {
         create: (affiliateLinks || []).map((l: any) => ({

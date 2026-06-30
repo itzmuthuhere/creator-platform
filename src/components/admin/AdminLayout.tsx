@@ -4,8 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut } from "next-auth/react";
 import {
-  LayoutDashboard, FileText, Plus, BarChart2, Tag, Settings,
-  LogOut, Menu, X, Zap, ExternalLink,
+  LayoutDashboard, FileText, Plus, BarChart2, Tag,
+  LogOut, Menu, X, Zap, ExternalLink, Mail, MessageSquare, BookOpen,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -14,6 +14,9 @@ const NAV = [
   { label: "All Posts", href: "/admin/posts", icon: FileText },
   { label: "New Post", href: "/admin/posts/new", icon: Plus },
   { label: "Categories", href: "/admin/categories", icon: Tag },
+  { label: "Series", href: "/admin/series", icon: BookOpen },
+  { label: "Comments", href: "/admin/comments", icon: MessageSquare },
+  { label: "Newsletter", href: "/admin/newsletter", icon: Mail },
   { label: "Analytics", href: "/admin/analytics", icon: BarChart2 },
 ];
 

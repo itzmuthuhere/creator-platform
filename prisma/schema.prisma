@@ -91,19 +91,29 @@ model Post {
 
   readingTime Int @default(0)
   viewCount   Int @default(0)
+  reactLike   Int @default(0)
+  reactFire   Int @default(0)
+  reactBulb   Int @default(0)
+
+  faqItems    Json?
+  seriesId    String?
+  seriesOrder Int?
 
   authorId   String
   author     User          @relation(fields: [authorId], references: [id])
   categoryId String?
   category   Category?     @relation(fields: [categoryId], references: [id])
+  series     Series?       @relation(fields: [seriesId], references: [id])
   tags       Tag[]
   affiliateLinks AffiliateLink[]
   analytics      PostAnalytic[]
+  comments       Comment[]
 
   @@index([slug])
   @@index([status])
   @@index([publishedAt])
   @@index([featured])
+  @@index([seriesId])
 }
 
 enum PostStatus {
@@ -181,4 +191,53 @@ model SiteSettings {
   key       String   @unique
   value     String   @db.Text
   updatedAt DateTime @updatedAt
+}
+
+model Subscriber {
+  id          String           @id @default(cuid())
+  email       String           @unique
+  name        String?
+  status      SubscriberStatus @default(PENDING)
+  token       String?          @unique
+  confirmedAt DateTime?
+  createdAt   DateTime         @default(now())
+
+  @@index([status])
+}
+
+enum SubscriberStatus {
+  PENDING
+  CONFIRMED
+  UNSUBSCRIBED
+}
+
+model Comment {
+  id          String        @id @default(cuid())
+  postId      String
+  post        Post          @relation(fields: [postId], references: [id], onDelete: Cascade)
+  authorName  String
+  authorEmail String
+  content     String        @db.Text
+  status      CommentStatus @default(PENDING)
+  createdAt   DateTime      @default(now())
+
+  @@index([postId])
+  @@index([status])
+}
+
+enum CommentStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model Series {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+  posts       Post[]
+
+  @@index([slug])
 }

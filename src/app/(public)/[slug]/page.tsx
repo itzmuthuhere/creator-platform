@@ -11,7 +11,13 @@ import PostCard from "@/components/posts/PostCard";
 import AffiliateSection from "@/components/posts/AffiliateSection";
 import QRCodeSection from "@/components/posts/QRCodeSection";
 import ShareButtons from "@/components/posts/ShareButtons";
-import { Clock, Eye, Calendar, ArrowLeft } from "lucide-react";
+import FAQSection from "@/components/posts/FAQSection";
+import SeriesNav from "@/components/posts/SeriesNav";
+import TableOfContents from "@/components/posts/TableOfContents";
+import ReactionButtons from "@/components/posts/ReactionButtons";
+import CommentSection from "@/components/posts/CommentSection";
+import NewsletterWidget from "@/components/posts/NewsletterWidget";
+import { Clock, Eye, Calendar, Home, ChevronRight } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
 import AdUnit from "@/components/ads/AdUnit";
 import PageEnhancements from "@/components/layout/PageEnhancements";
@@ -26,6 +32,14 @@ async function getPost(slug: string) {
       category: true,
       tags: true,
       affiliateLinks: true,
+      series: {
+        include: {
+          posts: {
+            where: { status: "PUBLISHED" },
+            select: { slug: true, title: true, seriesOrder: true },
+          },
+        },
+      },
     },
   });
 }
@@ -55,6 +69,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getPost(slug);
   if (!post) return { title: "Not Found" };
   const url = `${getBaseUrl()}/${post.slug}`;
+
+  const faqItems = post.faqItems as { question: string; answer: string }[] | null;
+
   return {
     title: post.seoTitle || post.title,
     description: post.metaDescription || post.excerpt || undefined,
@@ -81,9 +98,47 @@ export default async function ArticlePage({ params }: Props) {
 
   const related = await getRelated(post.categoryId, post.slug);
   const articleUrl = `${getBaseUrl()}/${post.slug}`;
+  const faqItems = post.faqItems as { question: string; answer: string }[] | null;
+
+  // Breadcrumb + Article JSON-LD
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: getBaseUrl() },
+      ...(post.category ? [{ "@type": "ListItem", position: 2, name: post.category.name, item: `${getBaseUrl()}/category/${post.category.slug}` }] : []),
+      { "@type": "ListItem", position: post.category ? 3 : 2, name: post.title, item: articleUrl },
+    ],
+  };
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.metaDescription || post.excerpt,
+    image: post.ogImage || post.coverImage,
+    author: { "@type": "Person", name: post.author.name },
+    datePublished: post.publishedAt?.toISOString(),
+    dateModified: post.updatedAt.toISOString(),
+    mainEntityOfPage: { "@type": "WebPage", "@id": articleUrl },
+  };
+
+  const faqJsonLd = faqItems?.length ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  } : null;
 
   return (
     <article className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
+
       <PageEnhancements showProgress={true} />
       {post.coverImage && (
         <div className="relative h-64 w-full sm:h-80 md:h-96 lg:h-[480px]">
@@ -98,9 +153,20 @@ export default async function ArticlePage({ params }: Props) {
       </div>
 
       <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
-        <Link href="/" className="mb-6 inline-flex items-center gap-2 text-sm text-gray-500 hover:text-violet-600">
-          <ArrowLeft className="h-4 w-4" /> Back to Home
-        </Link>
+        {/* Breadcrumb */}
+        <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-1.5 text-sm text-gray-500">
+          <Link href="/" className="flex items-center gap-1 hover:text-violet-600">
+            <Home className="h-3.5 w-3.5" /> Home
+          </Link>
+          {post.category && (
+            <>
+              <ChevronRight className="h-3.5 w-3.5 text-gray-400" />
+              <Link href={`/category/${post.category.slug}`} className="hover:text-violet-600">{post.category.name}</Link>
+            </>
+          )}
+          <ChevronRight className="h-3.5 w-3.5 text-gray-400" />
+          <span className="line-clamp-1 text-gray-700 dark:text-gray-300">{post.title}</span>
+        </nav>
 
         <div className="mb-6 flex flex-wrap items-center gap-2">
           {post.sponsored && <Badge variant="sponsored">{post.sponsoredLabel || "Sponsored"}</Badge>}
@@ -139,10 +205,16 @@ export default async function ArticlePage({ params }: Props) {
 
         <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_280px]">
           <div>
+            {/* Table of Contents */}
+            <TableOfContents content={post.content} />
+
             <div
-              className="prose prose-gray max-w-none dark:prose-invert prose-headings:font-bold prose-a:text-violet-600 prose-img:rounded-xl"
+              className="prose prose-gray mt-6 max-w-none dark:prose-invert prose-headings:font-bold prose-a:text-violet-600 prose-img:rounded-xl"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
+
+            {/* FAQ Section */}
+            {faqItems && faqItems.length > 0 && <FAQSection faqs={faqItems} />}
 
             {/* Ad — mid-article */}
             <div className="my-8">
@@ -157,15 +229,38 @@ export default async function ArticlePage({ params }: Props) {
               <strong>Affiliate Disclosure:</strong> This article contains affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you.
             </div>
 
+            {/* Reactions */}
+            <ReactionButtons
+              slug={post.slug}
+              initialLike={post.reactLike}
+              initialFire={post.reactFire}
+              initialBulb={post.reactBulb}
+            />
+
             {/* Ad — end of article */}
             <div className="mt-8">
               <AdUnit slot="7777777777" format="horizontal" className="h-24 sm:h-28" />
             </div>
 
             <ShareButtons url={articleUrl} title={post.title} />
+
+            {/* Comments */}
+            <CommentSection slug={post.slug} />
           </div>
 
           <aside className="space-y-6">
+            {/* Series navigation */}
+            {post.series && post.series.posts.length > 1 && (
+              <SeriesNav
+                seriesName={post.series.name}
+                currentSlug={post.slug}
+                posts={post.series.posts}
+              />
+            )}
+
+            {/* Newsletter */}
+            <NewsletterWidget />
+
             <QRCodeSection slug={post.slug} url={articleUrl} />
 
             <AdUnit slot="8888888888" format="vertical" className="min-h-[600px]" />

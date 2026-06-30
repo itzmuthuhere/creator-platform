@@ -10,20 +10,22 @@ import { Save, Eye, Globe, Image as ImageIcon, X, Plus, Upload, Link, QrCode } f
 type Category = { id: string; name: string; slug: string; color: string | null; description: string | null };
 type Tag = { id: string; name: string; slug: string };
 type AffiliateLink = { id: string; label: string; url: string; platform: string | null; clickCount: number; postId: string; createdAt: Date };
-type Post = { id: string; title: string; subtitle: string | null; slug: string; content: string; excerpt: string | null; coverImage: string | null; images: string[]; status: string; featured: boolean; sponsored: boolean; sponsoredLabel: string | null; categoryId: string | null; seoTitle: string | null; metaDescription: string | null; keywords: string[]; ogImage: string | null; readingTime: number; publishedAt: Date | null; scheduledAt: Date | null; createdAt: Date; updatedAt: Date; authorId: string; viewCount: number };
+type Series = { id: string; name: string; slug: string };
+type Post = { id: string; title: string; subtitle: string | null; slug: string; content: string; excerpt: string | null; coverImage: string | null; images: string[]; status: string; featured: boolean; sponsored: boolean; sponsoredLabel: string | null; categoryId: string | null; seriesId: string | null; seriesOrder: number | null; faqItems: { question: string; answer: string }[] | null; seoTitle: string | null; metaDescription: string | null; keywords: string[]; ogImage: string | null; readingTime: number; publishedAt: Date | null; scheduledAt: Date | null; createdAt: Date; updatedAt: Date; authorId: string; viewCount: number };
 import { slugify } from "@/lib/utils";
 
 const RichTextEditor = dynamic(() => import("@/components/editor/RichTextEditor"), { ssr: false });
 
 interface Props {
   categories: Category[];
+  seriesList: Series[];
   post?: Post & { tags: Tag[]; affiliateLinks: AffiliateLink[] };
 }
 
-export default function PostEditor({ categories, post }: Props) {
+export default function PostEditor({ categories, seriesList, post }: Props) {
   const router = useRouter();
   const [saving, setSaving] = useState(false);
-  const [activeTab, setActiveTab] = useState<"content" | "seo" | "affiliate">("content");
+  const [activeTab, setActiveTab] = useState<"content" | "seo" | "affiliate" | "faq">("content");
 
   const [form, setForm] = useState({
     title: post?.title || "",
@@ -44,6 +46,9 @@ export default function PostEditor({ categories, post }: Props) {
     ogImage: post?.ogImage || "",
     scheduledAt: "",
     affiliateLinks: post?.affiliateLinks.map((l) => ({ label: l.label, url: l.url, platform: l.platform || "" })) || [] as { label: string; url: string; platform: string }[],
+    seriesId: post?.seriesId || "",
+    seriesOrder: post?.seriesOrder?.toString() || "",
+    faqItems: post?.faqItems || [] as { question: string; answer: string }[],
   });
 
   const [tagInput, setTagInput] = useState("");
@@ -85,7 +90,12 @@ export default function PostEditor({ categories, post }: Props) {
 
   const handleSave = async (status: string) => {
     setSaving(true);
-    const payload = { ...form, status };
+    const payload = {
+      ...form,
+      status,
+      seriesId: form.seriesId || null,
+      seriesOrder: form.seriesOrder ? parseInt(form.seriesOrder as any) : null,
+    };
     const url = post ? `/api/posts/${post.slug}` : "/api/posts";
     const method = post ? "PUT" : "POST";
     const res = await fetch(url, {
@@ -102,7 +112,7 @@ export default function PostEditor({ categories, post }: Props) {
     }
   };
 
-  const TABS = ["content", "seo", "affiliate"] as const;
+  const TABS = ["content", "seo", "affiliate", "faq"] as const;
 
   return (
     <div className="space-y-6">
@@ -113,7 +123,7 @@ export default function PostEditor({ categories, post }: Props) {
             className={`px-4 py-2 text-sm font-medium capitalize transition border-b-2 -mb-px ${
               activeTab === tab ? "border-violet-600 text-violet-600" : "border-transparent text-gray-500 hover:text-gray-700"
             }`}>
-            {tab === "affiliate" ? "Affiliate Links" : tab}
+            {tab === "affiliate" ? "Affiliate Links" : tab === "faq" ? "FAQ" : tab}
           </button>
         ))}
       </div>
@@ -192,6 +202,42 @@ export default function PostEditor({ categories, post }: Props) {
                 <label className="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">OG Image URL</label>
                 <Input value={form.ogImage} onChange={(e) => set("ogImage", e.target.value)} placeholder="Social preview image URL" />
               </div>
+            </div>
+          )}
+
+          {activeTab === "faq" && (
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="font-medium text-gray-900 dark:text-white">FAQ Items</h3>
+                  <p className="text-xs text-gray-500">Adds an FAQ section at the end of the article + Google FAQ rich result</p>
+                </div>
+                <button type="button" onClick={() => set("faqItems", [...form.faqItems, { question: "", answer: "" }])}
+                  className="flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm hover:border-violet-400 dark:border-gray-600 dark:bg-gray-900">
+                  <Plus className="h-4 w-4" /> Add FAQ
+                </button>
+              </div>
+              {(form.faqItems as { question: string; answer: string }[]).map((faq, i) => (
+                <div key={i} className="rounded-xl border border-gray-200 p-4 space-y-3 dark:border-gray-700">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">FAQ #{i + 1}</span>
+                    <button type="button" onClick={() => set("faqItems", (form.faqItems as any[]).filter((_, j) => j !== i))}>
+                      <X className="h-4 w-4 text-gray-400 hover:text-red-500" />
+                    </button>
+                  </div>
+                  <input placeholder="Question" value={faq.question}
+                    onChange={(e) => { const f = [...(form.faqItems as any[])]; f[i].question = e.target.value; set("faqItems", f); }}
+                    className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm focus:border-violet-500 focus:outline-none dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100" />
+                  <textarea placeholder="Answer" value={faq.answer} rows={3}
+                    onChange={(e) => { const f = [...(form.faqItems as any[])]; f[i].answer = e.target.value; set("faqItems", f); }}
+                    className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm focus:border-violet-500 focus:outline-none dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100" />
+                </div>
+              ))}
+              {(form.faqItems as any[]).length === 0 && (
+                <div className="rounded-xl border border-dashed border-gray-300 p-8 text-center dark:border-gray-700">
+                  <p className="text-sm text-gray-500">No FAQ items yet. Add questions to boost SEO with Google rich results.</p>
+                </div>
+              )}
             </div>
           )}
 
@@ -285,6 +331,21 @@ export default function PostEditor({ categories, post }: Props) {
               <option value="">No category</option>
               {categories.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
             </select>
+          </div>
+
+          {/* Series */}
+          <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-900">
+            <h3 className="mb-3 font-semibold text-gray-900 dark:text-white">Series</h3>
+            <select value={form.seriesId} onChange={(e) => set("seriesId", e.target.value)}
+              className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 focus:border-violet-500 focus:outline-none">
+              <option value="">No series</option>
+              {seriesList.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
+            </select>
+            {form.seriesId && (
+              <input type="number" value={form.seriesOrder} onChange={(e) => set("seriesOrder", e.target.value)}
+                placeholder="Part number (1, 2, 3…)" min="1"
+                className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm focus:border-violet-500 focus:outline-none dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100" />
+            )}
           </div>
 
           {/* Tags */}

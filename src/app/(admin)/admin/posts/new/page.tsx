@@ -10,7 +10,10 @@ export default async function NewPostPage() {
   const session = await getServerSession(authOptions);
   if (!session) redirect("/admin/login");
 
-  const categories = await prisma.category.findMany({ orderBy: { name: "asc" } });
+  const [categories, seriesList] = await Promise.all([
+    prisma.category.findMany({ orderBy: { name: "asc" } }),
+    prisma.series.findMany({ orderBy: { name: "asc" } }),
+  ]);
 
   return (
     <AdminLayout>
@@ -18,7 +21,7 @@ export default async function NewPostPage() {
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">New Post</h1>
         <p className="text-sm text-gray-500">Create and publish a new article</p>
       </div>
-      <PostEditor categories={categories} />
+      <PostEditor categories={categories} seriesList={seriesList} />
     </AdminLayout>
   );
 }

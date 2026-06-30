@@ -13,12 +13,13 @@ export default async function EditPostPage({ params }: Props) {
   const session = await getServerSession(authOptions);
   if (!session) redirect("/admin/login");
 
-  const [post, categories] = await Promise.all([
+  const [post, categories, seriesList] = await Promise.all([
     prisma.post.findUnique({
       where: { slug },
       include: { tags: true, affiliateLinks: true },
     }),
     prisma.category.findMany({ orderBy: { name: "asc" } }),
+    prisma.series.findMany({ orderBy: { name: "asc" } }),
   ]);
 
   if (!post) notFound();
@@ -29,7 +30,7 @@ export default async function EditPostPage({ params }: Props) {
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Edit Post</h1>
         <p className="font-mono text-sm text-gray-500">/{post.slug}</p>
       </div>
-      <PostEditor categories={categories} post={post} />
+      <PostEditor categories={categories} seriesList={seriesList} post={post as any} />
     </AdminLayout>
   );
 }
