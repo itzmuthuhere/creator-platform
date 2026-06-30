@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
 
   if (isImage) {
     const result = await uploadImage(base64, "creator-platform");
-    return NextResponse.json({ url: result.url, type: "image" });
+    return NextResponse.json({ url: result.url, publicId: result.publicId, type: "image" });
   }
 
   // Raw file upload to Cloudinary — type "authenticated" bypasses the
@@ -79,6 +79,7 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({
     url: result.secure_url,
     downloadUrl,
+    publicId: result.public_id,
     name: file.name,
     size: file.size,
     type: "file",

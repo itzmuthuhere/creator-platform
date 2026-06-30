@@ -11,6 +11,7 @@ import Highlight from "@tiptap/extension-highlight";
 import { Table, TableRow, TableHeader, TableCell } from "@tiptap/extension-table";
 import { ResizableImage } from "./ResizableImageExtension";
 import { FileAttachment } from "./FileAttachmentExtension";
+import { trackUpload } from "@/lib/uploadTracker";
 import {
   Bold, Italic, UnderlineIcon, Strikethrough, Code, Link2, ImageIcon,
   AlignLeft, AlignCenter, AlignRight, List, ListOrdered,
@@ -90,9 +91,10 @@ export default function RichTextEditor({ value, onChange }: Props) {
     const data = await res.json();
     setUploading(false);
     if (!res.ok) { setUploadError(data.error || "Upload failed"); return; }
+    if (data.publicId) trackUpload("image", data.publicId);
     editor?.chain().focus().insertContent({
       type: "image",
-      attrs: { src: data.url, alt: file.name, width: "100%", align: "center" },
+      attrs: { src: data.url, alt: file.name, width: "100%", align: "center", publicId: data.publicId },
     }).run();
   };
 
@@ -105,6 +107,7 @@ export default function RichTextEditor({ value, onChange }: Props) {
     const data = await res.json();
     setUploading(false);
     if (!res.ok) { setUploadError(data.error || "Upload failed"); return; }
+    if (data.publicId) trackUpload("raw", data.publicId);
 
     const ext = data.name.split(".").pop()?.toUpperCase() || "FILE";
     editor?.chain().focus().insertContent({
@@ -114,6 +117,7 @@ export default function RichTextEditor({ value, onChange }: Props) {
         filename: data.name,
         size: formatBytes(data.size),
         ext,
+        publicId: data.publicId,
       },
     }).run();
   };

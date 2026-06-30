@@ -13,6 +13,7 @@ type AffiliateLink = { id: string; label: string; url: string; platform: string 
 type Series = { id: string; name: string; slug: string };
 type Post = { id: string; title: string; subtitle: string | null; slug: string; content: string; excerpt: string | null; coverImage: string | null; images: string[]; status: string; featured: boolean; sponsored: boolean; sponsoredLabel: string | null; categoryId: string | null; seriesId: string | null; seriesOrder: number | null; faqItems: { question: string; answer: string }[] | null; seoTitle: string | null; metaDescription: string | null; keywords: string[]; ogImage: string | null; readingTime: number; publishedAt: Date | null; scheduledAt: Date | null; createdAt: Date; updatedAt: Date; authorId: string; viewCount: number };
 import { slugify } from "@/lib/utils";
+import { extractAssetIds, getTrackedUploads, clearTrackedUploads } from "@/lib/uploadTracker";
 
 const RichTextEditor = dynamic(() => import("@/components/editor/RichTextEditor"), { ssr: false });
 
@@ -104,10 +105,26 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
       body: JSON.stringify(payload),
     });
     const data = await res.json();
-    setSaving(false);
+
     if (res.ok) {
+      // Clean up Cloudinary assets that were uploaded into the editor (incl. previously
+      // saved ones) but are no longer present in the final content.
+      const finalIds = extractAssetIds(form.content);
+      const oldIds = post ? extractAssetIds(post.content) : new Set<string>();
+      const candidates = new Set([...oldIds, ...getTrackedUploads()]);
+      const toDelete = [...candidates].filter((id) => !finalIds.has(id));
+      if (toDelete.length) {
+        fetch("/api/cloudinary/cleanup", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ids: toDelete }),
+        }).catch(() => {});
+      }
+      clearTrackedUploads();
+      setSaving(false);
       router.push(`/admin/posts`);
     } else {
+      setSaving(false);
       alert(data.error || "Failed to save");
     }
   };

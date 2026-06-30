@@ -4,6 +4,7 @@ import { Node, mergeAttributes } from "@tiptap/core";
 import { NodeViewWrapper, ReactNodeViewRenderer, type NodeViewProps } from "@tiptap/react";
 import { AlignLeft, AlignCenter, AlignRight, Crop, Trash2, GripVertical } from "lucide-react";
 import dynamic from "next/dynamic";
+import { trackUpload } from "@/lib/uploadTracker";
 
 const CropModal = dynamic(() => import("./CropModal"), { ssr: false });
 
@@ -76,7 +77,11 @@ function ResizableImageView({ node, updateAttributes, selected, deleteNode }: No
         <CropModal
           src={src}
           onClose={() => setShowCrop(false)}
-          onCropDone={(newUrl) => { updateAttributes({ src: newUrl }); setShowCrop(false); }}
+          onCropDone={(newUrl, newPublicId) => {
+            updateAttributes({ src: newUrl, publicId: newPublicId });
+            if (newPublicId) trackUpload("image", newPublicId);
+            setShowCrop(false);
+          }}
         />
       )}
 
@@ -222,11 +227,16 @@ export const ResizableImage = Node.create({
 
   addAttributes() {
     return {
-      src:   { default: null },
-      alt:   { default: null },
-      title: { default: null },
-      width: { default: "100%" },
-      align: { default: "center" },
+      src:      { default: null },
+      alt:      { default: null },
+      title:    { default: null },
+      width:    { default: "100%" },
+      align:    { default: "center" },
+      publicId: {
+        default: null,
+        parseHTML: (el) => el.getAttribute("data-public-id"),
+        renderHTML: () => ({}),
+      },
     };
   },
 
@@ -235,13 +245,18 @@ export const ResizableImage = Node.create({
   },
 
   renderHTML({ HTMLAttributes }) {
-    const { align, width, ...rest } = HTMLAttributes;
+    const { align, width, publicId, ...rest } = HTMLAttributes;
     const wrapStyle =
       align === "left"  ? `margin-right:auto;margin-left:0;width:${width};max-width:100%`
       : align === "right" ? `margin-left:auto;margin-right:0;width:${width};max-width:100%`
       : `margin:0 auto;width:${width};max-width:100%`;
     return ["div", { style: "margin:12px 0" },
-      ["img", mergeAttributes(rest, { style: `display:block;${wrapStyle};border-radius:6px`, "data-align": align })]
+      ["img", mergeAttributes(rest, {
+        style: `display:block;${wrapStyle};border-radius:6px`,
+        "data-align": align,
+        "data-public-id": publicId || undefined,
+        "data-cld": publicId ? `image:${publicId}` : undefined,
+      })]
     ];
   },
 

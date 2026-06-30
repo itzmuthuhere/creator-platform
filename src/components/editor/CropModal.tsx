@@ -7,7 +7,7 @@ import { X, Check, Loader2 } from "lucide-react";
 interface Props {
   src: string;
   onClose: () => void;
-  onCropDone: (newUrl: string) => void;
+  onCropDone: (newUrl: string, newPublicId: string) => void;
 }
 
 function centerDefaultCrop(width: number, height: number): Crop {
@@ -67,7 +67,7 @@ export default function CropModal({ src, onClose, onCropDone }: Props) {
       const data = await response.json();
 
       if (!response.ok) throw new Error(data.error || "Upload failed");
-      onCropDone(data.url);
+      onCropDone(data.url, data.publicId);
     } catch (e: any) {
       setError(e.message || "Crop failed");
       setUploading(false);

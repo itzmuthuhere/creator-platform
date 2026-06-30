@@ -69,6 +69,7 @@ export const FileAttachment = Node.create({
       filename: { default: "file" },
       size:     { default: "" },
       ext:      { default: "FILE" },
+      publicId: { default: null },
     };
   },
 
@@ -79,11 +80,13 @@ export const FileAttachment = Node.create({
   renderHTML({ HTMLAttributes }) {
     const href: string = HTMLAttributes.href ?? "";
     const filename: string = HTMLAttributes.filename ?? "file";
+    const publicId: string | null = HTMLAttributes.publicId ?? null;
 
     return [
       "div",
       {
         "data-file-attachment": "true",
+        "data-cld": publicId ? `raw:${publicId}` : undefined,
         style: "display:inline-flex;align-items:center;gap:6px;margin:4px 0",
       },
       ["a", {
