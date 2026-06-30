@@ -2,7 +2,7 @@
 import React, { useCallback, useRef, useState } from "react";
 import { Node, mergeAttributes } from "@tiptap/core";
 import { NodeViewWrapper, ReactNodeViewRenderer, type NodeViewProps } from "@tiptap/react";
-import { AlignLeft, AlignCenter, AlignRight, Crop, Trash2 } from "lucide-react";
+import { AlignLeft, AlignCenter, AlignRight, Crop, Trash2, GripVertical } from "lucide-react";
 import dynamic from "next/dynamic";
 
 const CropModal = dynamic(() => import("./CropModal"), { ssr: false });
@@ -21,7 +21,7 @@ function ResizableImageView({ node, updateAttributes, selected, deleteNode }: No
     e.stopPropagation();
     setIsResizing(true);
     startX.current = e.clientX;
-    startW.current = imgRef.current?.offsetWidth || parseInt(width) || 400;
+    startW.current = imgRef.current?.offsetWidth || parseInt(width) || 600;
 
     const onMove = (ev: MouseEvent) => {
       const delta = ev.clientX - startX.current;
@@ -39,15 +39,37 @@ function ResizableImageView({ node, updateAttributes, selected, deleteNode }: No
     window.addEventListener("mouseup", onUp);
   }, [updateAttributes, width]);
 
-  const alignStyle: React.CSSProperties =
-    align === "left"  ? { float: "left",  marginRight: "1.5rem", marginBottom: "0.5rem", clear: "left" }
-    : align === "right" ? { float: "right", marginLeft:  "1.5rem", marginBottom: "0.5rem", clear: "right" }
-    : { display: "block", margin: "1rem auto", clear: "both" };
+  const imgStyle: React.CSSProperties = {
+    display: "block",
+    width: width || "100%",
+    maxWidth: "100%",
+    borderRadius: "6px",
+    cursor: isResizing ? "ew-resize" : "default",
+  };
+
+  const wrapStyle: React.CSSProperties =
+    align === "left"
+      ? { marginRight: "auto", marginLeft: 0, width: width || "100%" }
+      : align === "right"
+      ? { marginLeft: "auto", marginRight: 0, width: width || "100%" }
+      : { margin: "0 auto", width: width || "100%" };
 
   return (
     <NodeViewWrapper
-      as="span"
-      style={{ display: align === "center" ? "block" : "inline-block", userSelect: "none" }}
+      as="div"
+      data-drag-handle
+      style={{
+        position: "relative",
+        display: "flex",
+        flexDirection: align === "left" ? "row" : align === "right" ? "row-reverse" : "column",
+        alignItems: align === "center" ? "center" : "flex-start",
+        outline: selected ? "2px solid #7c3aed" : "none",
+        outlineOffset: "3px",
+        borderRadius: "8px",
+        padding: "2px",
+        margin: "12px 0",
+        cursor: "grab",
+      }}
     >
       {/* Crop modal */}
       {showCrop && (
@@ -58,133 +80,122 @@ function ResizableImageView({ node, updateAttributes, selected, deleteNode }: No
         />
       )}
 
-      <span
-        style={{
-          ...alignStyle,
-          display: "inline-block",
-          position: "relative",
-          width: width || "auto",
-          maxWidth: "100%",
-          outline: selected ? "2px solid #7c3aed" : "none",
-          outlineOffset: "2px",
-          borderRadius: "4px",
-        }}
-      >
-        {/* Inline toolbar — only when selected */}
-        {selected && (
-          <span
-            contentEditable={false}
+      {/* Floating toolbar — visible when selected */}
+      {selected && (
+        <div
+          contentEditable={false}
+          style={{
+            position: "absolute",
+            top: -44,
+            left: "50%",
+            transform: "translateX(-50%)",
+            display: "flex",
+            alignItems: "center",
+            gap: 3,
+            background: "#1f2937",
+            borderRadius: 10,
+            padding: "5px 8px",
+            zIndex: 100,
+            boxShadow: "0 4px 16px rgba(0,0,0,0.35)",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {/* Drag hint */}
+          <span style={{ color: "#6b7280", display: "flex", alignItems: "center", marginRight: 2 }}>
+            <GripVertical size={13} />
+          </span>
+
+          {/* Alignment buttons */}
+          {(["left", "center", "right"] as const).map((a) => {
+            const Icon = a === "left" ? AlignLeft : a === "center" ? AlignCenter : AlignRight;
+            return (
+              <button key={a} type="button"
+                onMouseDown={(e) => { e.preventDefault(); updateAttributes({ align: a }); }}
+                title={`Align ${a}`}
+                style={{
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  width: 28, height: 28, borderRadius: 6, border: "none", cursor: "pointer",
+                  background: align === a ? "#7c3aed" : "transparent",
+                  color: "#fff",
+                }}
+              >
+                <Icon size={13} />
+              </button>
+            );
+          })}
+
+          <span style={{ width: 1, background: "#374151", alignSelf: "stretch", margin: "0 3px" }} />
+
+          {/* Crop */}
+          <button type="button"
+            onMouseDown={(e) => { e.preventDefault(); setShowCrop(true); }}
+            title="Crop image"
             style={{
-              position: "absolute",
-              top: "-40px",
-              left: "50%",
-              transform: "translateX(-50%)",
-              display: "flex",
-              gap: "4px",
-              background: "#1f2937",
-              borderRadius: "8px",
-              padding: "4px 6px",
-              zIndex: 50,
-              boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
-              whiteSpace: "nowrap",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              width: 28, height: 28, borderRadius: 6, border: "none", cursor: "pointer",
+              background: "transparent", color: "#fff",
             }}
           >
-            {/* Alignment */}
-            {(["left", "center", "right"] as const).map((a) => {
-              const Icon = a === "left" ? AlignLeft : a === "center" ? AlignCenter : AlignRight;
-              return (
-                <button key={a} type="button"
-                  onMouseDown={(e) => { e.preventDefault(); updateAttributes({ align: a }); }}
-                  title={`Align ${a}`}
-                  style={{
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    width: 28, height: 28, borderRadius: 6, border: "none", cursor: "pointer",
-                    background: align === a ? "#7c3aed" : "transparent",
-                    color: "#fff",
-                  }}
-                >
-                  <Icon size={14} />
-                </button>
-              );
-            })}
+            <Crop size={13} />
+          </button>
 
-            <span style={{ width: 1, background: "#374151", margin: "2px 2px" }} />
-
-            {/* Crop */}
-            <button type="button"
-              onMouseDown={(e) => { e.preventDefault(); setShowCrop(true); }}
-              title="Crop image"
+          {/* Width input */}
+          <div style={{ display: "flex", alignItems: "center", gap: 2 }}>
+            <input
+              type="number"
+              min={80} max={900} step={10}
+              value={parseInt(width) || ""}
+              onChange={(e) => updateAttributes({ width: `${e.target.value}px` })}
+              onMouseDown={(e) => e.stopPropagation()}
+              placeholder="w"
+              title="Width in px"
               style={{
-                display: "flex", alignItems: "center", justifyContent: "center",
-                width: 28, height: 28, borderRadius: 6, border: "none", cursor: "pointer",
-                background: "transparent", color: "#fff",
+                width: 52, height: 24, borderRadius: 4, border: "none",
+                background: "#374151", color: "#fff", fontSize: 11,
+                padding: "0 4px", outline: "none", textAlign: "center",
               }}
-            >
-              <Crop size={14} />
-            </button>
+            />
+            <span style={{ color: "#9ca3af", fontSize: 10 }}>px</span>
+          </div>
 
-            {/* Width input */}
-            <span style={{ display: "flex", alignItems: "center", gap: 2 }}>
-              <input
-                type="number"
-                min={80} max={900} step={10}
-                value={parseInt(width) || ""}
-                onChange={(e) => updateAttributes({ width: `${e.target.value}px` })}
-                onMouseDown={(e) => e.stopPropagation()}
-                placeholder="px"
-                title="Width in px"
-                style={{
-                  width: 54, height: 24, borderRadius: 4, border: "none",
-                  background: "#374151", color: "#fff", fontSize: 11,
-                  padding: "0 4px", outline: "none", textAlign: "center",
-                }}
-              />
-              <span style={{ color: "#9ca3af", fontSize: 10 }}>px</span>
-            </span>
+          <span style={{ width: 1, background: "#374151", alignSelf: "stretch", margin: "0 3px" }} />
 
-            <span style={{ width: 1, background: "#374151", margin: "2px 2px" }} />
+          {/* Delete */}
+          <button type="button"
+            onMouseDown={(e) => { e.preventDefault(); deleteNode(); }}
+            title="Remove image"
+            style={{
+              display: "flex", alignItems: "center", justifyContent: "center",
+              width: 28, height: 28, borderRadius: 6, border: "none", cursor: "pointer",
+              background: "transparent", color: "#f87171",
+            }}
+          >
+            <Trash2 size={13} />
+          </button>
+        </div>
+      )}
 
-            {/* Delete */}
-            <button type="button"
-              onMouseDown={(e) => { e.preventDefault(); deleteNode(); }}
-              title="Remove image"
-              style={{
-                display: "flex", alignItems: "center", justifyContent: "center",
-                width: 28, height: 28, borderRadius: 6, border: "none", cursor: "pointer",
-                background: "transparent", color: "#f87171",
-              }}
-            >
-              <Trash2 size={14} />
-            </button>
-          </span>
-        )}
-
-        {/* The image */}
+      {/* Image wrapper */}
+      <div style={{ ...wrapStyle, position: "relative" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           ref={imgRef}
           src={src}
           alt={alt || ""}
           draggable={false}
-          style={{
-            display: "block",
-            width: width || "auto",
-            maxWidth: "100%",
-            borderRadius: "6px",
-            cursor: isResizing ? "ew-resize" : "default",
-          }}
+          style={imgStyle}
         />
 
-        {/* Resize handle — bottom right */}
+        {/* Resize handle */}
         {selected && (
-          <span
+          <div
             contentEditable={false}
             onMouseDown={onResizeStart}
             title="Drag to resize"
             style={{
               position: "absolute",
-              bottom: -5,
-              right: -5,
+              bottom: 6,
+              right: 6,
               width: 14,
               height: 14,
               background: "#7c3aed",
@@ -195,7 +206,7 @@ function ResizableImageView({ node, updateAttributes, selected, deleteNode }: No
             }}
           />
         )}
-      </span>
+      </div>
     </NodeViewWrapper>
   );
 }
@@ -203,8 +214,8 @@ function ResizableImageView({ node, updateAttributes, selected, deleteNode }: No
 // ---------- Tiptap Extension ----------
 export const ResizableImage = Node.create({
   name: "image",
-  group: "inline",
-  inline: true,
+  group: "block",
+  inline: false,
   draggable: true,
   selectable: true,
   atom: true,
@@ -225,11 +236,13 @@ export const ResizableImage = Node.create({
 
   renderHTML({ HTMLAttributes }) {
     const { align, width, ...rest } = HTMLAttributes;
-    const style =
-      align === "left"  ? `float:left;margin-right:1.5rem;margin-bottom:0.5rem;width:${width};max-width:100%`
-      : align === "right" ? `float:right;margin-left:1.5rem;margin-bottom:0.5rem;width:${width};max-width:100%`
-      : `display:block;margin:1rem auto;width:${width};max-width:100%`;
-    return ["img", mergeAttributes(rest, { style, "data-align": align })];
+    const wrapStyle =
+      align === "left"  ? `margin-right:auto;margin-left:0;width:${width};max-width:100%`
+      : align === "right" ? `margin-left:auto;margin-right:0;width:${width};max-width:100%`
+      : `margin:0 auto;width:${width};max-width:100%`;
+    return ["div", { style: "margin:12px 0" },
+      ["img", mergeAttributes(rest, { style: `display:block;${wrapStyle};border-radius:6px`, "data-align": align })]
+    ];
   },
 
   addNodeView() {
