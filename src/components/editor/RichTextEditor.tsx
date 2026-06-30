@@ -10,6 +10,7 @@ import { TextStyle, Color } from "@tiptap/extension-text-style";
 import Highlight from "@tiptap/extension-highlight";
 import { Table, TableRow, TableHeader, TableCell } from "@tiptap/extension-table";
 import { ResizableImage } from "./ResizableImageExtension";
+import { FileAttachment } from "./FileAttachmentExtension";
 import {
   Bold, Italic, UnderlineIcon, Strikethrough, Code, Link2, ImageIcon,
   AlignLeft, AlignCenter, AlignRight, List, ListOrdered,
@@ -50,6 +51,7 @@ export default function RichTextEditor({ value, onChange }: Props) {
       Color,
       Highlight.configure({ multicolor: true }),
       ResizableImage,
+      FileAttachment,
       Link.configure({ openOnClick: false }),
       TextAlign.configure({ types: ["heading", "paragraph"] }),
       Placeholder.configure({ placeholder: "Start writing your article…" }),
@@ -105,17 +107,15 @@ export default function RichTextEditor({ value, onChange }: Props) {
     if (!res.ok) { setUploadError(data.error || "Upload failed"); return; }
 
     const ext = data.name.split(".").pop()?.toUpperCase() || "FILE";
-    const html = `<div class="file-attachment" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border:1.5px solid #e5e7eb;border-radius:12px;background:#f9fafb;margin:16px 0;">
-  <div style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:8px;background:#ede9fe;flex-shrink:0;">
-    <span style="font-size:11px;font-weight:700;color:#7c3aed;">${ext}</span>
-  </div>
-  <div style="flex:1;min-width:0;">
-    <div style="font-weight:600;font-size:14px;color:#111827;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${data.name}</div>
-    <div style="font-size:12px;color:#6b7280;margin-top:2px;">${formatBytes(data.size)}</div>
-  </div>
-  <a href="${data.downloadUrl}" download="${data.name}" style="display:inline-flex;align-items:center;gap:6px;background:#7c3aed;color:#fff;padding:8px 16px;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap;flex-shrink:0;">⬇ Download</a>
-</div>`;
-    editor?.chain().focus().insertContent(html).run();
+    editor?.chain().focus().insertContent({
+      type: "fileAttachment",
+      attrs: {
+        href: data.downloadUrl,
+        filename: data.name,
+        size: formatBytes(data.size),
+        ext,
+      },
+    }).run();
   };
 
   if (!editor) return null;
