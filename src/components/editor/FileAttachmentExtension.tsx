@@ -1,17 +1,20 @@
 "use client";
 import React from "react";
-import { Node, mergeAttributes } from "@tiptap/core";
+import { Node } from "@tiptap/core";
 import { NodeViewWrapper, ReactNodeViewRenderer, type NodeViewProps } from "@tiptap/react";
 import { Trash2, Download } from "lucide-react";
 
-function FileAttachmentView({ node, deleteNode, selected }: NodeViewProps) {
-  const { href, filename, size, ext } = node.attrs;
+const EXT_COLORS: Record<string, string> = {
+  PDF: "#ef4444", DOC: "#2563eb", DOCX: "#2563eb",
+  XLS: "#16a34a", XLSX: "#16a34a", PPT: "#f97316", PPTX: "#f97316",
+};
 
-  const colors: Record<string, string> = {
-    PDF: "#ef4444", DOC: "#2563eb", DOCX: "#2563eb",
-    XLS: "#16a34a", XLSX: "#16a34a", PPT: "#f97316", PPTX: "#f97316",
-  };
-  const badgeColor = colors[ext] || "#7c3aed";
+function FileAttachmentView({ node, deleteNode, selected }: NodeViewProps) {
+  const href: string = node.attrs.href ?? "";
+  const filename: string = node.attrs.filename ?? "file";
+  const size: string = node.attrs.size ?? "";
+  const ext: string = node.attrs.ext ?? "FILE";
+  const color = EXT_COLORS[ext] ?? "#7c3aed";
 
   return (
     <NodeViewWrapper
@@ -29,16 +32,15 @@ function FileAttachmentView({ node, deleteNode, selected }: NodeViewProps) {
         margin: "16px 0",
         cursor: "grab",
         userSelect: "none",
-        position: "relative",
       }}
     >
       {/* EXT badge */}
       <div style={{
         display: "flex", alignItems: "center", justifyContent: "center",
         width: 44, height: 44, borderRadius: 8,
-        background: badgeColor + "1a", flexShrink: 0,
+        background: color + "22", flexShrink: 0,
       }}>
-        <span style={{ fontSize: 11, fontWeight: 700, color: badgeColor }}>{ext}</span>
+        <span style={{ fontSize: 11, fontWeight: 700, color }}>{ext}</span>
       </div>
 
       {/* Name + size */}
@@ -49,11 +51,11 @@ function FileAttachmentView({ node, deleteNode, selected }: NodeViewProps) {
         <div style={{ fontSize: 12, color: "#6b7280", marginTop: 2 }}>{size}</div>
       </div>
 
-      {/* Delete button (editor only) */}
+      {/* Delete (editor only) */}
       <button
         type="button"
         onMouseDown={(e) => { e.preventDefault(); deleteNode(); }}
-        title="Remove file"
+        title="Remove"
         style={{
           display: "flex", alignItems: "center", justifyContent: "center",
           width: 28, height: 28, borderRadius: 6, border: "none",
@@ -63,7 +65,7 @@ function FileAttachmentView({ node, deleteNode, selected }: NodeViewProps) {
         <Trash2 size={14} />
       </button>
 
-      {/* Download badge */}
+      {/* Download */}
       <a
         href={href}
         download={filename}
@@ -104,16 +106,15 @@ export const FileAttachment = Node.create({
   },
 
   renderHTML({ HTMLAttributes }) {
-    const { href, filename, size, ext } = HTMLAttributes;
-    const colors: Record<string, string> = {
-      PDF: "#ef4444", DOC: "#2563eb", DOCX: "#2563eb",
-      XLS: "#16a34a", XLSX: "#16a34a", PPT: "#f97316", PPTX: "#f97316",
-    };
-    const badgeColor = colors[ext] || "#7c3aed";
+    const href: string = HTMLAttributes.href ?? "";
+    const filename: string = HTMLAttributes.filename ?? "file";
+    const size: string = HTMLAttributes.size ?? "";
+    const ext: string = HTMLAttributes.ext ?? "FILE";
+    const color = EXT_COLORS[ext] ?? "#7c3aed";
 
     return [
       "div",
-      mergeAttributes({
+      {
         "data-file-attachment": "true",
         style: [
           "display:flex", "align-items:center", "gap:14px",
@@ -121,16 +122,10 @@ export const FileAttachment = Node.create({
           "border:1.5px solid #e5e7eb", "border-radius:12px",
           "background:#f9fafb", "margin:16px 0",
         ].join(";"),
-      }),
-      ["div", {
-        style: [
-          "display:flex", "align-items:center", "justify-content:center",
-          "width:44px", "height:44px", "border-radius:8px",
-          `background:${badgeColor}1a`, "flex-shrink:0",
-        ].join(";"),
       },
-        ["span", { style: `font-size:11px;font-weight:700;color:${badgeColor}` }, ext],
-      ],
+      ["div", {
+        style: `display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:8px;background:${color}22;flex-shrink:0`,
+      }, ["span", { style: `font-size:11px;font-weight:700;color:${color}` }, ext]],
       ["div", { style: "flex:1;min-width:0" },
         ["div", { style: "font-weight:600;font-size:14px;color:#111827;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" }, filename],
         ["div", { style: "font-size:12px;color:#6b7280;margin-top:2px" }, size],
@@ -146,7 +141,7 @@ export const FileAttachment = Node.create({
           "text-decoration:none", "white-space:nowrap", "flex-shrink:0",
         ].join(";"),
       }, "⬇ Download"],
-    ];
+    ] as any;
   },
 
   addNodeView() {
