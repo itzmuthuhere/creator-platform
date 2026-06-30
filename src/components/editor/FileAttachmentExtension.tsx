@@ -2,19 +2,11 @@
 import React from "react";
 import { Node } from "@tiptap/core";
 import { NodeViewWrapper, ReactNodeViewRenderer, type NodeViewProps } from "@tiptap/react";
-import { Trash2, Download } from "lucide-react";
-
-const EXT_COLORS: Record<string, string> = {
-  PDF: "#ef4444", DOC: "#2563eb", DOCX: "#2563eb",
-  XLS: "#16a34a", XLSX: "#16a34a", PPT: "#f97316", PPTX: "#f97316",
-};
+import { Paperclip, Trash2 } from "lucide-react";
 
 function FileAttachmentView({ node, deleteNode, selected }: NodeViewProps) {
   const href: string = node.attrs.href ?? "";
   const filename: string = node.attrs.filename ?? "file";
-  const size: string = node.attrs.size ?? "";
-  const ext: string = node.attrs.ext ?? "FILE";
-  const color = EXT_COLORS[ext] ?? "#7c3aed";
 
   return (
     <NodeViewWrapper
@@ -22,64 +14,43 @@ function FileAttachmentView({ node, deleteNode, selected }: NodeViewProps) {
       data-drag-handle
       contentEditable={false}
       style={{
-        display: "flex",
+        display: "inline-flex",
         alignItems: "center",
-        gap: 14,
-        padding: "14px 18px",
-        border: selected ? "1.5px solid #7c3aed" : "1.5px solid #e5e7eb",
-        borderRadius: 12,
-        background: "#f9fafb",
-        margin: "16px 0",
+        gap: 6,
+        margin: "4px 0",
         cursor: "grab",
         userSelect: "none",
+        outline: selected ? "2px solid #7c3aed" : "none",
+        outlineOffset: 3,
+        borderRadius: 4,
       }}
     >
-      {/* EXT badge */}
-      <div style={{
-        display: "flex", alignItems: "center", justifyContent: "center",
-        width: 44, height: 44, borderRadius: 8,
-        background: color + "22", flexShrink: 0,
-      }}>
-        <span style={{ fontSize: 11, fontWeight: 700, color }}>{ext}</span>
-      </div>
-
-      {/* Name + size */}
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontWeight: 600, fontSize: 14, color: "#111827", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-          {filename}
-        </div>
-        <div style={{ fontSize: 12, color: "#6b7280", marginTop: 2 }}>{size}</div>
-      </div>
-
-      {/* Delete (editor only) */}
+      <Paperclip size={14} style={{ color: "#7c3aed", flexShrink: 0 }} />
+      <a
+        href={href}
+        download={filename}
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          color: "#7c3aed",
+          fontWeight: 500,
+          fontSize: 14,
+          textDecoration: "underline",
+        }}
+      >
+        {filename}
+      </a>
       <button
         type="button"
         onMouseDown={(e) => { e.preventDefault(); deleteNode(); }}
         title="Remove"
         style={{
           display: "flex", alignItems: "center", justifyContent: "center",
-          width: 28, height: 28, borderRadius: 6, border: "none",
+          width: 20, height: 20, borderRadius: 4, border: "none",
           background: "transparent", color: "#9ca3af", cursor: "pointer", flexShrink: 0,
         }}
       >
-        <Trash2 size={14} />
+        <Trash2 size={12} />
       </button>
-
-      {/* Download */}
-      <a
-        href={href}
-        download={filename}
-        onClick={(e) => e.stopPropagation()}
-        style={{
-          display: "inline-flex", alignItems: "center", gap: 6,
-          background: "#7c3aed", color: "#fff",
-          padding: "8px 16px", borderRadius: 8,
-          fontSize: 12, fontWeight: 600,
-          textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0,
-        }}
-      >
-        <Download size={13} /> Download
-      </a>
     </NodeViewWrapper>
   );
 }
@@ -108,39 +79,18 @@ export const FileAttachment = Node.create({
   renderHTML({ HTMLAttributes }) {
     const href: string = HTMLAttributes.href ?? "";
     const filename: string = HTMLAttributes.filename ?? "file";
-    const size: string = HTMLAttributes.size ?? "";
-    const ext: string = HTMLAttributes.ext ?? "FILE";
-    const color = EXT_COLORS[ext] ?? "#7c3aed";
 
     return [
       "div",
       {
         "data-file-attachment": "true",
-        style: [
-          "display:flex", "align-items:center", "gap:14px",
-          "padding:14px 18px",
-          "border:1.5px solid #e5e7eb", "border-radius:12px",
-          "background:#f9fafb", "margin:16px 0",
-        ].join(";"),
+        style: "display:inline-flex;align-items:center;gap:6px;margin:4px 0",
       },
-      ["div", {
-        style: `display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:8px;background:${color}22;flex-shrink:0`,
-      }, ["span", { style: `font-size:11px;font-weight:700;color:${color}` }, ext]],
-      ["div", { style: "flex:1;min-width:0" },
-        ["div", { style: "font-weight:600;font-size:14px;color:#111827;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" }, filename],
-        ["div", { style: "font-size:12px;color:#6b7280;margin-top:2px" }, size],
-      ],
       ["a", {
         href,
         download: filename,
-        style: [
-          "display:inline-flex", "align-items:center", "gap:6px",
-          "background:#7c3aed", "color:#fff",
-          "padding:8px 16px", "border-radius:8px",
-          "font-size:12px", "font-weight:600",
-          "text-decoration:none", "white-space:nowrap", "flex-shrink:0",
-        ].join(";"),
-      }, "⬇ Download"],
+        style: "color:#7c3aed;font-weight:500;font-size:14px;text-decoration:underline;display:inline-flex;align-items:center;gap:6px",
+      }, "📎 " + filename],
     ] as any;
   },
 

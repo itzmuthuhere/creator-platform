@@ -59,16 +59,22 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ url: result.url, type: "image" });
   }
 
-  // Raw file upload to Cloudinary
+  // Raw file upload to Cloudinary — type "authenticated" bypasses the
+  // platform-wide block on public PDF/ZIP raw delivery (Cloudinary security policy)
   const result: any = await new Promise((resolve, reject) => {
     cloudinary.uploader.upload(base64, {
       folder: "creator-platform/files",
       resource_type: "raw",
+      type: "authenticated",
       public_id: `${Date.now()}-${file.name.replace(/[^a-zA-Z0-9.-]/g, "_")}`,
     }, (err, res) => err ? reject(err) : resolve(res));
   });
 
-  const downloadUrl = `/api/download?url=${encodeURIComponent(result.secure_url)}&name=${encodeURIComponent(file.name)}`;
+  const downloadUrl = cloudinary.utils.private_download_url(result.public_id, "", {
+    resource_type: "raw",
+    type: "authenticated",
+    attachment: true,
+  });
 
   return NextResponse.json({
     url: result.secure_url,
