@@ -2,7 +2,6 @@
 import React, { useCallback, useRef, useState } from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-import ImageExt from "@tiptap/extension-image";
 import Link from "@tiptap/extension-link";
 import Underline from "@tiptap/extension-underline";
 import TextAlign from "@tiptap/extension-text-align";
@@ -10,6 +9,7 @@ import Placeholder from "@tiptap/extension-placeholder";
 import { TextStyle, Color } from "@tiptap/extension-text-style";
 import Highlight from "@tiptap/extension-highlight";
 import { Table, TableRow, TableHeader, TableCell } from "@tiptap/extension-table";
+import { ResizableImage } from "./ResizableImageExtension";
 import {
   Bold, Italic, UnderlineIcon, Strikethrough, Code, Link2, ImageIcon,
   AlignLeft, AlignCenter, AlignRight, List, ListOrdered,
@@ -49,7 +49,7 @@ export default function RichTextEditor({ value, onChange }: Props) {
       TextStyle,
       Color,
       Highlight.configure({ multicolor: true }),
-      ImageExt.configure({ inline: false, allowBase64: false }),
+      ResizableImage,
       Link.configure({ openOnClick: false }),
       TextAlign.configure({ types: ["heading", "paragraph"] }),
       Placeholder.configure({ placeholder: "Start writing your article…" }),
@@ -88,7 +88,10 @@ export default function RichTextEditor({ value, onChange }: Props) {
     const data = await res.json();
     setUploading(false);
     if (!res.ok) { setUploadError(data.error || "Upload failed"); return; }
-    editor?.chain().focus().setImage({ src: data.url, alt: file.name }).run();
+    editor?.chain().focus().insertContent({
+      type: "image",
+      attrs: { src: data.url, alt: file.name, width: "100%", align: "center" },
+    }).run();
   };
 
   const uploadAndInsertFile = async (file: File) => {
