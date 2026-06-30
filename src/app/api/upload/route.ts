@@ -68,8 +68,11 @@ export async function POST(req: NextRequest) {
     }, (err, res) => err ? reject(err) : resolve(res));
   });
 
+  const downloadUrl = `/api/download?url=${encodeURIComponent(result.secure_url)}&name=${encodeURIComponent(file.name)}`;
+
   return NextResponse.json({
     url: result.secure_url,
+    downloadUrl,
     name: file.name,
     size: file.size,
     type: "file",
