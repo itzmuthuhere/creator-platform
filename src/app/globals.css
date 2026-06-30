@@ -117,6 +117,70 @@ img {
   background: #1e1b4b20;
 }
 
+/* Prose table styles */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.prose th {
+  background: #f3f4f6;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+}
+
+.prose td {
+  padding: 0.65rem 1rem;
+  border: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.prose tr:nth-child(even) td {
+  background: #f9fafb;
+}
+
+.dark .prose table { border-color: #374151; }
+.dark .prose th { background: #1f2937; color: #f9fafb; border-color: #374151; }
+.dark .prose td { border-color: #374151; }
+.dark .prose tr:nth-child(even) td { background: #111827; }
+
+/* Tiptap table in editor */
+.ProseMirror table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.ProseMirror th,
+.ProseMirror td {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 0.75rem;
+  min-width: 80px;
+  position: relative;
+}
+
+.ProseMirror th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.ProseMirror .selectedCell::after {
+  background: rgba(124, 58, 237, 0.15);
+  content: "";
+  left: 0; right: 0; top: 0; bottom: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+
 /* TipTap editor placeholder */
 .ProseMirror {
   outline: none;
