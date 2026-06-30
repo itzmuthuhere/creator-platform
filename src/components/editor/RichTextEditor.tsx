@@ -104,14 +104,16 @@ export default function RichTextEditor({ value, onChange }: Props) {
     setUploading(false);
     if (!res.ok) { setUploadError(data.error || "Upload failed"); return; }
 
-    // Insert a styled file download card as HTML
-    const html = `<div class="file-attachment" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border:1px solid #e5e7eb;border-radius:10px;background:#f9fafb;margin:12px 0;text-decoration:none;">
-  <span style="font-size:24px">📎</span>
+    const ext = data.name.split(".").pop()?.toUpperCase() || "FILE";
+    const html = `<div class="file-attachment" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border:1.5px solid #e5e7eb;border-radius:12px;background:#f9fafb;margin:16px 0;">
+  <div style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:8px;background:#ede9fe;flex-shrink:0;">
+    <span style="font-size:11px;font-weight:700;color:#7c3aed;">${ext}</span>
+  </div>
   <div style="flex:1;min-width:0;">
     <div style="font-weight:600;font-size:14px;color:#111827;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${data.name}</div>
-    <div style="font-size:12px;color:#6b7280;">${formatBytes(data.size)}</div>
+    <div style="font-size:12px;color:#6b7280;margin-top:2px;">${formatBytes(data.size)}</div>
   </div>
-  <a href="${data.url}" target="_blank" rel="noopener noreferrer" download style="background:#7c3aed;color:#fff;padding:6px 14px;border-radius:6px;font-size:12px;font-weight:500;text-decoration:none;white-space:nowrap;">Download</a>
+  <a href="${data.downloadUrl}" download="${data.name}" style="display:inline-flex;align-items:center;gap:6px;background:#7c3aed;color:#fff;padding:8px 16px;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;white-space:nowrap;flex-shrink:0;">⬇ Download</a>
 </div>`;
     editor?.chain().focus().insertContent(html).run();
   };
