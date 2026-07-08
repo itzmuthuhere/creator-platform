@@ -8,7 +8,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const posts = await prisma.post.findMany({
     where: { status: "PUBLISHED" },
-    select: { slug: true, updatedAt: true },
+    select: { slug: true, updatedAt: true, locale: true },
   });
 
   const categories = await prisma.category.findMany({
@@ -16,11 +16,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     select: { slug: true, createdAt: true },
   });
 
+  const hasTamilPosts = posts.some((p) => p.locale === "ta");
+
   return [
     { url: base, lastModified: new Date(), changeFrequency: "daily", priority: 1 },
     { url: `${base}/search`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
+    ...(hasTamilPosts ? [{ url: `${base}/ta`, lastModified: new Date(), changeFrequency: "daily" as const, priority: 0.9 }] : []),
     ...posts.map((p) => ({
-      url: `${base}/${p.slug}`,
+      url: p.locale === "ta" ? `${base}/ta/${p.slug}` : `${base}/${p.slug}`,
       lastModified: p.updatedAt,
       changeFrequency: "weekly" as const,
       priority: 0.9,

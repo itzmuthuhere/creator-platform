@@ -6,11 +6,14 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function slugify(text: string): string {
-  return text
+  const base = text
     .toLowerCase()
     .replace(/[^\w\s-]/g, "")
     .replace(/[\s_-]+/g, "-")
     .replace(/^-+|-+$/g, "");
+  // Titles with no Latin characters (Tamil, etc.) strip down to nothing —
+  // fall back to a short unique slug instead of an invalid empty one.
+  return base || `post-${Date.now().toString(36)}`;
 }
 
 export function getWordCount(content: string): number {

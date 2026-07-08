@@ -7,7 +7,8 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params;
-  const url = `${getBaseUrl()}/${slug}`;
+  const locale = req.nextUrl.searchParams.get("locale");
+  const url = `${getBaseUrl()}/${locale === "ta" ? "ta/" : ""}${slug}`;
   const qrDataUrl = await QRCode.toDataURL(url, {
     width: 400,
     margin: 2,

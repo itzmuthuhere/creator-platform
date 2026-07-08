@@ -11,7 +11,7 @@ interface Comment {
   content: string;
   status: string;
   createdAt: Date;
-  post: { title: string; slug: string };
+  post: { title: string; slug: string; locale: string };
 }
 
 const STATUS_COLORS: Record<string, string> = {
@@ -68,7 +68,7 @@ export default function CommentsAdminClient({ initialComments }: { initialCommen
             </div>
             <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">{c.content}</p>
             <div className="flex items-center gap-2">
-              <Link href={`/${c.post.slug}`} target="_blank" className="text-xs text-violet-600 hover:underline">
+              <Link href={`/${c.post.locale === "ta" ? "ta/" : ""}${c.post.slug}`} target="_blank" className="text-xs text-violet-600 hover:underline">
                 {c.post.title}
               </Link>
               <div className="ml-auto flex gap-2">

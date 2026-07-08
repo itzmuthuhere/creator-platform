@@ -9,12 +9,13 @@ import type { PostCard } from "@/types";
 interface PostCardProps {
   post: PostCard;
   variant?: "default" | "featured" | "compact" | "horizontal";
+  basePath?: string;
 }
 
-export default function PostCard({ post, variant = "default" }: PostCardProps) {
+export default function PostCard({ post, variant = "default", basePath = "" }: PostCardProps) {
   if (variant === "compact") {
     return (
-      <Link href={`/${post.slug}`} className="group flex gap-3 rounded-lg p-2 transition hover:bg-gray-50 dark:hover:bg-gray-800/50">
+      <Link href={`${basePath}/${post.slug}`} className="group flex gap-3 rounded-lg p-2 transition hover:bg-gray-50 dark:hover:bg-gray-800/50">
         {post.coverImage && (
           <div className="relative h-16 w-24 flex-shrink-0 overflow-hidden rounded-md">
             <Image src={post.coverImage} alt={post.title} fill className="object-cover" />
@@ -34,7 +35,7 @@ export default function PostCard({ post, variant = "default" }: PostCardProps) {
 
   if (variant === "horizontal") {
     return (
-      <Link href={`/${post.slug}`} className="group card-hover flex gap-4 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-900">
+      <Link href={`${basePath}/${post.slug}`} className="group card-hover flex gap-4 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-900">
         {post.coverImage && (
           <div className="relative h-24 w-36 flex-shrink-0 overflow-hidden rounded-lg">
             <Image src={post.coverImage} alt={post.title} fill className="object-cover" />
@@ -63,7 +64,7 @@ export default function PostCard({ post, variant = "default" }: PostCardProps) {
 
   if (variant === "featured") {
     return (
-      <Link href={`/${post.slug}`} className="group relative block overflow-hidden rounded-2xl">
+      <Link href={`${basePath}/${post.slug}`} className="group relative block overflow-hidden rounded-2xl">
         <div className="relative aspect-[16/9] w-full">
           {post.coverImage ? (
             <Image src={post.coverImage} alt={post.title} fill className="object-cover transition duration-500 group-hover:scale-105" />
@@ -92,7 +93,7 @@ export default function PostCard({ post, variant = "default" }: PostCardProps) {
   }
 
   return (
-    <Link href={`/${post.slug}`} className="group card-hover flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900">
+    <Link href={`${basePath}/${post.slug}`} className="group card-hover flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900">
       <div className="relative aspect-[16/9] overflow-hidden">
         {post.coverImage ? (
           <Image src={post.coverImage} alt={post.title} fill className="object-cover transition-transform duration-500 ease-out group-hover:scale-105" />

@@ -11,7 +11,7 @@ type Category = { id: string; name: string; slug: string; color: string | null; 
 type Tag = { id: string; name: string; slug: string };
 type AffiliateLink = { id: string; label: string; url: string; platform: string | null; clickCount: number; postId: string; createdAt: Date };
 type Series = { id: string; name: string; slug: string };
-type Post = { id: string; title: string; subtitle: string | null; slug: string; content: string; excerpt: string | null; coverImage: string | null; images: string[]; status: string; featured: boolean; sponsored: boolean; sponsoredLabel: string | null; categoryId: string | null; seriesId: string | null; seriesOrder: number | null; faqItems: { question: string; answer: string }[] | null; seoTitle: string | null; metaDescription: string | null; keywords: string[]; ogImage: string | null; readingTime: number; publishedAt: Date | null; scheduledAt: Date | null; createdAt: Date; updatedAt: Date; authorId: string; viewCount: number };
+type Post = { id: string; title: string; subtitle: string | null; slug: string; content: string; excerpt: string | null; coverImage: string | null; images: string[]; status: string; featured: boolean; sponsored: boolean; sponsoredLabel: string | null; categoryId: string | null; seriesId: string | null; seriesOrder: number | null; faqItems: { question: string; answer: string }[] | null; seoTitle: string | null; metaDescription: string | null; keywords: string[]; ogImage: string | null; readingTime: number; publishedAt: Date | null; scheduledAt: Date | null; createdAt: Date; updatedAt: Date; authorId: string; viewCount: number; locale?: string };
 import { slugify } from "@/lib/utils";
 import { extractAssetIds, getTrackedUploads, clearTrackedUploads } from "@/lib/uploadTracker";
 
@@ -32,6 +32,7 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
     title: post?.title || "",
     subtitle: post?.subtitle || "",
     slug: post?.slug || "",
+    locale: post?.locale || "en",
     content: post?.content || "",
     excerpt: post?.excerpt || "",
     coverImage: post?.coverImage || "",
@@ -160,13 +161,35 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
                 />
               </div>
               <div>
+                <label className="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">Language</label>
+                <div className="flex gap-2">
+                  {[{ value: "en", label: "English" }, { value: "ta", label: "தமிழ் (Tamil)" }].map((opt) => (
+                    <button
+                      key={opt.value}
+                      type="button"
+                      onClick={() => set("locale", opt.value)}
+                      className={`rounded-lg border px-4 py-2 text-sm font-medium transition ${
+                        form.locale === opt.value
+                          ? "border-violet-600 bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400"
+                          : "border-gray-300 text-gray-600 hover:border-gray-400 dark:border-gray-600 dark:text-gray-400"
+                      }`}
+                    >
+                      {opt.label}
+                    </button>
+                  ))}
+                </div>
+                <p className="mt-1.5 text-xs text-gray-500">
+                  {form.locale === "ta" ? "Published at /ta/[slug] — separate section, its own font." : "Published at /[slug]."}
+                </p>
+              </div>
+              <div>
                 <label className="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">Subtitle</label>
                 <Input value={form.subtitle} onChange={(e) => set("subtitle", e.target.value)} placeholder="Optional subtitle" />
               </div>
               <div>
                 <label className="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">Slug</label>
                 <Input value={form.slug} onChange={(e) => set("slug", e.target.value)} placeholder="url-slug" className="font-mono text-sm" />
-                {form.slug && <p className="mt-1 text-xs text-gray-500">/{form.slug}</p>}
+                {form.slug && <p className="mt-1 text-xs text-gray-500">/{form.locale === "ta" ? "ta/" : ""}{form.slug}</p>}
               </div>
               <div>
                 <label className="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-300">Excerpt</label>
@@ -308,7 +331,7 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
                 <Save className="h-4 w-4" /> Save Draft
               </Button>
               {form.slug && (
-                <a href={`/${form.slug}`} target="_blank" rel="noopener noreferrer">
+                <a href={`/${form.locale === "ta" ? "ta/" : ""}${form.slug}`} target="_blank" rel="noopener noreferrer">
                   <Button variant="ghost" className="w-full text-xs">
                     <Eye className="h-4 w-4" /> Preview
                   </Button>
@@ -409,8 +432,8 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
               <h3 className="mb-3 flex items-center gap-2 font-semibold text-gray-900 dark:text-white">
                 <QrCode className="h-4 w-4" /> QR Code
               </h3>
-              <img src={`/api/qr/${form.slug}`} alt="QR" className="mx-auto h-32 w-32 rounded-lg" />
-              <a href={`/api/qr/${form.slug}`} download={`qr-${form.slug}.png`}
+              <img src={`/api/qr/${form.slug}?locale=${form.locale}`} alt="QR" className="mx-auto h-32 w-32 rounded-lg" />
+              <a href={`/api/qr/${form.slug}?locale=${form.locale}`} download={`qr-${form.slug}.png`}
                 className="mt-2 flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 py-2 text-xs text-gray-600 hover:border-violet-400 hover:text-violet-600 dark:border-gray-700">
                 Download QR Code
               </a>

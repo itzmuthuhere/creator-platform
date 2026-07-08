@@ -40,6 +40,7 @@ async function getPost(slug: string) {
           },
         },
       },
+      translations: { where: { status: "PUBLISHED", locale: "ta" }, select: { slug: true }, take: 1 },
     },
   });
 }
@@ -76,7 +77,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.seoTitle || post.title,
     description: post.metaDescription || post.excerpt || undefined,
     keywords: post.keywords,
-    alternates: { canonical: post.canonicalUrl || url },
+    alternates: {
+      canonical: post.canonicalUrl || url,
+      languages: post.translations[0]
+        ? { en: url, ta: `${getBaseUrl()}/ta/${post.translations[0].slug}` }
+        : { en: url },
+    },
     openGraph: {
       title: post.seoTitle || post.title,
       description: post.metaDescription || post.excerpt || undefined,

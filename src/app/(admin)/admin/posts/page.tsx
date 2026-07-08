@@ -49,8 +49,13 @@ export default async function PostsPage() {
               {posts.map((post) => (
                 <tr key={post.id} className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                   <td className="max-w-xs px-4 py-3">
-                    <p className="truncate font-medium text-gray-900 dark:text-white">{post.title}</p>
-                    <p className="text-xs text-gray-400 font-mono">/{post.slug}</p>
+                    <div className="flex items-center gap-1.5">
+                      <p className="truncate font-medium text-gray-900 dark:text-white">{post.title}</p>
+                      {post.locale === "ta" && (
+                        <span className="flex-shrink-0 rounded bg-orange-100 px-1.5 py-0.5 text-[10px] font-semibold text-orange-700 dark:bg-orange-900/30 dark:text-orange-400">TA</span>
+                      )}
+                    </div>
+                    <p className="text-xs text-gray-400 font-mono">/{post.locale === "ta" ? "ta/" : ""}{post.slug}</p>
                   </td>
                   <td className="px-4 py-3">
                     <span className={`rounded-full px-2.5 py-1 text-[10px] font-semibold ${
@@ -69,7 +74,7 @@ export default async function PostsPage() {
                         <Button variant="ghost" size="icon" className="h-8 w-8"><Edit2 className="h-3.5 w-3.5" /></Button>
                       </Link>
                       {post.status === "PUBLISHED" && (
-                        <Link href={`/${post.slug}`} target="_blank">
+                        <Link href={`/${post.locale === "ta" ? "ta/" : ""}${post.slug}`} target="_blank">
                           <Button variant="ghost" size="icon" className="h-8 w-8"><Eye className="h-3.5 w-3.5" /></Button>
                         </Link>
                       )}

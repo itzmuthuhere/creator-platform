@@ -20,7 +20,7 @@ export default async function CommentsAdminPage() {
   const comments = await prisma.comment.findMany({
     orderBy: { createdAt: "desc" },
     take: 200,
-    include: { post: { select: { title: true, slug: true } } },
+    include: { post: { select: { title: true, slug: true, locale: true } } },
   });
 
   return (

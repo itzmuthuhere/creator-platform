@@ -5,6 +5,7 @@
 
 @theme {
   --font-sans: "Inter", system-ui, sans-serif;
+  --font-tamil: var(--font-noto-tamil), "Inter", system-ui, sans-serif;
 }
 
 /* Smooth scrolling */

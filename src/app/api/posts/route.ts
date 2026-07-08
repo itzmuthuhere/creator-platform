@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
     title, subtitle, content, excerpt, coverImage, images,
     categoryId, tags, status, featured, sponsored, sponsoredLabel,
     seoTitle, metaDescription, keywords, ogImage, scheduledAt, affiliateLinks,
-    seriesId, seriesOrder, faqItems,
+    seriesId, seriesOrder, faqItems, locale, translationOfId,
   } = body;
 
   const slug = slugify(title);
@@ -112,6 +112,8 @@ export async function POST(req: NextRequest) {
       seriesId: seriesId || null,
       seriesOrder: seriesOrder || null,
       faqItems: faqItems || null,
+      locale: locale || "en",
+      translationOfId: translationOfId || null,
       tags: { connect: tagConnections },
       affiliateLinks: {
         create: (affiliateLinks || []).map((l: any) => ({

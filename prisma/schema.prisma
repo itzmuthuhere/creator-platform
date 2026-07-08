@@ -99,6 +99,11 @@ model Post {
   seriesId    String?
   seriesOrder Int?
 
+  locale          String  @default("en")
+  translationOfId String?
+  translationOf   Post?   @relation("PostTranslations", fields: [translationOfId], references: [id])
+  translations    Post[]  @relation("PostTranslations")
+
   authorId   String
   author     User          @relation(fields: [authorId], references: [id])
   categoryId String?
@@ -114,6 +119,7 @@ model Post {
   @@index([publishedAt])
   @@index([featured])
   @@index([seriesId])
+  @@index([locale])
 }
 
 enum PostStatus {
