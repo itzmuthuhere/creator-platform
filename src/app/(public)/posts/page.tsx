@@ -44,10 +44,12 @@ export default async function PostsPage({ searchParams }: Props) {
         <p className="mt-1 text-sm text-gray-500">{total} articles published</p>
       </div>
 
-      {/* Ad — top */}
-      <div className="mb-8">
-        <AdUnit slot="6677889900" format="horizontal" className="h-24 sm:h-28" />
-      </div>
+      {/* Ad — top (only once there's something to show) */}
+      {posts.length > 0 && (
+        <div className="mb-8">
+          <AdUnit slot="6677889900" format="horizontal" className="h-24 sm:h-28" />
+        </div>
+      )}
 
       {posts.length > 0 ? (
         <>

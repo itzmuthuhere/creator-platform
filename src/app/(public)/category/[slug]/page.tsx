@@ -54,10 +54,12 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         <p className="mt-1 text-sm text-gray-500">{total} articles</p>
       </div>
 
-      {/* Ad — below category header */}
-      <div className="mb-8">
-        <AdUnit slot="4455667788" format="horizontal" className="h-24 sm:h-28" />
-      </div>
+      {/* Ad — below category header (only when there's content to show alongside it) */}
+      {posts.length > 0 && (
+        <div className="mb-8">
+          <AdUnit slot="4455667788" format="horizontal" className="h-24 sm:h-28" />
+        </div>
+      )}
 
       {posts.length > 0 ? (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

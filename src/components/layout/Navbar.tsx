@@ -21,7 +21,9 @@ export default function Navbar() {
 
   useEffect(() => {
     fetch("/api/categories").then(r => r.json()).then(data => {
-      if (Array.isArray(data)) setCategories(data.slice(0, 7));
+      // Don't link to categories with no published posts — dead-end nav items
+      // read as broken/low-value to both users and reviewers.
+      if (Array.isArray(data)) setCategories(data.filter((c: any) => c._count?.posts > 0).slice(0, 7));
     }).catch(() => {});
   }, []);
 

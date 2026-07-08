@@ -33,7 +33,9 @@ async function getPosts() {
       include: { _count: { select: { posts: { where: { status: "PUBLISHED" } } } } },
     }),
   ]);
-  return { featured, latest, trending, categories };
+  // Don't surface categories with no published posts on the homepage —
+  // they're dead-end links to an empty page.
+  return { featured, latest, trending, categories: categories.filter((c) => c._count.posts > 0) };
 }
 
 const postSelect = {

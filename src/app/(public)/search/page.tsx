@@ -87,10 +87,12 @@ export default async function SearchPage({ searchParams }: Props) {
         </p>
       )}
 
-      {/* Ad — top of results */}
-      <div className="mb-8">
-        <AdUnit slot="2233445566" format="horizontal" className="h-24 sm:h-28" />
-      </div>
+      {/* Ad — top of results (only once there's something to show) */}
+      {posts.length > 0 && (
+        <div className="mb-8">
+          <AdUnit slot="2233445566" format="horizontal" className="h-24 sm:h-28" />
+        </div>
+      )}
 
       {posts.length > 0 ? (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
