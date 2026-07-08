@@ -15,9 +15,22 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   return { title: q ? `Search results for "${q}"` : "Search" };
 }
 
+// A title match ("Voice Access" for query "voice") means far more than the word
+// merely appearing somewhere in a long article — rank on relevance first, with
+// view count only as a tiebreaker within the same relevance tier.
+function relevanceScore(post: { title: string; excerpt: string | null; tags: { name: string }[] }, q: string) {
+  const ql = q.toLowerCase();
+  const title = post.title.toLowerCase();
+  if (title === ql) return 100;
+  if (title.startsWith(ql)) return 90;
+  if (title.includes(ql)) return 80;
+  if (post.tags.some((t) => t.name.toLowerCase().includes(ql))) return 60;
+  if (post.excerpt?.toLowerCase().includes(ql)) return 40;
+  return 10;
+}
+
 async function searchPosts(q: string, page: number) {
   const limit = 12;
-  const skip = (page - 1) * limit;
   if (!q) return { posts: [], total: 0 };
   const where = {
     status: "PUBLISHED" as const,
@@ -28,20 +41,20 @@ async function searchPosts(q: string, page: number) {
       { tags: { some: { name: { contains: q, mode: "insensitive" as const } } } },
     ],
   };
-  const [posts, total] = await Promise.all([
-    prisma.post.findMany({
-      where, skip, take: limit, orderBy: { viewCount: "desc" },
-      select: {
-        id: true, title: true, subtitle: true, slug: true, excerpt: true,
-        coverImage: true, publishedAt: true, viewCount: true, readingTime: true,
-        featured: true, sponsored: true, sponsoredLabel: true,
-        author: { select: { name: true, image: true } },
-        category: { select: { name: true, slug: true, color: true } },
-        tags: { select: { name: true, slug: true } },
-      },
-    }),
-    prisma.post.count({ where }),
-  ]);
+  const all = await prisma.post.findMany({
+    where,
+    select: {
+      id: true, title: true, subtitle: true, slug: true, excerpt: true,
+      coverImage: true, publishedAt: true, viewCount: true, readingTime: true,
+      featured: true, sponsored: true, sponsoredLabel: true,
+      author: { select: { name: true, image: true } },
+      category: { select: { name: true, slug: true, color: true } },
+      tags: { select: { name: true, slug: true } },
+    },
+  });
+  all.sort((a, b) => relevanceScore(b, q) - relevanceScore(a, q) || b.viewCount - a.viewCount);
+  const total = all.length;
+  const posts = all.slice((page - 1) * limit, (page - 1) * limit + limit);
   return { posts, total };
 }
 

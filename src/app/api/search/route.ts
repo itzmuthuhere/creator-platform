@@ -1,6 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 
+// A title match means far more than the word merely appearing somewhere in a
+// long article — rank on relevance first, view count only as a tiebreaker.
+function relevanceScore(post: { title: string; excerpt: string | null; tags: { name: string }[] }, q: string) {
+  const ql = q.toLowerCase();
+  const title = post.title.toLowerCase();
+  if (title === ql) return 100;
+  if (title.startsWith(ql)) return 90;
+  if (title.includes(ql)) return 80;
+  if (post.tags.some((t) => t.name.toLowerCase().includes(ql))) return 60;
+  if (post.excerpt?.toLowerCase().includes(ql)) return 40;
+  return 10;
+}
+
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const raw = searchParams.get("q")?.trim() || "";
@@ -18,53 +31,41 @@ export async function GET(req: NextRequest) {
 
   const skip = (page - 1) * limit;
 
-  const [posts, total] = await Promise.all([
-    prisma.post.findMany({
-      where: {
-        status: "PUBLISHED",
-        OR: [
-          { title: { contains: q, mode: "insensitive" } },
-          { excerpt: { contains: q, mode: "insensitive" } },
-          { content: { contains: q, mode: "insensitive" } },
-          { tags: { some: { name: { contains: q, mode: "insensitive" } } } },
-          { category: { name: { contains: q, mode: "insensitive" } } },
-          { keywords: { has: q.toLowerCase() } },
-        ],
-      },
-      skip,
-      take: limit,
-      orderBy: { viewCount: "desc" },
-      select: {
-        id: true,
-        title: true,
-        subtitle: true,
-        slug: true,
-        excerpt: true,
-        coverImage: true,
-        publishedAt: true,
-        viewCount: true,
-        readingTime: true,
-        featured: true,
-        sponsored: true,
-        sponsoredLabel: true,
-        author: { select: { name: true, image: true } },
-        category: { select: { name: true, slug: true, color: true } },
-        tags: { select: { name: true, slug: true } },
-      },
-    }),
-    prisma.post.count({
-      where: {
-        status: "PUBLISHED",
-        OR: [
-          { title: { contains: q, mode: "insensitive" } },
-          { excerpt: { contains: q, mode: "insensitive" } },
-          { content: { contains: q, mode: "insensitive" } },
-          { tags: { some: { name: { contains: q, mode: "insensitive" } } } },
-          { category: { name: { contains: q, mode: "insensitive" } } },
-        ],
-      },
-    }),
-  ]);
+  const where = {
+    status: "PUBLISHED" as const,
+    OR: [
+      { title: { contains: q, mode: "insensitive" as const } },
+      { excerpt: { contains: q, mode: "insensitive" as const } },
+      { content: { contains: q, mode: "insensitive" as const } },
+      { tags: { some: { name: { contains: q, mode: "insensitive" as const } } } },
+      { category: { name: { contains: q, mode: "insensitive" as const } } },
+      { keywords: { has: q.toLowerCase() } },
+    ],
+  };
+
+  const all = await prisma.post.findMany({
+    where,
+    select: {
+      id: true,
+      title: true,
+      subtitle: true,
+      slug: true,
+      excerpt: true,
+      coverImage: true,
+      publishedAt: true,
+      viewCount: true,
+      readingTime: true,
+      featured: true,
+      sponsored: true,
+      sponsoredLabel: true,
+      author: { select: { name: true, image: true } },
+      category: { select: { name: true, slug: true, color: true } },
+      tags: { select: { name: true, slug: true } },
+    },
+  });
+  all.sort((a, b) => relevanceScore(b, q) - relevanceScore(a, q) || b.viewCount - a.viewCount);
+  const total = all.length;
+  const posts = all.slice(skip, skip + limit);
 
   // Track search query
   const querySlug = q.toLowerCase().trim();
