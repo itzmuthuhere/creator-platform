@@ -5,7 +5,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
-import { formatDate, formatNumber, getBaseUrl } from "@/lib/utils";
+import { formatDate, formatNumber, getBaseUrl, getWordCount } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import PostCard from "@/components/posts/PostCard";
 import AffiliateSection from "@/components/posts/AffiliateSection";
@@ -99,6 +99,12 @@ export default async function ArticlePage({ params }: Props) {
   const related = await getRelated(post.categoryId, post.slug);
   const articleUrl = `${getBaseUrl()}/${post.slug}`;
   const faqItems = post.faqItems as { question: string; answer: string }[] | null;
+
+  // Scale ad density to content length — a short post surrounded by every ad slot
+  // reads as low-value/ad-stuffed to readers and to AdSense review.
+  const wordCount = getWordCount(post.content);
+  const showCoreAds = wordCount >= 300; // mid-content + end-of-article
+  const showExtraAds = wordCount >= 800; // sidebar + before/after related
 
   // Breadcrumb + Article JSON-LD
   const breadcrumbJsonLd = {
@@ -217,9 +223,11 @@ export default async function ArticlePage({ params }: Props) {
             {faqItems && faqItems.length > 0 && <FAQSection faqs={faqItems} />}
 
             {/* Ad — mid-article */}
-            <div className="my-8">
-              <AdUnit slot="6666666666" format="rectangle" className="min-h-[250px]" />
-            </div>
+            {showCoreAds && (
+              <div className="my-8">
+                <AdUnit slot="6666666666" format="rectangle" className="min-h-[250px]" />
+              </div>
+            )}
 
             {post.affiliateLinks.length > 0 && (
               <AffiliateSection links={post.affiliateLinks} />
@@ -238,9 +246,11 @@ export default async function ArticlePage({ params }: Props) {
             />
 
             {/* Ad — end of article */}
-            <div className="mt-8">
-              <AdUnit slot="7777777777" format="horizontal" className="h-24 sm:h-28" />
-            </div>
+            {showCoreAds && (
+              <div className="mt-8">
+                <AdUnit slot="7777777777" format="horizontal" className="h-24 sm:h-28" />
+              </div>
+            )}
 
             <ShareButtons url={articleUrl} title={post.title} />
 
@@ -263,10 +273,14 @@ export default async function ArticlePage({ params }: Props) {
 
             <QRCodeSection slug={post.slug} url={articleUrl} />
 
-            <AdUnit slot="8888888888" format="vertical" className="min-h-[600px]" />
-            <div className="mt-4">
-              <AdUnit slot="9999999999" format="rectangle" className="min-h-[250px]" />
-            </div>
+            {showExtraAds && (
+              <>
+                <AdUnit slot="8888888888" format="vertical" className="min-h-[600px]" />
+                <div className="mt-4">
+                  <AdUnit slot="9999999999" format="rectangle" className="min-h-[250px]" />
+                </div>
+              </>
+            )}
 
             {post.tags.length > 0 && (
               <div className="rounded-xl border border-gray-200 p-4 dark:border-gray-700">
@@ -286,9 +300,11 @@ export default async function ArticlePage({ params }: Props) {
       </div>
 
       {/* Ad — before related posts */}
-      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <AdUnit slot="1010101010" format="horizontal" className="h-24 sm:h-28" />
-      </div>
+      {showExtraAds && (
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <AdUnit slot="1010101010" format="horizontal" className="h-24 sm:h-28" />
+        </div>
+      )}
 
       {related.length > 0 && (
         <section className="bg-gray-50 py-14 dark:bg-gray-900/50">
@@ -298,9 +314,11 @@ export default async function ArticlePage({ params }: Props) {
               {related.map((p) => <PostCard key={p.id} post={p as PostCardType} />)}
             </div>
             {/* Ad — after related posts */}
-            <div className="mt-10">
-              <AdUnit slot="1122334455" format="horizontal" className="h-24 sm:h-28" />
-            </div>
+            {showExtraAds && (
+              <div className="mt-10">
+                <AdUnit slot="1122334455" format="horizontal" className="h-24 sm:h-28" />
+              </div>
+            )}
           </div>
         </section>
       )}

@@ -13,9 +13,13 @@ export function slugify(text: string): string {
     .replace(/^-+|-+$/g, "");
 }
 
+export function getWordCount(content: string): number {
+  const text = content.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  return text ? text.split(" ").length : 0;
+}
+
 export function estimateReadingTime(content: string): number {
-  const words = content.replace(/<[^>]*>/g, "").split(/\s+/).length;
-  return Math.max(1, Math.ceil(words / 200));
+  return Math.max(1, Math.ceil(getWordCount(content) / 200));
 }
 
 export function formatDate(date: Date | string): string {

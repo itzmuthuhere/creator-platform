@@ -36,6 +36,59 @@ function formatBytes(bytes: number) {
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
+// Tiptap's input rules only convert "## "/"- " to real nodes while typing live —
+// pasted markdown (e.g. copied from ChatGPT) lands as literal "## text" paragraphs.
+// This detects and converts that on paste so it doesn't happen again.
+function looksLikeMarkdown(text: string) {
+  return /(^|\n)\s*(#{1,6}\s+\S|[-*]\s+\S|\d+\.\s+\S)/.test(text);
+}
+
+function escapeHtml(s: string) {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function inlineMarkdown(s: string) {
+  return s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`([^`]+)`/g, "<code>$1</code>");
+}
+
+function markdownLiteToHtml(text: string) {
+  const lines = text.split(/\r?\n/).map((l) => l.trim()).filter((l) => l.length > 0);
+  let result = "";
+  let listBuffer: string[] = [];
+  let listType: "ul" | "ol" | null = null;
+
+  const flushList = () => {
+    if (listBuffer.length) {
+      result += `<${listType}>${listBuffer.map((i) => `<li>${i}</li>`).join("")}</${listType}>`;
+      listBuffer = [];
+      listType = null;
+    }
+  };
+
+  for (const line of lines) {
+    const headingMatch = line.match(/^(#{1,6})\s+(.*)$/);
+    const bulletMatch = line.match(/^[-*]\s+(.*)$/);
+    const numberedMatch = line.match(/^\d+\.\s+(.*)$/);
+
+    if (headingMatch) {
+      flushList();
+      const level = Math.min(Math.max(headingMatch[1].length, 2), 4);
+      result += `<h${level}>${inlineMarkdown(escapeHtml(headingMatch[2].trim()))}</h${level}>`;
+    } else if (bulletMatch) {
+      if (listType !== "ul") { flushList(); listType = "ul"; }
+      listBuffer.push(inlineMarkdown(escapeHtml(bulletMatch[1].trim())));
+    } else if (numberedMatch) {
+      if (listType !== "ol") { flushList(); listType = "ol"; }
+      listBuffer.push(inlineMarkdown(escapeHtml(numberedMatch[1].trim())));
+    } else {
+      flushList();
+      result += `<p>${inlineMarkdown(escapeHtml(line))}</p>`;
+    }
+  }
+  flushList();
+  return result;
+}
+
 export default function RichTextEditor({ value, onChange }: Props) {
   const [showColorPicker, setShowColorPicker] = useState(false);
   const [showTableMenu, setShowTableMenu] = useState(false);
@@ -66,6 +119,13 @@ export default function RichTextEditor({ value, onChange }: Props) {
     editorProps: {
       attributes: {
         class: "prose prose-gray max-w-none dark:prose-invert min-h-[400px] p-4 focus:outline-none",
+      },
+      handlePaste: (_view, event) => {
+        const text = event.clipboardData?.getData("text/plain");
+        if (!text || !looksLikeMarkdown(text)) return false;
+        event.preventDefault();
+        editor?.chain().focus().insertContent(markdownLiteToHtml(text)).run();
+        return true;
       },
     },
   });
