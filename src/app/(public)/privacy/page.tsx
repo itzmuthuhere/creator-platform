@@ -18,8 +18,8 @@ export default function PrivacyPage() {
             <p className="mt-3">We use the information we collect to operate and improve our website, send newsletters (with your consent), analyze traffic patterns, and comply with legal obligations. We do not sell your personal information to third parties.</p>
           </section>
           <section>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white">3. Cookies</h2>
-            <p className="mt-3">We use cookies to understand how visitors interact with our site. You can disable cookies in your browser settings, though some features may not function correctly.</p>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white">3. Cookies and Ad Consent</h2>
+            <p className="mt-3">We use cookies to understand how visitors interact with our site and to serve ads through Google AdSense. On your first visit, a banner lets you choose "Accept" (allows personalized ads) or "Reject" (limits us to non-personalized ads only, based on the page content rather than your browsing history). Your choice is stored in your browser and applied on every subsequent visit until you clear your browser data. You can also disable cookies entirely in your browser settings, though some features may not function correctly.</p>
           </section>
           <section>
             <h2 className="text-lg font-semibold text-gray-900 dark:text-white">4. Third-party services</h2>

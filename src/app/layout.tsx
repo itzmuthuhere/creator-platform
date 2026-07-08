@@ -36,12 +36,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.variable} suppressHydrationWarning>
       <head>
         {process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID && (
-          <Script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
-          />
+          <>
+            {/* Must run before adsbygoogle.js initializes so it picks up the
+                visitor's consent choice (EEA/UK/CH require non-personalized
+                ads by default until they explicitly accept). */}
+            <Script id="adsense-consent-init" strategy="beforeInteractive">
+              {`
+                try {
+                  window.adsbygoogle = window.adsbygoogle || [];
+                  var consent = localStorage.getItem("techpulzo_ad_consent");
+                  window.adsbygoogle.requestNonPersonalizedAds = consent === "granted" ? 0 : 1;
+                } catch (e) {}
+              `}
+            </Script>
+            <Script
+              async
+              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
+              crossOrigin="anonymous"
+              strategy="afterInteractive"
+            />
+          </>
         )}
       </head>
       <body className="min-h-screen bg-white font-sans antialiased dark:bg-gray-950">
