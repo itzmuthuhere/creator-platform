@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_Tamil } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import SessionProvider from "@/components/layout/SessionProvider";
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </ThemeProvider>
         </SessionProvider>
+        <Analytics />
       </body>
     </html>
   );
