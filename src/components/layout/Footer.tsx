@@ -56,6 +56,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {[
                 { label: "About", href: "/about" },
+                { label: "Contact", href: "mailto:rajamuthu107@gmail.com" },
                 { label: "Search", href: "/search" },
                 { label: "Sitemap", href: "/sitemap.xml" },
                 { label: "Privacy Policy", href: "/privacy" },
