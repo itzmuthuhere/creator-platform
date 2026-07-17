@@ -1,5 +1,3 @@
-export const dynamic = "force-dynamic";
-
 export default function DisclosurePage() {
   const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "Techpulzo";
   return (

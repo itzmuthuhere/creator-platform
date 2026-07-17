@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 import React from "react";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
@@ -8,6 +8,11 @@ import type { PostCard as PostCardType } from "@/types";
 import AdUnit from "@/components/ads/AdUnit";
 
 interface Props { params: Promise<{ slug: string }>; searchParams: Promise<{ page?: string }> }
+
+export async function generateStaticParams() {
+  const categories = await prisma.category.findMany({ select: { slug: true } });
+  return categories.map((c) => ({ slug: c.slug }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;

@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -15,6 +15,14 @@ import type { PostCard as PostCardType } from "@/types";
 import AdUnit from "@/components/ads/AdUnit";
 
 interface Props { params: Promise<{ slug: string }> }
+
+export async function generateStaticParams() {
+  const posts = await prisma.post.findMany({
+    where: { status: "PUBLISHED", locale: "ta" },
+    select: { slug: true },
+  });
+  return posts.map((p) => ({ slug: p.slug }));
+}
 
 async function getPost(slug: string) {
   return prisma.post.findUnique({
