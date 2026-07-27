@@ -46,7 +46,9 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
     metaDescription: post?.metaDescription || "",
     keywords: post?.keywords || [] as string[],
     ogImage: post?.ogImage || "",
-    scheduledAt: "",
+    scheduledAt: post?.scheduledAt
+      ? new Date(post.scheduledAt).toISOString().slice(0, 16)
+      : "",
     affiliateLinks: post?.affiliateLinks.map((l) => ({ label: l.label, url: l.url, platform: l.platform || "" })) || [] as { label: string; url: string; platform: string }[],
     seriesId: post?.seriesId || "",
     seriesOrder: post?.seriesOrder?.toString() || "",
@@ -95,6 +97,10 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
     const payload = {
       ...form,
       status,
+      // datetime-local has no timezone offset — resolve it against the browser's
+      // local time (the admin's actual clock) before it crosses to the server,
+      // instead of letting the server reinterpret the bare string in its own TZ.
+      scheduledAt: form.scheduledAt ? new Date(form.scheduledAt).toISOString() : "",
       seriesId: form.seriesId || null,
       seriesOrder: form.seriesOrder ? parseInt(form.seriesOrder as any) : null,
     };
@@ -330,6 +336,34 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
               <Button variant="outline" onClick={() => handleSave("DRAFT")} disabled={saving} className="w-full">
                 <Save className="h-4 w-4" /> Save Draft
               </Button>
+
+              <div className="border-t border-gray-100 pt-3 dark:border-gray-800">
+                <label className="mb-1.5 block text-xs font-medium text-gray-500 dark:text-gray-400">
+                  Schedule for later
+                </label>
+                <Input
+                  type="datetime-local"
+                  value={form.scheduledAt}
+                  onChange={(e) => set("scheduledAt", e.target.value)}
+                  className="mb-2"
+                />
+                <Button
+                  variant="outline"
+                  onClick={() => handleSave("SCHEDULED")}
+                  disabled={saving || !form.scheduledAt}
+                  className="w-full"
+                >
+                  <Save className="h-4 w-4" /> {saving ? "Scheduling…" : "Schedule Post"}
+                </Button>
+                <p className="mt-1.5 text-[11px] text-gray-400">
+                  Publishes automatically at this time — space posts out instead of publishing them all at once.
+                </p>
+              </div>
+              {post?.status === "SCHEDULED" && post.scheduledAt && (
+                <p className="rounded-lg bg-blue-50 px-3 py-2 text-xs text-blue-700 dark:bg-blue-900/20 dark:text-blue-400">
+                  Scheduled for {new Date(post.scheduledAt).toLocaleString("en-IN")}
+                </p>
+              )}
               {form.slug && (
                 <a href={`/${form.locale === "ta" ? "ta/" : ""}${form.slug}`} target="_blank" rel="noopener noreferrer">
                   <Button variant="ghost" className="w-full text-xs">

@@ -16,6 +16,7 @@ import SeriesNav from "@/components/posts/SeriesNav";
 import TableOfContents from "@/components/posts/TableOfContents";
 import ReactionButtons from "@/components/posts/ReactionButtons";
 import CommentSection from "@/components/posts/CommentSection";
+import AuthorBio from "@/components/posts/AuthorBio";
 import NewsletterWidget from "@/components/posts/NewsletterWidget";
 import { Clock, Eye, Calendar, Home, ChevronRight } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
@@ -267,6 +268,13 @@ export default async function ArticlePage({ params }: Props) {
             )}
 
             <ShareButtons url={articleUrl} title={post.title} />
+
+            <AuthorBio
+              name={post.author.name}
+              image={post.author.image}
+              bio={post.author.bio}
+              socialLinks={post.author.socialLinks}
+            />
 
             {/* Comments */}
             <CommentSection slug={post.slug} />

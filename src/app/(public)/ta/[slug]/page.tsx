@@ -13,6 +13,7 @@ import FAQSection from "@/components/posts/FAQSection";
 import { Clock, Eye, Calendar, Home, ChevronRight } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
 import AdUnit from "@/components/ads/AdUnit";
+import AuthorBio from "@/components/posts/AuthorBio";
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -203,6 +204,13 @@ export default async function TamilArticlePage({ params }: Props) {
         )}
 
         <ShareButtons url={articleUrl} title={post.title} />
+
+        <AuthorBio
+          name={post.author.name}
+          image={post.author.image}
+          bio={post.author.bio}
+          socialLinks={post.author.socialLinks}
+        />
       </div>
 
       {related.length > 0 && (
