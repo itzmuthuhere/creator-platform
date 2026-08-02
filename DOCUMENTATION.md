@@ -37,7 +37,7 @@
 |------|-------|
 | Site Name | Techpulzo |
 | Live URL | https://techpulzo.in |
-| Vercel URL | https://creator-platform-three-self.vercel.app |
+| Hosting | **Railway** (project `humorous-commitment`, service `creator-platform`) — see §17 |
 | GitHub | https://github.com/itzmuthuhere/creator-platform |
 | Local path | D:\creator-platform |
 | Builder | Muthu Raja (Muthuraja), 26, Java Dev at Bank of America |
@@ -65,7 +65,7 @@
 | Language | TypeScript | 5 | Type safety |
 | Styling | Tailwind CSS | v4 | Utility-first CSS |
 | Database ORM | Prisma | 7.8.0 | Type-safe DB queries |
-| Database | PostgreSQL | — | Hosted on Neon (free tier) |
+| Database | PostgreSQL | — | Hosted on Railway (see §17) |
 | Auth | NextAuth.js | 4.24.14 | Email magic link auth |
 | Image Upload | Cloudinary | 2.10.0 | Media storage and CDN |
 | Rich Editor | Tiptap | 3.27.1 | WYSIWYG post editor |
@@ -74,8 +74,8 @@
 | Icons | Lucide React | 1.21.0 | Icon library |
 | QR Codes | qrcode | 1.5.4 | Per-article QR generation |
 | Email | Nodemailer | 7.0.13 | Magic link email delivery |
-| Hosting | Vercel | Hobby plan | Auto-deploy from GitHub |
-| DB Host | Neon | Free tier | Serverless PostgreSQL |
+| Hosting | Railway | — | Auto-deploy from GitHub — see §17 |
+| DB Host | Railway Postgres | — | Managed PostgreSQL, service `Postgres` |
 
 ### Important version notes
 
@@ -88,11 +88,18 @@
 
 ## 3. Environment Variables
 
-All variables set in Vercel → Settings → Environment Variables.
+**All variables live in Railway** → project `humorous-commitment` → service `creator-platform` →
+Variables tab (`railway variables --service creator-platform` from a linked shell also works).
+`vercel env ls` will show a similar-looking list on the `creator-platform` **Vercel** project —
+that project is a leftover/unused deployment target for the same GitHub repo (Vercel still
+auto-builds on push, but techpulzo.in's DNS does not point at it). Do not trust Vercel env values
+for this app; Railway is the source of truth. See §17.
+
+The values below are correct as of Aug 2, 2026 (verified via `railway run`); DB password redacted.
 
 | Variable | Value | Purpose |
 |----------|-------|---------|
-| `DATABASE_URL` | postgresql://neondb_owner:...@neon.tech/neondb | Neon PostgreSQL connection |
+| `DATABASE_URL` | postgresql://postgres:...@kodama.proxy.rlwy.net:23830/railway | Railway PostgreSQL connection |
 | `NEXTAUTH_URL` | https://techpulzo.in | Auth callback base URL |
 | `NEXTAUTH_SECRET` | CB/PbWrTZGR... | NextAuth JWT secret |
 | `ADMIN_EMAIL` | rajamuthu107@gmail.com,nithiyaraj17081998@gmail.com | Comma-separated admin emails |
@@ -568,7 +575,8 @@ showed empty "Advertisement"-labeled boxes stacked between short sections of
 content (5 on the homepage, 6–7 on a single article) — a strong low-value /
 ad-heavy signal to AdSense reviewers, and a likely contributor to repeated
 rejection. Leave `NEXT_PUBLIC_ADS_LIVE` unset/`false` until **both** of these
-are true, then flip it to `"true"` in Vercel:
+are true, then flip it to `"true"` in Railway (project `humorous-commitment` → service
+`creator-platform` → Variables):
 1. AdSense account is approved
 2. Every placeholder slot ID below has been replaced with a real one
 
@@ -720,9 +728,20 @@ Full PostEditor with:
 
 ## 17. Deployment
 
-**Platform**: Vercel Hobby plan (free)
+**Platform**: Railway (project `humorous-commitment`, service `creator-platform`), confirmed via
+`railway status` on Aug 2, 2026. techpulzo.in is mapped as a custom domain directly on this
+Railway service.
 
-**Auto-deploy**: Every push to `main` branch triggers deploy.
+**Correction (Aug 2, 2026)**: this doc previously said Vercel. That was wrong — a `creator-platform`
+Vercel project exists and is connected to the same GitHub repo (so it still auto-builds on every
+push), but it is **not** what serves techpulzo.in and its env vars/database are not the live ones.
+Local `.env` also points at a stale/different Postgres (Neon) left over from early development —
+don't trust local `npm run dev` data as a preview of production content. To run commands against
+the real database, use `railway run --service creator-platform -- <command>` from a Railway-linked
+shell (`railway link` once, `railway whoami` to confirm auth) instead of relying on `.env`.
+
+**Auto-deploy**: Every push to `main` branch triggers a Railway deploy (and a wasted, unused Vercel
+build in parallel — harmless, just noise).
 
 **Deploy time**: ~1–2 minutes
 
@@ -734,7 +753,7 @@ cd D:\creator-platform
 git add -A
 git commit -m "feat: description"
 git push origin main
-# Vercel auto-deploys in ~2 minutes
+# Railway auto-deploys in ~1-2 minutes
 ```
 
 **Git config** (important — must match GitHub account):
@@ -751,9 +770,9 @@ user.email = rajamuthu107107@gmail.com
 |------|-------|
 | Domain | techpulzo.in |
 | Registrar | GoDaddy |
-| Nameservers | ns1.vercel-dns.com, ns2.vercel-dns.com |
-| DNS managed by | Vercel (via nameserver delegation) |
-| SSL | Auto-provisioned by Vercel |
+| Nameservers | ns1.vercel-dns.com, ns2.vercel-dns.com (still accurate — verified `nslookup -type=NS techpulzo.in`, Aug 2, 2026) |
+| DNS records managed in | Vercel's DNS panel (via nameserver delegation) — but the record for techpulzo.in itself points at **Railway**, not the Vercel app |
+| Actual hosting/SSL | Railway (custom domain on the `creator-platform` service) — see §17 |
 | Domain expires | Jun 28, 2027 |
 | KYC status | Verified |
 
