@@ -554,9 +554,23 @@ Full post creation/editing form. Fields:
 **Publisher ID**: `ca-pub-5709135704283433`
 
 **Setup**:
-- AdSense script loaded in `src/app/layout.tsx` via `next/script`
+- AdSense verification script loaded in `src/app/layout.tsx` via `next/script`
 - Only loads when `NEXT_PUBLIC_ADSENSE_CLIENT_ID` env var is set
 - `public/ads.txt` used for site verification
+
+**`NEXT_PUBLIC_ADS_LIVE` gate (added Aug 2, 2026)**: `AdUnit.tsx` renders nothing
+(not even a placeholder box) unless `NEXT_PUBLIC_ADS_LIVE="true"`. Previously,
+having `NEXT_PUBLIC_ADSENSE_CLIENT_ID` set (it was, in Vercel) was enough to
+make every `<AdUnit>` render a real `<ins class="adsbygoogle">` request using
+the placeholder slot IDs below — none of which exist in AdSense. Since the
+account wasn't approved either, nothing filled those slots, so the site
+showed empty "Advertisement"-labeled boxes stacked between short sections of
+content (5 on the homepage, 6–7 on a single article) — a strong low-value /
+ad-heavy signal to AdSense reviewers, and a likely contributor to repeated
+rejection. Leave `NEXT_PUBLIC_ADS_LIVE` unset/`false` until **both** of these
+are true, then flip it to `"true"` in Vercel:
+1. AdSense account is approved
+2. Every placeholder slot ID below has been replaced with a real one
 
 **AdUnit slot IDs** (placeholder — replace with real AdSense slot IDs):
 
