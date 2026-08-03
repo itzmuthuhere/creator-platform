@@ -8,7 +8,7 @@ import AdUnit from "@/components/ads/AdUnit";
 
 export const metadata: Metadata = {
   title: "Browse Topics — Techpulzo",
-  description: "Explore all article categories on Techpulzo — Tech, Career, Tutorials, Finance, Reviews and more.",
+  description: "Explore all article categories on Techpulzo — Tech, Career, Tutorials, Finance and more.",
 };
 
 const CATEGORY_ICONS: Record<string, string> = {
