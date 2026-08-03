@@ -9,7 +9,7 @@ import type { PostCard as PostCardType } from "@/types";
 import AdUnit from "@/components/ads/AdUnit";
 
 async function getPosts() {
-  const [featured, latest, trending, categories] = await Promise.all([
+  const [featured, latest, trending, categories, totalPublished] = await Promise.all([
     prisma.post.findMany({
       where: { status: "PUBLISHED", featured: true },
       take: 4,
@@ -32,10 +32,11 @@ async function getPosts() {
       take: 12,
       include: { _count: { select: { posts: { where: { status: "PUBLISHED" } } } } },
     }),
+    prisma.post.count({ where: { status: "PUBLISHED" } }),
   ]);
   // Don't surface categories with no published posts on the homepage —
   // they're dead-end links to an empty page.
-  return { featured, latest, trending, categories: categories.filter((c) => c._count.posts > 0) };
+  return { featured, latest, trending, categories: categories.filter((c) => c._count.posts > 0), totalPublished };
 }
 
 const postSelect = {
@@ -55,16 +56,16 @@ const CATEGORY_ICONS: Record<string, string> = {
 };
 
 export default async function HomePage() {
-  let featured: any[] = [], latest: any[] = [], trending: any[] = [], categories: any[] = [], topSearches: any[] = [];
+  let featured: any[] = [], latest: any[] = [], trending: any[] = [], categories: any[] = [], topSearches: any[] = [], totalPublished = 0;
   try {
-    ({ featured, latest, trending, categories } = await getPosts());
+    ({ featured, latest, trending, categories, totalPublished } = await getPosts());
     topSearches = await prisma.searchQuery.findMany({ where: { count: { gte: 3 } }, orderBy: { count: "desc" }, take: 5 });
   } catch (e) {}
   const heroTags = topSearches.length > 0
     ? topSearches.map((s: any) => s.query)
     : ["Technology", "AI Tools", "Tutorials", "Finance", "Career"];
 
-  const totalPosts = latest.length;
+  const totalPosts = totalPublished;
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
