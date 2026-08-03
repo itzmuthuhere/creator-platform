@@ -25,7 +25,7 @@ const CATEGORY_ICONS: Record<string, string> = {
 };
 
 export default async function CategoriesPage() {
-  const categories = await prisma.category.findMany({
+  const allCategories = await prisma.category.findMany({
     orderBy: { name: "asc" },
     include: {
       _count: {
@@ -33,6 +33,9 @@ export default async function CategoriesPage() {
       },
     },
   });
+  // Don't list categories with no published posts — dead-end links read as
+  // low-value/broken to both users and search reviewers.
+  const categories = allCategories.filter((c) => c._count.posts > 0);
 
   return (
     <div className="min-h-screen">

@@ -10,7 +10,10 @@ import AdUnit from "@/components/ads/AdUnit";
 interface Props { params: Promise<{ slug: string }>; searchParams: Promise<{ page?: string }> }
 
 export async function generateStaticParams() {
-  const categories = await prisma.category.findMany({ select: { slug: true } });
+  const categories = await prisma.category.findMany({
+    where: { posts: { some: { status: "PUBLISHED" } } },
+    select: { slug: true },
+  });
   return categories.map((c) => ({ slug: c.slug }));
 }
 
@@ -46,6 +49,10 @@ export default async function CategoryPage({ params, searchParams }: Props) {
     }),
     prisma.post.count({ where: { status: "PUBLISHED", categoryId: category.id } }),
   ]);
+
+  // A category page with zero published posts has no content to offer —
+  // serve a real 404 instead of an empty page search engines flag as low-value.
+  if (total === 0) notFound();
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
