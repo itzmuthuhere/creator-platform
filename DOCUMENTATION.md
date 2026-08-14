@@ -1,6 +1,6 @@
 # Techpulzo — Complete Project Documentation
 
-> Version: 1.0 | Last updated: Jun 28, 2026
+> Version: 1.1 | Last updated: Aug 15, 2026
 > Full reference for features, APIs, tech stack, workflows, and context.
 
 ---
@@ -73,7 +73,7 @@
 | Charts | Recharts | 3.9.0 | Analytics charts |
 | Icons | Lucide React | 1.21.0 | Icon library |
 | QR Codes | qrcode | 1.5.4 | Per-article QR generation |
-| Email | Nodemailer | 7.0.13 | Magic link email delivery |
+| Email | Resend HTTP API | — | Magic link email delivery — see §9 for why (Railway blocks outbound SMTP from services) |
 | Hosting | Railway | — | Auto-deploy from GitHub — see §17 |
 | DB Host | Railway Postgres | — | Managed PostgreSQL, service `Postgres` |
 
@@ -95,26 +95,26 @@ that project is a leftover/unused deployment target for the same GitHub repo (Ve
 auto-builds on push, but techpulzo.in's DNS does not point at it). Do not trust Vercel env values
 for this app; Railway is the source of truth. See §17.
 
-The values below are correct as of Aug 2, 2026 (verified via `railway run`); DB password redacted.
+The values below are correct as of Aug 15, 2026 (verified via `railway run` / `railway variables`); secrets redacted.
 
 | Variable | Value | Purpose |
 |----------|-------|---------|
 | `DATABASE_URL` | postgresql://postgres:...@kodama.proxy.rlwy.net:23830/railway | Railway PostgreSQL connection |
-| `NEXTAUTH_URL` | https://techpulzo.in | Auth callback base URL |
+| `NEXTAUTH_URL` | https://techpulzo.in | Auth callback base URL — **do not let this drift to the raw `*.up.railway.app` hostname**, see §9 |
+| `NEXTAUTH_URL_PRODUCTION` | https://techpulzo.in | Same as above; NextAuth reads this in production |
 | `NEXTAUTH_SECRET` | CB/PbWrTZGR... | NextAuth JWT secret |
 | `ADMIN_EMAIL` | rajamuthu107@gmail.com,nithiyaraj17081998@gmail.com | Comma-separated admin emails |
 | `CLOUDINARY_CLOUD_NAME` | dkoqrad8k | Cloudinary cloud |
 | `CLOUDINARY_API_KEY` | 851729445168496 | Cloudinary API key |
 | `CLOUDINARY_API_SECRET` | 5MbhwG8TXn3NDqr-xi_zFALs1KI | Cloudinary secret |
 | `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME` | dkoqrad8k | Client-side Cloudinary name |
-| `EMAIL_SERVER_HOST` | smtp.gmail.com | Gmail SMTP host |
-| `EMAIL_SERVER_PORT` | 587 | Gmail SMTP port |
-| `EMAIL_SERVER_USER` | rajamuthu107@gmail.com | Gmail address |
-| `EMAIL_SERVER_PASSWORD` | uvfenshpxwbcqtmh | Gmail App Password |
-| `EMAIL_FROM` | rajamuthu107@gmail.com | From address for magic links |
-| `NEXT_PUBLIC_SITE_URL` | https://techpulzo.in | Used in SEO and OG tags |
+| `RESEND_API_KEY` | re_Axs8XpZJ_... | Resend API key, "Sending access" scope — sends magic-link email, see §9 |
+| `EMAIL_FROM` | Techpulzo \<login@techpulzo.in\> | Verified sender identity in Resend (domain `techpulzo.in` verified Aug 15, 2026) |
+| `NEXT_PUBLIC_SITE_URL` | https://techpulzo.in | Used in SEO, OG tags, sitemap.xml, canonical URLs — same drift warning as `NEXTAUTH_URL` above |
 | `NEXT_PUBLIC_SITE_NAME` | Techpulzo | Site name shown in UI |
 | `NEXT_PUBLIC_ADSENSE_CLIENT_ID` | ca-pub-5709135704283433 | Google AdSense publisher ID |
+
+**No longer used (Aug 15, 2026)**: `EMAIL_SERVER_HOST`, `EMAIL_SERVER_PORT`, `EMAIL_SERVER_USER`, `EMAIL_SERVER_PASSWORD` (Gmail SMTP config) — the app no longer reads these; still present in Railway but harmless. See §9 for why they were replaced.
 
 ### Local .env file location
 `D:\creator-platform\.env`
@@ -520,20 +520,46 @@ Full post creation/editing form. Fields:
 
 **Flow**:
 1. User enters email at `/admin/login`
-2. NextAuth sends magic link to email via Gmail SMTP
+2. NextAuth sends magic link via Resend's HTTP API (see below)
 3. User clicks link → session created in database
 4. Session stored in `Session` table via Prisma adapter
 
 **Admin access control**:
 - Only emails in `ADMIN_EMAIL` env var can sign in
 - Multiple admins: comma-separated `email1@gmail.com,email2@gmail.com`
-- Check in `auth.ts` → `signIn` callback
+- Checked in `auth.ts` → `signIn` callback, which runs on the initial `/api/auth/signin/email` POST — an email not in the allow-list gets `AccessDenied` immediately and no email is sent at all (not just blocked at the callback-click step)
 
 **Current admins**:
 - rajamuthu107@gmail.com
 - nithiyaraj17081998@gmail.com
 
 **Session strategy**: Database sessions (not JWT)
+
+### Email delivery: Resend HTTP API, not SMTP (as of Aug 15, 2026)
+
+`src/lib/auth.ts` → `EmailProvider` uses a custom `sendVerificationRequest` that POSTs to
+`https://api.resend.com/emails` instead of nodemailer/SMTP.
+
+**Why**: the app originally sent magic-link email via raw SMTP to `smtp.gmail.com` (port 587,
+then 465). Both hung indefinitely on the **live Railway service** —
+`railway logs --network` showed repeated TCP SYN retransmission with no response, and
+application logs eventually surfaced `[next-auth][error][SIGNIN_EMAIL_ERROR] Connection timeout`.
+Critically, the identical SMTP credentials worked fine when tested via `railway run` (a one-off
+job container) — only the persistent service container's outbound SMTP was blocked, which points
+to a Railway anti-abuse policy on services rather than a config problem. Resend's API rides
+HTTPS/443, which is never blocked, and fixed it immediately.
+
+**Sender identity**: `EMAIL_FROM` is `Techpulzo <login@techpulzo.in>`, sent from Resend's Tokyo
+(ap-northeast-1) region. The `techpulzo.in` domain is verified in Resend (DKIM + SPF) — see §18 for
+the DNS records. Before verification (same day), `EMAIL_FROM` was temporarily
+`onboarding@resend.dev`, Resend's shared sandbox address, which only delivers to the email used to
+sign up for the Resend account — that's why it briefly worked for `rajamuthu107@gmail.com` but
+not `nithiyaraj17081998@gmail.com`.
+
+**Debugging note**: if magic-link email ever stops arriving again, check (in order): Resend
+dashboard → Emails (delivery status, bounces), Railway `RESEND_API_KEY` is still set, and the
+`ADMIN_EMAIL` allow-list actually contains the address being tested (an `AccessDenied` response is
+a config issue, not a delivery issue — no email is even attempted in that case).
 
 ---
 
@@ -606,7 +632,46 @@ are true, then flip it to `"true"` in Railway (project `humorous-commitment` →
 2. Create one unit per placement
 3. Replace placeholder IDs in respective page files
 
-**Status**: Review submitted for `techpulzo.in`. Approval expected in 1–14 days.
+**Status (Aug 15, 2026)**: rejected 5× for "Low value content" as of Aug 14. Fixes applied
+this session, not yet resubmitted — waiting for Google to recrawl first (resubmitting on stale
+crawl data burns another rejection cycle for nothing). See below for what was actually wrong.
+
+### Root cause found Aug 14, 2026: canonical URLs pointed at the wrong domain
+
+`NEXT_PUBLIC_SITE_URL`, `NEXTAUTH_URL`, and `NEXTAUTH_URL_PRODUCTION` had drifted in Railway to
+the raw `creator-platform-production-b465.up.railway.app` hostname instead of `https://techpulzo.in`
+(cause unknown — possibly Railway auto-populating them when the custom domain was configured).
+Since `getBaseUrl()` (`src/lib/utils.ts`) reads `NEXT_PUBLIC_SITE_URL`, and Next.js inlines
+`NEXT_PUBLIC_*` vars at **build time**, every page's `<link rel="canonical">`, `og:url`, and every
+URL in `sitemap.xml` was pointing at the Railway subdomain — not `techpulzo.in`, the domain
+actually under AdSense review.
+
+**Why this plausibly explains the rejections**: when Googlebot crawls `techpulzo.in`, every page
+declares its canonical version lives on a *different, unrelated domain*. That reads as
+duplicate/unoriginal content attached to the reviewed site, regardless of how good the writing
+actually is — a much more literal explanation than generic thinness, and it would explain why
+earlier rounds of genuine content fixes (real author bios, hiding empty categories, removing
+placeholder ad boxes — see git log for `low-value-content`) didn't move the needle. The bug
+was structural, not content quality.
+
+**Fix**: reset all three vars to `https://techpulzo.in` in Railway and forced a rebuild (env var
+changes alone don't help — `NEXT_PUBLIC_*` is baked into the bundle at build time). Verified live:
+canonical/og:url on articles and `sitemap.xml`'s first entry both correctly read `techpulzo.in`.
+
+### Secondary fix: `/ta` (Tamil section) no longer serves an indexable placeholder
+
+`/ta` (see §7, Tamil-language section infrastructure from Aug 12) rendered a real, crawlable page
+with only "தமிழில் கட்டுரைகள் வெளியிடப்படும் விரைவில்" ("Tamil articles coming soon") when zero
+Tamil posts exist — the same thin-content pattern already fixed for empty categories
+(`fix: hide and 404 empty categories`, Aug 3). It wasn't linked from Navbar/Footer and was already
+excluded from `sitemap.xml` while empty, so exposure was low, but `src/app/(public)/ta/page.tsx`
+now calls `notFound()` when there are no published `locale: "ta"` posts, matching the empty-category
+pattern exactly. Revert this once real Tamil content ships.
+
+**Next steps once approved / before resubmitting**: submit `sitemap.xml` in Google Search Console
+and request indexing on the homepage + a few articles to speed up the recrawl, then confirm via
+GSC's URL Inspection that the "Google-selected canonical" says `techpulzo.in` before resubmitting
+for AdSense review.
 
 ---
 
@@ -778,6 +843,18 @@ user.email = rajamuthu107107@gmail.com
 
 **www redirect**: `www.techpulzo.in` → 308 redirect → `techpulzo.in`
 
+**Resend DNS records (added Aug 15, 2026)**, alongside the existing Railway/Google verification
+TXT records, added via Vercel's DNS panel to verify `techpulzo.in` for sending email (see §9):
+
+| Name | Type | Purpose |
+|------|------|---------|
+| `resend._domainkey` | TXT | DKIM |
+| `send` | MX (priority 10) | SPF — `feedback-smtp.ap-northeast-1.amazonses.com` |
+| `send` | TXT | SPF — `v=spf1 include:amazonses.com ~all` |
+
+DMARC and the "Enable Receiving" MX record were skipped — this app only sends mail, never
+receives it. Domain shows **Verified** in Resend's dashboard.
+
 **Old URL still works**: `creator-platform-three-self.vercel.app` still points to same site.
 
 ---
@@ -810,6 +887,18 @@ Next.js 15/16 changed `params` and `searchParams` to be Promises in server compo
 
 ### Cloudinary cleanup note
 If image upload to Cloudinary succeeds but DB save fails, the uploaded image becomes orphaned. Not currently handled — future improvement.
+
+### Why email switched from Gmail SMTP to Resend's HTTP API (Aug 15, 2026)
+Railway blocks outbound SMTP (ports 587 and 465) from the running service, confirmed via
+`[next-auth][error][SIGNIN_EMAIL_ERROR] Connection timeout` in production logs — identical
+credentials worked fine from a one-off `railway run` job container, so it's specific to the
+persistent service, not the credentials. See §9 for the full story.
+
+### Watch for `NEXT_PUBLIC_SITE_URL` / `NEXTAUTH_URL` drifting off `techpulzo.in`
+Found Aug 14, 2026 pointing at the raw `*.up.railway.app` hostname instead, which silently broke
+canonical URLs, `og:url`, and `sitemap.xml` sitewide and is the leading suspect for the AdSense
+"Low value content" rejections — see §11. If either var ever shows anything other than
+`https://techpulzo.in` in `railway variables`, that's a live bug, not a valid alternate config.
 
 ---
 
