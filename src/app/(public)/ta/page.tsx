@@ -1,6 +1,7 @@
 import React from "react";
 export const revalidate = 60;
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import PostCard from "@/components/posts/PostCard";
 import type { PostCard as PostCardType } from "@/types";
@@ -31,6 +32,10 @@ export default async function TamilHomePage() {
     select: postSelect,
   });
 
+  // No Tamil content yet — serve a real 404 instead of an indexable
+  // "coming soon" placeholder search reviewers flag as low-value.
+  if (posts.length === 0) notFound();
+
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       <section className="border-b border-gray-100 dark:border-gray-800">
@@ -45,17 +50,11 @@ export default async function TamilHomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        {posts.length > 0 ? (
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {posts.map((p) => (
-              <PostCard key={p.id} post={p as PostCardType} basePath="/ta" />
-            ))}
-          </div>
-        ) : (
-          <div className="py-20 text-center text-gray-500 dark:text-gray-400">
-            விரைவில் கட்டுரைகள் வெளியிடப்படும்.
-          </div>
-        )}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((p) => (
+            <PostCard key={p.id} post={p as PostCardType} basePath="/ta" />
+          ))}
+        </div>
       </section>
     </div>
   );
