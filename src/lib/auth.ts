@@ -7,18 +7,32 @@ export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma) as any,
   providers: [
     EmailProvider({
-      server: {
-        host: process.env.EMAIL_SERVER_HOST,
-        port: Number(process.env.EMAIL_SERVER_PORT),
-        // Port 465 is implicit TLS from connect — secure must be true or the
-        // handshake never starts. Port 587 (STARTTLS) needs secure: false.
-        secure: Number(process.env.EMAIL_SERVER_PORT) === 465,
-        auth: {
-          user: process.env.EMAIL_SERVER_USER,
-          pass: process.env.EMAIL_SERVER_PASSWORD,
-        },
-      },
       from: process.env.EMAIL_FROM,
+      // Railway blocks outbound SMTP (both 587 and 465) from long-running
+      // services — confirmed via [next-auth][error][SIGNIN_EMAIL_ERROR]
+      // "Connection timeout" in production logs, even though the exact same
+      // credentials work fine from a one-off `railway run` job container.
+      // Resend's HTTP API rides port 443, which is never blocked.
+      sendVerificationRequest: async ({ identifier: email, url }) => {
+        const { host } = new URL(url);
+        const res = await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from: process.env.EMAIL_FROM,
+            to: email,
+            subject: `Sign in to ${host}`,
+            html: `<p>Sign in to <b>${host}</b></p><p><a href="${url}">Click here to sign in</a></p><p>If you did not request this, you can safely ignore this email.</p>`,
+            text: `Sign in to ${host}\n${url}\n\nIf you did not request this, you can safely ignore this email.`,
+          }),
+        });
+        if (!res.ok) {
+          throw new Error(`Resend API error ${res.status}: ${await res.text()}`);
+        }
+      },
     }),
   ],
   callbacks: {
