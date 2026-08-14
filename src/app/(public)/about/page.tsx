@@ -1,7 +1,16 @@
 import Link from "next/link";
 import { ArrowRight, BookOpen, Target, Users, Zap } from "lucide-react";
+import { prisma } from "@/lib/prisma";
+import AuthorBio from "@/components/posts/AuthorBio";
 
-export default function AboutPage() {
+export const revalidate = 3600;
+
+export default async function AboutPage() {
+  const founder = await prisma.user.findFirst({
+    where: { email: "rajamuthu107@gmail.com" },
+    select: { name: true, image: true, bio: true, socialLinks: true },
+  });
+
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       {/* Hero */}
@@ -47,9 +56,27 @@ export default function AboutPage() {
             <p>Every article we publish goes through a research and review process. We cover topics across technology, career, finance, and productivity — the things that actually matter in your day-to-day life.</p>
             <p>We're independently owned and supported by affiliate partnerships and advertising. When you click a link and make a purchase, we may earn a commission at no extra cost to you.</p>
           </div>
-          <div className="mt-8">
+
+          {founder?.bio && (
+            <div className="mt-10">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Who writes this</h2>
+              <div className="mt-4">
+                <AuthorBio
+                  name={founder.name}
+                  image={founder.image}
+                  bio={founder.bio}
+                  socialLinks={founder.socialLinks}
+                />
+              </div>
+            </div>
+          )}
+
+          <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/" className="inline-flex items-center gap-2 rounded-lg bg-violet-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-violet-700">
               Read our articles <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link href="/contact" className="inline-flex items-center gap-2 rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-900">
+              Get in touch
             </Link>
           </div>
         </div>

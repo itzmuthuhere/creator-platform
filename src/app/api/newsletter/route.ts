@@ -2,17 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
-import nodemailer from "nodemailer";
+import { sendEmail } from "@/lib/email";
 import crypto from "crypto";
-
-const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_SERVER_HOST,
-  port: Number(process.env.EMAIL_SERVER_PORT),
-  auth: {
-    user: process.env.EMAIL_SERVER_USER,
-    pass: process.env.EMAIL_SERVER_PASSWORD,
-  },
-});
 
 export async function POST(req: NextRequest) {
   const { email, name } = await req.json();
@@ -34,8 +25,7 @@ export async function POST(req: NextRequest) {
     update: { name, token, status: "PENDING" },
   });
 
-  await transporter.sendMail({
-    from: process.env.EMAIL_FROM,
+  await sendEmail({
     to: email,
     subject: "Confirm your Techpulzo subscription",
     html: `
@@ -50,6 +40,7 @@ export async function POST(req: NextRequest) {
         <p style="color:#666;font-size:12px">If you didn't request this, you can safely ignore this email.</p>
       </div>
     `,
+    text: `Hi ${name || "there"},\n\nConfirm your Techpulzo subscription: ${siteUrl}/api/newsletter/confirm?token=${token}\n\nIf you didn't request this, you can safely ignore this email.`,
   });
 
   return NextResponse.json({ message: "Check your email to confirm subscription!" });
