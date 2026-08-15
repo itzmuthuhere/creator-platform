@@ -5,7 +5,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
-import { formatDate, formatNumber, getBaseUrl, getWordCount } from "@/lib/utils";
+import { formatDate, formatNumber, getBaseUrl, getWordCount, extractHowToSteps } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import PostCard from "@/components/posts/PostCard";
 import AffiliateSection from "@/components/posts/AffiliateSection";
@@ -154,11 +154,28 @@ export default async function ArticlePage({ params }: Props) {
     })),
   } : null;
 
+  // Only present when the content actually has "Step N:" headings —
+  // see extractHowToSteps for why we don't infer this from generic H2s.
+  const howToSteps = extractHowToSteps(post.content);
+  const howToJsonLd = howToSteps ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: post.title,
+    description: post.metaDescription || post.excerpt || undefined,
+    image: post.ogImage || post.coverImage || undefined,
+    step: howToSteps.map((s) => ({
+      "@type": "HowToStep",
+      name: s.name,
+      text: s.text,
+    })),
+  } : null;
+
   return (
     <article className="min-h-screen">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
+      {howToJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />}
 
       <PageEnhancements showProgress={true} />
       {post.coverImage && (

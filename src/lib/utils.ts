@@ -47,3 +47,31 @@ export function truncate(str: string, length: number): string {
 export function getBaseUrl(): string {
   return process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 }
+
+export interface HowToStep {
+  name: string;
+  text: string;
+}
+
+// Only treats content as a genuine HowTo when it has real "Step N:" H2 headings —
+// tagging essay-style H2 sections as HowTo would produce structured data that
+// doesn't match the actual content, which Google explicitly warns against.
+export function extractHowToSteps(content: string): HowToStep[] | null {
+  const parts = content.split(/(<h2[^>]*>.*?<\/h2>)/gi);
+  const steps: HowToStep[] = [];
+
+  for (let i = 1; i < parts.length; i += 2) {
+    const heading = parts[i].replace(/<[^>]*>/g, "").trim();
+    if (!/^step\s*\d+/i.test(heading)) continue;
+
+    const body = (parts[i + 1] || "")
+      .replace(/<[^>]*>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+    if (!body) continue;
+
+    steps.push({ name: heading, text: body.slice(0, 500) });
+  }
+
+  return steps.length >= 2 ? steps : null;
+}
