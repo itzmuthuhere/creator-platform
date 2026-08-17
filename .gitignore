@@ -44,3 +44,9 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# local content backups (humanization pass working files)
+/backups/
+
+# Claude Code local runtime state
+.claude/scheduled_tasks.lock

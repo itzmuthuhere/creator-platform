@@ -1,0 +1,19 @@
+{
+  "title": "How Database Indexes Actually Work — Why the Same Query Can Take 2ms or 8 Seconds",
+  "subtitle": "The phone book analogy that actually explains it, and how to find the problem with EXPLAIN",
+  "slug": "how-database-indexes-actually-work",
+  "contentFile": "content.html",
+  "excerpt": "The same query on the same table can take milliseconds or seconds depending entirely on whether the database has an index to use. Here's what an index actually does, and when adding one hurts more than it helps.",
+  "seoTitle": "How Database Indexes Work (Explained Simply)",
+  "metaDescription": "How database indexes actually work — why unindexed queries do a full table scan, when adding an index helps versus hurts, and how to use EXPLAIN to diagnose a slow query.",
+  "keywords": ["database index explained", "sql index tutorial", "why is my query slow", "explain analyze postgres", "database performance basics"],
+  "category": "tutorials",
+  "tags": ["sql", "databases", "coding"],
+  "author": "Muthu",
+  "faq": [
+    {
+      "question": "Should I just add an index to every column to be safe?",
+      "answer": "No — every index slows down writes (inserts, updates, deletes) because it has to be maintained on every change. Index columns that are actually used often in WHERE, JOIN, or ORDER BY; leave the rest alone, especially on small tables or low-variation columns."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+cluster,current_category,article_count,keep_count,improve_count,rewrite_count,rebuild_count,merge_count,remove_count,quality_average,originality_average,information_gain_average,first_hand_potential,factual_risk,recommended_action
+Generic Tech/AI Listicles & Learning Aggregators,Tech:3/Tutorials:3,6,0,0,3,1,1,1,2.83,0.83,0.67,2.33,Medium,"REBUILD OR REMOVE — no clear pillar home, lowest quality cluster on site"
+Backend & Developer Fundamentals,Tutorials:6,6,4,1,1,0,0,0,5.67,4.67,5.17,2.67,Low,"GROW — flagship Pillar 2, deepen with real production/code examples"
+Phone Performance & Storage Management,Tech:4,4,0,3,0,0,1,0,4.50,2.75,2.75,3.25,Low,CONSOLIDATE & IMPROVE — fold into Pillar 1 as supporting content
+Phone Battery,Tech:2,2,0,1,0,0,1,0,5.00,2.50,2.00,1.00,Medium,MERGE & IMPROVE — consolidate to one canonical article
+Home Wi-Fi & Networking,Tech:5,5,1,3,0,0,1,0,5.20,5.60,4.20,3.20,Low,CONSOLIDATE & IMPROVE — anchors Pillar 1 flagship (site's strongest article)
+Consumer Tech Mechanism Explainers,Tech:12,12,5,1,0,0,0,0,5.75,4.42,4.08,4.50,Low,"MAINTAIN AS FLAGSHIP — Pillar 1 core, most site benchmarks live here"
+Android Phone Utilities & Family Device Management,Tech:6,6,0,4,0,2,0,0,4.83,3.17,3.17,2.33,Medium,"IMPROVE — clear REBUILD items first (parental controls, ad-legality)"
+Account & Digital Privacy Security,Tech:7,7,0,6,0,0,1,0,5.71,6.43,5.86,5.00,Low,GROW — anchors Pillar 4
+Scam & Fraud Protection (India),Tech:5/Finance:4/Career:2/Reviews:1,12,0,7,0,1,2,0,5.33,4.17,3.67,3.50,Low,"GROW — anchors Pillar 4, highest India-specific protective value"
+Personal Budgeting & Saving,Finance:5,5,0,3,1,0,1,0,4.60,3.20,2.60,1.60,Low,CONSOLIDATE & IMPROVE — fold into Pillar 3
+Subscriptions & Recurring Charges,Finance:2,2,0,1,0,0,1,0,5.50,4.50,3.50,1.50,Low,"MERGE & IMPROVE — two articles, one canonical survivor"
+"Credit, Loans, Cards, Investing & Debt",Finance:10,10,0,8,0,1,1,0,5.20,4.50,3.40,3.70,Medium,"IMPROVE — fix the CIBIL REBUILD first, then source the rest"
+"Household Bills, Rent & Tax",Finance:3,3,1,2,0,0,0,0,6.00,7.33,5.00,3.33,Medium,"GROW — strong India-localization already proven, expand"
+Shopping Deals & Discount Timing,Finance:2,2,0,1,0,1,0,0,4.50,4.50,1.50,1.00,Low,LOW PRIORITY — rebuild with real price data or fold into Pillar 3
+Government Portals & Official Documents,Finance:4/Tech:1,5,0,4,1,0,0,0,5.20,3.60,3.80,4.40,Medium,GROW — highest first-hand-experience upside in Pillar 3
+Home Appliance Decisions (India),Reviews:3,3,3,0,0,0,0,0,6.00,7.00,5.33,4.00,Low,"MAINTAIN — already strong, publish as-is"
+Freelance & Independent Work,Career:3,3,0,1,2,0,0,0,4.33,2.33,1.67,1.33,Low,"REBUILD — weak, needs real case studies/numbers"
+"Job Search, Resume & Hiring",Career:3,3,0,2,0,0,1,0,5.67,5.33,4.67,3.33,Medium,IMPROVE & MERGE — anchors Pillar 5 alongside interview prep
+Interview Prep & Salary Negotiation,Career:5,5,1,1,0,0,3,0,5.40,4.80,4.00,5.60,Low,"CONSOLIDATE — heavy internal overlap, merge down to canonical articles"
+"Career Growth, Transitions & Workplace Advice",Career:5/Productivity:2,7,0,3,3,0,1,0,4.71,3.43,2.71,2.00,Medium,REBUILD — needs genuine India workplace context
+Career Education & Upskilling,Career:2,2,0,2,0,0,0,0,5.00,4.50,4.50,2.50,Medium,"IMPROVE — small, low priority"
+Productivity Habits & Self-Help Frameworks,Productivity:5,5,0,0,0,3,1,1,3.60,1.80,1.60,2.20,Low,"RETIRE CATEGORY — rebuild 2 salvageable pieces into Pillar 5, cut the rest"
+Time Management & Task Automation,Productivity:3/Tech:2,5,0,2,3,0,0,0,4.40,2.40,2.00,2.20,Low,"RETIRE — no credential, no differentiation, do not grow"
+Electronics Buying Guides,Reviews:6/Tech:3,9,0,4,2,1,1,0,4.67,3.78,2.56,1.33,Low,"NARROW — stop growing, fix IMPROVE items only, no hands-on testing capability"
+Software & App Comparisons,Reviews:5,5,0,4,0,0,1,0,4.80,3.00,2.80,1.00,Medium,"NARROW — same constraint as Electronics, low priority"
+Cloud Storage & File Management,Tech:2,2,0,2,0,0,0,0,5.00,2.00,2.00,1.50,Medium,LOW PRIORITY — improve only if time permits
+Accessibility Features,Tech:1,1,1,0,0,0,0,0,6.00,5.00,5.00,7.00,Low,"NICHE KEEP — too small to be a vertical, maintain as Pillar 1 supporting content"
