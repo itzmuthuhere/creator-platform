@@ -84,7 +84,7 @@ export default async function HomePage() {
               {" "}and expertise
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-lg text-gray-500 dark:text-gray-400">
-              Read in-depth articles on technology, career growth, finance, and more — written by experts, for curious minds.
+              Read in-depth articles on technology, career growth, finance, and more — written and researched by one working developer, for curious minds.
             </p>
             <div className="mt-10 w-full max-w-xl">
               <SearchBar size="hero" placeholder="Search articles, topics, authors…" />

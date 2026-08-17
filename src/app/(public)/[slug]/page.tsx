@@ -138,7 +138,7 @@ export default async function ArticlePage({ params }: Props) {
     headline: post.title,
     description: post.metaDescription || post.excerpt,
     image: post.ogImage || post.coverImage,
-    author: { "@type": "Person", name: post.author.name },
+    author: { "@type": "Person", name: post.author.name, url: `${getBaseUrl()}/author/muthu-raja` },
     datePublished: post.publishedAt?.toISOString(),
     dateModified: post.updatedAt.toISOString(),
     mainEntityOfPage: { "@type": "WebPage", "@id": articleUrl },

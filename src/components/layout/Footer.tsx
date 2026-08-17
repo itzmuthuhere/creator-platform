@@ -59,6 +59,7 @@ export default function Footer() {
                 { label: "Contact", href: "/contact" },
                 { label: "Search", href: "/search" },
                 { label: "Sitemap", href: "/sitemap.xml" },
+                { label: "Editorial Policy", href: "/editorial-policy" },
                 { label: "Privacy Policy", href: "/privacy" },
                 { label: "Affiliate Disclosure", href: "/disclosure" },
               ].map(({ label, href }) => (
