@@ -75,6 +75,11 @@ model Post {
   coverImage     String?
   images         String[]
   status         PostStatus @default(DRAFT)
+  // Gate for the publish-scheduled cron: a SCHEDULED post whose date has
+  // passed will NOT flip to PUBLISHED unless this is explicitly true.
+  // Defaults false so every existing/new scheduled post requires a
+  // deliberate editorial approval before it can go live.
+  editorialApproved Boolean @default(false)
   featured       Boolean    @default(false)
   sponsored      Boolean    @default(false)
   sponsoredLabel String?

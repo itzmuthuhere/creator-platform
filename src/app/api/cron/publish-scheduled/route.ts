@@ -13,9 +13,17 @@ export async function GET(req: NextRequest) {
   }
 
   const now = new Date();
+  // editorialApproved is a hard gate, independent of scheduledAt: a due
+  // SCHEDULED post that hasn't been explicitly approved is left exactly
+  // as it is (still SCHEDULED, same date) — never auto-flipped to
+  // PUBLISHED. See reports/11-final-submission-gate.md for why this exists.
   const due = await prisma.post.findMany({
-    where: { status: "SCHEDULED", scheduledAt: { lte: now } },
+    where: { status: "SCHEDULED", scheduledAt: { lte: now }, editorialApproved: true },
     select: { id: true, slug: true },
+  });
+
+  const pendingApproval = await prisma.post.count({
+    where: { status: "SCHEDULED", scheduledAt: { lte: now }, editorialApproved: false },
   });
 
   if (due.length > 0) {
@@ -25,5 +33,9 @@ export async function GET(req: NextRequest) {
     });
   }
 
-  return NextResponse.json({ published: due.map((p) => p.slug), count: due.length });
+  return NextResponse.json({
+    published: due.map((p) => p.slug),
+    count: due.length,
+    pendingApproval,
+  });
 }

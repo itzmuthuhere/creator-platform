@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
     title, subtitle, content, excerpt, coverImage, images,
     categoryId, tags, status, featured, sponsored, sponsoredLabel,
     seoTitle, metaDescription, keywords, ogImage, scheduledAt, affiliateLinks,
-    seriesId, seriesOrder, faqItems, locale, translationOfId,
+    seriesId, seriesOrder, faqItems, locale, translationOfId, editorialApproved,
   } = body;
 
   const slug = slugify(title);
@@ -97,6 +97,7 @@ export async function POST(req: NextRequest) {
       coverImage,
       images: images || [],
       status: status || "DRAFT",
+      editorialApproved: editorialApproved || false,
       featured: featured || false,
       sponsored: sponsored || false,
       sponsoredLabel,

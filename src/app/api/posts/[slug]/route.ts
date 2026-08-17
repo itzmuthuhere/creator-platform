@@ -61,7 +61,7 @@ export async function PUT(
     title, subtitle, content, excerpt, coverImage, images,
     categoryId, tags, status, featured, sponsored, sponsoredLabel,
     seoTitle, metaDescription, keywords, ogImage, scheduledAt, affiliateLinks,
-    seriesId, seriesOrder, faqItems, locale, translationOfId,
+    seriesId, seriesOrder, faqItems, locale, translationOfId, editorialApproved,
   } = body;
 
   const post = await prisma.post.findUnique({ where: { slug } });
@@ -97,6 +97,7 @@ export async function PUT(
       coverImage,
       images: images || [],
       status,
+      editorialApproved: editorialApproved !== undefined ? editorialApproved : post.editorialApproved,
       featured,
       sponsored,
       sponsoredLabel,

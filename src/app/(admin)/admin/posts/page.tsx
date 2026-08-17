@@ -64,6 +64,13 @@ export default async function PostsPage() {
                       post.status === "SCHEDULED" ? "bg-blue-100 text-blue-700" :
                       "bg-orange-100 text-orange-700"
                     }`}>{post.status}</span>
+                    {post.status === "SCHEDULED" && (
+                      <span className={`ml-1.5 rounded-full px-2 py-1 text-[10px] font-semibold ${
+                        post.editorialApproved
+                          ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400"
+                          : "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400"
+                      }`}>{post.editorialApproved ? "Approved" : "Pending approval"}</span>
+                    )}
                   </td>
                   <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">{post.category?.name || "—"}</td>
                   <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">{formatNumber(post.viewCount)}</td>

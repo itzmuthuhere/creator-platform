@@ -11,7 +11,7 @@ type Category = { id: string; name: string; slug: string; color: string | null; 
 type Tag = { id: string; name: string; slug: string };
 type AffiliateLink = { id: string; label: string; url: string; platform: string | null; clickCount: number; postId: string; createdAt: Date };
 type Series = { id: string; name: string; slug: string };
-type Post = { id: string; title: string; subtitle: string | null; slug: string; content: string; excerpt: string | null; coverImage: string | null; images: string[]; status: string; featured: boolean; sponsored: boolean; sponsoredLabel: string | null; categoryId: string | null; seriesId: string | null; seriesOrder: number | null; faqItems: { question: string; answer: string }[] | null; seoTitle: string | null; metaDescription: string | null; keywords: string[]; ogImage: string | null; readingTime: number; publishedAt: Date | null; scheduledAt: Date | null; createdAt: Date; updatedAt: Date; authorId: string; viewCount: number; locale?: string };
+type Post = { id: string; title: string; subtitle: string | null; slug: string; content: string; excerpt: string | null; coverImage: string | null; images: string[]; status: string; editorialApproved: boolean; featured: boolean; sponsored: boolean; sponsoredLabel: string | null; categoryId: string | null; seriesId: string | null; seriesOrder: number | null; faqItems: { question: string; answer: string }[] | null; seoTitle: string | null; metaDescription: string | null; keywords: string[]; ogImage: string | null; readingTime: number; publishedAt: Date | null; scheduledAt: Date | null; createdAt: Date; updatedAt: Date; authorId: string; viewCount: number; locale?: string };
 import { slugify } from "@/lib/utils";
 import { extractAssetIds, getTrackedUploads, clearTrackedUploads } from "@/lib/uploadTracker";
 
@@ -37,6 +37,7 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
     excerpt: post?.excerpt || "",
     coverImage: post?.coverImage || "",
     status: post?.status || "DRAFT",
+    editorialApproved: post?.editorialApproved || false,
     featured: post?.featured || false,
     sponsored: post?.sponsored || false,
     sponsoredLabel: post?.sponsoredLabel || "",
@@ -347,6 +348,15 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
                   onChange={(e) => set("scheduledAt", e.target.value)}
                   className="mb-2"
                 />
+                <label className="mb-2 flex items-start gap-2 cursor-pointer rounded-lg border border-gray-200 p-2.5 dark:border-gray-700">
+                  <input type="checkbox" checked={form.editorialApproved}
+                    onChange={(e) => set("editorialApproved", e.target.checked)}
+                    className="mt-0.5 h-4 w-4 rounded border-gray-300 text-violet-600 focus:ring-violet-500" />
+                  <span className="text-xs text-gray-600 dark:text-gray-400">
+                    <span className="font-medium text-gray-800 dark:text-gray-200">Approved for scheduled publish.</span>{" "}
+                    Required — an unapproved scheduled post will never auto-publish, even after its date passes.
+                  </span>
+                </label>
                 <Button
                   variant="outline"
                   onClick={() => handleSave("SCHEDULED")}
@@ -356,12 +366,13 @@ export default function PostEditor({ categories, seriesList, post }: Props) {
                   <Save className="h-4 w-4" /> {saving ? "Scheduling…" : "Schedule Post"}
                 </Button>
                 <p className="mt-1.5 text-[11px] text-gray-400">
-                  Publishes automatically at this time — space posts out instead of publishing them all at once.
+                  Publishes automatically at this time, but only once approved above — space posts out instead of publishing them all at once.
                 </p>
               </div>
               {post?.status === "SCHEDULED" && post.scheduledAt && (
                 <p className="rounded-lg bg-blue-50 px-3 py-2 text-xs text-blue-700 dark:bg-blue-900/20 dark:text-blue-400">
-                  Scheduled for {new Date(post.scheduledAt).toLocaleString("en-IN")}
+                  Scheduled for {new Date(post.scheduledAt).toLocaleString("en-IN")} —{" "}
+                  {post.editorialApproved ? "approved, will auto-publish" : "awaiting editorial approval"}
                 </p>
               )}
               {form.slug && (
