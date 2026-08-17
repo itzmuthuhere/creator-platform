@@ -1,11 +1,14 @@
 name: Publish scheduled posts
 
 on:
-  schedule:
-    # Every 30 minutes. Railway has no built-in "hit this URL on schedule"
-    # for a web service, so GitHub Actions triggers it instead — works no
-    # matter which host the site ends up on.
-    - cron: "*/30 * * * *"
+  # Schedule trigger disabled 2026-08-17 pending editorial review of the
+  # scheduled-post queue (see reports/11-final-submission-gate.md) — two
+  # HOLD-FROM-PUBLICATION articles already auto-published unremediated
+  # before this was caught. Re-enable the `schedule:` block below only on
+  # explicit instruction; workflow_dispatch is left so it can still be run
+  # manually for a single, deliberate batch if ever needed.
+  # schedule:
+  #   - cron: "*/30 * * * *"
   workflow_dispatch: {}
 
 jobs:
