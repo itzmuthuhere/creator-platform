@@ -10,6 +10,7 @@ import { Plus, Edit2, Eye, Trash2, Globe, FileText } from "lucide-react";
 import { formatDate, formatNumber } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import DeletePostButton from "@/components/admin/DeletePostButton";
+import QuickApproveToggle from "@/components/admin/QuickApproveToggle";
 
 export default async function PostsPage() {
   const session = await getServerSession(authOptions);
@@ -65,11 +66,7 @@ export default async function PostsPage() {
                       "bg-orange-100 text-orange-700"
                     }`}>{post.status}</span>
                     {post.status === "SCHEDULED" && (
-                      <span className={`ml-1.5 rounded-full px-2 py-1 text-[10px] font-semibold ${
-                        post.editorialApproved
-                          ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400"
-                          : "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400"
-                      }`}>{post.editorialApproved ? "Approved" : "Pending approval"}</span>
+                      <QuickApproveToggle slug={post.slug} approved={post.editorialApproved} />
                     )}
                   </td>
                   <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">{post.category?.name || "—"}</td>
