@@ -1,9 +1,15 @@
 import Link from "next/link";
 import { ArrowRight, BookOpen, Target, Users, Zap } from "lucide-react";
+import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
+import { getBaseUrl } from "@/lib/utils";
 import AuthorBio from "@/components/posts/AuthorBio";
 
 export const revalidate = 3600;
+
+export const metadata: Metadata = {
+  alternates: { canonical: `${getBaseUrl()}/about` },
+};
 
 export default async function AboutPage() {
   const founder = await prisma.user.findFirst({

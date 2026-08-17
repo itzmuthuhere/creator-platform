@@ -4,11 +4,13 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { Metadata } from "next";
 import { Grid3X3 } from "lucide-react";
+import { getBaseUrl } from "@/lib/utils";
 import AdUnit from "@/components/ads/AdUnit";
 
 export const metadata: Metadata = {
   title: "Browse Topics — Techpulzo",
   description: "Explore all article categories on Techpulzo — Tech, Career, Tutorials, Finance and more.",
+  alternates: { canonical: `${getBaseUrl()}/categories` },
 };
 
 const CATEGORY_ICONS: Record<string, string> = {

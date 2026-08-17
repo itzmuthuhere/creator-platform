@@ -5,6 +5,7 @@ import { prisma } from "@/lib/prisma";
 import PostCard from "@/components/posts/PostCard";
 import { Metadata } from "next";
 import type { PostCard as PostCardType } from "@/types";
+import { getBaseUrl } from "@/lib/utils";
 import AdUnit from "@/components/ads/AdUnit";
 
 interface Props { params: Promise<{ slug: string }>; searchParams: Promise<{ page?: string }> }
@@ -17,10 +18,16 @@ export async function generateStaticParams() {
   return categories.map((c) => ({ slug: c.slug }));
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const { slug } = await params;
+  const { page } = await searchParams;
   const cat = await prisma.category.findUnique({ where: { slug } });
-  return { title: cat ? `${cat.name} — Articles` : "Category" };
+  const base = `${getBaseUrl()}/category/${slug}`;
+  const url = page && page !== "1" ? `${base}?page=${page}` : base;
+  return {
+    title: cat ? `${cat.name} — Articles` : "Category",
+    alternates: { canonical: url },
+  };
 }
 
 export default async function CategoryPage({ params, searchParams }: Props) {

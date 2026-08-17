@@ -20,7 +20,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     { url: base, lastModified: new Date(), changeFrequency: "daily", priority: 1 },
-    { url: `${base}/search`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
     ...(hasTamilPosts ? [{ url: `${base}/ta`, lastModified: new Date(), changeFrequency: "daily" as const, priority: 0.9 }] : []),
     ...posts.map((p) => ({
       url: p.locale === "ta" ? `${base}/ta/${p.slug}` : `${base}/${p.slug}`,

@@ -6,11 +6,19 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
 import type { Metadata } from "next";
+import { getBaseUrl } from "@/lib/utils";
 import AdUnit from "@/components/ads/AdUnit";
 
-export const metadata: Metadata = { title: "All Articles" };
-
 interface Props { searchParams: Promise<{ page?: string }> }
+
+export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
+  const { page } = await searchParams;
+  const url = page && page !== "1" ? `${getBaseUrl()}/posts?page=${page}` : `${getBaseUrl()}/posts`;
+  return {
+    title: "All Articles",
+    alternates: { canonical: url },
+  };
+}
 
 export default async function PostsPage({ searchParams }: Props) {
   const { page: pageStr } = await searchParams;

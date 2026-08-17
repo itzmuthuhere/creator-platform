@@ -6,7 +6,13 @@ import PostCard from "@/components/posts/PostCard";
 import SearchBar from "@/components/posts/SearchBar";
 import { TrendingUp, Flame, Star, Grid3X3, ArrowRight, PenLine } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
+import type { Metadata } from "next";
+import { getBaseUrl } from "@/lib/utils";
 import AdUnit from "@/components/ads/AdUnit";
+
+export const metadata: Metadata = {
+  alternates: { canonical: getBaseUrl() },
+};
 
 async function getPosts() {
   const [featured, latest, trending, categories, totalPublished] = await Promise.all([

@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+import { getBaseUrl } from "@/lib/utils";
+
+export const metadata: Metadata = {
+  alternates: { canonical: `${getBaseUrl()}/privacy` },
+};
+
 export default function PrivacyPage() {
   const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "Techpulzo";
   return (

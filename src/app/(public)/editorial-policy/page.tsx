@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
+import { getBaseUrl } from "@/lib/utils";
 
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Editorial Policy",
   description: "Who writes Techpulzo, what they're qualified to write about, and the process every article goes through before it's published.",
+  alternates: { canonical: `${getBaseUrl()}/editorial-policy` },
 };
 
 export default async function EditorialPolicyPage() {
