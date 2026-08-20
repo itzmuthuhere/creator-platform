@@ -4,7 +4,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import PostCard from "@/components/posts/PostCard";
 import SearchBar from "@/components/posts/SearchBar";
-import { TrendingUp, Flame, Star, Grid3X3, ArrowRight, PenLine } from "lucide-react";
+import { TrendingUp, Flame, Star, ArrowRight, PenLine } from "lucide-react";
 import type { PostCard as PostCardType } from "@/types";
 import type { Metadata } from "next";
 import { getBaseUrl } from "@/lib/utils";
@@ -53,13 +53,6 @@ const postSelect = {
   category: { select: { name: true, slug: true, color: true } },
   tags: { select: { name: true, slug: true } },
 } as const;
-
-const CATEGORY_ICONS: Record<string, string> = {
-  "tech": "💻", "ai-tools": "🤖", "reviews": "⭐", "tutorials": "📚",
-  "finance": "💰", "career": "🚀", "productivity": "⚡", "mobile-apps": "📱",
-  "web-tools": "🌐", "coding": "👨‍💻", "business": "💼", "life-hacks": "🎯",
-  "technology": "💻", "health": "❤️", "science": "🔬", "travel": "✈️",
-};
 
 export default async function HomePage() {
   let featured: any[] = [], latest: any[] = [], trending: any[] = [], categories: any[] = [], topSearches: any[] = [], totalPublished = 0;
@@ -130,25 +123,6 @@ export default async function HomePage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <AdUnit slot="2222222222" format="horizontal" className="h-24 sm:h-28" />
       </div>
-
-      {/* Categories */}
-      {categories.length > 0 && (
-        <section className="border-y border-gray-100 bg-gray-50 py-14 dark:border-gray-800 dark:bg-gray-900/30">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <SectionHeader icon={<Grid3X3 className="h-5 w-5" />} title="Browse Topics" href="/categories" />
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-              {categories.map((cat) => (
-                <Link key={cat.id} href={`/category/${cat.slug}`}
-                  className="group flex flex-col items-center gap-2 rounded-xl border border-gray-200 bg-white p-5 text-center transition hover:border-violet-300 hover:shadow-sm dark:border-gray-700 dark:bg-gray-900 dark:hover:border-violet-700">
-                  <span className="text-2xl">{CATEGORY_ICONS[cat.slug] || "📄"}</span>
-                  <span className="text-sm font-semibold text-gray-800 group-hover:text-violet-600 dark:text-gray-200 dark:group-hover:text-violet-400">{cat.name}</span>
-                  <span className="text-xs text-gray-400">{(cat as any)._count.posts} articles</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Ad — between categories and trending */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
