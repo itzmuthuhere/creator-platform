@@ -71,8 +71,6 @@ export default async function HomePage() {
     ? topSearches.map((s: any) => s.query)
     : ["Technology", "AI Tools", "Tutorials", "Finance", "Career"];
 
-  const totalPosts = totalPublished;
-
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
 
@@ -112,24 +110,6 @@ export default async function HomePage() {
       <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
         <AdUnit slot="1111111111" format="horizontal" className="h-24 sm:h-28" />
       </div>
-
-      {/* Stats bar */}
-      {totalPosts > 0 && (
-        <div className="border-b border-gray-100 bg-gray-50 dark:border-gray-800 dark:bg-gray-900/50">
-          <div className="mx-auto flex max-w-7xl items-center justify-center gap-10 px-4 py-4 sm:px-6 lg:px-8">
-            {[
-              { label: "Articles", value: totalPosts },
-              { label: "Categories", value: categories.length },
-              { label: "Free to read", value: "100%" },
-            ].map(({ label, value }) => (
-              <div key={label} className="text-center">
-                <div className="text-lg font-bold text-gray-900 dark:text-white">{value}</div>
-                <div className="text-xs text-gray-500">{label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
 
       {/* Featured Posts */}
       {featured.length > 0 && (
