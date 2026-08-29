@@ -1,0 +1,972 @@
+{
+  "note": "Current DB state. Regenerate: node scripts/dump-articles.mjs && node _tmp_manifest.js (stamp date manually).",
+  "counts": {
+    "UNPUBLISHED": 129,
+    "PUBLISHED": 8
+  },
+  "published": [
+    "best-time-of-year-to-buy-electronics-in-india-what-the-sales-calendar-shows",
+    "buying-vs-leasing-a-car-in-india-the-real-math",
+    "credit-score-in-india-how-it-works-and-how-to-fix-it",
+    "google-search-console-how-to-add-your-website-and-get-free-traffic",
+    "how-facial-recognition-unlock-actually-works-on-your-phone",
+    "how-to-learn-python-in-30-days-complete-beginner-roadmap",
+    "the-real-cost-of-buy-now-pay-later-what-the-fine-print-does-not-say",
+    "why-just-learn-to-code-doesnt-get-freshers-hired-in-2026"
+  ],
+  "unpublished": [
+    "10-best-free-websites-to-learn-coding-in-2026",
+    "best-free-ai-tools-in-2026-complete-guide",
+    "best-free-ai-tools-that-will-save-you-10-hours-every-week",
+    "chrome-vs-firefox-vs-edge-does-the-browser-you-pick-actually-matter",
+    "complete-guide-to-getting-a-software-job-in-india-without-a-degree",
+    "credit-card-vs-debit-card-for-everyday-spending-what-actually-saves-you-money",
+    "digital-decluttering-how-to-clean-up-years-of-phone-photos-and-files",
+    "docker-for-complete-beginners-what-it-actually-solves",
+    "five-recurring-charges-most-people-forget-to-cancel",
+    "free-vs-paid-antivirus-in-2026-do-you-actually-need-to-pay",
+    "freelancing-vs-a-full-time-job-in-india-what-youre-actually-trading-off",
+    "git-and-github-for-complete-beginners-a-step-by-step-guide",
+    "google-drive-vs-onedrive-vs-icloud-which-cloud-storage-to-use",
+    "google-sheets-vs-excel-which-one-actually-fits-how-you-work",
+    "how-ad-targeting-actually-follows-you-between-apps",
+    "how-applicant-tracking-systems-actually-filter-resumes",
+    "how-autocorrect-actually-decides-what-you-meant-to-type",
+    "how-cashback-apps-actually-make-money-off-you",
+    "how-database-indexes-actually-work",
+    "how-google-maps-knows-there-is-traffic-ahead",
+    "how-https-actually-works-behind-the-padlock",
+    "how-much-home-loan-you-can-actually-afford",
+    "how-much-of-your-salary-should-actually-go-to-rent",
+    "how-much-ram-you-actually-need-in-a-laptop-in-2026",
+    "how-often-you-should-actually-clean-your-laptop-fans",
+    "how-streaming-quality-adjusts-automatically-to-your-internet-speed",
+    "how-to-actually-cancel-a-subscription-you-forgot-you-had",
+    "how-to-actually-stick-to-a-morning-routine-based-on-what-derails-most-people",
+    "how-to-answer-why-are-you-leaving-your-current-job-honestly-and-well",
+    "how-to-ask-for-a-raise-without-a-new-offer-in-hand",
+    "how-to-automate-a-repetitive-task-without-learning-to-code",
+    "how-to-back-up-your-phone-so-a-lost-device-does-not-cost-you-your-photos",
+    "how-to-batch-small-tasks-so-they-stop-interrupting-deep-work",
+    "how-to-build-a-habit-that-survives-a-bad-week",
+    "how-to-build-a-linkedin-profile-that-recruiters-actually-find",
+    "how-to-build-a-second-brain-with-just-notes-and-folders-no-app-needed",
+    "how-to-build-an-emergency-fund-from-scratch-whatever-your-income",
+    "how-to-check-a-products-real-reviews-instead-of-fake-ones",
+    "how-to-check-if-your-phone-number-was-leaked-in-a-data-breach",
+    "how-to-check-if-your-vehicle-challan-is-real-or-a-scam",
+    "how-to-check-what-personal-data-google-has-on-you-and-delete-it",
+    "how-to-check-your-cibil-score-for-free-legally",
+    "how-to-check-your-epf-balance-without-visiting-an-office",
+    "how-to-choose-between-a-split-ac-and-a-window-ac-for-a-small-room",
+    "how-to-choose-budget-wireless-earbuds-under-2000-what-actually-matters",
+    "how-to-compress-a-large-file-without-losing-quality",
+    "how-to-download-your-digital-driving-licence-on-digilocker",
+    "how-to-extend-a-phone-battery-lifespan-over-years-not-just-a-day",
+    "how-to-extend-your-wi-fi-router-range-without-buying-a-new-one",
+    "how-to-file-a-consumer-complaint-online-in-india",
+    "how-to-find-a-lost-android-phone-even-when-it-is-offline",
+    "how-to-find-freelance-work-in-india-without-bidding-to-the-bottom",
+    "how-to-free-up-storage-on-your-phone-without-deleting-photos-you-want",
+    "how-to-get-a-duplicate-pan-card-online",
+    "how-to-handle-a-counteroffer-from-your-current-employer",
+    "how-to-handle-being-laid-off-the-first-two-weeks",
+    "how-to-link-aadhaar-and-pan-online-step-by-step",
+    "how-to-negotiate-your-broadband-or-dth-bill-down",
+    "how-to-negotiate-your-salary-in-india-what-actually-works",
+    "how-to-organize-your-email-inbox-in-under-30-minutes",
+    "how-to-prepare-for-a-technical-interview-a-step-by-step-guide-for-freshers",
+    "how-to-read-a-loan-apr-instead-of-just-the-emi",
+    "how-to-recognize-a-fake-loan-app-before-it-drains-your-bank-account",
+    "how-to-recover-deleted-whatsapp-messages-and-photos-what-actually-works",
+    "how-to-reduce-your-electricity-bill-without-changing-your-lifestyle-much",
+    "how-to-register-a-complaint-against-spam-calls-with-trai",
+    "how-to-report-a-fraudulent-upi-transaction-and-actually-get-your-money-back",
+    "how-to-run-a-weekly-review-that-actually-changes-what-you-do",
+    "how-to-save-1-lakh-in-one-year-on-a-30000-salary",
+    "how-to-say-no-to-extra-work-without-damaging-the-relationship",
+    "how-to-screen-record-on-android-without-a-third-party-app",
+    "how-to-set-boundaries-with-work-messages-after-hours",
+    "how-to-set-up-a-home-wi-fi-guest-network-and-why-you-should",
+    "how-to-set-up-a-password-manager-in-15-minutes",
+    "how-to-set-up-a-second-whatsapp-number-on-one-phone",
+    "how-to-set-up-a-smart-plug-and-what-it-is-actually-useful-for",
+    "how-to-set-up-parental-controls-without-making-a-teenager-furious",
+    "how-to-speed-up-a-slow-android-phone-without-buying-a-new-one",
+    "how-to-spot-a-fake-job-offer-sent-over-whatsapp-or-telegram",
+    "how-to-spot-a-refurbished-phone-listed-as-new",
+    "how-to-stop-spam-calls-and-sms-on-an-indian-sim-the-settings-that-actually-help",
+    "how-to-tell-if-a-deal-price-online-is-actually-a-discount",
+    "how-to-tell-if-a-link-is-a-phishing-scam-before-you-click-it",
+    "how-to-tell-if-your-internet-plan-is-actually-giving-you-the-speed-you-pay-for",
+    "how-to-track-where-your-salary-actually-goes-every-month",
+    "how-to-transfer-whatsapp-chats-to-a-new-phone-without-losing-history",
+    "how-to-turn-a-spreadsheet-into-a-simple-budget-tracker",
+    "how-to-turn-off-ads-in-free-android-apps-what-is-legal-and-what-is-not",
+    "how-to-use-google-alerts-to-track-anything-automatically",
+    "how-to-use-google-lens-for-more-than-just-translating-text",
+    "how-to-verify-a-company-is-real-before-accepting-a-job-offer",
+    "how-to-write-a-portfolio-that-gets-replies-when-you-have-no-client-work-yet",
+    "how-to-write-a-resume-that-actually-gets-shortlisted",
+    "how-two-factor-authentication-actually-stops-account-hacks",
+    "how-upi-fraud-actually-happens-the-five-warning-signs",
+    "how-voice-assistants-actually-understand-what-you-are-saying",
+    "how-your-bank-sends-an-otp-in-under-two-seconds",
+    "how-your-phone-fast-charging-actually-works-and-why-it-slows-down-near-80-percent",
+    "how-your-phone-knows-your-location-even-with-gps-off",
+    "inverter-vs-ups-for-home-power-backup-what-is-the-real-difference",
+    "is-an-mba-actually-worth-it-in-india-the-real-math",
+    "javascript-basics-the-concepts-every-beginner-actually-needs",
+    "notion-vs-google-docs-what-each-one-is-actually-built-for",
+    "notion-vs-google-keep-vs-obsidian-which-note-taking-app-should-you-use",
+    "power-bank-buying-guide-what-the-mah-number-does-not-tell-you",
+    "prepaid-vs-postpaid-mobile-plans-which-actually-costs-less-over-a-year",
+    "remote-work-vs-hybrid-vs-office-what-actually-affects-career-growth",
+    "ro-vs-uv-water-purifier-which-one-your-water-actually-needs",
+    "sip-vs-lump-sum-how-to-actually-decide-where-to-put-your-money",
+    "smartwatch-buying-guide-which-features-are-worth-paying-extra-for",
+    "sql-basics-the-queries-every-beginner-should-actually-know",
+    "ssd-vs-hdd-for-a-budget-laptop-where-the-money-should-actually-go",
+    "the-real-difference-between-a-fixed-deposit-and-a-recurring-deposit",
+    "the-two-minute-rule-for-getting-through-a-long-to-do-list",
+    "time-blocking-the-productivity-method-that-actually-works",
+    "top-5-budget-smartphones-of-2026-full-buying-guide",
+    "top-5-free-online-courses-that-can-get-you-a-job-in-2026",
+    "two-factor-authentication-explained-which-method-is-actually-safest",
+    "voice-access-how-to-control-your-android-phone-using-just-your-voice",
+    "what-a-vpn-actually-protects-you-from-and-what-it-does-not",
+    "what-end-to-end-encrypted-actually-means-for-an-app-you-use-daily",
+    "what-is-artificial-intelligence-simple-explanation-for-beginners",
+    "what-to-actually-negotiate-besides-salary-in-a-job-offer",
+    "why-video-calls-lag-even-with-fast-internet",
+    "why-you-should-not-reuse-passwords-what-happens-when-one-site-gets-breached",
+    "why-your-phone-battery-degrades-over-time-the-real-chemistry",
+    "why-your-wifi-feels-slow-in-certain-rooms-router-placement",
+    "wired-vs-wireless-earbuds-what-you-actually-give-up-either-way",
+    "zero-based-budgeting-how-to-build-a-budget-that-actually-works"
+  ],
+  "rows": [
+    {
+      "slug": "best-time-of-year-to-buy-electronics-in-india-what-the-sales-calendar-shows",
+      "title": "Best Time of Year to Buy Electronics in India: What the Sales Calendar Shows",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-20T17:41:25.183Z"
+    },
+    {
+      "slug": "buying-vs-leasing-a-car-in-india-the-real-math",
+      "title": "Buying vs Leasing a Car in India — The Math Most People Get Wrong",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-07-18T16:16:55.085Z"
+    },
+    {
+      "slug": "credit-score-in-india-how-it-works-and-how-to-fix-it",
+      "title": "Credit Score in India: How It Works and How to Fix a Bad One",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-07-18T15:41:39.813Z"
+    },
+    {
+      "slug": "google-search-console-how-to-add-your-website-and-get-free-traffic",
+      "title": "Google Search Console for Beginners: How to Add Your Site and Read the Reports",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-29T16:42:13.411Z"
+    },
+    {
+      "slug": "how-facial-recognition-unlock-actually-works-on-your-phone",
+      "title": "How Facial Recognition Unlock Works on Your Phone",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-03T05:07:55.041Z"
+    },
+    {
+      "slug": "how-to-learn-python-in-30-days-complete-beginner-roadmap",
+      "title": "How to Learn Python in 30 Days — A Beginner Roadmap You Can Actually Code Along With",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-29T19:17:59.398Z"
+    },
+    {
+      "slug": "the-real-cost-of-buy-now-pay-later-what-the-fine-print-does-not-say",
+      "title": "The Real Cost of Buy Now Pay Later — What the Fine Print Does Not Say",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-20T17:41:25.183Z"
+    },
+    {
+      "slug": "why-just-learn-to-code-doesnt-get-freshers-hired-in-2026",
+      "title": "Why \"Just Learn to Code\" Doesn't Get Freshers Hired in 2026",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-07-18T16:16:53.059Z"
+    },
+    {
+      "slug": "10-best-free-websites-to-learn-coding-in-2026",
+      "title": "10 Best Free Websites to Learn Coding in 2026",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-15T15:13:59.683Z"
+    },
+    {
+      "slug": "best-free-ai-tools-in-2026-complete-guide",
+      "title": "Best Free AI Tools in 2026 — What They Actually Do and Where the Limits Kick In",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-06-28T11:13:51.290Z"
+    },
+    {
+      "slug": "best-free-ai-tools-that-will-save-you-10-hours-every-week",
+      "title": "Best Free AI Tools That Will Save You 10 Hours Every Week",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-06-28T15:14:11.586Z"
+    },
+    {
+      "slug": "chrome-vs-firefox-vs-edge-does-the-browser-you-pick-actually-matter",
+      "title": "Chrome vs Firefox vs Edge — Does the Browser You Pick Actually Matter",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "complete-guide-to-getting-a-software-job-in-india-without-a-degree",
+      "title": "Complete Guide to Getting a Software Job in India Without a Degree",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-06-28T15:03:44.190Z"
+    },
+    {
+      "slug": "credit-card-vs-debit-card-for-everyday-spending-what-actually-saves-you-money",
+      "title": "Credit Card vs Debit Card for Everyday Spending — What Actually Saves You Money",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "digital-decluttering-how-to-clean-up-years-of-phone-photos-and-files",
+      "title": "Digital Decluttering: How to Clean Up Years of Phone Photos and Files",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "docker-for-complete-beginners-what-it-actually-solves",
+      "title": "Docker for Complete Beginners: What It Solves and How to Get Started",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-18T15:41:38.221Z"
+    },
+    {
+      "slug": "five-recurring-charges-most-people-forget-to-cancel",
+      "title": "Five Recurring Charges Most People Forget to Cancel",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "free-vs-paid-antivirus-in-2026-do-you-actually-need-to-pay",
+      "title": "Free vs Paid Antivirus in 2026 — Do You Need to Pay",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "freelancing-vs-a-full-time-job-in-india-what-youre-actually-trading-off",
+      "title": "Freelancing vs a Full-Time Job in India — What You're Actually Trading Off",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-24T10:00:00.000Z"
+    },
+    {
+      "slug": "git-and-github-for-complete-beginners-a-step-by-step-guide",
+      "title": "Git and GitHub for Complete Beginners: A Step-by-Step Guide",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-08T10:00:00.000Z"
+    },
+    {
+      "slug": "google-drive-vs-onedrive-vs-icloud-which-cloud-storage-to-use",
+      "title": "Google Drive vs OneDrive vs iCloud in 2026 — Which Cloud Storage Fits You",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-18T15:41:34.870Z"
+    },
+    {
+      "slug": "google-sheets-vs-excel-which-one-actually-fits-how-you-work",
+      "title": "Google Sheets vs Excel — Which One Fits How You Work",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-13T04:59:03.106Z"
+    },
+    {
+      "slug": "how-ad-targeting-actually-follows-you-between-apps",
+      "title": "How Ad Targeting Follows You Between Apps",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-12T05:15:35.563Z"
+    },
+    {
+      "slug": "how-applicant-tracking-systems-actually-filter-resumes",
+      "title": "What Applicant Tracking Systems Really Do With Your Resume",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-autocorrect-actually-decides-what-you-meant-to-type",
+      "title": "How Autocorrect Actually Decides What You Meant to Type",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-05T06:08:42.180Z"
+    },
+    {
+      "slug": "how-cashback-apps-actually-make-money-off-you",
+      "title": "How Cashback Apps Actually Make Money Off You",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-database-indexes-actually-work",
+      "title": "How Database Indexes Work — Why the Same Query Can Take 2ms or 8 Seconds",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-18T16:07:13.711Z"
+    },
+    {
+      "slug": "how-google-maps-knows-there-is-traffic-ahead",
+      "title": "How Google Maps Knows There Is Traffic Ahead",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-08T03:51:54.889Z"
+    },
+    {
+      "slug": "how-https-actually-works-behind-the-padlock",
+      "title": "How HTTPS Works — What's Really Happening Behind the Padlock",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-18T16:16:56.389Z"
+    },
+    {
+      "slug": "how-much-home-loan-you-can-actually-afford",
+      "title": "How Much Home Loan You Can Afford — The Math Banks Don't Show You",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-18T16:07:16.525Z"
+    },
+    {
+      "slug": "how-much-of-your-salary-should-actually-go-to-rent",
+      "title": "How Much of Your Salary Should Actually Go to Rent",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-much-ram-you-actually-need-in-a-laptop-in-2026",
+      "title": "How Much RAM You Actually Need in a Laptop in 2026",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-often-you-should-actually-clean-your-laptop-fans",
+      "title": "How Often You Should Actually Clean Your Laptop Fans",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-streaming-quality-adjusts-automatically-to-your-internet-speed",
+      "title": "How Streaming Quality Adjusts Automatically to Your Internet Speed",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-06T04:20:17.790Z"
+    },
+    {
+      "slug": "how-to-actually-cancel-a-subscription-you-forgot-you-had",
+      "title": "How to Cancel a Subscription You Forgot You Had",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-actually-stick-to-a-morning-routine-based-on-what-derails-most-people",
+      "title": "How to Actually Stick to a Morning Routine, Based on What Derails Most People",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-answer-why-are-you-leaving-your-current-job-honestly-and-well",
+      "title": "How to Answer \"Why Are You Leaving Your Current Job\" Honestly and Well",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-ask-for-a-raise-without-a-new-offer-in-hand",
+      "title": "How to Ask for a Raise Without a New Offer in Hand",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-automate-a-repetitive-task-without-learning-to-code",
+      "title": "How to Automate a Repetitive Task Without Learning to Code",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-14T04:55:39.165Z"
+    },
+    {
+      "slug": "how-to-back-up-your-phone-so-a-lost-device-does-not-cost-you-your-photos",
+      "title": "How to Back Up Your Phone So a Lost Device Does Not Cost You Your Photos",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-batch-small-tasks-so-they-stop-interrupting-deep-work",
+      "title": "How to Batch Small Tasks So They Stop Interrupting Deep Work",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-build-a-habit-that-survives-a-bad-week",
+      "title": "How to Build a Habit That Survives a Bad Week",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-build-a-linkedin-profile-that-recruiters-actually-find",
+      "title": "How to Build a LinkedIn Profile That Recruiters Actually Find",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-build-a-second-brain-with-just-notes-and-folders-no-app-needed",
+      "title": "How to Build a Second Brain With Just Notes and Folders, No App Needed",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-build-an-emergency-fund-from-scratch-whatever-your-income",
+      "title": "How to Build an Emergency Fund From Scratch, Whatever Your Income",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-08T14:00:00.000Z"
+    },
+    {
+      "slug": "how-to-check-a-products-real-reviews-instead-of-fake-ones",
+      "title": "How to Check a Product's Real Reviews Instead of Fake Ones",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-check-if-your-phone-number-was-leaked-in-a-data-breach",
+      "title": "How to Check If Your Phone Number Was Leaked in a Data Breach",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-check-if-your-vehicle-challan-is-real-or-a-scam",
+      "title": "How to Check If Your Vehicle Challan Is Real or a Scam",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-check-what-personal-data-google-has-on-you-and-delete-it",
+      "title": "How to Check What Personal Data Google Has on You (And Delete It)",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-check-your-cibil-score-for-free-legally",
+      "title": "How to Check Your CIBIL Score for Free, Legally",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-check-your-epf-balance-without-visiting-an-office",
+      "title": "How to Check Your EPF Balance Without Visiting an Office",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-choose-between-a-split-ac-and-a-window-ac-for-a-small-room",
+      "title": "How to Choose Between a Split AC and a Window AC for a Small Room",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-choose-budget-wireless-earbuds-under-2000-what-actually-matters",
+      "title": "How to Choose Budget Wireless Earbuds Under ₹2,000 — What Actually Matters",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-01T10:00:00.000Z"
+    },
+    {
+      "slug": "how-to-compress-a-large-file-without-losing-quality",
+      "title": "How to Compress a Large File Without Losing Quality",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-download-your-digital-driving-licence-on-digilocker",
+      "title": "How to Download Your Digital Driving Licence on DigiLocker",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-extend-a-phone-battery-lifespan-over-years-not-just-a-day",
+      "title": "How to Extend a Phone Battery Lifespan Over Years, Not Just a Day",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-extend-your-wi-fi-router-range-without-buying-a-new-one",
+      "title": "How to Extend Your Wi-Fi Router Range Without Buying a New One",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-file-a-consumer-complaint-online-in-india",
+      "title": "How to File a Consumer Complaint Online in India",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-find-a-lost-android-phone-even-when-it-is-offline",
+      "title": "How to Find a Lost Android Phone Even When It Is Offline",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-find-freelance-work-in-india-without-bidding-to-the-bottom",
+      "title": "How to Find Freelance Work in India Without Bidding to the Bottom",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-free-up-storage-on-your-phone-without-deleting-photos-you-want",
+      "title": "How to Free Up Storage on Your Phone Without Deleting Photos You Want",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-get-a-duplicate-pan-card-online",
+      "title": "How to Get a Duplicate PAN Card Online",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-handle-a-counteroffer-from-your-current-employer",
+      "title": "How to Handle a Counteroffer From Your Current Employer",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-handle-being-laid-off-the-first-two-weeks",
+      "title": "How to Handle Being Laid Off: The First Two Weeks",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-link-aadhaar-and-pan-online-step-by-step",
+      "title": "How to Link Aadhaar and PAN Online — Step by Step",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-negotiate-your-broadband-or-dth-bill-down",
+      "title": "How to Negotiate Your Broadband or DTH Bill Down",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-negotiate-your-salary-in-india-what-actually-works",
+      "title": "How to Negotiate Your Salary in India — What Works, Including Counteroffers and Raises",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-18T15:41:36.619Z"
+    },
+    {
+      "slug": "how-to-organize-your-email-inbox-in-under-30-minutes",
+      "title": "How to Organize Your Email Inbox in Under 30 Minutes",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-prepare-for-a-technical-interview-a-step-by-step-guide-for-freshers",
+      "title": "How to Prepare for a Technical Interview: A Step-by-Step Guide for Freshers",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-08T13:00:00.000Z"
+    },
+    {
+      "slug": "how-to-read-a-loan-apr-instead-of-just-the-emi",
+      "title": "How to Read a Loan APR Instead of Just the EMI",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-recognize-a-fake-loan-app-before-it-drains-your-bank-account",
+      "title": "How to Recognize a Fake Loan App Before It Drains Your Bank Account",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-recover-deleted-whatsapp-messages-and-photos-what-actually-works",
+      "title": "How to Recover Deleted WhatsApp Messages and Photos — What Actually Works",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-reduce-your-electricity-bill-without-changing-your-lifestyle-much",
+      "title": "How to Reduce Your Electricity Bill Without Changing Your Lifestyle Much",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-register-a-complaint-against-spam-calls-with-trai",
+      "title": "How to Register a Complaint Against Spam Calls With TRAI",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-report-a-fraudulent-upi-transaction-and-actually-get-your-money-back",
+      "title": "How to Report a Fraudulent UPI Transaction and Actually Get Your Money Back",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-run-a-weekly-review-that-actually-changes-what-you-do",
+      "title": "How to Run a Weekly Review That Actually Changes What You Do",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-save-1-lakh-in-one-year-on-a-30000-salary",
+      "title": "How to Save ₹1 Lakh in One Year on a ₹30,000 Salary",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-06-28T15:10:13.292Z"
+    },
+    {
+      "slug": "how-to-say-no-to-extra-work-without-damaging-the-relationship",
+      "title": "How to Say No to Extra Work and Set After-Hours Boundaries, Without Damaging the Relationship",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-screen-record-on-android-without-a-third-party-app",
+      "title": "How to Screen Record on Android Without a Third-Party App",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-set-boundaries-with-work-messages-after-hours",
+      "title": "How to Set Boundaries With Work Messages After Hours",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-set-up-a-home-wi-fi-guest-network-and-why-you-should",
+      "title": "How to Set Up a Home Wi-Fi Guest Network, and Why You Should",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-set-up-a-password-manager-in-15-minutes",
+      "title": "How to Set Up a Password Manager in 15 Minutes",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-set-up-a-second-whatsapp-number-on-one-phone",
+      "title": "How to Set Up a Second WhatsApp Number on One Phone",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-set-up-a-smart-plug-and-what-it-is-actually-useful-for",
+      "title": "How to Set Up a Smart Plug and What It Is Actually Useful For",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-set-up-parental-controls-without-making-a-teenager-furious",
+      "title": "How to Set Up Parental Controls Without Making a Teenager Furious",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-speed-up-a-slow-android-phone-without-buying-a-new-one",
+      "title": "How to Speed Up a Slow Android Phone in 2026 — Without Buying a New One",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-18T15:41:32.843Z"
+    },
+    {
+      "slug": "how-to-spot-a-fake-job-offer-sent-over-whatsapp-or-telegram",
+      "title": "How to Spot a Fake Job Offer Sent Over WhatsApp or Telegram",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-spot-a-refurbished-phone-listed-as-new",
+      "title": "How to Spot a Refurbished Phone Listed as New",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-stop-spam-calls-and-sms-on-an-indian-sim-the-settings-that-actually-help",
+      "title": "How to Stop Spam Calls and SMS on an Indian SIM — The Settings That Actually Help",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-tell-if-a-deal-price-online-is-actually-a-discount",
+      "title": "How to Tell If a Deal Price Online Is Actually a Discount",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-tell-if-a-link-is-a-phishing-scam-before-you-click-it",
+      "title": "How to Tell If a Link Is a Phishing Scam Before You Click It",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-tell-if-your-internet-plan-is-actually-giving-you-the-speed-you-pay-for",
+      "title": "How to Tell If Your Internet Plan Is Actually Giving You the Speed You Pay For",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-track-where-your-salary-actually-goes-every-month",
+      "title": "How to Track Where Your Salary Actually Goes Every Month",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-transfer-whatsapp-chats-to-a-new-phone-without-losing-history",
+      "title": "How to Transfer WhatsApp Chats to a New Phone Without Losing History",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-turn-a-spreadsheet-into-a-simple-budget-tracker",
+      "title": "How to Turn a Spreadsheet Into a Simple Budget Tracker",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-17T04:20:45.312Z"
+    },
+    {
+      "slug": "how-to-turn-off-ads-in-free-android-apps-what-is-legal-and-what-is-not",
+      "title": "How to Turn Off Ads in Free Android Apps — What Is Legal and What Is Not",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-use-google-alerts-to-track-anything-automatically",
+      "title": "How to Use Google Alerts to Track Anything Automatically",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-16T04:09:48.138Z"
+    },
+    {
+      "slug": "how-to-use-google-lens-for-more-than-just-translating-text",
+      "title": "How to Use Google Lens for More Than Just Translating Text",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-verify-a-company-is-real-before-accepting-a-job-offer",
+      "title": "How to Verify a Company Is Real Before Accepting a Job Offer, Including WhatsApp and Telegram Scams",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-write-a-portfolio-that-gets-replies-when-you-have-no-client-work-yet",
+      "title": "How to Write a Portfolio That Gets Replies When You Have No Client Work Yet",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-to-write-a-resume-that-actually-gets-shortlisted",
+      "title": "How to Write a Resume That Gets Shortlisted — Including How ATS Software Actually Filters It",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-08T17:00:00.000Z"
+    },
+    {
+      "slug": "how-two-factor-authentication-actually-stops-account-hacks",
+      "title": "How Two-Factor Authentication Actually Stops the Most Common Account Hacks — And Which Method Is Safest",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-21T10:00:00.000Z"
+    },
+    {
+      "slug": "how-upi-fraud-actually-happens-the-five-warning-signs",
+      "title": "How UPI Fraud Actually Happens: The Five Warning Signs",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "how-voice-assistants-actually-understand-what-you-are-saying",
+      "title": "How Voice Assistants Actually Understand What You Are Saying",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-09T04:00:57.595Z"
+    },
+    {
+      "slug": "how-your-bank-sends-an-otp-in-under-two-seconds",
+      "title": "How Your Bank Sends an OTP in Under Two Seconds",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-10T04:15:26.636Z"
+    },
+    {
+      "slug": "how-your-phone-fast-charging-actually-works-and-why-it-slows-down-near-80-percent",
+      "title": "How Your Phone's Fast Charging Works, and Why It Slows Down Near 80 Percent",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-07T03:55:28.960Z"
+    },
+    {
+      "slug": "how-your-phone-knows-your-location-even-with-gps-off",
+      "title": "How Your Phone Knows Your Location Even With GPS Off",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-04T03:50:43.525Z"
+    },
+    {
+      "slug": "inverter-vs-ups-for-home-power-backup-what-is-the-real-difference",
+      "title": "Inverter vs UPS for Home Power Backup — What Is the Real Difference",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "is-an-mba-actually-worth-it-in-india-the-real-math",
+      "title": "Is an MBA Worth It in India in 2026 — The Real Math",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-18T16:07:15.339Z"
+    },
+    {
+      "slug": "javascript-basics-the-concepts-every-beginner-actually-needs",
+      "title": "JavaScript Basics: The Concepts Every Beginner Actually Needs",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-27T10:00:00.000Z"
+    },
+    {
+      "slug": "notion-vs-google-docs-what-each-one-is-actually-built-for",
+      "title": "Notion vs Google Docs vs Obsidian — What Each One Is Actually Built For",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-15T03:49:08.583Z"
+    },
+    {
+      "slug": "notion-vs-google-keep-vs-obsidian-which-note-taking-app-should-you-use",
+      "title": "Notion vs Google Keep vs Obsidian: Which Note-Taking App Should You Actually Use",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-02T10:00:00.000Z"
+    },
+    {
+      "slug": "power-bank-buying-guide-what-the-mah-number-does-not-tell-you",
+      "title": "Power Bank Buying Guide: What the mAh Number Does Not Tell You",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "prepaid-vs-postpaid-mobile-plans-which-actually-costs-less-over-a-year",
+      "title": "Prepaid vs Postpaid Mobile Plans: Which Actually Costs Less Over a Year",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "remote-work-vs-hybrid-vs-office-what-actually-affects-career-growth",
+      "title": "Remote Work vs Hybrid vs Office: How Each Setup Shapes Your Career Growth",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "ro-vs-uv-water-purifier-which-one-your-water-actually-needs",
+      "title": "RO vs UV Water Purifier — Which One Your Water Actually Needs",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "sip-vs-lump-sum-how-to-actually-decide-where-to-put-your-money",
+      "title": "SIP vs Lump Sum: How to Actually Decide Where to Put Your Money",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-30T10:00:00.000Z"
+    },
+    {
+      "slug": "smartwatch-buying-guide-which-features-are-worth-paying-extra-for",
+      "title": "Smartwatch Buying Guide: Which Features Are Worth Paying Extra For",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "sql-basics-the-queries-every-beginner-should-actually-know",
+      "title": "SQL Basics: The Queries Every Beginner Should Know",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-08T20:00:00.000Z"
+    },
+    {
+      "slug": "ssd-vs-hdd-for-a-budget-laptop-where-the-money-should-actually-go",
+      "title": "SSD vs HDD for a Budget Laptop: Where the Money Should Actually Go",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "the-real-difference-between-a-fixed-deposit-and-a-recurring-deposit",
+      "title": "The Real Difference Between a Fixed Deposit and a Recurring Deposit",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "the-two-minute-rule-for-getting-through-a-long-to-do-list",
+      "title": "The Two-Minute Rule for Getting Through a Long To-Do List",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "time-blocking-the-productivity-method-that-actually-works",
+      "title": "Time Blocking: A Step-by-Step Guide to Scheduling Your Day Around Real Priorities",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-08T19:00:00.000Z"
+    },
+    {
+      "slug": "top-5-budget-smartphones-of-2026-full-buying-guide",
+      "title": "Best Budget Smartphones Under ₹15,000 in 2026 — Complete Buying Guide",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-06-28T10:09:56.499Z"
+    },
+    {
+      "slug": "top-5-free-online-courses-that-can-get-you-a-job-in-2026",
+      "title": "Top 5 Free Online Courses That Can Get You a Job in 2026",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-15T15:13:59.683Z"
+    },
+    {
+      "slug": "two-factor-authentication-explained-which-method-is-actually-safest",
+      "title": "Two-Factor Authentication Explained: Which Method Is Actually Safest",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "voice-access-how-to-control-your-android-phone-using-just-your-voice",
+      "title": "Voice Access: How to Control Your Android Phone Using Just Your Voice",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-08T18:00:00.000Z"
+    },
+    {
+      "slug": "what-a-vpn-actually-protects-you-from-and-what-it-does-not",
+      "title": "What a VPN Actually Protects You From, and What It Does Not",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "what-end-to-end-encrypted-actually-means-for-an-app-you-use-daily",
+      "title": "What End-to-End Encrypted Actually Means for an App You Use Daily",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "what-is-artificial-intelligence-simple-explanation-for-beginners",
+      "title": "What is Artificial Intelligence — Simple Explanation for Beginners",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-06-28T14:58:30.771Z"
+    },
+    {
+      "slug": "what-to-actually-negotiate-besides-salary-in-a-job-offer",
+      "title": "Beyond Salary: The Other Parts of a Job Offer Worth Negotiating",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "why-video-calls-lag-even-with-fast-internet",
+      "title": "Why Video Calls Lag Even With Fast Internet",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-08-11T04:03:11.188Z"
+    },
+    {
+      "slug": "why-you-should-not-reuse-passwords-what-happens-when-one-site-gets-breached",
+      "title": "Why You Should Not Reuse Passwords: What Happens When One Site Gets Breached",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "why-your-phone-battery-degrades-over-time-the-real-chemistry",
+      "title": "Why Your Phone Battery Degrades Over Time — The Real Chemistry, and How to Slow It Down",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-18T16:16:51.236Z"
+    },
+    {
+      "slug": "why-your-wifi-feels-slow-in-certain-rooms-router-placement",
+      "title": "Why Your Wi-Fi Feels Slow in Certain Rooms — The Real Physics Behind Router Placement (and How to Extend Its Range)",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-18T16:07:12.483Z"
+    },
+    {
+      "slug": "wired-vs-wireless-earbuds-what-you-actually-give-up-either-way",
+      "title": "Wired vs Wireless Earbuds: What You Actually Give Up Either Way",
+      "status": "UNPUBLISHED",
+      "publishedAt": null
+    },
+    {
+      "slug": "zero-based-budgeting-how-to-build-a-budget-that-actually-works",
+      "title": "Zero-Based Budgeting: A Practical Guide to Giving Every Rupee a Job",
+      "status": "UNPUBLISHED",
+      "publishedAt": "2026-07-08T16:00:00.000Z"
+    }
+  ]
+}
