@@ -1,8 +1,9 @@
 {
   "note": "Current DB state. Regenerate: node scripts/dump-articles.mjs && node _tmp_manifest.js (stamp date manually).",
+  "generatedAt": "2026-08-30",
   "counts": {
-    "UNPUBLISHED": 129,
-    "PUBLISHED": 8
+    "UNPUBLISHED": 128,
+    "PUBLISHED": 9
   },
   "published": [
     "best-time-of-year-to-buy-electronics-in-india-what-the-sales-calendar-shows",
@@ -11,6 +12,7 @@
     "google-search-console-how-to-add-your-website-and-get-free-traffic",
     "how-facial-recognition-unlock-actually-works-on-your-phone",
     "how-to-learn-python-in-30-days-complete-beginner-roadmap",
+    "how-to-read-a-loan-apr-instead-of-just-the-emi",
     "the-real-cost-of-buy-now-pay-later-what-the-fine-print-does-not-say",
     "why-just-learn-to-code-doesnt-get-freshers-hired-in-2026"
   ],
@@ -76,7 +78,6 @@
     "how-to-negotiate-your-salary-in-india-what-actually-works",
     "how-to-organize-your-email-inbox-in-under-30-minutes",
     "how-to-prepare-for-a-technical-interview-a-step-by-step-guide-for-freshers",
-    "how-to-read-a-loan-apr-instead-of-just-the-emi",
     "how-to-recognize-a-fake-loan-app-before-it-drains-your-bank-account",
     "how-to-recover-deleted-whatsapp-messages-and-photos-what-actually-works",
     "how-to-reduce-your-electricity-bill-without-changing-your-lifestyle-much",
@@ -181,6 +182,12 @@
       "title": "How to Learn Python in 30 Days — A Beginner Roadmap You Can Actually Code Along With",
       "status": "PUBLISHED",
       "publishedAt": "2026-08-29T19:17:59.398Z"
+    },
+    {
+      "slug": "how-to-read-a-loan-apr-instead-of-just-the-emi",
+      "title": "How to Read a Loan APR Instead of Just the EMI",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-30T19:43:48.470Z"
     },
     {
       "slug": "the-real-cost-of-buy-now-pay-later-what-the-fine-print-does-not-say",
@@ -559,12 +566,6 @@
       "title": "How to Prepare for a Technical Interview: A Step-by-Step Guide for Freshers",
       "status": "UNPUBLISHED",
       "publishedAt": "2026-07-08T13:00:00.000Z"
-    },
-    {
-      "slug": "how-to-read-a-loan-apr-instead-of-just-the-emi",
-      "title": "How to Read a Loan APR Instead of Just the EMI",
-      "status": "UNPUBLISHED",
-      "publishedAt": null
     },
     {
       "slug": "how-to-recognize-a-fake-loan-app-before-it-drains-your-bank-account",
