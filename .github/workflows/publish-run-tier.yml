@@ -1,0 +1,51 @@
+name: Publish Run-tier queue
+
+# Publishes the next eligible article from data/publish-run-tier-queue.json,
+# one per run, twice a day. Replaces the local Windows Scheduled Task
+# (TechPulse-Publish-RunTier) so publishing no longer depends on a laptop
+# being awake / plugged in / logged in.
+#
+# Times are UTC. 02:43 UTC = 08:13 IST, 14:43 UTC = 20:13 IST.
+# GitHub may delay scheduled runs by a few minutes under load.
+
+on:
+  schedule:
+    - cron: "43 2 * * *"
+    - cron: "43 14 * * *"
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many articles to publish this run"
+        required: false
+        default: "1"
+      dry_run:
+        description: "Dry run (evaluate the gate, publish nothing)"
+        type: boolean
+        required: false
+        default: false
+
+concurrency:
+  group: publish-run-tier
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Publish next eligible article
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          node scripts/publish-run-tier.mjs \
+            --count=${{ github.event.inputs.count || '1' }} \
+            ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
