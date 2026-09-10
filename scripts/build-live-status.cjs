@@ -13,7 +13,8 @@ const rows = posts
   .sort((a, b) => (a.status === b.status ? a.slug.localeCompare(b.slug) : a.status.localeCompare(b.status)));
 
 const out = {
-  note: 'Current DB state. Regenerate: node scripts/dump-articles.mjs && node _tmp_manifest.js (stamp date manually).',
+  note: 'Current DB state. Regenerate: node scripts/dump-articles.mjs && node scripts/build-live-status.cjs',
+  generatedAt: new Date().toISOString().slice(0, 10),
   counts,
   published: rows.filter(r => r.status === 'PUBLISHED').map(r => r.slug),
   unpublished: rows.filter(r => r.status === 'UNPUBLISHED').map(r => r.slug),

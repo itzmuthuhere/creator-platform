@@ -1,19 +1,29 @@
 {
-  "note": "Current DB state. Regenerate: node scripts/dump-articles.mjs && node _tmp_manifest.js (stamp date manually).",
-  "generatedAt": "2026-08-30",
+  "note": "Current DB state. Regenerate: node scripts/dump-articles.mjs && node scripts/build-live-status.cjs",
+  "generatedAt": "2026-09-10",
   "counts": {
-    "UNPUBLISHED": 128,
-    "PUBLISHED": 9
+    "UNPUBLISHED": 118,
+    "PUBLISHED": 19
   },
   "published": [
     "best-time-of-year-to-buy-electronics-in-india-what-the-sales-calendar-shows",
     "buying-vs-leasing-a-car-in-india-the-real-math",
     "credit-score-in-india-how-it-works-and-how-to-fix-it",
     "google-search-console-how-to-add-your-website-and-get-free-traffic",
+    "how-ad-targeting-actually-follows-you-between-apps",
+    "how-autocorrect-actually-decides-what-you-meant-to-type",
     "how-facial-recognition-unlock-actually-works-on-your-phone",
+    "how-google-maps-knows-there-is-traffic-ahead",
+    "how-streaming-quality-adjusts-automatically-to-your-internet-speed",
     "how-to-learn-python-in-30-days-complete-beginner-roadmap",
     "how-to-read-a-loan-apr-instead-of-just-the-emi",
+    "how-voice-assistants-actually-understand-what-you-are-saying",
+    "how-your-bank-sends-an-otp-in-under-two-seconds",
+    "how-your-phone-fast-charging-actually-works-and-why-it-slows-down-near-80-percent",
+    "how-your-phone-knows-your-location-even-with-gps-off",
     "the-real-cost-of-buy-now-pay-later-what-the-fine-print-does-not-say",
+    "what-a-vpn-actually-protects-you-from-and-what-it-does-not",
+    "what-end-to-end-encrypted-actually-means-for-an-app-you-use-daily",
     "why-just-learn-to-code-doesnt-get-freshers-hired-in-2026"
   ],
   "unpublished": [
@@ -31,18 +41,14 @@
     "git-and-github-for-complete-beginners-a-step-by-step-guide",
     "google-drive-vs-onedrive-vs-icloud-which-cloud-storage-to-use",
     "google-sheets-vs-excel-which-one-actually-fits-how-you-work",
-    "how-ad-targeting-actually-follows-you-between-apps",
     "how-applicant-tracking-systems-actually-filter-resumes",
-    "how-autocorrect-actually-decides-what-you-meant-to-type",
     "how-cashback-apps-actually-make-money-off-you",
     "how-database-indexes-actually-work",
-    "how-google-maps-knows-there-is-traffic-ahead",
     "how-https-actually-works-behind-the-padlock",
     "how-much-home-loan-you-can-actually-afford",
     "how-much-of-your-salary-should-actually-go-to-rent",
     "how-much-ram-you-actually-need-in-a-laptop-in-2026",
     "how-often-you-should-actually-clean-your-laptop-fans",
-    "how-streaming-quality-adjusts-automatically-to-your-internet-speed",
     "how-to-actually-cancel-a-subscription-you-forgot-you-had",
     "how-to-actually-stick-to-a-morning-routine-based-on-what-derails-most-people",
     "how-to-answer-why-are-you-leaving-your-current-job-honestly-and-well",
@@ -111,10 +117,6 @@
     "how-to-write-a-resume-that-actually-gets-shortlisted",
     "how-two-factor-authentication-actually-stops-account-hacks",
     "how-upi-fraud-actually-happens-the-five-warning-signs",
-    "how-voice-assistants-actually-understand-what-you-are-saying",
-    "how-your-bank-sends-an-otp-in-under-two-seconds",
-    "how-your-phone-fast-charging-actually-works-and-why-it-slows-down-near-80-percent",
-    "how-your-phone-knows-your-location-even-with-gps-off",
     "inverter-vs-ups-for-home-power-backup-what-is-the-real-difference",
     "is-an-mba-actually-worth-it-in-india-the-real-math",
     "javascript-basics-the-concepts-every-beginner-actually-needs",
@@ -135,8 +137,6 @@
     "top-5-free-online-courses-that-can-get-you-a-job-in-2026",
     "two-factor-authentication-explained-which-method-is-actually-safest",
     "voice-access-how-to-control-your-android-phone-using-just-your-voice",
-    "what-a-vpn-actually-protects-you-from-and-what-it-does-not",
-    "what-end-to-end-encrypted-actually-means-for-an-app-you-use-daily",
     "what-is-artificial-intelligence-simple-explanation-for-beginners",
     "what-to-actually-negotiate-besides-salary-in-a-job-offer",
     "why-video-calls-lag-even-with-fast-internet",
@@ -172,10 +172,34 @@
       "publishedAt": "2026-08-29T16:42:13.411Z"
     },
     {
+      "slug": "how-ad-targeting-actually-follows-you-between-apps",
+      "title": "How Ad Targeting Follows You Between Apps",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-12T05:15:35.563Z"
+    },
+    {
+      "slug": "how-autocorrect-actually-decides-what-you-meant-to-type",
+      "title": "How Autocorrect Actually Decides What You Meant to Type",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-05T06:08:42.180Z"
+    },
+    {
       "slug": "how-facial-recognition-unlock-actually-works-on-your-phone",
       "title": "How Facial Recognition Unlock Works on Your Phone",
       "status": "PUBLISHED",
       "publishedAt": "2026-08-03T05:07:55.041Z"
+    },
+    {
+      "slug": "how-google-maps-knows-there-is-traffic-ahead",
+      "title": "How Google Maps Knows There Is Traffic Ahead",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-08T03:51:54.889Z"
+    },
+    {
+      "slug": "how-streaming-quality-adjusts-automatically-to-your-internet-speed",
+      "title": "How Streaming Quality Adjusts Automatically to Your Internet Speed",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-06T04:20:17.790Z"
     },
     {
       "slug": "how-to-learn-python-in-30-days-complete-beginner-roadmap",
@@ -190,10 +214,46 @@
       "publishedAt": "2026-08-30T19:43:48.470Z"
     },
     {
+      "slug": "how-voice-assistants-actually-understand-what-you-are-saying",
+      "title": "How Voice Assistants Actually Understand What You Are Saying",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-09T04:00:57.595Z"
+    },
+    {
+      "slug": "how-your-bank-sends-an-otp-in-under-two-seconds",
+      "title": "How Your Bank Sends an OTP in Under Two Seconds",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-10T04:15:26.636Z"
+    },
+    {
+      "slug": "how-your-phone-fast-charging-actually-works-and-why-it-slows-down-near-80-percent",
+      "title": "How Your Phone's Fast Charging Works, and Why It Slows Down Near 80 Percent",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-07T03:55:28.960Z"
+    },
+    {
+      "slug": "how-your-phone-knows-your-location-even-with-gps-off",
+      "title": "How Your Phone Knows Your Location Even With GPS Off",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-08-04T03:50:43.525Z"
+    },
+    {
       "slug": "the-real-cost-of-buy-now-pay-later-what-the-fine-print-does-not-say",
       "title": "The Real Cost of Buy Now Pay Later — What the Fine Print Does Not Say",
       "status": "PUBLISHED",
       "publishedAt": "2026-08-20T17:41:25.183Z"
+    },
+    {
+      "slug": "what-a-vpn-actually-protects-you-from-and-what-it-does-not",
+      "title": "What a VPN Actually Protects You From, and What It Does Not",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-09-10T13:53:34.329Z"
+    },
+    {
+      "slug": "what-end-to-end-encrypted-actually-means-for-an-app-you-use-daily",
+      "title": "What End-to-End Encrypted Actually Means for an App You Use Daily",
+      "status": "PUBLISHED",
+      "publishedAt": "2026-09-10T13:23:10.998Z"
     },
     {
       "slug": "why-just-learn-to-code-doesnt-get-freshers-hired-in-2026",
@@ -286,22 +346,10 @@
       "publishedAt": "2026-08-13T04:59:03.106Z"
     },
     {
-      "slug": "how-ad-targeting-actually-follows-you-between-apps",
-      "title": "How Ad Targeting Follows You Between Apps",
-      "status": "UNPUBLISHED",
-      "publishedAt": "2026-08-12T05:15:35.563Z"
-    },
-    {
       "slug": "how-applicant-tracking-systems-actually-filter-resumes",
       "title": "What Applicant Tracking Systems Really Do With Your Resume",
       "status": "UNPUBLISHED",
       "publishedAt": null
-    },
-    {
-      "slug": "how-autocorrect-actually-decides-what-you-meant-to-type",
-      "title": "How Autocorrect Actually Decides What You Meant to Type",
-      "status": "UNPUBLISHED",
-      "publishedAt": "2026-08-05T06:08:42.180Z"
     },
     {
       "slug": "how-cashback-apps-actually-make-money-off-you",
@@ -314,12 +362,6 @@
       "title": "How Database Indexes Work — Why the Same Query Can Take 2ms or 8 Seconds",
       "status": "UNPUBLISHED",
       "publishedAt": "2026-07-18T16:07:13.711Z"
-    },
-    {
-      "slug": "how-google-maps-knows-there-is-traffic-ahead",
-      "title": "How Google Maps Knows There Is Traffic Ahead",
-      "status": "UNPUBLISHED",
-      "publishedAt": "2026-08-08T03:51:54.889Z"
     },
     {
       "slug": "how-https-actually-works-behind-the-padlock",
@@ -350,12 +392,6 @@
       "title": "How Often You Should Actually Clean Your Laptop Fans",
       "status": "UNPUBLISHED",
       "publishedAt": null
-    },
-    {
-      "slug": "how-streaming-quality-adjusts-automatically-to-your-internet-speed",
-      "title": "How Streaming Quality Adjusts Automatically to Your Internet Speed",
-      "status": "UNPUBLISHED",
-      "publishedAt": "2026-08-06T04:20:17.790Z"
     },
     {
       "slug": "how-to-actually-cancel-a-subscription-you-forgot-you-had",
@@ -766,30 +802,6 @@
       "publishedAt": null
     },
     {
-      "slug": "how-voice-assistants-actually-understand-what-you-are-saying",
-      "title": "How Voice Assistants Actually Understand What You Are Saying",
-      "status": "UNPUBLISHED",
-      "publishedAt": "2026-08-09T04:00:57.595Z"
-    },
-    {
-      "slug": "how-your-bank-sends-an-otp-in-under-two-seconds",
-      "title": "How Your Bank Sends an OTP in Under Two Seconds",
-      "status": "UNPUBLISHED",
-      "publishedAt": "2026-08-10T04:15:26.636Z"
-    },
-    {
-      "slug": "how-your-phone-fast-charging-actually-works-and-why-it-slows-down-near-80-percent",
-      "title": "How Your Phone's Fast Charging Works, and Why It Slows Down Near 80 Percent",
-      "status": "UNPUBLISHED",
-      "publishedAt": "2026-08-07T03:55:28.960Z"
-    },
-    {
-      "slug": "how-your-phone-knows-your-location-even-with-gps-off",
-      "title": "How Your Phone Knows Your Location Even With GPS Off",
-      "status": "UNPUBLISHED",
-      "publishedAt": "2026-08-04T03:50:43.525Z"
-    },
-    {
       "slug": "inverter-vs-ups-for-home-power-backup-what-is-the-real-difference",
       "title": "Inverter vs UPS for Home Power Backup — What Is the Real Difference",
       "status": "UNPUBLISHED",
@@ -908,18 +920,6 @@
       "title": "Voice Access: How to Control Your Android Phone Using Just Your Voice",
       "status": "UNPUBLISHED",
       "publishedAt": "2026-07-08T18:00:00.000Z"
-    },
-    {
-      "slug": "what-a-vpn-actually-protects-you-from-and-what-it-does-not",
-      "title": "What a VPN Actually Protects You From, and What It Does Not",
-      "status": "UNPUBLISHED",
-      "publishedAt": null
-    },
-    {
-      "slug": "what-end-to-end-encrypted-actually-means-for-an-app-you-use-daily",
-      "title": "What End-to-End Encrypted Actually Means for an App You Use Daily",
-      "status": "UNPUBLISHED",
-      "publishedAt": null
     },
     {
       "slug": "what-is-artificial-intelligence-simple-explanation-for-beginners",
