@@ -20,7 +20,7 @@ steps:
       - -c
       - |
         set -e
-        IMAGE="${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPO}/creator-platform:${SHORT_SHA}"
+        IMAGE="${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPO}/creator-platform:$BUILD_ID"
         docker build \
           --build-arg DATABASE_URL="$$DATABASE_URL" \
           -t "$$IMAGE" \

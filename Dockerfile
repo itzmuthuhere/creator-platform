@@ -44,7 +44,14 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=8080
 
 RUN groupadd --system --gid 1001 nodejs \
-    && useradd --system --uid 1001 --gid nodejs nextjs
+    && useradd --system --uid 1001 --gid nodejs nextjs \
+    && chown nextjs:nodejs /app
+# The WORKDIR itself is created root-owned before any COPY runs, and
+# `COPY --chown` only sets ownership on what it copies in — not on /app as a
+# directory node. publish-run-tier.mjs writes a scratch file directly into
+# ROOT (== /app, scripts/publish-run-tier.mjs:26) for its content-check gate,
+# which needs /app itself to be writable by the nextjs user, not just its
+# contents.
 
 # Full node_modules (post `prisma generate`, so the generated client is
 # included) rather than the trimmed standalone trace — the trace only covers
