@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.github
+.vercel
+.claude/worktrees
+.claude/scheduled_tasks.lock
+backups
+reports
+*.md
+.env
+.env.*
+!.env.example
+npm-debug.log*
+tsconfig.tsbuildinfo

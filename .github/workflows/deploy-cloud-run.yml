@@ -1,0 +1,46 @@
+name: Deploy to Cloud Run
+
+# Replaces Railway's auto-deploy-on-push. Runs cloudbuild.yaml, which builds
+# the Dockerfile image (passing a build-time DATABASE_URL — next build's
+# generateStaticParams() needs to reach Postgres, see cloudbuild.yaml's
+# comment), pushes it to Artifact Registry, deploys the Cloud Run web
+# service, and updates the publish-run-tier Cloud Run Job to the same image.
+#
+# One-time setup before this workflow can run (see runbook):
+#   - Workload Identity Federation pool + provider, and a deploy service
+#     account with roles/run.developer + roles/artifactregistry.writer +
+#     roles/cloudbuild.builds.editor + roles/secretmanager.secretAccessor +
+#     roles/iam.serviceAccountUser
+#   - Repo secrets: GCP_WORKLOAD_IDENTITY_PROVIDER, GCP_SERVICE_ACCOUNT
+#   - Repo variables: GCP_PROJECT_ID, GCP_REGION, GCP_ARTIFACT_REPO,
+#     GCP_CLOUD_RUN_SERVICE, GCP_SQL_PUBLIC_IP, GCP_DB_NAME, GCP_DB_USER
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  id-token: write # required for Workload Identity Federation
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+
+      - name: Build and deploy via Cloud Build
+        run: |
+          gcloud builds submit \
+            --project "${{ vars.GCP_PROJECT_ID }}" \
+            --config cloudbuild.yaml \
+            --substitutions "_REGION=${{ vars.GCP_REGION }},_ARTIFACT_REPO=${{ vars.GCP_ARTIFACT_REPO }},_CLOUD_RUN_SERVICE=${{ vars.GCP_CLOUD_RUN_SERVICE }},_SQL_PUBLIC_IP=${{ vars.GCP_SQL_PUBLIC_IP }},_DB_NAME=${{ vars.GCP_DB_NAME }},_DB_USER=${{ vars.GCP_DB_USER }}"
