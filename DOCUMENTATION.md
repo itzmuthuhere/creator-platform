@@ -37,7 +37,7 @@
 |------|-------|
 | Site Name | Techpulzo |
 | Live URL | https://techpulzo.in |
-| Hosting | **Railway** (project `humorous-commitment`, service `creator-platform`) — see §17 |
+| Hosting | **Google Cloud Run** (project `creator-platform-prod`, service `creator-platform`, region `asia-south1`) — see §17 |
 | GitHub | https://github.com/itzmuthuhere/creator-platform |
 | Local path | D:\creator-platform |
 | Builder | Muthu Raja (Muthuraja), 26, Java Dev at Bank of America |
@@ -65,7 +65,7 @@
 | Language | TypeScript | 5 | Type safety |
 | Styling | Tailwind CSS | v4 | Utility-first CSS |
 | Database ORM | Prisma | 7.8.0 | Type-safe DB queries |
-| Database | PostgreSQL | — | Hosted on Railway (see §17) |
+| Database | PostgreSQL | — | Hosted on Neon (see §17) |
 | Auth | NextAuth.js | 4.24.14 | Email magic link auth |
 | Image Upload | Cloudinary | 2.10.0 | Media storage and CDN |
 | Rich Editor | Tiptap | 3.27.1 | WYSIWYG post editor |
@@ -73,9 +73,9 @@
 | Charts | Recharts | 3.9.0 | Analytics charts |
 | Icons | Lucide React | 1.21.0 | Icon library |
 | QR Codes | qrcode | 1.5.4 | Per-article QR generation |
-| Email | Resend HTTP API | — | Magic link email delivery — see §9 for why (Railway blocks outbound SMTP from services) |
-| Hosting | Railway | — | Auto-deploy from GitHub — see §17 |
-| DB Host | Railway Postgres | — | Managed PostgreSQL, service `Postgres` |
+| Email | Resend HTTP API | — | Magic link email delivery — see §9 for why this was adopted (outbound SMTP was blocked on the old host) |
+| Hosting | Google Cloud Run | — | Auto-deploy via GitHub Actions + Cloud Build — see §17 |
+| DB Host | Neon | — | Managed serverless PostgreSQL, project `creator-platform`, database `creator_platform_prod` |
 
 ### Important version notes
 
@@ -88,19 +88,23 @@
 
 ## 3. Environment Variables
 
-**All variables live in Railway** → project `humorous-commitment` → service `creator-platform` →
-Variables tab (`railway variables --service creator-platform` from a linked shell also works).
+**Secrets live in GCP Secret Manager** (project `creator-platform-prod`) — `DATABASE_URL`,
+`NEXTAUTH_SECRET`, `CLOUDINARY_API_SECRET`, `RESEND_API_KEY`, `CRON_SECRET` (`gcloud secrets list`
+/ `gcloud secrets versions access latest --secret=NAME` from an authenticated shell). Everything
+else is a plain env var set directly on the Cloud Run service (`gcloud run services describe
+creator-platform --region=asia-south1 --format=yaml` shows the full set, or the Cloud Run console
+→ service → Edit & Deploy New Revision → Variables & Secrets tab).
 `vercel env ls` will show a similar-looking list on the `creator-platform` **Vercel** project —
 that project is a leftover/unused deployment target for the same GitHub repo (Vercel still
 auto-builds on push, but techpulzo.in's DNS does not point at it). Do not trust Vercel env values
-for this app; Railway is the source of truth. See §17.
+for this app. See §17.
 
-The values below are correct as of Aug 15, 2026 (verified via `railway run` / `railway variables`); secrets redacted.
+The values below are correct as of Sep 26, 2026 (post-migration to Google Cloud); secrets redacted.
 
 | Variable | Value | Purpose |
 |----------|-------|---------|
-| `DATABASE_URL` | postgresql://postgres:...@kodama.proxy.rlwy.net:23830/railway | Railway PostgreSQL connection |
-| `NEXTAUTH_URL` | https://techpulzo.in | Auth callback base URL — **do not let this drift to the raw `*.up.railway.app` hostname**, see §9 |
+| `DATABASE_URL` | postgresql://neondb_owner:...@ep-purple-poetry-aonlg5it-pooler.c-2.ap-southeast-1.aws.neon.tech/creator_platform_prod | Neon PostgreSQL connection (pooled) — used for both the runtime app and the build-time `generateStaticParams()` query, see §17 |
+| `NEXTAUTH_URL` | https://techpulzo.in | Auth callback base URL — **do not let this drift to the raw `*.run.app` Cloud Run hostname**, same class of bug that hit this app on Railway, see §9 |
 | `NEXTAUTH_URL_PRODUCTION` | https://techpulzo.in | Same as above; NextAuth reads this in production |
 | `NEXTAUTH_SECRET` | CB/PbWrTZGR... | NextAuth JWT secret |
 | `ADMIN_EMAIL` | rajamuthu107@gmail.com,nithiyaraj17081998@gmail.com | Comma-separated admin emails |
@@ -114,7 +118,7 @@ The values below are correct as of Aug 15, 2026 (verified via `railway run` / `r
 | `NEXT_PUBLIC_SITE_NAME` | Techpulzo | Site name shown in UI |
 | `NEXT_PUBLIC_ADSENSE_CLIENT_ID` | ca-pub-5709135704283433 | Google AdSense publisher ID |
 
-**No longer used (Aug 15, 2026)**: `EMAIL_SERVER_HOST`, `EMAIL_SERVER_PORT`, `EMAIL_SERVER_USER`, `EMAIL_SERVER_PASSWORD` (Gmail SMTP config) — the app no longer reads these; still present in Railway but harmless. See §9 for why they were replaced.
+**No longer used (Aug 15, 2026)**: `EMAIL_SERVER_HOST`, `EMAIL_SERVER_PORT`, `EMAIL_SERVER_USER`, `EMAIL_SERVER_PASSWORD` (Gmail SMTP config) — the app no longer reads these; not carried over to the Cloud Run env config during the Sep 2026 migration. See §9 for why they were replaced.
 
 ### Local .env file location
 `D:\creator-platform\.env`
@@ -601,8 +605,9 @@ showed empty "Advertisement"-labeled boxes stacked between short sections of
 content (5 on the homepage, 6–7 on a single article) — a strong low-value /
 ad-heavy signal to AdSense reviewers, and a likely contributor to repeated
 rejection. Leave `NEXT_PUBLIC_ADS_LIVE` unset/`false` until **both** of these
-are true, then flip it to `"true"` in Railway (project `humorous-commitment` → service
-`creator-platform` → Variables):
+are true, then flip it to `"true"` on the Cloud Run service (`gcloud run services update
+creator-platform --region=asia-south1 --update-env-vars=NEXT_PUBLIC_ADS_LIVE=true`, or via the
+Cloud Run console → service → Edit & Deploy New Revision → Variables & Secrets):
 1. AdSense account is approved
 2. Every placeholder slot ID below has been replaced with a real one
 
@@ -632,9 +637,12 @@ are true, then flip it to `"true"` in Railway (project `humorous-commitment` →
 2. Create one unit per placement
 3. Replace placeholder IDs in respective page files
 
-**Status (Aug 15, 2026)**: rejected 5× for "Low value content" as of Aug 14. Fixes applied
-this session, not yet resubmitted — waiting for Google to recrawl first (resubmitting on stale
-crawl data burns another rejection cycle for nothing). See below for what was actually wrong.
+**Status (Sep 16, 2026)**: rejected 5× for "Low value content" as of Aug 14, 2026. Root cause
+(canonical URL bug, below) and follow-up content fixes (reports 11–18) were applied through
+Aug 20. Review re-requested in the AdSense dashboard on **16 Sep 2026 11:28** — this is the
+first review to run against the site with the canonical bug actually fixed, not just another
+retry. Per Google's own estimate this can take anywhere from a few days to 2-4 weeks. See below
+for what was actually wrong.
 
 ### Root cause found Aug 14, 2026: canonical URLs pointed at the wrong domain
 
@@ -672,6 +680,14 @@ pattern exactly. Revert this once real Tamil content ships.
 and request indexing on the homepage + a few articles to speed up the recrawl, then confirm via
 GSC's URL Inspection that the "Google-selected canonical" says `techpulzo.in` before resubmitting
 for AdSense review.
+
+**While the Sep 16, 2026 review is pending**: avoid major structural changes (nav, redirects,
+bulk unpublishing) that could confuse the recrawl. If report 18's still-open items ever need
+closing before a future resubmission, they are: (1) a human read of the four merged articles for
+voice coherence — Wi-Fi, 2FA, Resume, Salary Negotiation; (2) regenerating the stale
+key-takeaways header images on those same four articles; (3) the never-explained
+unattributed-database-write pattern from reports 13–18, which needs admin/deployment-log access
+this repo's own tooling doesn't have.
 
 ---
 
@@ -793,24 +809,60 @@ Full PostEditor with:
 
 ## 17. Deployment
 
-**Platform**: Railway (project `humorous-commitment`, service `creator-platform`), confirmed via
-`railway status` on Aug 2, 2026. techpulzo.in is mapped as a custom domain directly on this
-Railway service.
+**Platform**: Google Cloud Run (project `creator-platform-prod`, service `creator-platform`,
+region `asia-south1`). techpulzo.in reaches it through a Global External HTTPS Load Balancer
+(Cloud Run's direct `domain-mappings` API isn't available in `asia-south1`) — see §18.
 
-**Correction (Aug 2, 2026)**: this doc previously said Vercel. That was wrong — a `creator-platform`
-Vercel project exists and is connected to the same GitHub repo (so it still auto-builds on every
-push), but it is **not** what serves techpulzo.in and its env vars/database are not the live ones.
-Local `.env` also points at a stale/different Postgres (Neon) left over from early development —
-don't trust local `npm run dev` data as a preview of production content. To run commands against
-the real database, use `railway run --service creator-platform -- <command>` from a Railway-linked
-shell (`railway link` once, `railway whoami` to confirm auth) instead of relying on `.env`.
+**Migration history**: this app ran on Railway (project `humorous-commitment`) from launch until
+it was migrated to Google Cloud Run + Neon on **Sep 24–26, 2026**, to cut hosting cost — Railway's
+paid plan cost more than this app needed, whereas Cloud Run's free tier plus Neon's free tier
+covers a low-traffic blog at effectively $0/month. Railway's project and subscription were deleted
+after migration verification. Historical incident write-ups elsewhere in this doc (§9, §11) that
+reference Railway describe issues from *before* the migration and are kept as-is for the
+record — they are not current architecture.
 
-**Auto-deploy**: Every push to `main` branch triggers a Railway deploy (and a wasted, unused Vercel
-build in parallel — harmless, just noise).
+**Database**: Neon (project `creator-platform`, database `creator_platform_prod`, region AWS
+`ap-southeast-1` / Singapore) — not Cloud SQL. Cloud SQL has no free tier and would run
+~$10–17/month regardless of traffic; Neon's free tier fits this app's usage. Local `.env` points
+at a separate, older Neon database (`neondb`, same Neon project) left over from early
+development — don't trust local `npm run dev` data as a preview of production content. To run
+commands against the real database, use the `creator_platform_prod` connection string from GCP
+Secret Manager (`gcloud secrets versions access latest --secret=DATABASE_URL`), not local `.env`.
 
-**Deploy time**: ~1–2 minutes
+**Build-time DB dependency**: `next build` calls `generateStaticParams()` in
+`src/app/(public)/[slug]/page.tsx`, which queries Postgres for every published slug to
+pre-render — this needs a real, reachable `DATABASE_URL` *during the build*, not just at runtime.
+`Dockerfile` takes it as a build `ARG`; `cloudbuild.yaml` supplies it from the same Secret Manager
+secret used at runtime (Neon's connection string is a public, SSL-required endpoint, so no extra
+networking is needed for the build to reach it).
 
-**Build command**: `prisma generate && next build`
+**Auto-deploy**: Every push to `main` triggers `.github/workflows/deploy-cloud-run.yml`, which
+authenticates to GCP via Workload Identity Federation (pool `github-pool`, provider
+`github-provider`, service account `gh-deployer@creator-platform-prod.iam.gserviceaccount.com` —
+no long-lived JSON key in GitHub secrets) and runs `cloudbuild.yaml`. That builds the image from
+`Dockerfile`, pushes it to Artifact Registry (`asia-south1-docker.pkg.dev/creator-platform-prod/
+creator-platform`), deploys the Cloud Run service, and updates the `publish-run-tier` Cloud Run
+Job (below) to the same image. Required GitHub repo secrets: `GCP_WORKLOAD_IDENTITY_PROVIDER`,
+`GCP_SERVICE_ACCOUNT`; variables: `GCP_PROJECT_ID`, `GCP_REGION`, `GCP_ARTIFACT_REPO`,
+`GCP_CLOUD_RUN_SERVICE`.
+
+**railway.json** in the repo root is a vestigial safety pin from the migration (it forced Railway
+to keep using Nixpacks instead of auto-detecting the new root `Dockerfile` and breaking the old
+deploy mid-migration). Harmless now that Railway is gone; safe to delete.
+
+**Publish queue cron**: the twice-daily publish-queue drain (`scripts/publish-run-tier.mjs`) that
+ran as a Railway cron service now runs as a **Cloud Run Job** (`publish-run-tier`, same image as
+the web service, entrypoint overridden to `node scripts/publish-run-tier.mjs`), triggered by
+**Cloud Scheduler** (`publish-run-tier-trigger`, schedule `43 2,14 * * *` UTC — same schedule as
+before) via a dedicated `scheduler-invoker` service account with `roles/run.invoker` on the job.
+Manually test with `gcloud run jobs execute publish-run-tier --region=asia-south1 --args=scripts/
+publish-run-tier.mjs,--dry-run --wait` (the job's default args have no `--dry-run`, so passing
+`--args` at execute time replaces them entirely — always include the script path).
+
+**Deploy time**: ~2–4 minutes (Cloud Build has no layer cache from local Docker builds, so it
+reinstalls `npm ci` from scratch each time)
+
+**Build command**: `prisma generate && next build && cp -r public .next/standalone/public && cp -r .next/static .next/standalone/.next/static` (see `package.json` `build` script; `Dockerfile` runs this inside a multi-stage build)
 
 **Git workflow**:
 ```bash
@@ -818,13 +870,22 @@ cd D:\creator-platform
 git add -A
 git commit -m "feat: description"
 git push origin main
-# Railway auto-deploys in ~1-2 minutes
+# GitHub Actions builds and deploys to Cloud Run in ~2-4 minutes
 ```
 
 **Git config** (important — must match GitHub account):
 ```
 user.name  = itzmuthuhere
 user.email = rajamuthu107107@gmail.com
+```
+
+**First-time / manual deploy** (bypassing CI, e.g. for local debugging): build and push with
+Docker directly, then `gcloud run deploy`:
+```bash
+docker build --build-arg DATABASE_URL="<neon connection string>" \
+  -t asia-south1-docker.pkg.dev/creator-platform-prod/creator-platform/creator-platform:manual .
+docker push asia-south1-docker.pkg.dev/creator-platform-prod/creator-platform/creator-platform:manual
+gcloud run deploy creator-platform --image=...:manual --region=asia-south1
 ```
 
 ---
@@ -836,12 +897,29 @@ user.email = rajamuthu107107@gmail.com
 | Domain | techpulzo.in |
 | Registrar | GoDaddy |
 | Nameservers | ns1.vercel-dns.com, ns2.vercel-dns.com (still accurate — verified `nslookup -type=NS techpulzo.in`, Aug 2, 2026) |
-| DNS records managed in | Vercel's DNS panel (via nameserver delegation) — but the record for techpulzo.in itself points at **Railway**, not the Vercel app |
-| Actual hosting/SSL | Railway (custom domain on the `creator-platform` service) — see §17 |
+| DNS records managed in | Vercel's DNS panel (via nameserver delegation) — the `A` records for `techpulzo.in` and `www.techpulzo.in` both point at the GCP Load Balancer's static IP `136.82.10.1`, not at the Vercel app |
+| Actual hosting/SSL | Google Cloud — Global External HTTPS Load Balancer in front of Cloud Run (see §17) |
 | Domain expires | Jun 28, 2027 |
 | KYC status | Verified |
 
-**www redirect**: `www.techpulzo.in` → 308 redirect → `techpulzo.in`
+**Load balancer setup** (`asia-south1` doesn't support Cloud Run's direct `domain-mappings` API,
+so this is the manual-but-standard path): Serverless NEG `creator-platform-neg` → backend service
+`creator-platform-backend` → URL map `creator-platform-lb` → target HTTPS proxy
+`creator-platform-https-proxy` (two Google-managed SSL certs attached — `creator-platform-cert`
+for the apex domain, `creator-platform-www-cert` for `www`) → global forwarding rule on the static
+IP `creator-platform-ip` (`136.82.10.1`). A parallel HTTP→HTTPS redirect uses its own URL map
+(`creator-platform-http-redirect`) and proxy on port 80. Managed certs can take 15–60 min to
+activate after DNS starts pointing at the IP — check status with `gcloud compute
+ssl-certificates describe creator-platform-cert --global --format="value(managed.status)"`.
+
+**www redirect**: `www.techpulzo.in` → same load balancer → app-level 308 redirect (in
+`next.config.ts`) → `techpulzo.in`. DNS-wise `www` is now its own `A` record at the same IP,
+not a CNAME to a hosting-platform hostname like it was on Railway.
+
+**Vestigial Railway records**: `_railway-verify` and `_railway-verify.www` TXT records, and one
+leftover Vercel-auto-managed apex `ALIAS` record (→ `cname.vercel-dns-017.com.`, sitting alongside
+the real apex `A` record), are still in the DNS zone from before the migration. Harmless — safe to
+delete whenever, just hasn't been cleaned up yet.
 
 **Resend DNS records (added Aug 15, 2026)**, alongside the existing Railway/Google verification
 TXT records, added via Vercel's DNS panel to verify `techpulzo.in` for sending email (see §9):
