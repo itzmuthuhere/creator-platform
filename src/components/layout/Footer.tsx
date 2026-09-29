@@ -29,7 +29,7 @@ export default function Footer() {
               <span className="text-lg font-bold text-gray-900 dark:text-white">{siteName}</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-              In-depth articles on technology, career, finance, and productivity. Written for curious, ambitious people.
+              Practical guides to everyday tech and personal finance in India.
             </p>
           </div>
 

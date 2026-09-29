@@ -29,7 +29,7 @@ export default async function AboutPage() {
             We write so you can decide
           </h1>
           <p className="mt-6 text-lg text-gray-500 dark:text-gray-400">
-            Techpulzo is an independent blog covering technology, career growth, personal finance, and productivity. We do the research so you can make confident decisions.
+            Techpulzo is an independent blog covering everyday technology and personal finance for readers in India. We do the research so you can make confident decisions.
           </p>
         </div>
       </section>
@@ -59,7 +59,7 @@ export default async function AboutPage() {
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Our story</h2>
           <div className="mt-4 space-y-4 text-gray-600 dark:text-gray-400">
             <p>Techpulzo was started to fill a gap: most tech content online is either too shallow or too technical. We wanted a place where smart, curious people could come to get real answers.</p>
-            <p>Every article we publish goes through a research and review process. We cover topics across technology, career, finance, and productivity — the things that actually matter in your day-to-day life.</p>
+            <p>Every article we publish goes through a research and review process. We focus on two things: the technology you use every day (phones, laptops, Wi-Fi, apps, online security) and the money decisions that come with living in India (loans, credit scores, UPI, savings).</p>
             <p>We're independently owned and supported by affiliate partnerships and advertising. When you click a link and make a purchase, we may earn a commission at no extra cost to you.</p>
           </div>
 

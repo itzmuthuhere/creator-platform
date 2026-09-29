@@ -265,9 +265,11 @@ export default async function ArticlePage({ params }: Props) {
               <AffiliateSection links={post.affiliateLinks} />
             )}
 
-            <div className="mt-8 rounded-lg border border-orange-200 bg-orange-50 p-4 text-xs text-orange-700 dark:border-orange-800 dark:bg-orange-900/20 dark:text-orange-400">
-              <strong>Affiliate Disclosure:</strong> This article contains affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you.
-            </div>
+            {post.affiliateLinks.length > 0 && (
+              <div className="mt-8 rounded-lg border border-orange-200 bg-orange-50 p-4 text-xs text-orange-700 dark:border-orange-800 dark:bg-orange-900/20 dark:text-orange-400">
+                <strong>Affiliate Disclosure:</strong> This article contains affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you.
+              </div>
+            )}
 
             {/* Reactions */}
             <ReactionButtons

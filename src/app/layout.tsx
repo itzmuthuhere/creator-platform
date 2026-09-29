@@ -17,10 +17,10 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteName} — Tech Reviews, AI Tools & Digital Content`,
+    default: `${siteName} — Practical Tech and Money Guides for India`,
     template: `%s | ${siteName}`,
   },
-  description: "In-depth reviews, tutorials, and insights on tech, AI tools, and digital productivity.",
+  description: "Practical guides to the phones, apps, gadgets and money decisions people in India deal with every day.",
   metadataBase: new URL(siteUrl),
   openGraph: {
     type: "website",

@@ -62,7 +62,7 @@ export default async function HomePage() {
   } catch (e) {}
   const heroTags = topSearches.length > 0
     ? topSearches.map((s: any) => s.query)
-    : ["Technology", "AI Tools", "Tutorials", "Finance", "Career"];
+    : ["Wi-Fi", "Passwords", "UPI", "Credit Score", "Budget Smartphones"];
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
@@ -81,7 +81,7 @@ export default async function HomePage() {
               {" "}and expertise
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-lg text-gray-500 dark:text-gray-400">
-              Read in-depth articles on technology, career growth, finance, and more — written and researched by one working developer, for curious minds.
+              Practical guides to everyday tech and personal finance in India — written and researched by one working developer, for curious minds.
             </p>
             <div className="mt-10 w-full max-w-xl">
               <SearchBar size="hero" placeholder="Search articles, topics, authors…" />
