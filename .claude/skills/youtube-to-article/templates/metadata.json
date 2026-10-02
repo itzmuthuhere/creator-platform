@@ -1,0 +1,32 @@
+{
+  "title": "",
+  "seoTitle": "",
+  "h1": "",
+  "slug": "",
+  "metaDescription": "",
+  "excerpt": "",
+  "primaryKeyword": "",
+  "secondaryKeywords": [],
+  "searchIntent": "",
+  "targetAudience": "",
+  "category": "",
+  "tags": [],
+  "sourceVideo": "",
+  "sourceVideoTitle": "",
+  "sourceChannel": "",
+  "author": "",
+  "status": "RESEARCHING",
+  "createdAt": "",
+  "updatedAt": "",
+  "wordCount": 0,
+  "readingTimeMinutes": 0,
+  "screenshots": [],
+  "internalLinks": [],
+  "faq": [],
+  "audit": {
+    "lastRunAt": null,
+    "result": null,
+    "fails": 0,
+    "warnings": 0
+  }
+}
