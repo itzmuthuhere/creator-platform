@@ -1,0 +1,110 @@
+{
+ "python": "3.12.3",
+ "results": {
+  "P1": {
+   "code": "name = input(\"What's your name? \")\nage = int(input(\"How old are you? \"))\nprint(f\"Hi {name}! In 5 years you'll be {age + 5}.\")",
+   "stdin": "Muthu\n29\n",
+   "stdout": "What's your name? How old are you? Hi Muthu! In 5 years you'll be 34.\n",
+   "stderr": "",
+   "rc": 0
+  },
+  "P2": {
+   "code": "bill = 1840          # food total in rupees\ngst_rate = 0.05      # restaurant GST\npeople = 4\n\ntotal = bill + bill * gst_rate\nshare = total / people\nprint(f\"Total with GST: Rs {total:.2f}\")\nprint(f\"Each person pays: Rs {share:.2f}\")",
+   "stdin": "",
+   "stdout": "Total with GST: Rs 1932.00\nEach person pays: Rs 483.00\n",
+   "stderr": "",
+   "rc": 0
+  },
+  "P3": {
+   "code": "principal = 500000      # loan amount\nannual_rate = 10.5      # percent per year\nyears = 5\n\nr = annual_rate / 12 / 100\nn = years * 12\nemi = principal * r * (1 + r) ** n / ((1 + r) ** n - 1)\nprint(f\"EMI: Rs {emi:,.0f} per month\")\nprint(f\"Total paid: Rs {emi * n:,.0f}\")\nprint(f\"Interest: Rs {emi * n - principal:,.0f}\")",
+   "stdin": "",
+   "stdout": "EMI: Rs 10,747 per month\nTotal paid: Rs 644,817\nInterest: Rs 144,817\n",
+   "stderr": "",
+   "rc": 0
+  },
+  "P4": {
+   "code": "amount = 100000\nrate = 7.0\nyears = 3\n\nsimple = amount * rate * years / 100\ncompound = amount * (1 + rate / 400) ** (4 * years) - amount   # quarterly, like most bank FDs\nprint(f\"Simple interest:   Rs {simple:,.0f}\")\nprint(f\"Compound interest: Rs {compound:,.0f}\")\nprint(f\"Difference:        Rs {compound - simple:,.0f}\")",
+   "stdin": "",
+   "stdout": "Simple interest:   Rs 21,000\nCompound interest: Rs 23,144\nDifference:        Rs 2,144\n",
+   "stderr": "",
+   "rc": 0
+  },
+  "P5": {
+   "code": "for year in [1900, 2000, 2024, 2025]:\n    if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):\n        print(year, \"is a leap year\")\n    else:\n        print(year, \"is not a leap year\")",
+   "stdin": "",
+   "stdout": "1900 is not a leap year\n2000 is a leap year\n2024 is a leap year\n2025 is not a leap year\n",
+   "stderr": "",
+   "rc": 0
+  },
+  "P6": {
+   "code": "n = 7\nfor i in range(1, 11):\n    print(f\"{n} x {i:2} = {n * i}\")",
+   "stdin": "",
+   "stdout": "7 x  1 = 7\n7 x  2 = 14\n7 x  3 = 21\n7 x  4 = 28\n7 x  5 = 35\n7 x  6 = 42\n7 x  7 = 49\n7 x  8 = 56\n7 x  9 = 63\n7 x 10 = 70\n",
+   "stderr": "",
+   "rc": 0
+  },
+  "P7": {
+   "code": "import random\nrandom.seed(42)          # fixed seed so the output is repeatable\nsecret = random.randint(1, 20)\n\nfor guess in [10, 15, 3, secret]:\n    if guess < secret:\n        print(guess, \"-> too low\")\n    elif guess > secret:\n        print(guess, \"-> too high\")\n    else:\n        print(guess, \"-> correct!\")",
+   "stdin": "",
+   "stdout": "10 -> too high\n15 -> too high\n3 -> too low\n4 -> correct!\n",
+   "stderr": "",
+   "rc": 0
+  },
+  "P8": {
+   "code": "text = \"the quick brown fox jumps over the lazy dog the fox\"\ncounts = {}\nfor word in text.split():\n    counts[word] = counts.get(word, 0) + 1\n\nfor word, c in sorted(counts.items(), key=lambda x: -x[1])[:3]:\n    print(word, c)",
+   "stdin": "",
+   "stdout": "the 3\nfox 2\nquick 1\n",
+   "stderr": "",
+   "rc": 0
+  },
+  "P9": {
+   "code": "expenses = [\n    {\"item\": \"Groceries\", \"cat\": \"Food\", \"amt\": 2450},\n    {\"item\": \"Swiggy\", \"cat\": \"Food\", \"amt\": 680},\n    {\"item\": \"Metro card\", \"cat\": \"Travel\", \"amt\": 500},\n    {\"item\": \"Electricity\", \"cat\": \"Bills\", \"amt\": 1320},\n    {\"item\": \"Petrol\", \"cat\": \"Travel\", \"amt\": 1500},\n]\ntotals = {}\nfor e in expenses:\n    totals[e[\"cat\"]] = totals.get(e[\"cat\"], 0) + e[\"amt\"]\n\nfor cat, amt in totals.items():\n    print(f\"{cat:<7} Rs {amt:>5}\")\nprint(f\"{'Total':<7} Rs {sum(totals.values()):>5}\")",
+   "stdin": "",
+   "stdout": "Food    Rs  3130\nTravel  Rs  2000\nBills   Rs  1320\nTotal   Rs  6450\n",
+   "stderr": "",
+   "rc": 0
+  },
+  "P10": {
+   "code": "import csv\n\nrows = [[\"date\", \"item\", \"amount\"], [\"2026-09-01\", \"Rent\", 12000], [\"2026-09-03\", \"Internet\", 799]]\nwith open(\"expenses.csv\", \"w\", newline=\"\") as f:\n    csv.writer(f).writerows(rows)\n\nwith open(\"expenses.csv\") as f:\n    reader = csv.DictReader(f)\n    total = 0\n    for row in reader:\n        print(row[\"date\"], row[\"item\"], row[\"amount\"])\n        total += int(row[\"amount\"])\nprint(\"Total:\", total)",
+   "stdin": "",
+   "stdout": "2026-09-01 Rent 12000\n2026-09-03 Internet 799\nTotal: 12799\n",
+   "stderr": "",
+   "rc": 0
+  },
+  "E_type": {
+   "code": "age = input(\"Age: \")\nprint(age + 5)",
+   "stdin": "29\n",
+   "stdout": "Age: ",
+   "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\MUTHUR~1\\AppData\\Local\\Temp\\tmp4fxu3y0a\\main.py\", line 2, in <module>\n    print(age + 5)\n          ~~~~^~~\nTypeError: can only concatenate str (not \"int\") to str\n",
+   "rc": 1
+  },
+  "E_indent": {
+   "code": "for i in range(3):\nprint(i)",
+   "stdin": "",
+   "stdout": "",
+   "stderr": "  File \"C:\\Users\\MUTHUR~1\\AppData\\Local\\Temp\\tmp4fxu3y0a\\main.py\", line 2\n    print(i)\n    ^\nIndentationError: expected an indented block after 'for' statement on line 1\n",
+   "rc": 1
+  },
+  "E_name": {
+   "code": "total = 100\nprint(totl)",
+   "stdin": "",
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\MUTHUR~1\\AppData\\Local\\Temp\\tmp4fxu3y0a\\main.py\", line 2, in <module>\n    print(totl)\n          ^^^^\nNameError: name 'totl' is not defined. Did you mean: 'total'?\n",
+   "rc": 1
+  },
+  "E_zero": {
+   "code": "people = 0\nprint(1840 / people)",
+   "stdin": "",
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\MUTHUR~1\\AppData\\Local\\Temp\\tmp4fxu3y0a\\main.py\", line 2, in <module>\n    print(1840 / people)\n          ~~~~~^~~~~~~~\nZeroDivisionError: division by zero\n",
+   "rc": 1
+  },
+  "E_file": {
+   "code": "open(\"expense.csv\")",
+   "stdin": "",
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\MUTHUR~1\\AppData\\Local\\Temp\\tmp4fxu3y0a\\main.py\", line 1, in <module>\n    open(\"expense.csv\")\nFileNotFoundError: [Errno 2] No such file or directory: 'expense.csv'\n",
+   "rc": 1
+  }
+ }
+}

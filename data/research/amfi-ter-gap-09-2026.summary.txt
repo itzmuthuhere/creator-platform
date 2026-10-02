@@ -1,0 +1,584 @@
+{
+  "source": "https://www.amfiindia.com/api/populate-te-rdata-revised?Month=09-2026 (AMFI 'TER of MF Schemes', amfiindia.com/ter-of-mf-schemes)",
+  "fetchedAt": "2026-10-02T07:56:35.722Z",
+  "rowsFetched": 60967,
+  "schemesWithBothPlans": 1992,
+  "overall": {
+    "n": 1992,
+    "medianGap": 0.65,
+    "medianRegularTER": 1.21,
+    "medianDirectTER": 0.54,
+    "minGap": 0,
+    "maxGap": 9.42
+  },
+  "categories": {
+    "Other Scheme - Index Funds": {
+      "n": 284,
+      "medianGap": 0.47,
+      "medianRegularTER": 0.9,
+      "medianDirectTER": 0.35,
+      "minGap": 0.08,
+      "maxGap": 0.92
+    },
+    "Equity Scheme - Sectoral/ Thematic": {
+      "n": 174,
+      "medianGap": 1.195,
+      "medianRegularTER": 2.37,
+      "medianDirectTER": 1.21,
+      "minGap": 0.1,
+      "maxGap": 1.76
+    },
+    "Other Scheme - Other  ETFs": {
+      "n": 147,
+      "medianGap": 0.3,
+      "medianRegularTER": 0.3,
+      "medianDirectTER": 0,
+      "minGap": 0.0304,
+      "maxGap": 1.15
+    },
+    "Other Scheme - FoF Domestic": {
+      "n": 91,
+      "medianGap": 0.38,
+      "medianRegularTER": 0.58,
+      "medianDirectTER": 0.192,
+      "minGap": 0,
+      "maxGap": 1.32
+    },
+    "Exchange Traded Funds (ETFs) - Equity ETF": {
+      "n": 74,
+      "medianGap": 0.42,
+      "medianRegularTER": 0.42,
+      "medianDirectTER": 0,
+      "minGap": 0.04,
+      "maxGap": 9.42
+    },
+    "Index Funds - Equity Funds": {
+      "n": 70,
+      "medianGap": 0.58,
+      "medianRegularTER": 1.115,
+      "medianDirectTER": 0.48,
+      "minGap": 0.08,
+      "maxGap": 0.95
+    },
+    "Fund of Funds Scheme (Domestic) - Fund of Funds Scheme (Domestic)": {
+      "n": 63,
+      "medianGap": 0.44,
+      "medianRegularTER": 0.62,
+      "medianDirectTER": 0.14,
+      "minGap": 0.06,
+      "maxGap": 1.22
+    },
+    "Equity Schemes - Thematic Fund": {
+      "n": 61,
+      "medianGap": 1.31,
+      "medianRegularTER": 2.42,
+      "medianDirectTER": 1.09,
+      "minGap": 0.12,
+      "maxGap": 1.89
+    },
+    "Other Scheme - FoF Overseas": {
+      "n": 33,
+      "medianGap": 0.69,
+      "medianRegularTER": 1.39,
+      "medianDirectTER": 0.59,
+      "minGap": 0,
+      "maxGap": 1.05
+    },
+    "Equity Scheme - Flexi Cap Fund": {
+      "n": 30,
+      "medianGap": 1.205,
+      "medianRegularTER": 2.21,
+      "medianDirectTER": 1.015,
+      "minGap": 0.05,
+      "maxGap": 2.06
+    },
+    "Income/Debt Oriented Schemes - Ultra Short to Short Term Fund": {
+      "n": 25,
+      "medianGap": 0.48,
+      "medianRegularTER": 0.87,
+      "medianDirectTER": 0.35,
+      "minGap": 0.11,
+      "maxGap": 0.78
+    },
+    "Equity Scheme - Small Cap Fund": {
+      "n": 24,
+      "medianGap": 1.145,
+      "medianRegularTER": 2.01,
+      "medianDirectTER": 0.895,
+      "minGap": 0.71,
+      "maxGap": 1.93
+    },
+    "Hybrid Scheme - Arbitrage Fund": {
+      "n": 24,
+      "medianGap": 0.685,
+      "medianRegularTER": 2.04,
+      "medianDirectTER": 1.34,
+      "minGap": 0.4,
+      "maxGap": 0.99
+    },
+    "Equity Scheme - Large Cap Fund": {
+      "n": 24,
+      "medianGap": 1.03,
+      "medianRegularTER": 2.14,
+      "medianDirectTER": 1.05,
+      "minGap": 0.22,
+      "maxGap": 1.68
+    },
+    "Debt Scheme - Liquid Fund": {
+      "n": 24,
+      "medianGap": 0.105,
+      "medianRegularTER": 0.265,
+      "medianDirectTER": 0.135,
+      "minGap": 0.06,
+      "maxGap": 0.28
+    },
+    "Income/Debt Oriented Schemes - Ultra Short Term Fund": {
+      "n": 23,
+      "medianGap": 0.52,
+      "medianRegularTER": 0.82,
+      "medianDirectTER": 0.3,
+      "minGap": 0.15,
+      "maxGap": 1.16
+    },
+    "Equity Scheme - Large & Mid Cap Fund": {
+      "n": 22,
+      "medianGap": 1.175,
+      "medianRegularTER": 2.335,
+      "medianDirectTER": 1.2,
+      "minGap": 0.67,
+      "maxGap": 2.02
+    },
+    "Hybrid Scheme - Dynamic Asset Allocation or Balanced Advantage": {
+      "n": 22,
+      "medianGap": 1.2,
+      "medianRegularTER": 2.24,
+      "medianDirectTER": 1.04,
+      "minGap": 0.35,
+      "maxGap": 2.02
+    },
+    "Debt Scheme - Overnight Fund": {
+      "n": 22,
+      "medianGap": 0.07,
+      "medianRegularTER": 0.175,
+      "medianDirectTER": 0.1,
+      "minGap": 0.02,
+      "maxGap": 0.12
+    },
+    "Solution Oriented Scheme - Retirement Fund": {
+      "n": 22,
+      "medianGap": 1.17,
+      "medianRegularTER": 2.175,
+      "medianDirectTER": 1.14,
+      "minGap": 0.47,
+      "maxGap": 1.59
+    },
+    "Index Funds - Debt Funds": {
+      "n": 22,
+      "medianGap": 0.2,
+      "medianRegularTER": 0.395,
+      "medianDirectTER": 0.165,
+      "minGap": 0.11,
+      "maxGap": 0.36
+    },
+    "Income/Debt Oriented Schemes - Short Term Fund": {
+      "n": 22,
+      "medianGap": 0.625,
+      "medianRegularTER": 1,
+      "medianDirectTER": 0.377,
+      "minGap": 0.32,
+      "maxGap": 0.91
+    },
+    "Income/Debt Oriented Schemes - Dynamic Term Fund": {
+      "n": 21,
+      "medianGap": 0.72,
+      "medianRegularTER": 1.32,
+      "medianDirectTER": 0.54,
+      "minGap": 0.25,
+      "maxGap": 1.19
+    },
+    "Equity Schemes - ELSS- Tax Saver Fund": {
+      "n": 21,
+      "medianGap": 1.15,
+      "medianRegularTER": 2.29,
+      "medianDirectTER": 1.1,
+      "minGap": 0.56,
+      "maxGap": 1.76
+    },
+    "Equity Scheme - Mid Cap Fund": {
+      "n": 20,
+      "medianGap": 0.93,
+      "medianRegularTER": 1.945,
+      "medianDirectTER": 0.975,
+      "minGap": 0.44,
+      "maxGap": 1.63
+    },
+    "Equity Schemes - Sectoral Fund": {
+      "n": 20,
+      "medianGap": 1.49,
+      "medianRegularTER": 2.5,
+      "medianDirectTER": 1.08,
+      "minGap": 0.83,
+      "maxGap": 1.88
+    },
+    "Income/Debt Oriented Schemes - Liquid Fund": {
+      "n": 19,
+      "medianGap": 0.1,
+      "medianRegularTER": 0.24,
+      "medianDirectTER": 0.13,
+      "minGap": 0.07,
+      "maxGap": 0.18
+    },
+    "Hybrid Scheme - Multi Asset Allocation": {
+      "n": 19,
+      "medianGap": 1.3,
+      "medianRegularTER": 2.09,
+      "medianDirectTER": 0.79,
+      "minGap": 0.34,
+      "maxGap": 1.71
+    },
+    "Overseas Fund of Funds - Fund of Funds investing overseas": {
+      "n": 19,
+      "medianGap": 0.56,
+      "medianRegularTER": 1.354,
+      "medianDirectTER": 0.57,
+      "minGap": 0.06,
+      "maxGap": 1.06
+    },
+    "Hybrid Schemes - Multi Asset Allocation Fund": {
+      "n": 18,
+      "medianGap": 1.36,
+      "medianRegularTER": 2.155,
+      "medianDirectTER": 0.875,
+      "minGap": 0.58,
+      "maxGap": 1.86
+    },
+    "Equity Scheme - ELSS": {
+      "n": 18,
+      "medianGap": 0.965,
+      "medianRegularTER": 2.155,
+      "medianDirectTER": 1.125,
+      "minGap": 0.53,
+      "maxGap": 1.67
+    },
+    "Equity Scheme - Focused Fund": {
+      "n": 18,
+      "medianGap": 1.055,
+      "medianRegularTER": 2.26,
+      "medianDirectTER": 1.08,
+      "minGap": 0.66,
+      "maxGap": 1.77
+    },
+    "Equity Scheme - Multi Cap Fund": {
+      "n": 18,
+      "medianGap": 1.315,
+      "medianRegularTER": 2.285,
+      "medianDirectTER": 1.015,
+      "minGap": 0.78,
+      "maxGap": 1.71
+    },
+    "Income/Debt Oriented Schemes - Overnight Fund": {
+      "n": 17,
+      "medianGap": 0.07,
+      "medianRegularTER": 0.2,
+      "medianDirectTER": 0.11,
+      "minGap": 0.03,
+      "maxGap": 0.2
+    },
+    "Hybrid Schemes - Aggressive Hybrid Fund": {
+      "n": 17,
+      "medianGap": 1.11,
+      "medianRegularTER": 2.19,
+      "medianDirectTER": 0.95,
+      "minGap": 0.54,
+      "maxGap": 1.81
+    },
+    "Equity Schemes - Flexi Cap Fund": {
+      "n": 16,
+      "medianGap": 1.225,
+      "medianRegularTER": 2.11,
+      "medianDirectTER": 0.865,
+      "minGap": 0.79,
+      "maxGap": 1.86
+    },
+    "Income/Debt Oriented Schemes - Banking and PSU Debt Fund": {
+      "n": 16,
+      "medianGap": 0.335,
+      "medianRegularTER": 0.69,
+      "medianDirectTER": 0.365,
+      "minGap": 0.15,
+      "maxGap": 0.54
+    },
+    "Hybrid Scheme - Equity Savings": {
+      "n": 16,
+      "medianGap": 0.895,
+      "medianRegularTER": 2.075,
+      "medianDirectTER": 1.135,
+      "minGap": 0.47,
+      "maxGap": 1.72
+    },
+    "Hybrid Schemes - Arbitrage Fund": {
+      "n": 16,
+      "medianGap": 0.67,
+      "medianRegularTER": 2.16,
+      "medianDirectTER": 1.555,
+      "minGap": 0.52,
+      "maxGap": 1.6
+    },
+    "Equity Scheme - Value Fund": {
+      "n": 15,
+      "medianGap": 1.03,
+      "medianRegularTER": 2.24,
+      "medianDirectTER": 1.2,
+      "minGap": 0.47,
+      "maxGap": 1.69
+    },
+    "Hybrid Schemes - Balanced Advantage Fund/ Dynamic Asset Allocation": {
+      "n": 15,
+      "medianGap": 1.32,
+      "medianRegularTER": 2.4,
+      "medianDirectTER": 1.05,
+      "minGap": 1.08,
+      "maxGap": 1.67
+    },
+    "Equity Schemes - Multi Cap Fund": {
+      "n": 15,
+      "medianGap": 1.24,
+      "medianRegularTER": 2.09,
+      "medianDirectTER": 0.89,
+      "minGap": 0.74,
+      "maxGap": 2
+    },
+    "Equity Schemes - Large & Mid Cap Fund": {
+      "n": 14,
+      "medianGap": 1.22,
+      "medianRegularTER": 2.28,
+      "medianDirectTER": 0.9,
+      "minGap": 0.7,
+      "maxGap": 1.72
+    },
+    "Equity Schemes - Mid Cap Fund": {
+      "n": 14,
+      "medianGap": 1.26,
+      "medianRegularTER": 2.17,
+      "medianDirectTER": 0.96,
+      "minGap": 0.74,
+      "maxGap": 2
+    },
+    "Debt Scheme - Money Market Fund": {
+      "n": 14,
+      "medianGap": 0.22,
+      "medianRegularTER": 0.395,
+      "medianDirectTER": 0.17,
+      "minGap": 0.07,
+      "maxGap": 0.64
+    },
+    "Income/Debt Oriented Schemes - Medium to Long Term Fund": {
+      "n": 13,
+      "medianGap": 0.56,
+      "medianRegularTER": 1.36,
+      "medianDirectTER": 0.69,
+      "minGap": 0.32,
+      "maxGap": 1.12
+    },
+    "Income/Debt Oriented Schemes - Money Market Fund": {
+      "n": 13,
+      "medianGap": 0.23,
+      "medianRegularTER": 0.4,
+      "medianDirectTER": 0.161,
+      "minGap": 0.15,
+      "maxGap": 0.65
+    },
+    "Hybrid Scheme - Aggressive Hybrid Fund": {
+      "n": 13,
+      "medianGap": 1.22,
+      "medianRegularTER": 2.24,
+      "medianDirectTER": 1.11,
+      "minGap": 0.57,
+      "maxGap": 1.89
+    },
+    "Debt Scheme - Corporate Bond Fund": {
+      "n": 12,
+      "medianGap": 0.32,
+      "medianRegularTER": 0.655,
+      "medianDirectTER": 0.365,
+      "minGap": 0.18,
+      "maxGap": 0.59
+    },
+    "Income/Debt Oriented Schemes - Floating Interest Rates Fund": {
+      "n": 12,
+      "medianGap": 0.345,
+      "medianRegularTER": 0.636,
+      "medianDirectTER": 0.28,
+      "minGap": 0.14,
+      "maxGap": 0.62
+    },
+    "Income/Debt Oriented Schemes - Gilt Fund": {
+      "n": 12,
+      "medianGap": 0.645,
+      "medianRegularTER": 1.185,
+      "medianDirectTER": 0.485,
+      "minGap": 0.27,
+      "maxGap": 1.11
+    },
+    "Income/Debt Oriented Schemes - Medium Term Fund": {
+      "n": 12,
+      "medianGap": 0.62,
+      "medianRegularTER": 1.31,
+      "medianDirectTER": 0.705,
+      "minGap": 0.33,
+      "maxGap": 0.82
+    },
+    "Equity Schemes - Small Cap Fund": {
+      "n": 12,
+      "medianGap": 1.245,
+      "medianRegularTER": 2.11,
+      "medianDirectTER": 0.91,
+      "minGap": 0.92,
+      "maxGap": 1.64
+    },
+    "Solution Oriented Scheme - Children’s Fund": {
+      "n": 11,
+      "medianGap": 0.78,
+      "medianRegularTER": 2.28,
+      "medianDirectTER": 1.38,
+      "minGap": 0.11,
+      "maxGap": 1.36
+    },
+    "Hybrid Schemes - Conservative Hybrid Fund": {
+      "n": 11,
+      "medianGap": 1,
+      "medianRegularTER": 1.86,
+      "medianDirectTER": 1.04,
+      "minGap": 0.52,
+      "maxGap": 1.53
+    },
+    "Income/Debt Oriented Schemes - Long Term Fund": {
+      "n": 11,
+      "medianGap": 0.45,
+      "medianRegularTER": 0.78,
+      "medianDirectTER": 0.32,
+      "minGap": 0.28,
+      "maxGap": 1.18
+    },
+    "Equity Schemes - Large Cap Fund": {
+      "n": 11,
+      "medianGap": 1.13,
+      "medianRegularTER": 2.33,
+      "medianDirectTER": 1.08,
+      "minGap": 0.55,
+      "maxGap": 1.57
+    },
+    "Debt Scheme - Gilt Fund": {
+      "n": 11,
+      "medianGap": 0.62,
+      "medianRegularTER": 1.18,
+      "medianDirectTER": 0.52,
+      "minGap": 0.4,
+      "maxGap": 1.18
+    },
+    "Equity Schemes - Focused Fund": {
+      "n": 10,
+      "medianGap": 1.18,
+      "medianRegularTER": 2.175,
+      "medianDirectTER": 1.065,
+      "minGap": 0.86,
+      "maxGap": 1.6
+    },
+    "Equity Scheme - Dividend Yield Fund": {
+      "n": 9,
+      "medianGap": 1.15,
+      "medianRegularTER": 2.41,
+      "medianDirectTER": 1.12,
+      "minGap": 0.8,
+      "maxGap": 1.53
+    },
+    "Income/Debt Oriented Schemes - Corporate Bond Fund": {
+      "n": 9,
+      "medianGap": 0.4,
+      "medianRegularTER": 0.69,
+      "medianDirectTER": 0.32,
+      "minGap": 0.27,
+      "maxGap": 0.63
+    },
+    "Equity Schemes - Value Fund": {
+      "n": 9,
+      "medianGap": 1.34,
+      "medianRegularTER": 2.47,
+      "medianDirectTER": 1.33,
+      "minGap": 0.52,
+      "maxGap": 1.79
+    },
+    "Debt Scheme - Credit Risk Fund": {
+      "n": 8,
+      "medianGap": 0.775,
+      "medianRegularTER": 1.485,
+      "medianDirectTER": 0.73,
+      "minGap": 0.63,
+      "maxGap": 1.01
+    },
+    "Hybrid Schemes - Equity Savings Fund": {
+      "n": 8,
+      "medianGap": 1.13,
+      "medianRegularTER": 2.75,
+      "medianDirectTER": 1.49,
+      "minGap": 0.99,
+      "maxGap": 1.55
+    },
+    "Other Scheme - Gold ETF": {
+      "n": 8,
+      "medianGap": 0.51,
+      "medianRegularTER": 0.51,
+      "medianDirectTER": 0,
+      "minGap": 0.45,
+      "maxGap": 0.65
+    },
+    "Solution Oriented Schemes ** - Retirement Fund": {
+      "n": 7,
+      "medianGap": 1.02,
+      "medianRegularTER": 2.33,
+      "medianDirectTER": 1.27,
+      "minGap": 0.89,
+      "maxGap": 1.39
+    },
+    "Hybrid Scheme - Conservative Hybrid Fund": {
+      "n": 7,
+      "medianGap": 0.57,
+      "medianRegularTER": 1.79,
+      "medianDirectTER": 0.98,
+      "minGap": 0.35,
+      "maxGap": 1.08
+    },
+    "Exchange Traded Funds (ETFs) - Debt ETF": {
+      "n": 7,
+      "medianGap": 0.23,
+      "medianRegularTER": 0.23,
+      "medianDirectTER": 0,
+      "minGap": 0.11,
+      "maxGap": 0.52
+    },
+    "Exchange Traded Funds (ETFs) - Gold ETF": {
+      "n": 6,
+      "medianGap": 0.51,
+      "medianRegularTER": 0.51,
+      "medianDirectTER": 0,
+      "minGap": 0.35,
+      "maxGap": 0.59
+    },
+    "Income/Debt Oriented Schemes - Credit Risk Fund": {
+      "n": 5,
+      "medianGap": 0.79,
+      "medianRegularTER": 1.51,
+      "medianDirectTER": 0.82,
+      "minGap": 0.5,
+      "maxGap": 1.18
+    },
+    "Income/Debt Oriented Schemes - 10-year Constant Maturity Gilt Fund": {
+      "n": 5,
+      "medianGap": 0.22,
+      "medianRegularTER": 0.51,
+      "medianDirectTER": 0.31,
+      "minGap": 0.16,
+      "maxGap": 0.44
+    }
+  }
+}

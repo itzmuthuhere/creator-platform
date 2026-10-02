@@ -1,0 +1,642 @@
+{
+ "testedAt": "2026-09-29T17:34:31.437Z",
+ "profile": "Lighthouse default mobile",
+ "sites": {
+  "SBI": {
+   "url": "https://sbi.bank.in/",
+   "runs": [
+    {
+     "score": 9,
+     "finalUrl": "https://sbi.bank.in/",
+     "fcp": 6843.0705,
+     "lcp": 20905.876999999993,
+     "tbt": 1801.4999999999945,
+     "cls": 0.5573516673760255,
+     "si": 6843.0705,
+     "bytes": 20342718,
+     "requests": 189,
+     "thirdPartyBytes": 326422
+    },
+    {
+     "score": 9,
+     "finalUrl": "https://sbi.bank.in/",
+     "fcp": 6856.073,
+     "lcp": 22542.856750000006,
+     "tbt": 1941.5,
+     "cls": 0.5351673483816795,
+     "si": 6856.073,
+     "bytes": 20342294,
+     "requests": 189,
+     "thirdPartyBytes": 326422
+    },
+    {
+     "score": 23,
+     "finalUrl": "https://sbi.bank.in/",
+     "fcp": 7048.0869999999995,
+     "lcp": 21158.655,
+     "tbt": 1714,
+     "cls": 0.1878750987047395,
+     "si": 7048.0869999999995,
+     "bytes": 20343543,
+     "requests": 189,
+     "thirdPartyBytes": 326416
+    }
+   ],
+   "median": {
+    "score": 9,
+    "finalUrl": "https://sbi.bank.in/",
+    "fcp": 6856.073,
+    "lcp": 22542.856750000006,
+    "tbt": 1941.5,
+    "cls": 0.5351673483816795,
+    "si": 6856.073,
+    "bytes": 20342294,
+    "requests": 189,
+    "thirdPartyBytes": 326422
+   }
+  },
+  "HDFC Bank": {
+   "url": "https://www.hdfc.bank.in/",
+   "runs": [
+    {
+     "score": 45,
+     "finalUrl": "https://www.hdfc.bank.in/",
+     "fcp": 2391.7209999999995,
+     "lcp": 5508.0355,
+     "tbt": 900.5,
+     "cls": 0.19489474070960658,
+     "si": 3940.2144338723992,
+     "bytes": 2528918,
+     "requests": 160,
+     "thirdPartyBytes": 1938802
+    },
+    {
+     "score": 45,
+     "finalUrl": "https://www.hdfc.bank.in/",
+     "fcp": 2411.273,
+     "lcp": 5561.4995,
+     "tbt": 801.4999999999982,
+     "cls": 0.20207031314334392,
+     "si": 4150.577663975724,
+     "bytes": 2527355,
+     "requests": 160,
+     "thirdPartyBytes": 1937245
+    },
+    {
+     "score": 36,
+     "finalUrl": "https://www.hdfc.bank.in/",
+     "fcp": 2383.261,
+     "lcp": 5306.246000000001,
+     "tbt": 861.6555000000008,
+     "cls": 0.4214171664894978,
+     "si": 3999.5096278159685,
+     "bytes": 2527993,
+     "requests": 160,
+     "thirdPartyBytes": 1937884
+    }
+   ],
+   "median": {
+    "score": 45,
+    "finalUrl": "https://www.hdfc.bank.in/",
+    "fcp": 2391.7209999999995,
+    "lcp": 5508.0355,
+    "tbt": 900.5,
+    "cls": 0.19489474070960658,
+    "si": 3940.2144338723992,
+    "bytes": 2528918,
+    "requests": 160,
+    "thirdPartyBytes": 1938802
+   }
+  },
+  "ICICI Bank": {
+   "url": "https://www.icici.bank.in/",
+   "runs": [
+    {
+     "score": 68,
+     "finalUrl": "https://www.icici.bank.in/",
+     "fcp": 2460.583,
+     "lcp": 7092.259,
+     "tbt": 153.5,
+     "cls": 0.0006023660584442716,
+     "si": 4693.217769027763,
+     "bytes": 1038754,
+     "requests": 112,
+     "thirdPartyBytes": 350050
+    },
+    {
+     "score": 68,
+     "finalUrl": "https://www.icici.bank.in/",
+     "fcp": 2477.535,
+     "lcp": 7169.795,
+     "tbt": 171,
+     "cls": 0.018326999889715007,
+     "si": 4657.183289940462,
+     "bytes": 1052456,
+     "requests": 113,
+     "thirdPartyBytes": 350024
+    },
+    {
+     "score": 65,
+     "finalUrl": "https://www.icici.bank.in/",
+     "fcp": 2721.946,
+     "lcp": 7149.656,
+     "tbt": 226,
+     "cls": 0.01584224143052849,
+     "si": 4985.8248004977695,
+     "bytes": 1035012,
+     "requests": 112,
+     "thirdPartyBytes": 350048
+    }
+   ],
+   "median": {
+    "score": 68,
+    "finalUrl": "https://www.icici.bank.in/",
+    "fcp": 2460.583,
+    "lcp": 7092.259,
+    "tbt": 153.5,
+    "cls": 0.0006023660584442716,
+    "si": 4693.217769027763,
+    "bytes": 1038754,
+    "requests": 112,
+    "thirdPartyBytes": 350050
+   }
+  },
+  "Axis Bank": {
+   "url": "https://www.axis.bank.in/",
+   "runs": [
+    {
+     "score": 34,
+     "finalUrl": "https://www.axis.bank.in/",
+     "fcp": 5562.303750000001,
+     "lcp": 20596.339500000002,
+     "tbt": 1034,
+     "cls": 0,
+     "si": 10935.239969657503,
+     "bytes": 5235731,
+     "requests": 156,
+     "thirdPartyBytes": 3678300
+    },
+    {
+     "score": 52,
+     "finalUrl": "https://www.axis.bank.in/",
+     "fcp": 5171.7655,
+     "lcp": 21088.1965,
+     "tbt": 275,
+     "cls": 0.004108571121171601,
+     "si": 8947.874256351679,
+     "bytes": 4168474,
+     "requests": 114,
+     "thirdPartyBytes": 2610927
+    },
+    {
+     "score": 62,
+     "finalUrl": "https://www.axis.bank.in/",
+     "fcp": 1828.442,
+     "lcp": 12328.442,
+     "tbt": 312.5,
+     "cls": 0.01029486886836425,
+     "si": 6061.998663994449,
+     "bytes": 4090997,
+     "requests": 106,
+     "thirdPartyBytes": 2554672
+    }
+   ],
+   "median": {
+    "score": 52,
+    "finalUrl": "https://www.axis.bank.in/",
+    "fcp": 5171.7655,
+    "lcp": 21088.1965,
+    "tbt": 275,
+    "cls": 0.004108571121171601,
+    "si": 8947.874256351679,
+    "bytes": 4168474,
+    "requests": 114,
+    "thirdPartyBytes": 2610927
+   }
+  },
+  "Kotak Mahindra Bank": {
+   "url": "https://www.kotak.bank.in/en/home.html",
+   "runs": [
+    {
+     "score": 49,
+     "finalUrl": "https://www.kotak.bank.in/en/home.html",
+     "fcp": 3325.5750000000003,
+     "lcp": 15782.01500000001,
+     "tbt": 465,
+     "cls": 0.022294625088405864,
+     "si": 8264.768512007602,
+     "bytes": 2968499,
+     "requests": 241,
+     "thirdPartyBytes": 860920
+    },
+    {
+     "score": 31,
+     "finalUrl": "https://www.kotak.bank.in/en/home.html",
+     "fcp": 3227.0049999999997,
+     "lcp": 16870.88900000001,
+     "tbt": 459.5,
+     "cls": 0.3942783705612538,
+     "si": 8062.808369921842,
+     "bytes": 2968734,
+     "requests": 241,
+     "thirdPartyBytes": 861125
+    },
+    {
+     "score": 26,
+     "finalUrl": "https://www.kotak.bank.in/en/home.html",
+     "fcp": 3242.4709999999995,
+     "lcp": 17153.681000000022,
+     "tbt": 430.5,
+     "cls": 0.948399221230015,
+     "si": 8176.603946173218,
+     "bytes": 2968456,
+     "requests": 241,
+     "thirdPartyBytes": 860877
+    }
+   ],
+   "median": {
+    "score": 31,
+    "finalUrl": "https://www.kotak.bank.in/en/home.html",
+    "fcp": 3227.0049999999997,
+    "lcp": 16870.88900000001,
+    "tbt": 459.5,
+    "cls": 0.3942783705612538,
+    "si": 8062.808369921842,
+    "bytes": 2968734,
+    "requests": 241,
+    "thirdPartyBytes": 861125
+   }
+  },
+  "Punjab National Bank": {
+   "url": "https://pnb.bank.in/",
+   "runs": [
+    {
+     "score": 55,
+     "finalUrl": "https://pnb.bank.in/hi/",
+     "fcp": 6490.7895,
+     "lcp": 14248.811999999994,
+     "tbt": 246.50000000000364,
+     "cls": 0.0006569565575301513,
+     "si": 6490.7895,
+     "bytes": 12076145,
+     "requests": 231,
+     "thirdPartyBytes": 1175495
+    },
+    {
+     "score": 43,
+     "finalUrl": "https://pnb.bank.in/hi/",
+     "fcp": 6273.086,
+     "lcp": 15477.468373776663,
+     "tbt": 265,
+     "cls": 0.21719218508875396,
+     "si": 6273.086,
+     "bytes": 12076358,
+     "requests": 231,
+     "thirdPartyBytes": 1175505
+    },
+    {
+     "score": 54,
+     "finalUrl": "https://pnb.bank.in/hi/",
+     "fcp": 6322.087499999999,
+     "lcp": 13952.963289454701,
+     "tbt": 281,
+     "cls": 0.0006569565575301513,
+     "si": 6322.087499999999,
+     "bytes": 12076278,
+     "requests": 231,
+     "thirdPartyBytes": 1175498
+    }
+   ],
+   "median": {
+    "score": 54,
+    "finalUrl": "https://pnb.bank.in/hi/",
+    "fcp": 6322.087499999999,
+    "lcp": 13952.963289454701,
+    "tbt": 281,
+    "cls": 0.0006569565575301513,
+    "si": 6322.087499999999,
+    "bytes": 12076278,
+    "requests": 231,
+    "thirdPartyBytes": 1175498
+   }
+  },
+  "Bank of Baroda": {
+   "url": "https://bankofbaroda.bank.in/",
+   "runs": [
+    {
+     "score": 43,
+     "finalUrl": "https://bankofbaroda.bank.in/",
+     "fcp": 5158.5075,
+     "lcp": 24893.9835,
+     "tbt": 644.5,
+     "cls": 0,
+     "si": 6820.634440981155,
+     "bytes": 4044384,
+     "requests": 155,
+     "thirdPartyBytes": 1508988
+    },
+    {
+     "score": 41,
+     "finalUrl": "https://bankofbaroda.bank.in/",
+     "fcp": 5193.505,
+     "lcp": 26234.40524999999,
+     "tbt": 683,
+     "cls": 0,
+     "si": 7849.989439788595,
+     "bytes": 4285155,
+     "requests": 155,
+     "thirdPartyBytes": 1509036
+    },
+    {
+     "score": 42,
+     "finalUrl": "https://bankofbaroda.bank.in/",
+     "fcp": 5061.848499999998,
+     "lcp": 26198.272500000006,
+     "tbt": 696,
+     "cls": 0,
+     "si": 7265.848525682687,
+     "bytes": 4325568,
+     "requests": 155,
+     "thirdPartyBytes": 1508978
+    }
+   ],
+   "median": {
+    "score": 42,
+    "finalUrl": "https://bankofbaroda.bank.in/",
+    "fcp": 5061.848499999998,
+    "lcp": 26198.272500000006,
+    "tbt": 696,
+    "cls": 0,
+    "si": 7265.848525682687,
+    "bytes": 4325568,
+    "requests": 155,
+    "thirdPartyBytes": 1508978
+   }
+  },
+  "Canara Bank": {
+   "url": "https://www.canarabank.bank.in/",
+   "runs": [
+    {
+     "score": 52,
+     "finalUrl": "https://www.canarabank.bank.in/",
+     "fcp": 17724.97742999999,
+     "lcp": 47336.52150000001,
+     "tbt": 0,
+     "cls": 0.1129256828008623,
+     "si": 17724.97742999999,
+     "bytes": 13619831,
+     "requests": 236,
+     "thirdPartyBytes": 3718201
+    },
+    {
+     "score": 52,
+     "finalUrl": "https://www.canarabank.bank.in/",
+     "fcp": 17730.34049999999,
+     "lcp": 46752.62399999998,
+     "tbt": 34,
+     "cls": 0.1129256828008623,
+     "si": 17730.34049999999,
+     "bytes": 13634724,
+     "requests": 257,
+     "thirdPartyBytes": 3734297
+    },
+    {
+     "score": 52,
+     "finalUrl": "https://www.canarabank.bank.in/",
+     "fcp": 17766.713,
+     "lcp": 46820.672999999995,
+     "tbt": 39.5,
+     "cls": 0.1129256828008623,
+     "si": 17766.713,
+     "bytes": 13627721,
+     "requests": 250,
+     "thirdPartyBytes": 3727816
+    }
+   ],
+   "median": {
+    "score": 52,
+    "finalUrl": "https://www.canarabank.bank.in/",
+    "fcp": 17730.34049999999,
+    "lcp": 46752.62399999998,
+    "tbt": 34,
+    "cls": 0.1129256828008623,
+    "si": 17730.34049999999,
+    "bytes": 13634724,
+    "requests": 257,
+    "thirdPartyBytes": 3734297
+   }
+  },
+  "Union Bank of India": {
+   "url": "https://www.unionbankofindia.bank.in/en/home",
+   "runs": [
+    {
+     "score": 37,
+     "finalUrl": "https://www.unionbankofindia.bank.in/en/home",
+     "fcp": 5455.267,
+     "lcp": 15155.345700000002,
+     "tbt": 185,
+     "cls": 0.40797167969056547,
+     "si": 6746.53816123782,
+     "bytes": 6791170,
+     "requests": 168,
+     "thirdPartyBytes": 1255921
+    },
+    {
+     "score": 37,
+     "finalUrl": "https://www.unionbankofindia.bank.in/en/home",
+     "fcp": 5724.916999999998,
+     "lcp": 15029.448799999995,
+     "tbt": 201,
+     "cls": 0.4099217490311422,
+     "si": 6769.825199894271,
+     "bytes": 6791197,
+     "requests": 168,
+     "thirdPartyBytes": 1255948
+    },
+    {
+     "score": 36,
+     "finalUrl": "https://www.unionbankofindia.bank.in/en/home",
+     "fcp": 5476.2480000000005,
+     "lcp": 15023.869749999998,
+     "tbt": 217.5,
+     "cls": 0.4073920810622111,
+     "si": 6851.219037462379,
+     "bytes": 6791173,
+     "requests": 168,
+     "thirdPartyBytes": 1255924
+    }
+   ],
+   "median": {
+    "score": 37,
+    "finalUrl": "https://www.unionbankofindia.bank.in/en/home",
+    "fcp": 5455.267,
+    "lcp": 15155.345700000002,
+    "tbt": 185,
+    "cls": 0.40797167969056547,
+    "si": 6746.53816123782,
+    "bytes": 6791170,
+    "requests": 168,
+    "thirdPartyBytes": 1255921
+   }
+  },
+  "IndusInd Bank": {
+   "url": "https://www.indusind.bank.in/",
+   "runs": [
+    {
+     "score": 63,
+     "finalUrl": "https://www.indusind.bank.in/",
+     "fcp": 2084.0385,
+     "lcp": 8221.724499999997,
+     "tbt": 274,
+     "cls": 0.0630756373322514,
+     "si": 5118.358745130774,
+     "bytes": 4612421,
+     "requests": 128,
+     "thirdPartyBytes": 875903
+    },
+    {
+     "score": 76,
+     "finalUrl": "https://www.indusind.bank.in/",
+     "fcp": 2073.3585,
+     "lcp": 4033.4345000000003,
+     "tbt": 160.5,
+     "cls": 0.11484928657592465,
+     "si": 4959.428772202044,
+     "bytes": 4607515,
+     "requests": 128,
+     "thirdPartyBytes": 875794
+    },
+    {
+     "score": 78,
+     "finalUrl": "https://www.indusind.bank.in/",
+     "fcp": 2097.939,
+     "lcp": 3995.1229999999982,
+     "tbt": 203,
+     "cls": 0.023834578332542846,
+     "si": 5172.4794521281365,
+     "bytes": 4659351,
+     "requests": 129,
+     "thirdPartyBytes": 875748
+    }
+   ],
+   "median": {
+    "score": 76,
+    "finalUrl": "https://www.indusind.bank.in/",
+    "fcp": 2073.3585,
+    "lcp": 4033.4345000000003,
+    "tbt": 160.5,
+    "cls": 0.11484928657592465,
+    "si": 4959.428772202044,
+    "bytes": 4607515,
+    "requests": 128,
+    "thirdPartyBytes": 875794
+   }
+  },
+  "Yes Bank": {
+   "url": "https://www.yes.bank.in/",
+   "runs": [
+    {
+     "score": 5,
+     "finalUrl": "https://www.yes.bank.in/",
+     "fcp": 3871.5737500000005,
+     "lcp": 18500.050000000003,
+     "tbt": 3537.000000000001,
+     "cls": 0.9536149503116088,
+     "si": 9992.57873206582,
+     "bytes": 4161111,
+     "requests": 228,
+     "thirdPartyBytes": 1052139
+    },
+    {
+     "score": 27,
+     "finalUrl": "https://www.yes.bank.in/",
+     "fcp": 3938.09675,
+     "lcp": 16359.695,
+     "tbt": 2320.499999999998,
+     "cls": 0.10569150280426887,
+     "si": 9787.006452948115,
+     "bytes": 4161408,
+     "requests": 227,
+     "thirdPartyBytes": 1052767
+    },
+    {
+     "score": 26,
+     "finalUrl": "https://www.yes.bank.in/",
+     "fcp": 3913.7745000000004,
+     "lcp": 15762.5515,
+     "tbt": 3108.5,
+     "cls": 0.10870537567128863,
+     "si": 10347.384861259097,
+     "bytes": 4161730,
+     "requests": 228,
+     "thirdPartyBytes": 1052712
+    }
+   ],
+   "median": {
+    "score": 26,
+    "finalUrl": "https://www.yes.bank.in/",
+    "fcp": 3913.7745000000004,
+    "lcp": 15762.5515,
+    "tbt": 3108.5,
+    "cls": 0.10870537567128863,
+    "si": 10347.384861259097,
+    "bytes": 4161730,
+    "requests": 228,
+    "thirdPartyBytes": 1052712
+   }
+  },
+  "IDFC FIRST Bank": {
+   "url": "https://www.idfcfirst.bank.in/",
+   "runs": [
+    {
+     "score": 53,
+     "finalUrl": "https://www.idfcfirst.bank.in/",
+     "fcp": 3551.1525,
+     "lcp": 9904.678,
+     "tbt": 437.5,
+     "cls": 0.007971259238189551,
+     "si": 5519.765317709571,
+     "bytes": 2238918,
+     "requests": 115,
+     "thirdPartyBytes": 727397
+    },
+    {
+     "score": 64,
+     "finalUrl": "https://www.idfcfirst.bank.in/",
+     "fcp": 2080.3059999999996,
+     "lcp": 6909.014,
+     "tbt": 392.4999999999982,
+     "cls": 0.00560081176652662,
+     "si": 3415.3069088017296,
+     "bytes": 2235855,
+     "requests": 112,
+     "thirdPartyBytes": 724415
+    },
+    {
+     "score": 64,
+     "finalUrl": "https://www.idfcfirst.bank.in/",
+     "fcp": 2476.4310000000005,
+     "lcp": 9564.938499999997,
+     "tbt": 250.5,
+     "cls": 0.003677078986740135,
+     "si": 4437.670073355655,
+     "bytes": 2237202,
+     "requests": 112,
+     "thirdPartyBytes": 724514
+    }
+   ],
+   "median": {
+    "score": 64,
+    "finalUrl": "https://www.idfcfirst.bank.in/",
+    "fcp": 2080.3059999999996,
+    "lcp": 6909.014,
+    "tbt": 392.4999999999982,
+    "cls": 0.00560081176652662,
+    "si": 3415.3069088017296,
+    "bytes": 2235855,
+    "requests": 112,
+    "thirdPartyBytes": 724415
+   }
+  }
+ }
+}

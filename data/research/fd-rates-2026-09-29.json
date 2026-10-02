@@ -1,0 +1,225 @@
+{
+ "collectedOn": "2026-09-29",
+ "note": "Deposits below Rs 3 crore, standard (callable) FD. Rates in % p.a. Tenor columns use the bucket that contains exactly 1/2/3/5 years. Collected by reading each bank's official rate page.",
+ "banks": {
+  "SBI": {
+   "source": "https://sbi.bank.in/web/interest-rates/deposit-rates/retail-domestic-term-deposits",
+   "effective": "2025-12-15",
+   "gen": {
+    "1y": 6.25,
+    "2y": 6.4,
+    "3y": 6.3,
+    "5y": 6.05
+   },
+   "sen": {
+    "1y": 6.75,
+    "2y": 6.9,
+    "3y": 6.8,
+    "5y": 7.05
+   },
+   "bestGen": [
+    6.45,
+    "Amrit Vrishti 444 days (special scheme)"
+   ],
+   "bestSen": [
+    7.05,
+    "5-10 years incl. We-care premium"
+   ],
+   "notes": "Senior 5y rate includes 50 bps SBI We-care premium. 2y bucket = 2 to <3 years; 3y bucket = 3 to <5 years."
+  },
+  "HDFC Bank": {
+   "source": "https://www.hdfc.bank.in/fixed-deposit/fd-interest-rate",
+   "effective": "2026-08-19",
+   "gen": {
+    "1y": 6.25,
+    "2y": 6.45,
+    "3y": 6.45,
+    "5y": 6.4
+   },
+   "sen": {
+    "1y": 6.75,
+    "2y": 6.95,
+    "3y": 6.95,
+    "5y": 6.9
+   },
+   "bestGen": [
+    6.5,
+    "3 years 1 day to < 4 years 7 months"
+   ],
+   "bestSen": [
+    7.1,
+    "3 years 1 day to < 4 years 7 months"
+   ]
+  },
+  "ICICI Bank": {
+   "source": "https://www.icici.bank.in/personal-banking/deposits/fixed-deposit/fd-interest-rates",
+   "effective": "2026-09-29",
+   "gen": {
+    "1y": 6.25,
+    "2y": 6.3,
+    "3y": 6.45,
+    "5y": 6.5
+   },
+   "sen": {
+    "1y": 6.75,
+    "2y": 6.8,
+    "3y": 6.95,
+    "5y": 7.1
+   },
+   "bestGen": [
+    6.5,
+    "3 years 1 day to 10 years"
+   ],
+   "bestSen": [
+    7.1,
+    "3 years 1 day to 5 years"
+   ]
+  },
+  "Axis Bank": {
+   "source": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates (rate card PDF domestic-fixed-deposits-26-september-26.pdf)",
+   "effective": "2026-09-26",
+   "gen": {
+    "1y": 6.25,
+    "2y": 6.5,
+    "3y": 6.5,
+    "5y": 6.5
+   },
+   "sen": {
+    "1y": 6.75,
+    "2y": 7.0,
+    "3y": 7.0,
+    "5y": 7.25
+   },
+   "bestGen": [
+    6.5,
+    "15 months to 10 years (6.45 for 15-18m)"
+   ],
+   "bestSen": [
+    7.25,
+    "5 to 10 years"
+   ]
+  },
+  "Kotak Mahindra Bank": {
+   "source": "https://www.kotak.bank.in/en/rates/interest-rates.html",
+   "effective": "2026-09-23",
+   "gen": {
+    "1y": 6.35,
+    "2y": 6.65,
+    "3y": 6.4,
+    "5y": 6.25
+   },
+   "sen": {
+    "1y": 6.85,
+    "2y": 7.15,
+    "3y": 6.9,
+    "5y": 6.75
+   },
+   "bestGen": [
+    6.65,
+    "2 to <3 years"
+   ],
+   "bestSen": [
+    7.15,
+    "2 to <3 years"
+   ]
+  },
+  "Punjab National Bank": {
+   "source": "https://pnb.bank.in/Interest-Rates-Deposit.html",
+   "effective": "2026-06-01",
+   "gen": {
+    "1y": 6.25,
+    "2y": 6.3,
+    "3y": 6.3,
+    "5y": 6.35
+   },
+   "sen": {
+    "1y": 6.75,
+    "2y": 6.8,
+    "3y": 6.8,
+    "5y": 6.85
+   },
+   "bestGen": [
+    6.6,
+    "444 days"
+   ],
+   "bestSen": [
+    7.1,
+    "444 days (super senior 7.40)"
+   ]
+  },
+  "Bank of Baroda": {
+   "source": "https://bankofbaroda.bank.in/interest-rate-and-service-charges/deposits-interest-rates/fixed-deposits-callable-and-non-callable-upto-ten-crores",
+   "effective": "2026-06-12",
+   "gen": {
+    "1y": 6.25,
+    "2y": 6.25,
+    "3y": 6.25,
+    "5y": 6.3
+   },
+   "sen": {
+    "1y": 6.75,
+    "2y": 6.75,
+    "3y": 6.75,
+    "5y": 6.9
+   },
+   "bestGen": [
+    6.75,
+    "bob Golden Goal 555 days"
+   ],
+   "bestSen": [
+    7.25,
+    "bob Golden Goal 555 days"
+   ]
+  },
+  "IDFC FIRST Bank": {
+   "source": "https://www.idfcfirst.bank.in/personal-banking/deposits/fixed-deposit/fd-interest-rates",
+   "effective": "2026-09-01",
+   "gen": {
+    "1y": 6.5,
+    "2y": 7.1,
+    "3y": 7.1,
+    "5y": 6.75
+   },
+   "sen": {
+    "1y": 6.75,
+    "2y": 7.35,
+    "3y": 7.35,
+    "5y": 7.0
+   },
+   "bestGen": [
+    7.1,
+    "500 days to 3 years"
+   ],
+   "bestSen": [
+    7.35,
+    "500 days to 3 years"
+   ],
+   "notes": "Senior premium only 0.25%."
+  },
+  "AU Small Finance Bank": {
+   "source": "https://www.au.bank.in/interest-rates/fixed-deposit-interest-rates",
+   "effective": "2026-09-01 (general); 2026-06-10 (senior table)",
+   "gen": {
+    "1y": 6.35,
+    "2y": 7.0,
+    "3y": 7.4,
+    "5y": 6.75
+   },
+   "sen": {
+    "1y": 6.85,
+    "2y": 7.5,
+    "3y": 7.9,
+    "5y": 7.25
+   },
+   "bestGen": [
+    7.4,
+    "30 months 1 day to 36 months"
+   ],
+   "bestSen": [
+    7.9,
+    "30 months 1 day to 36 months"
+   ],
+   "notes": "Exactly 12 months falls in the 6m1d-12m bucket (6.35%); 12 months 1 day jumps to 7.10%. Senior eligibility requires an existing AU banking relationship."
+  }
+ }
+}

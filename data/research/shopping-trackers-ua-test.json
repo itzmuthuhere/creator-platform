@@ -1,0 +1,248 @@
+{
+ "testedAt": "2026-09-29T17:56:51.332Z",
+ "method": "Lighthouse desktop preset, homepage only, no interaction",
+ "sites": {
+  "Meesho": {
+   "url": "https://www.meesho.com/",
+   "finalUrl": "https://www.meesho.com/",
+   "totalRequests": 10,
+   "thirdPartyRequests": 0,
+   "thirdPartyDomains": 0,
+   "trackerEntities": [],
+   "entities": {},
+   "domains": [],
+   "score": 100
+  },
+  "BigBasket": {
+   "url": "https://www.bigbasket.com/",
+   "finalUrl": "https://www.bigbasket.com/",
+   "totalRequests": 243,
+   "thirdPartyRequests": 122,
+   "thirdPartyDomains": 19,
+   "trackerEntities": [
+    "Google Tag Manager",
+    "Facebook",
+    "FullStory",
+    "Google/Doubleclick Ads",
+    "Google Analytics",
+    "Qualtrics"
+   ],
+   "entities": {
+    "Cloudflare CDN": {
+     "categories": [
+      "cdn"
+     ],
+     "domains": 1
+    },
+    "Google Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 1
+    },
+    "Facebook": {
+     "categories": [
+      "social"
+     ],
+     "domains": 2
+    },
+    "FullStory": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Other Google APIs/SDKs": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Google/Doubleclick Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 3
+    },
+    "Google Analytics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Qualtrics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    }
+   },
+   "domains": [
+    {
+     "host": "cdnjs.cloudflare.com",
+     "entity": "Cloudflare CDN",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 1,
+     "bytes": 64356
+    },
+    {
+     "host": "www.bbassets.com",
+     "entity": null,
+     "categories": [],
+     "requests": 88,
+     "bytes": 1252323
+    },
+    {
+     "host": "cdn.epsilondelta.co",
+     "entity": null,
+     "categories": [],
+     "requests": 3,
+     "bytes": 39042
+    },
+    {
+     "host": "www.googletagmanager.com",
+     "entity": "Google Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 3,
+     "bytes": 525524
+    },
+    {
+     "host": "accounts.tatadigital.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 17331
+    },
+    {
+     "host": "connect.facebook.net",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 2,
+     "bytes": 204637
+    },
+    {
+     "host": "edge.fullstory.com",
+     "entity": "FullStory",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 93878
+    },
+    {
+     "host": "www.google.com",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 4,
+     "bytes": 126
+    },
+    {
+     "host": "ad.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 22
+    },
+    {
+     "host": "www.google-analytics.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 21863
+    },
+    {
+     "host": "api.tatadigital.com",
+     "entity": null,
+     "categories": [],
+     "requests": 4,
+     "bytes": 3660
+    },
+    {
+     "host": "analytics.google.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 551
+    },
+    {
+     "host": "stats.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 560
+    },
+    {
+     "host": "www.google.co.in",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 127
+    },
+    {
+     "host": "www.facebook.com",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 1,
+     "bytes": 20
+    },
+    {
+     "host": "zn00za9ubdwvj6one-tatadigital.siteintercept.qualtrics.com",
+     "entity": "Qualtrics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 5260
+    },
+    {
+     "host": "siteintercept.qualtrics.com",
+     "entity": "Qualtrics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 3,
+     "bytes": 59925
+    },
+    {
+     "host": "googleads.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 2685
+    },
+    {
+     "host": "rs.fullstory.com",
+     "entity": "FullStory",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 0
+    }
+   ],
+   "score": 74
+  }
+ }
+}

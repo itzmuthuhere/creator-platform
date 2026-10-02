@@ -1,0 +1,17 @@
+{
+ "testedAt": "2026-09-29T17:57:34.950Z",
+ "method": "Lighthouse desktop preset, homepage only, no interaction",
+ "sites": {
+  "Meesho": {
+   "url": "https://www.meesho.com/",
+   "finalUrl": "https://www.meesho.com/",
+   "totalRequests": 10,
+   "thirdPartyRequests": 0,
+   "thirdPartyDomains": 0,
+   "trackerEntities": [],
+   "entities": {},
+   "domains": [],
+   "score": 100
+  }
+ }
+}

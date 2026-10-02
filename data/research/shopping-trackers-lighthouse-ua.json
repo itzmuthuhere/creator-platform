@@ -1,0 +1,4669 @@
+{
+ "testedAt": "2026-09-29T17:50:59.317Z",
+ "method": "Lighthouse desktop preset, homepage only, no interaction",
+ "sites": {
+  "Amazon.in": {
+   "url": "https://www.amazon.in/",
+   "finalUrl": "https://www.amazon.in/",
+   "totalRequests": 254,
+   "thirdPartyRequests": 227,
+   "thirdPartyDomains": 44,
+   "trackerEntities": [
+    "Amazon Ads",
+    "AppNexus",
+    "Improve Digital",
+    "Nativo",
+    "UserReport",
+    "Weborama",
+    "Smart AdServer",
+    "Index Exchange",
+    "Bidswitch",
+    "Yieldlab",
+    "Yahoo!",
+    "ID5 Identity Cloud",
+    "Connatix",
+    "ZEOTAP",
+    "FreakOut",
+    "Rubicon Project",
+    "Adobe Tag Manager",
+    "Xaxis",
+    "mediarithmics",
+    "Google/Doubleclick Ads",
+    "LoopMe",
+    "OpenX",
+    "TripleLift",
+    "Semasio",
+    "Kargo",
+    "GumGum",
+    "Pubmatic",
+    "eXelate",
+    "Adscale",
+    "Yieldmo",
+    "smartclip"
+   ],
+   "entities": {
+    "Marketplace Web Service": {
+     "categories": [
+      "other"
+     ],
+     "domains": 1
+    },
+    "Amazon Web Services": {
+     "categories": [
+      "other"
+     ],
+     "domains": 1
+    },
+    "Amazon Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "AppNexus": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Improve Digital": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Nativo": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "UserReport": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Weborama": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Smart AdServer": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Index Exchange": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Bidswitch": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Yieldlab": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Yahoo!": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "ID5 Identity Cloud": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Connatix": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Dailymotion": {
+     "categories": [
+      "content"
+     ],
+     "domains": 1
+    },
+    "ZEOTAP": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "freewheel.tv": {
+     "categories": [
+      "content"
+     ],
+     "domains": 1
+    },
+    "FreakOut": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Rubicon Project": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Adobe Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 1
+    },
+    "Xaxis": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "mediarithmics": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Google/Doubleclick Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "LoopMe": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "OpenX": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "TripleLift": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Semasio": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Kargo": {
+     "categories": [
+      "marketing"
+     ],
+     "domains": 1
+    },
+    "GumGum": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Pubmatic": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 2
+    },
+    "eXelate": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Adscale": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Yieldmo": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "smartclip": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    }
+   },
+   "domains": [
+    {
+     "host": "1c5c1ecf7303.0b384439.ap-southeast-1.token.awswaf.com",
+     "entity": null,
+     "categories": [],
+     "requests": 3,
+     "bytes": 807057
+    },
+    {
+     "host": "m.media-amazon.com",
+     "entity": null,
+     "categories": [],
+     "requests": 137,
+     "bytes": 6258878
+    },
+    {
+     "host": "images-na.ssl-images-amazon.com",
+     "entity": "Marketplace Web Service",
+     "categories": [
+      "other"
+     ],
+     "requests": 1,
+     "bytes": 3851
+    },
+    {
+     "host": "unagi-eu.amazon.com",
+     "entity": "Amazon Web Services",
+     "categories": [
+      "other"
+     ],
+     "requests": 1,
+     "bytes": 580
+    },
+    {
+     "host": "aax-eu.amazon-adsystem.com",
+     "entity": "Amazon Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 24,
+     "bytes": 20360
+    },
+    {
+     "host": "ib.adnxs.com",
+     "entity": "AppNexus",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 1676
+    },
+    {
+     "host": "match.360yield.com",
+     "entity": "Improve Digital",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1059
+    },
+    {
+     "host": "jadserve.postrelease.com",
+     "entity": "Nativo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 547
+    },
+    {
+     "host": "audex.userreport.com",
+     "entity": "UserReport",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 1822
+    },
+    {
+     "host": "rd.frontend.weborama.fr",
+     "entity": "Weborama",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1201
+    },
+    {
+     "host": "rtb-csync.smartadserver.com",
+     "entity": "Smart AdServer",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 931
+    },
+    {
+     "host": "dsum-sec.casalemedia.com",
+     "entity": "Index Exchange",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1690
+    },
+    {
+     "host": "x.bidswitch.net",
+     "entity": "Bidswitch",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 879
+    },
+    {
+     "host": "ad.yieldlab.net",
+     "entity": "Yieldlab",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 399
+    },
+    {
+     "host": "pbs.yahoo.com",
+     "entity": "Yahoo!",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 767
+    },
+    {
+     "host": "id5-sync.com",
+     "entity": "ID5 Identity Cloud",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 43
+    },
+    {
+     "host": "capi.connatix.com",
+     "entity": "Connatix",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 930
+    },
+    {
+     "host": "public-prod-dspcookiematching.dmxleo.com",
+     "entity": "Dailymotion",
+     "categories": [
+      "content"
+     ],
+     "requests": 1,
+     "bytes": 262
+    },
+    {
+     "host": "geo.ads.audio.thisisdax.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 270
+    },
+    {
+     "host": "spl.zeotap.com",
+     "entity": "ZEOTAP",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "user-sync.fwmrm.net",
+     "entity": "freewheel.tv",
+     "categories": [
+      "content"
+     ],
+     "requests": 2,
+     "bytes": 962
+    },
+    {
+     "host": "sync.rfp.fout.jp",
+     "entity": "FreakOut",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 256
+    },
+    {
+     "host": "pixel.rubiconproject.com",
+     "entity": "Rubicon Project",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 1379
+    },
+    {
+     "host": "ms-cookie-sync.presage.io",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 351
+    },
+    {
+     "host": "dpm.demdex.net",
+     "entity": "Adobe Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 2,
+     "bytes": 1281
+    },
+    {
+     "host": "odr.mookie1.com",
+     "entity": "Xaxis",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 185
+    },
+    {
+     "host": "cookie-matching.mediarithmics.com",
+     "entity": "mediarithmics",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 680
+    },
+    {
+     "host": "cm.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 4,
+     "bytes": 979
+    },
+    {
+     "host": "csync.loopme.me",
+     "entity": "LoopMe",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 169
+    },
+    {
+     "host": "us-u.openx.net",
+     "entity": "OpenX",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 681
+    },
+    {
+     "host": "eb2.3lift.com",
+     "entity": "TripleLift",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 582
+    },
+    {
+     "host": "uipglob.semasio.net",
+     "entity": "Semasio",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 1334
+    },
+    {
+     "host": "crb.kargo.com",
+     "entity": "Kargo",
+     "categories": [
+      "marketing"
+     ],
+     "requests": 1,
+     "bytes": 393
+    },
+    {
+     "host": "usersync.gumgum.com",
+     "entity": "GumGum",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 203
+    },
+    {
+     "host": "image2.pubmatic.com",
+     "entity": "Pubmatic",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 624
+    },
+    {
+     "host": "loadus.exelator.com",
+     "entity": "eXelate",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 325
+    },
+    {
+     "host": "ih.adscale.de",
+     "entity": "Adscale",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 554
+    },
+    {
+     "host": "sync-amazon.ads.yieldmo.com",
+     "entity": "Yieldmo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "sync.sxp.smartclip.net",
+     "entity": "smartclip",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1048
+    },
+    {
+     "host": "eu-sync.richaudience.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 322
+    },
+    {
+     "host": "target.digitalaudience.io",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "image4.pubmatic.com",
+     "entity": "Pubmatic",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 454
+    },
+    {
+     "host": "redirect.prod.experiment.routing.cloudfront.aws.a2z.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 154
+    },
+    {
+     "host": "aa9fa4e63ca59d5389eac1ce0cc409ed0.profile.iad55-p1.cloudfront.net",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 58
+    }
+   ],
+   "score": 60
+  },
+  "Flipkart": {
+   "url": "https://www.flipkart.com/",
+   "finalUrl": "https://www.flipkart.com/",
+   "totalRequests": 161,
+   "thirdPartyRequests": 144,
+   "thirdPartyDomains": 5,
+   "trackerEntities": [],
+   "entities": {
+    "New Relic": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Akamai": {
+     "categories": [
+      "cdn"
+     ],
+     "domains": 1
+    }
+   },
+   "domains": [
+    {
+     "host": "static-assets-web.flixcart.com",
+     "entity": null,
+     "categories": [],
+     "requests": 78,
+     "bytes": 3452747
+    },
+    {
+     "host": "rukminim2.flixcart.com",
+     "entity": null,
+     "categories": [],
+     "requests": 55,
+     "bytes": 916165
+    },
+    {
+     "host": "js-agent.newrelic.com",
+     "entity": "New Relic",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 32321
+    },
+    {
+     "host": "bam.nr-data.net",
+     "entity": "New Relic",
+     "categories": [
+      "utility"
+     ],
+     "requests": 6,
+     "bytes": 2756
+    },
+    {
+     "host": "trinity-fk.akamaized.net",
+     "entity": "Akamai",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 4,
+     "bytes": 1227674
+    }
+   ],
+   "score": 70
+  },
+  "Myntra": {
+   "url": "https://www.myntra.com/",
+   "finalUrl": "https://www.myntra.com/",
+   "totalRequests": 73,
+   "thirdPartyRequests": 55,
+   "thirdPartyDomains": 20,
+   "trackerEntities": [
+    "mPulse",
+    "Google Analytics",
+    "Google Tag Manager",
+    "Snapchat",
+    "Facebook",
+    "Google/Doubleclick Ads",
+    "ContentSquare",
+    "Tapad"
+   ],
+   "entities": {
+    "mPulse": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Google Analytics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Google Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 1
+    },
+    "New Relic": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Snapchat": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 3
+    },
+    "Facebook": {
+     "categories": [
+      "social"
+     ],
+     "domains": 2
+    },
+    "Other Google APIs/SDKs": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Google/Doubleclick Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 2
+    },
+    "ContentSquare": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Tapad": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    }
+   },
+   "domains": [
+    {
+     "host": "constant.myntassets.com",
+     "entity": null,
+     "categories": [],
+     "requests": 10,
+     "bytes": 1066506
+    },
+    {
+     "host": "s.go-mpulse.net",
+     "entity": "mPulse",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 57914
+    },
+    {
+     "host": "www.google-analytics.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 22836
+    },
+    {
+     "host": "www.googletagmanager.com",
+     "entity": "Google Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 3,
+     "bytes": 503098
+    },
+    {
+     "host": "assets.myntassets.com",
+     "entity": null,
+     "categories": [],
+     "requests": 7,
+     "bytes": 556828
+    },
+    {
+     "host": "c.go-mpulse.net",
+     "entity": "mPulse",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 212
+    },
+    {
+     "host": "js-agent.newrelic.com",
+     "entity": "New Relic",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 34038
+    },
+    {
+     "host": "sc-static.net",
+     "entity": "Snapchat",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 50818
+    },
+    {
+     "host": "connect.facebook.net",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 5,
+     "bytes": 285105
+    },
+    {
+     "host": "www.google.com",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 5,
+     "bytes": 147
+    },
+    {
+     "host": "ad.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 22
+    },
+    {
+     "host": "t.contentsquare.net",
+     "entity": "ContentSquare",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 157602
+    },
+    {
+     "host": "bam.nr-data.net",
+     "entity": "New Relic",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 1136
+    },
+    {
+     "host": "mpc2-prod-24-is5qnl632q-uw.a.run.app",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 278
+    },
+    {
+     "host": "www.facebook.com",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 2,
+     "bytes": 37
+    },
+    {
+     "host": "googleads.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 2742
+    },
+    {
+     "host": "www.google.co.in",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 64
+    },
+    {
+     "host": "tr.snapchat.com",
+     "entity": "Snapchat",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 6,
+     "bytes": 2386
+    },
+    {
+     "host": "tr6.snapchat.com",
+     "entity": "Snapchat",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 44
+    },
+    {
+     "host": "pixel.tapad.com",
+     "entity": "Tapad",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1095
+    }
+   ],
+   "score": 88
+  },
+  "Meesho": {
+   "url": "https://www.meesho.com/",
+   "finalUrl": "https://www.meesho.com/",
+   "totalRequests": 10,
+   "thirdPartyRequests": 0,
+   "thirdPartyDomains": 0,
+   "trackerEntities": [],
+   "entities": {},
+   "domains": [],
+   "score": 100
+  },
+  "AJIO": {
+   "url": "https://www.ajio.com/",
+   "finalUrl": "https://www.ajio.com/",
+   "totalRequests": 289,
+   "thirdPartyRequests": 128,
+   "thirdPartyDomains": 65,
+   "trackerEntities": [
+    "Facebook",
+    "Google Analytics",
+    "Google Tag Manager",
+    "Google/Doubleclick Ads",
+    "Segment",
+    "Sokrati",
+    "Criteo",
+    "Amplitude Mobile Analytics",
+    "Pinterest",
+    "Conversant",
+    "OpenX",
+    "Pubmatic",
+    "Eyeota",
+    "Crowd Control",
+    "Bidswitch",
+    "AppNexus",
+    "Supership",
+    "Index Exchange",
+    "fluct",
+    "Improve Digital",
+    "LiveRamp IdentityLink",
+    "Bing Ads",
+    "Outbrain",
+    "Rubicon Project",
+    "Smart AdServer",
+    "Taboola",
+    "Teads",
+    "TripleLift",
+    "Burst Media",
+    "Media.net",
+    "Aggregate Knowledge",
+    "Unruly Media"
+   ],
+   "entities": {
+    "Facebook": {
+     "categories": [
+      "social"
+     ],
+     "domains": 2
+    },
+    "Google Analytics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Google Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 1
+    },
+    "Google/Doubleclick Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 7
+    },
+    "Other Google APIs/SDKs": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Segment": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Sokrati": {
+     "categories": [
+      "marketing"
+     ],
+     "domains": 1
+    },
+    "Criteo": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 5
+    },
+    "Amplitude Mobile Analytics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Pinterest": {
+     "categories": [
+      "social"
+     ],
+     "domains": 2
+    },
+    "Conversant": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 4
+    },
+    "OpenX": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Pubmatic": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 2
+    },
+    "Eyeota": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Crowd Control": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Bidswitch": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "AppNexus": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Supership": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Index Exchange": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "fluct": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Improve Digital": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "LiveRamp IdentityLink": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Bing Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Outbrain": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Rubicon Project": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Smart AdServer": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Taboola": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Teads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "TripleLift": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Burst Media": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Media.net": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Aggregate Knowledge": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Unruly Media": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    }
+   },
+   "domains": [
+    {
+     "host": "connect.facebook.net",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 3,
+     "bytes": 288316
+    },
+    {
+     "host": "tags.pw.adn.cloud",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 46004
+    },
+    {
+     "host": "www.google-analytics.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 3,
+     "bytes": 21885
+    },
+    {
+     "host": "www.googletagmanager.com",
+     "entity": "Google Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 5,
+     "bytes": 921608
+    },
+    {
+     "host": "api.tx4.pw.adn.cloud",
+     "entity": null,
+     "categories": [],
+     "requests": 7,
+     "bytes": 3661
+    },
+    {
+     "host": "6045405.fls.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 6,
+     "bytes": 1873
+    },
+    {
+     "host": "www.google.com",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 7,
+     "bytes": 189
+    },
+    {
+     "host": "ad.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 22
+    },
+    {
+     "host": "adservice.google.com",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 189
+    },
+    {
+     "host": "cdn.segment.com",
+     "entity": "Segment",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 1397
+    },
+    {
+     "host": "stats.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 949
+    },
+    {
+     "host": "chuknu.sokrati.com",
+     "entity": "Sokrati",
+     "categories": [
+      "marketing"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "static.criteo.net",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 26107
+    },
+    {
+     "host": "cdn.atomex.net",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "wcdn.ril.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "gumi.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 5795
+    },
+    {
+     "host": "sr-client-cfg.amplitude.com",
+     "entity": "Amplitude Mobile Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 690
+    },
+    {
+     "host": "api.segment.io",
+     "entity": "Segment",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 3,
+     "bytes": 514
+    },
+    {
+     "host": "cdn.tirabeauty.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 1229
+    },
+    {
+     "host": "t.o-s.io",
+     "entity": null,
+     "categories": [],
+     "requests": 4,
+     "bytes": 214
+    },
+    {
+     "host": "googleads.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 2749
+    },
+    {
+     "host": "api2.amplitude.com",
+     "entity": "Amplitude Mobile Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 4,
+     "bytes": 0
+    },
+    {
+     "host": "s.pinimg.com",
+     "entity": "Pinterest",
+     "categories": [
+      "social"
+     ],
+     "requests": 2,
+     "bytes": 40636
+    },
+    {
+     "host": "client.prod.mplat-ppcprotect.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 2325
+    },
+    {
+     "host": "login.dotomi.com",
+     "entity": "Conversant",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 13190
+    },
+    {
+     "host": "www.facebook.com",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 3,
+     "bytes": 54
+    },
+    {
+     "host": "login-ds.dotomi.com",
+     "entity": "Conversant",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 14044
+    },
+    {
+     "host": "www.google.co.in",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 3,
+     "bytes": 147
+    },
+    {
+     "host": "ct.pinterest.com",
+     "entity": "Pinterest",
+     "categories": [
+      "social"
+     ],
+     "requests": 6,
+     "bytes": 5836
+    },
+    {
+     "host": "www.googleadservices.com",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 1112
+    },
+    {
+     "host": "analytics.google.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 547
+    },
+    {
+     "host": "sl-11a463aaedf44600a99367660fd6fa70.ecs.us-east-1.on.aws",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 217
+    },
+    {
+     "host": "us-u.openx.net",
+     "entity": "OpenX",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 528
+    },
+    {
+     "host": "simage2.pubmatic.com",
+     "entity": "Pubmatic",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 718
+    },
+    {
+     "host": "ps.eyeota.net",
+     "entity": "Eyeota",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1211
+    },
+    {
+     "host": "cm.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1495
+    },
+    {
+     "host": "sync.crwdcntrl.net",
+     "entity": "Crowd Control",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1013
+    },
+    {
+     "host": "ms-cookie-sync.presage.io",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 327
+    },
+    {
+     "host": "click.prod.mplat-ppcprotect.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 466
+    },
+    {
+     "host": "dclk-match.dotomi.com",
+     "entity": "Conversant",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 103
+    },
+    {
+     "host": "lotame-match.dotomi.com",
+     "entity": "Conversant",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 103
+    },
+    {
+     "host": "sslwidget.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 2844
+    },
+    {
+     "host": "x.bidswitch.net",
+     "entity": "Bidswitch",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 838
+    },
+    {
+     "host": "ib.adnxs.com",
+     "entity": "AppNexus",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 2912
+    },
+    {
+     "host": "simage4.pubmatic.com",
+     "entity": "Pubmatic",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 395
+    },
+    {
+     "host": "tg.socdm.com",
+     "entity": "Supership",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 863
+    },
+    {
+     "host": "r.casalemedia.com",
+     "entity": "Index Exchange",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1133
+    },
+    {
+     "host": "cs.adingo.jp",
+     "entity": "fluct",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 451
+    },
+    {
+     "host": "ad.360yield.com",
+     "entity": "Improve Digital",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 949
+    },
+    {
+     "host": "idsync.rlcdn.com",
+     "entity": "LiveRamp IdentityLink",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 440
+    },
+    {
+     "host": "c.bing.com",
+     "entity": "Bing Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 691
+    },
+    {
+     "host": "gum.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 638
+    },
+    {
+     "host": "sync.outbrain.com",
+     "entity": "Outbrain",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 360
+    },
+    {
+     "host": "pixel.rubiconproject.com",
+     "entity": "Rubicon Project",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 1494
+    },
+    {
+     "host": "rtb-csync.smartadserver.com",
+     "entity": "Smart AdServer",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 587
+    },
+    {
+     "host": "sync-t1.taboola.com",
+     "entity": "Taboola",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 391
+    },
+    {
+     "host": "criteo-sync.teads.tv",
+     "entity": "Teads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 393
+    },
+    {
+     "host": "ade.clmbtech.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 411
+    },
+    {
+     "host": "eb2.3lift.com",
+     "entity": "TripleLift",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 525
+    },
+    {
+     "host": "sync.1rx.io",
+     "entity": "Burst Media",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 721
+    },
+    {
+     "host": "cs.media.net",
+     "entity": "Media.net",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 624
+    },
+    {
+     "host": "dis.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1525
+    },
+    {
+     "host": "aa.agkn.com",
+     "entity": "Aggregate Knowledge",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 307
+    },
+    {
+     "host": "cs.fluctssp.smt.docomo.ne.jp",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 384
+    },
+    {
+     "host": "sync.targeting.unrulymedia.com",
+     "entity": "Unruly Media",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 378
+    }
+   ],
+   "score": 77
+  },
+  "Nykaa": {
+   "url": "https://www.nykaa.com/",
+   "finalUrl": "https://www.nykaa.com/",
+   "totalRequests": 156,
+   "thirdPartyRequests": 73,
+   "thirdPartyDomains": 31,
+   "trackerEntities": [
+    "Google Tag Manager",
+    "Mixpanel",
+    "CleverTap",
+    "Pinterest",
+    "Bing Ads",
+    "RTB House AdPilot",
+    "Google/Doubleclick Ads",
+    "Facebook",
+    "Google Analytics",
+    "AppNexus"
+   ],
+   "entities": {
+    "New Relic": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Google Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 1
+    },
+    "Mixpanel": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "CleverTap": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Pinterest": {
+     "categories": [
+      "social"
+     ],
+     "domains": 2
+    },
+    "Bing Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Other Google APIs/SDKs": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 3
+    },
+    "RTB House AdPilot": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 3
+    },
+    "Google/Doubleclick Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 4
+    },
+    "Clarity": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 4
+    },
+    "Facebook": {
+     "categories": [
+      "social"
+     ],
+     "domains": 1
+    },
+    "Google Analytics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "AppNexus": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    }
+   },
+   "domains": [
+    {
+     "host": "images-static.naikaa.com",
+     "entity": null,
+     "categories": [],
+     "requests": 6,
+     "bytes": 28611
+    },
+    {
+     "host": "js-agent.newrelic.com",
+     "entity": "New Relic",
+     "categories": [
+      "utility"
+     ],
+     "requests": 11,
+     "bytes": 30717
+    },
+    {
+     "host": "bam.nr-data.net",
+     "entity": "New Relic",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 600
+    },
+    {
+     "host": "www.googletagmanager.com",
+     "entity": "Google Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 3,
+     "bytes": 601526
+    },
+    {
+     "host": "cdn.mxpnl.com",
+     "entity": "Mixpanel",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 37102
+    },
+    {
+     "host": "d2r1yp2w7bby2u.cloudfront.net",
+     "entity": "CleverTap",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 103529
+    },
+    {
+     "host": "s.pinimg.com",
+     "entity": "Pinterest",
+     "categories": [
+      "social"
+     ],
+     "requests": 2,
+     "bytes": 40634
+    },
+    {
+     "host": "bat.bing.com",
+     "entity": "Bing Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 18025
+    },
+    {
+     "host": "apis.google.com",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 25291
+    },
+    {
+     "host": "asia.creativecdn.com",
+     "entity": "RTB House AdPilot",
+     "categories": [
+      "ad"
+     ],
+     "requests": 4,
+     "bytes": 3109
+    },
+    {
+     "host": "11310639.fls.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1191
+    },
+    {
+     "host": "script.mfilterit.net",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "www.clarity.ms",
+     "entity": "Clarity",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 2358
+    },
+    {
+     "host": "www.google.com",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 84
+    },
+    {
+     "host": "ad.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 22
+    },
+    {
+     "host": "www.facebook.com",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 1,
+     "bytes": 20
+    },
+    {
+     "host": "www.artfut.com",
+     "entity": null,
+     "categories": [],
+     "requests": 3,
+     "bytes": 15783
+    },
+    {
+     "host": "www.google-analytics.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 21873
+    },
+    {
+     "host": "in1.clevertap-prod.com",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 1708
+    },
+    {
+     "host": "ct.pinterest.com",
+     "entity": "Pinterest",
+     "categories": [
+      "social"
+     ],
+     "requests": 6,
+     "bytes": 5852
+    },
+    {
+     "host": "analytics.google.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 596
+    },
+    {
+     "host": "stats.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 614
+    },
+    {
+     "host": "www.google.co.in",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 126
+    },
+    {
+     "host": "ib.adnxs.com",
+     "entity": "AppNexus",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 525
+    },
+    {
+     "host": "sin46.creativecdn.com",
+     "entity": "RTB House AdPilot",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 230
+    },
+    {
+     "host": "cm.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1796
+    },
+    {
+     "host": "scripts.clarity.ms",
+     "entity": "Clarity",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 25984
+    },
+    {
+     "host": "c.clarity.ms",
+     "entity": "Clarity",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 0
+    },
+    {
+     "host": "api-js.mixpanel.com",
+     "entity": "Mixpanel",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 347
+    },
+    {
+     "host": "a.clarity.ms",
+     "entity": "Clarity",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 554
+    },
+    {
+     "host": "cm.creativecdn.com",
+     "entity": "RTB House AdPilot",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 229
+    }
+   ],
+   "score": 62
+  },
+  "Tata CLiQ": {
+   "url": "https://www.tatacliq.com/",
+   "finalUrl": "https://www.tatacliq.com/",
+   "totalRequests": 325,
+   "thirdPartyRequests": 223,
+   "thirdPartyDomains": 78,
+   "trackerEntities": [
+    "Google Tag Manager",
+    "Adobe Tag Manager",
+    "Google Analytics",
+    "Bing Ads",
+    "Pingdom RUM",
+    "Adobe Experience Cloud",
+    "Google/Doubleclick Ads",
+    "Criteo",
+    "RTB House AdPilot",
+    "Facebook",
+    "Quora Ads",
+    "Twitter Online Conversion Tracking",
+    "Twitter Short URL",
+    "Bidswitch",
+    "AppNexus",
+    "Pubmatic",
+    "Supership",
+    "Index Exchange",
+    "Improve Digital",
+    "LiveRamp IdentityLink",
+    "Outbrain",
+    "Rubicon Project",
+    "Smart AdServer",
+    "Taboola",
+    "Teads",
+    "TripleLift",
+    "Burst Media",
+    "Media.net",
+    "Aggregate Knowledge",
+    "Unruly Media"
+   ],
+   "entities": {
+    "Google Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 1
+    },
+    "Adobe Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 4
+    },
+    "Cloudflare": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 1
+    },
+    "Google Fonts": {
+     "categories": [
+      "cdn"
+     ],
+     "domains": 2
+    },
+    "Amazon Web Services": {
+     "categories": [
+      "other"
+     ],
+     "domains": 1
+    },
+    "Google Analytics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Bing Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 2
+    },
+    "Launch Darkly": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Other Google APIs/SDKs": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Pingdom RUM": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Adobe Experience Cloud": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Google CDN": {
+     "categories": [
+      "cdn"
+     ],
+     "domains": 1
+    },
+    "Google/Doubleclick Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 6
+    },
+    "Firebase": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Ipify": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 1
+    },
+    "Criteo": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 5
+    },
+    "RTB House AdPilot": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Facebook": {
+     "categories": [
+      "social"
+     ],
+     "domains": 2
+    },
+    "Quora Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 2
+    },
+    "Twitter Online Conversion Tracking": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 2
+    },
+    "Twitter Short URL": {
+     "categories": [
+      "social"
+     ],
+     "domains": 1
+    },
+    "Bidswitch": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "AppNexus": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Pubmatic": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 2
+    },
+    "Supership": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Index Exchange": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Improve Digital": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "LiveRamp IdentityLink": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Outbrain": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Rubicon Project": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Smart AdServer": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Taboola": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Teads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "TripleLift": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Burst Media": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Media.net": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Aggregate Knowledge": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Unruly Media": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    }
+   },
+   "domains": [
+    {
+     "host": "www.googletagmanager.com",
+     "entity": "Google Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 8,
+     "bytes": 1374623
+    },
+    {
+     "host": "accounts.tatadigital.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 17331
+    },
+    {
+     "host": "assets.adobedtm.com",
+     "entity": "Adobe Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 24,
+     "bytes": 139109
+    },
+    {
+     "host": "static.cloudflareinsights.com",
+     "entity": "Cloudflare",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 10338
+    },
+    {
+     "host": "fonts.googleapis.com",
+     "entity": "Google Fonts",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 2,
+     "bytes": 1948
+    },
+    {
+     "host": "api.tatadigital.com",
+     "entity": null,
+     "categories": [],
+     "requests": 4,
+     "bytes": 3628
+    },
+    {
+     "host": "s3.ap-south-1.amazonaws.com",
+     "entity": "Amazon Web Services",
+     "categories": [
+      "other"
+     ],
+     "requests": 1,
+     "bytes": 71791
+    },
+    {
+     "host": "dpm.demdex.net",
+     "entity": "Adobe Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 2,
+     "bytes": 1625
+    },
+    {
+     "host": "www.google-analytics.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 21875
+    },
+    {
+     "host": "bat.bing.com",
+     "entity": "Bing Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 16646
+    },
+    {
+     "host": "d246big5q963u9.cloudfront.net",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 0
+    },
+    {
+     "host": "app.launchdarkly.com",
+     "entity": "Launch Darkly",
+     "categories": [
+      "utility"
+     ],
+     "requests": 8,
+     "bytes": 1010
+    },
+    {
+     "host": "api.rudderstack.com",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 1458
+    },
+    {
+     "host": "www.tataque.com",
+     "entity": null,
+     "categories": [],
+     "requests": 4,
+     "bytes": 1943
+    },
+    {
+     "host": "cdn.moengage.com",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 173875
+    },
+    {
+     "host": "www.google.com",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 21,
+     "bytes": 30109
+    },
+    {
+     "host": "c.o-s.io",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 3459
+    },
+    {
+     "host": "rum-static.pingdom.net",
+     "entity": "Pingdom RUM",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 2943
+    },
+    {
+     "host": "tataunistore.demdex.net",
+     "entity": "Adobe Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 1,
+     "bytes": 3383
+    },
+    {
+     "host": "tataunistorelimited.sc.omtrdc.net",
+     "entity": "Adobe Experience Cloud",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 4,
+     "bytes": 730
+    },
+    {
+     "host": "cm.everesttech.net",
+     "entity": "Adobe Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 1,
+     "bytes": 517
+    },
+    {
+     "host": "www.gstatic.com",
+     "entity": "Google CDN",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 5,
+     "bytes": 393005
+    },
+    {
+     "host": "analytics.google.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 3,
+     "bytes": 636
+    },
+    {
+     "host": "stats.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 636
+    },
+    {
+     "host": "www.google.co.in",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 10,
+     "bytes": 637
+    },
+    {
+     "host": "firebaseinstallations.googleapis.com",
+     "entity": "Firebase",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 670
+    },
+    {
+     "host": "ad.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 40
+    },
+    {
+     "host": "t.o-s.io",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 383
+    },
+    {
+     "host": "googleads.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 6,
+     "bytes": 8041
+    },
+    {
+     "host": "www.googleadservices.com",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 5,
+     "bytes": 32403
+    },
+    {
+     "host": "fonts.gstatic.com",
+     "entity": "Google Fonts",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 3,
+     "bytes": 81744
+    },
+    {
+     "host": "events.launchdarkly.com",
+     "entity": "Launch Darkly",
+     "categories": [
+      "utility"
+     ],
+     "requests": 6,
+     "bytes": 1137
+    },
+    {
+     "host": "sdk-03.moengage.com",
+     "entity": null,
+     "categories": [],
+     "requests": 7,
+     "bytes": 4430
+    },
+    {
+     "host": "rum-collector-2.pingdom.net",
+     "entity": "Pingdom RUM",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 213
+    },
+    {
+     "host": "image-ap1.moengage.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 18479
+    },
+    {
+     "host": "firebaseremoteconfig.googleapis.com",
+     "entity": "Firebase",
+     "categories": [
+      "utility"
+     ],
+     "requests": 12,
+     "bytes": 60264
+    },
+    {
+     "host": "tatacliqfkqfud.dataplane.rudderstack.com",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 79
+    },
+    {
+     "host": "tataunistore.tt.omtrdc.net",
+     "entity": "Adobe Experience Cloud",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 845
+    },
+    {
+     "host": "cdn.preciso.net",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 4754
+    },
+    {
+     "host": "api.ipify.org",
+     "entity": "Ipify",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 155
+    },
+    {
+     "host": "static.criteo.net",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 26107
+    },
+    {
+     "host": "sin.creativecdn.com",
+     "entity": "RTB House AdPilot",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1228
+    },
+    {
+     "host": "connect.facebook.net",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 2,
+     "bytes": 272351
+    },
+    {
+     "host": "8706005.fls.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1737
+    },
+    {
+     "host": "a.quora.com",
+     "entity": "Quora Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 15286
+    },
+    {
+     "host": "q.quora.com",
+     "entity": "Quora Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 558
+    },
+    {
+     "host": "static.ads-twitter.com",
+     "entity": "Twitter Online Conversion Tracking",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 17668
+    },
+    {
+     "host": "t.co",
+     "entity": "Twitter Short URL",
+     "categories": [
+      "social"
+     ],
+     "requests": 1,
+     "bytes": 670
+    },
+    {
+     "host": "analytics.twitter.com",
+     "entity": "Twitter Online Conversion Tracking",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 681
+    },
+    {
+     "host": "cm.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 2169
+    },
+    {
+     "host": "ban.tknpm.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 1074
+    },
+    {
+     "host": "d4p.2trk.info",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 667
+    },
+    {
+     "host": "gumi.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 5751
+    },
+    {
+     "host": "sslwidget.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 2792
+    },
+    {
+     "host": "x.bidswitch.net",
+     "entity": "Bidswitch",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 820
+    },
+    {
+     "host": "ib.adnxs.com",
+     "entity": "AppNexus",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 2920
+    },
+    {
+     "host": "simage4.pubmatic.com",
+     "entity": "Pubmatic",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 397
+    },
+    {
+     "host": "tg.socdm.com",
+     "entity": "Supership",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 862
+    },
+    {
+     "host": "r.casalemedia.com",
+     "entity": "Index Exchange",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1598
+    },
+    {
+     "host": "ad.360yield.com",
+     "entity": "Improve Digital",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 951
+    },
+    {
+     "host": "idsync.rlcdn.com",
+     "entity": "LiveRamp IdentityLink",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 421
+    },
+    {
+     "host": "c.bing.com",
+     "entity": "Bing Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 503
+    },
+    {
+     "host": "gum.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 643
+    },
+    {
+     "host": "sync.outbrain.com",
+     "entity": "Outbrain",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 360
+    },
+    {
+     "host": "simage2.pubmatic.com",
+     "entity": "Pubmatic",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 272
+    },
+    {
+     "host": "pixel.rubiconproject.com",
+     "entity": "Rubicon Project",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 1494
+    },
+    {
+     "host": "rtb-csync.smartadserver.com",
+     "entity": "Smart AdServer",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 587
+    },
+    {
+     "host": "sync-t1.taboola.com",
+     "entity": "Taboola",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 391
+    },
+    {
+     "host": "criteo-sync.teads.tv",
+     "entity": "Teads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 392
+    },
+    {
+     "host": "ade.clmbtech.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 411
+    },
+    {
+     "host": "eb2.3lift.com",
+     "entity": "TripleLift",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 526
+    },
+    {
+     "host": "sync.1rx.io",
+     "entity": "Burst Media",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 721
+    },
+    {
+     "host": "cs.media.net",
+     "entity": "Media.net",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 644
+    },
+    {
+     "host": "dis.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1544
+    },
+    {
+     "host": "aa.agkn.com",
+     "entity": "Aggregate Knowledge",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 307
+    },
+    {
+     "host": "tulprodesfleet.tataunistore.com",
+     "entity": null,
+     "categories": [],
+     "requests": 4,
+     "bytes": 315
+    },
+    {
+     "host": "sync.targeting.unrulymedia.com",
+     "entity": "Unruly Media",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 378
+    },
+    {
+     "host": "www.facebook.com",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 1,
+     "bytes": 20
+    }
+   ],
+   "score": 56
+  },
+  "BigBasket": {
+   "url": "https://www.bigbasket.com/",
+   "error": "Command failed: npx -y lighthouse https://www.bigbasket.com/ --quiet --preset=desktop --only-categories=performance --output=json --output-path=data/r"
+  },
+  "JioMart": {
+   "url": "https://www.jiomart.com/",
+   "finalUrl": "https://www.jiomart.com/sections/low-price-mumbai",
+   "totalRequests": 302,
+   "thirdPartyRequests": 173,
+   "thirdPartyDomains": 32,
+   "trackerEntities": [
+    "mPulse",
+    "Google Tag Manager",
+    "Facebook",
+    "RTB House AdPilot",
+    "CleverTap",
+    "Geniee",
+    "Google Analytics",
+    "Google/Doubleclick Ads"
+   ],
+   "entities": {
+    "Azure Web Services": {
+     "categories": [
+      "cdn"
+     ],
+     "domains": 1
+    },
+    "Google Fonts": {
+     "categories": [
+      "cdn"
+     ],
+     "domains": 2
+    },
+    "mPulse": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Google Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 1
+    },
+    "Facebook": {
+     "categories": [
+      "social"
+     ],
+     "domains": 2
+    },
+    "RTB House AdPilot": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 2
+    },
+    "CleverTap": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Geniee": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Akamai": {
+     "categories": [
+      "cdn"
+     ],
+     "domains": 1
+    },
+    "Other Google APIs/SDKs": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Google Analytics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Google/Doubleclick Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    }
+   },
+   "domains": [
+    {
+     "host": "dev-jiostatic.azurewebsites.net",
+     "entity": "Azure Web Services",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 3,
+     "bytes": 88435
+    },
+    {
+     "host": "fonts.gstatic.com",
+     "entity": "Google Fonts",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 2,
+     "bytes": 133498
+    },
+    {
+     "host": "cdn.pixelbin.io",
+     "entity": null,
+     "categories": [],
+     "requests": 4,
+     "bytes": 31329
+    },
+    {
+     "host": "s.go-mpulse.net",
+     "entity": "mPulse",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 61418
+    },
+    {
+     "host": "cdn1.jiomartjcp.com",
+     "entity": null,
+     "categories": [],
+     "requests": 98,
+     "bytes": 5110289
+    },
+    {
+     "host": "api.profile.relianceretail.com",
+     "entity": null,
+     "categories": [],
+     "requests": 3,
+     "bytes": 1127
+    },
+    {
+     "host": "c.go-mpulse.net",
+     "entity": "mPulse",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 215
+    },
+    {
+     "host": "www.googletagmanager.com",
+     "entity": "Google Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 2,
+     "bytes": 389988
+    },
+    {
+     "host": "ads.jiomartjcp.com",
+     "entity": null,
+     "categories": [],
+     "requests": 5,
+     "bytes": 999
+    },
+    {
+     "host": "store1.jiomartjcp.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "connect.facebook.net",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 2,
+     "bytes": 51562
+    },
+    {
+     "host": "asia.creativecdn.com",
+     "entity": "RTB House AdPilot",
+     "categories": [
+      "ad"
+     ],
+     "requests": 4,
+     "bytes": 2677
+    },
+    {
+     "host": "d2r1yp2w7bby2u.cloudfront.net",
+     "entity": "CleverTap",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 103529
+    },
+    {
+     "host": "retail.googleapis.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "cs.gssprt.jp",
+     "entity": "Geniee",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 462
+    },
+    {
+     "host": "sin46.creativecdn.com",
+     "entity": "RTB House AdPilot",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 230
+    },
+    {
+     "host": "jioadsweb.akamaized.net",
+     "entity": "Akamai",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 1,
+     "bytes": 167889
+    },
+    {
+     "host": "script.copilot.live",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 415185
+    },
+    {
+     "host": "fonts.googleapis.com",
+     "entity": "Google Fonts",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 2,
+     "bytes": 3121
+    },
+    {
+     "host": "public.copilot.live",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 5385
+    },
+    {
+     "host": "websdk.appsflyersdk.com",
+     "entity": null,
+     "categories": [],
+     "requests": 6,
+     "bytes": 13846
+    },
+    {
+     "host": "cdn.copilot.live",
+     "entity": null,
+     "categories": [],
+     "requests": 3,
+     "bytes": 39734
+    },
+    {
+     "host": "in1.clevertap-prod.com",
+     "entity": null,
+     "categories": [],
+     "requests": 5,
+     "bytes": 4199
+    },
+    {
+     "host": "www.google.com",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 6,
+     "bytes": 123
+    },
+    {
+     "host": "analytics.google.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 6,
+     "bytes": 761
+    },
+    {
+     "host": "stats.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 558
+    },
+    {
+     "host": "www.google.co.in",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 63
+    },
+    {
+     "host": "rmp-cdn.moloco.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 83834
+    },
+    {
+     "host": "www.facebook.com",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 1,
+     "bytes": 20
+    },
+    {
+     "host": "wa.onelink.me",
+     "entity": null,
+     "categories": [],
+     "requests": 3,
+     "bytes": 1377
+    },
+    {
+     "host": "wa.appsflyersdk.com",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 1123
+    },
+    {
+     "host": "jiomart-evt.mcm-api.moloco.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 95
+    }
+   ],
+   "score": 11
+  },
+  "Snapdeal": {
+   "url": "https://www.snapdeal.com/",
+   "finalUrl": "https://www.snapdeal.com/",
+   "totalRequests": 291,
+   "thirdPartyRequests": 257,
+   "thirdPartyDomains": 11,
+   "trackerEntities": [
+    "Google Tag Manager",
+    "Google Analytics"
+   ],
+   "entities": {
+    "Google Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 1
+    },
+    "Google Analytics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    }
+   },
+   "domains": [
+    {
+     "host": "g.sdlcdn.com",
+     "entity": null,
+     "categories": [],
+     "requests": 56,
+     "bytes": 1089764
+    },
+    {
+     "host": "i4.sdlcdn.com",
+     "entity": null,
+     "categories": [],
+     "requests": 3,
+     "bytes": 33867
+    },
+    {
+     "host": "i2.sdlcdn.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 15303
+    },
+    {
+     "host": "i1.sdlcdn.com",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 19720
+    },
+    {
+     "host": "checkout.razorpay.com",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 110046
+    },
+    {
+     "host": "www.googletagmanager.com",
+     "entity": "Google Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 1,
+     "bytes": 174965
+    },
+    {
+     "host": "api.razorpay.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 2566
+    },
+    {
+     "host": "cdn.razorpay.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 1829
+    },
+    {
+     "host": "www.google-analytics.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 550
+    },
+    {
+     "host": "checkout-static-next.razorpay.com",
+     "entity": null,
+     "categories": [],
+     "requests": 188,
+     "bytes": 1452616
+    },
+    {
+     "host": "lumberjack.razorpay.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 267
+    }
+   ],
+   "score": 62
+  },
+  "Croma": {
+   "url": "https://www.croma.com/",
+   "finalUrl": "https://www.croma.com/",
+   "totalRequests": 234,
+   "thirdPartyRequests": 143,
+   "thirdPartyDomains": 60,
+   "trackerEntities": [
+    "Adobe Tag Manager",
+    "FullStory",
+    "mPulse",
+    "Google Tag Manager",
+    "Adobe Experience Cloud",
+    "Bing Ads",
+    "Criteo",
+    "Hotjar",
+    "Facebook",
+    "CleverTap",
+    "Google/Doubleclick Ads",
+    "Google Analytics",
+    "Bidswitch",
+    "AppNexus",
+    "Pubmatic",
+    "Supership",
+    "Index Exchange",
+    "Improve Digital",
+    "LiveRamp IdentityLink",
+    "Outbrain",
+    "Rubicon Project",
+    "Smart AdServer",
+    "Taboola",
+    "Teads",
+    "TripleLift",
+    "Burst Media",
+    "Media.net"
+   ],
+   "entities": {
+    "Cloudflare CDN": {
+     "categories": [
+      "cdn"
+     ],
+     "domains": 1
+    },
+    "Adobe Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 4
+    },
+    "Google Maps": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 1
+    },
+    "AppDynamics": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 1
+    },
+    "FullStory": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "mPulse": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Google Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 1
+    },
+    "Adobe Experience Cloud": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Bing Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 2
+    },
+    "Criteo": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 5
+    },
+    "Hotjar": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "Facebook": {
+     "categories": [
+      "social"
+     ],
+     "domains": 2
+    },
+    "CleverTap": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Other Google APIs/SDKs": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Google/Doubleclick Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 8
+    },
+    "Google Analytics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Bidswitch": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "AppNexus": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Pubmatic": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 2
+    },
+    "Supership": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Index Exchange": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Improve Digital": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "LiveRamp IdentityLink": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Outbrain": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Rubicon Project": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Smart AdServer": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Taboola": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Teads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "TripleLift": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Burst Media": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Media.net": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    }
+   },
+   "domains": [
+    {
+     "host": "accounts.tatadigital.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 17332
+    },
+    {
+     "host": "cdnjs.cloudflare.com",
+     "entity": "Cloudflare CDN",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 1,
+     "bytes": 4914
+    },
+    {
+     "host": "assets.adobedtm.com",
+     "entity": "Adobe Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 3,
+     "bytes": 115113
+    },
+    {
+     "host": "maps.googleapis.com",
+     "entity": "Google Maps",
+     "categories": [
+      "utility"
+     ],
+     "requests": 3,
+     "bytes": 389487
+    },
+    {
+     "host": "cdn.appdynamics.com",
+     "entity": "AppDynamics",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 56803
+    },
+    {
+     "host": "dpm.demdex.net",
+     "entity": "Adobe Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 2,
+     "bytes": 1622
+    },
+    {
+     "host": "edge.fullstory.com",
+     "entity": "FullStory",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 93896
+    },
+    {
+     "host": "s.go-mpulse.net",
+     "entity": "mPulse",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 57751
+    },
+    {
+     "host": "cdn.rudderlabs.com",
+     "entity": null,
+     "categories": [],
+     "requests": 14,
+     "bytes": 60673
+    },
+    {
+     "host": "www.googletagmanager.com",
+     "entity": "Google Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 6,
+     "bytes": 987550
+    },
+    {
+     "host": "cromaretail.demdex.net",
+     "entity": "Adobe Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 1,
+     "bytes": 3388
+    },
+    {
+     "host": "cm.everesttech.net",
+     "entity": "Adobe Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 1,
+     "bytes": 517
+    },
+    {
+     "host": "cromaretail.tt.omtrdc.net",
+     "entity": "Adobe Experience Cloud",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 844
+    },
+    {
+     "host": "api.rudderstack.com",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 1466
+    },
+    {
+     "host": "api.tatadigital.com",
+     "entity": null,
+     "categories": [],
+     "requests": 9,
+     "bytes": 5930
+    },
+    {
+     "host": "c.go-mpulse.net",
+     "entity": "mPulse",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 214
+    },
+    {
+     "host": "bat.bing.com",
+     "entity": "Bing Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 16645
+    },
+    {
+     "host": "dynamic.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 26096
+    },
+    {
+     "host": "static.hotjar.com",
+     "entity": "Hotjar",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 6854
+    },
+    {
+     "host": "connect.facebook.net",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 2,
+     "bytes": 259495
+    },
+    {
+     "host": "d2r1yp2w7bby2u.cloudfront.net",
+     "entity": "CleverTap",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 103529
+    },
+    {
+     "host": "c.o-s.io",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 1221
+    },
+    {
+     "host": "www.google.com",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 6,
+     "bytes": 151
+    },
+    {
+     "host": "ad.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 5,
+     "bytes": 132
+    },
+    {
+     "host": "cromaraghlzckr.dataplane.rudderstack.com",
+     "entity": null,
+     "categories": [],
+     "requests": 14,
+     "bytes": 410
+    },
+    {
+     "host": "script.hotjar.com",
+     "entity": "Hotjar",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 58273
+    },
+    {
+     "host": "in1.clevertap-prod.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 660
+    },
+    {
+     "host": "gumi.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 5754
+    },
+    {
+     "host": "analytics.google.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 614
+    },
+    {
+     "host": "stats.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 557
+    },
+    {
+     "host": "www.google.co.in",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 5,
+     "bytes": 63
+    },
+    {
+     "host": "www.facebook.com",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 2,
+     "bytes": 37
+    },
+    {
+     "host": "917807264.fls.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1610
+    },
+    {
+     "host": "www.googleadservices.com",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 8,
+     "bytes": 5195
+    },
+    {
+     "host": "13135721.fls.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1138
+    },
+    {
+     "host": "adservice.google.com",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 126
+    },
+    {
+     "host": "googleads.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 4,
+     "bytes": 92
+    },
+    {
+     "host": "rs.fullstory.com",
+     "entity": "FullStory",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 288
+    },
+    {
+     "host": "sslwidget.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 3338
+    },
+    {
+     "host": "x.bidswitch.net",
+     "entity": "Bidswitch",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "cm.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 926
+    },
+    {
+     "host": "ib.adnxs.com",
+     "entity": "AppNexus",
+     "categories": [
+      "ad"
+     ],
+     "requests": 3,
+     "bytes": 2925
+    },
+    {
+     "host": "simage4.pubmatic.com",
+     "entity": "Pubmatic",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "tg.socdm.com",
+     "entity": "Supership",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "r.casalemedia.com",
+     "entity": "Index Exchange",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "ad.360yield.com",
+     "entity": "Improve Digital",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "idsync.rlcdn.com",
+     "entity": "LiveRamp IdentityLink",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "c.bing.com",
+     "entity": "Bing Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 505
+    },
+    {
+     "host": "gum.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "sync.outbrain.com",
+     "entity": "Outbrain",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "simage2.pubmatic.com",
+     "entity": "Pubmatic",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "pixel.rubiconproject.com",
+     "entity": "Rubicon Project",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "rtb-csync.smartadserver.com",
+     "entity": "Smart AdServer",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "sync-t1.taboola.com",
+     "entity": "Taboola",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 391
+    },
+    {
+     "host": "criteo-sync.teads.tv",
+     "entity": "Teads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "ade.clmbtech.com",
+     "entity": null,
+     "categories": [],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "eb2.3lift.com",
+     "entity": "TripleLift",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "sync.1rx.io",
+     "entity": "Burst Media",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "cs.media.net",
+     "entity": "Media.net",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 0
+    },
+    {
+     "host": "dis.criteo.com",
+     "entity": "Criteo",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1523
+    }
+   ],
+   "score": 45
+  },
+  "Reliance Digital": {
+   "url": "https://www.reliancedigital.in/",
+   "finalUrl": "https://www.reliancedigital.in/",
+   "totalRequests": 396,
+   "thirdPartyRequests": 368,
+   "thirdPartyDomains": 30,
+   "trackerEntities": [
+    "Google Tag Manager",
+    "Snapchat",
+    "mPulse",
+    "CleverTap",
+    "Facebook",
+    "Google/Doubleclick Ads",
+    "Google Analytics",
+    "Tapad",
+    "Bing Ads"
+   ],
+   "entities": {
+    "Google Tag Manager": {
+     "categories": [
+      "tag-manager"
+     ],
+     "domains": 1
+    },
+    "Snapchat": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 3
+    },
+    "mPulse": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 2
+    },
+    "CleverTap": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Clarity": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 4
+    },
+    "Facebook": {
+     "categories": [
+      "social"
+     ],
+     "domains": 2
+    },
+    "Google/Doubleclick Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 3
+    },
+    "Other Google APIs/SDKs": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 2
+    },
+    "Google Analytics": {
+     "categories": [
+      "analytics"
+     ],
+     "domains": 1
+    },
+    "Sentry": {
+     "categories": [
+      "utility"
+     ],
+     "domains": 1
+    },
+    "Google Fonts": {
+     "categories": [
+      "cdn"
+     ],
+     "domains": 2
+    },
+    "Tapad": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    },
+    "Bing Ads": {
+     "categories": [
+      "ad"
+     ],
+     "domains": 1
+    }
+   },
+   "domains": [
+    {
+     "host": "cdn.jiostore.online",
+     "entity": null,
+     "categories": [],
+     "requests": 283,
+     "bytes": 2104305
+    },
+    {
+     "host": "www.googletagmanager.com",
+     "entity": "Google Tag Manager",
+     "categories": [
+      "tag-manager"
+     ],
+     "requests": 14,
+     "bytes": 545266
+    },
+    {
+     "host": "sc-static.net",
+     "entity": "Snapchat",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 2,
+     "bytes": 50833
+    },
+    {
+     "host": "s.go-mpulse.net",
+     "entity": "mPulse",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 57970
+    },
+    {
+     "host": "d2r1yp2w7bby2u.cloudfront.net",
+     "entity": "CleverTap",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 103529
+    },
+    {
+     "host": "in1.clevertap-prod.com",
+     "entity": null,
+     "categories": [],
+     "requests": 6,
+     "bytes": 5495
+    },
+    {
+     "host": "www.clarity.ms",
+     "entity": "Clarity",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 1707
+    },
+    {
+     "host": "connect.facebook.net",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 5,
+     "bytes": 320548
+    },
+    {
+     "host": "c.go-mpulse.net",
+     "entity": "mPulse",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 214
+    },
+    {
+     "host": "googleads.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 5404
+    },
+    {
+     "host": "www.google.com",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 10,
+     "bytes": 292
+    },
+    {
+     "host": "ad.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 22
+    },
+    {
+     "host": "scripts.clarity.ms",
+     "entity": "Clarity",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 25985
+    },
+    {
+     "host": "analytics.google.com",
+     "entity": "Google Analytics",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 4,
+     "bytes": 642
+    },
+    {
+     "host": "stats.g.doubleclick.net",
+     "entity": "Google/Doubleclick Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 563
+    },
+    {
+     "host": "www.google.co.in",
+     "entity": "Other Google APIs/SDKs",
+     "categories": [
+      "utility"
+     ],
+     "requests": 3,
+     "bytes": 191
+    },
+    {
+     "host": "j.clarity.ms",
+     "entity": "Clarity",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 572
+    },
+    {
+     "host": "o71740.ingest.us.sentry.io",
+     "entity": "Sentry",
+     "categories": [
+      "utility"
+     ],
+     "requests": 1,
+     "bytes": 300
+    },
+    {
+     "host": "script.copilot.live",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 415098
+    },
+    {
+     "host": "mpc2-prod-21-is5qnl632q-uc.a.run.app",
+     "entity": null,
+     "categories": [],
+     "requests": 3,
+     "bytes": 422
+    },
+    {
+     "host": "www.facebook.com",
+     "entity": "Facebook",
+     "categories": [
+      "social"
+     ],
+     "requests": 5,
+     "bytes": 94
+    },
+    {
+     "host": "tr.snapchat.com",
+     "entity": "Snapchat",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 6,
+     "bytes": 2145
+    },
+    {
+     "host": "fonts.googleapis.com",
+     "entity": "Google Fonts",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 1,
+     "bytes": 939
+    },
+    {
+     "host": "public.copilot.live",
+     "entity": null,
+     "categories": [],
+     "requests": 2,
+     "bytes": 7923
+    },
+    {
+     "host": "cdn.copilot.live",
+     "entity": null,
+     "categories": [],
+     "requests": 3,
+     "bytes": 49925
+    },
+    {
+     "host": "fonts.gstatic.com",
+     "entity": "Google Fonts",
+     "categories": [
+      "cdn"
+     ],
+     "requests": 1,
+     "bytes": 14007
+    },
+    {
+     "host": "tr6.snapchat.com",
+     "entity": "Snapchat",
+     "categories": [
+      "analytics"
+     ],
+     "requests": 1,
+     "bytes": 45
+    },
+    {
+     "host": "c.clarity.ms",
+     "entity": "Clarity",
+     "categories": [
+      "utility"
+     ],
+     "requests": 2,
+     "bytes": 1237
+    },
+    {
+     "host": "pixel.tapad.com",
+     "entity": "Tapad",
+     "categories": [
+      "ad"
+     ],
+     "requests": 2,
+     "bytes": 1079
+    },
+    {
+     "host": "c.bing.com",
+     "entity": "Bing Ads",
+     "categories": [
+      "ad"
+     ],
+     "requests": 1,
+     "bytes": 765
+    }
+   ],
+   "score": 91
+  }
+ }
+}

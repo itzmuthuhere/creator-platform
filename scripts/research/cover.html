@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- Cover image template for data-driven articles. Rendered to a 1200x630 PNG
+     with headless Chrome by render-covers.mjs; content comes from the URL hash. -->
+<html><head><meta charset="utf-8"><style>
+*{margin:0;box-sizing:border-box}
+body{width:1200px;height:630px;font-family:"Segoe UI",Inter,Arial,sans-serif;color:#fff;overflow:hidden;
+background:radial-gradient(circle at 25% 30%,#6b3fb0 0,transparent 45%),radial-gradient(circle at 85% 15%,#7c3aed 0,transparent 40%),linear-gradient(135deg,#3b0f78,#5b21b6 55%,#2e1065)}
+.wrap{position:absolute;inset:64px 80px 56px}
+.cat{display:inline-block;padding:9px 18px;border-radius:999px;background:rgba(255,255,255,.16);font-size:17px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.stat{position:absolute;top:92px;right:0;text-align:right}
+.stat b{display:block;font-size:92px;line-height:1;font-weight:800;color:#bbf7d0}
+.stat span{font-size:21px;opacity:.85}
+.bars{position:absolute;top:96px;left:0;width:560px}
+.bar{display:flex;align-items:center;gap:12px;margin:9px 0;font-size:17px}
+.bar i{display:block;height:18px;border-radius:4px;background:#a78bfa}
+.bar i.hi{background:#86efac}.bar i.lo{background:#fca5a5}
+.term{position:absolute;top:100px;left:0;width:560px;padding:20px 24px;border-radius:12px;background:rgba(10,4,30,.55);font:19px/1.55 Consolas,monospace;white-space:pre;color:#e9d5ff}
+.term b{color:#86efac;font-weight:400}
+.bar em{font-style:normal;width:130px;opacity:.9}
+h1{position:absolute;bottom:40px;left:0;right:140px;font-size:52px;line-height:1.12;font-weight:800}
+.brand{position:absolute;bottom:0;right:0;font-size:20px;font-weight:700;opacity:.9}
+</style></head><body><div class="wrap">
+<div class="cat" id="cat"></div>
+<div class="bars" id="bars"></div>
+<div class="stat" id="stat"></div>
+<h1 id="title"></h1>
+<div class="brand">Techpulzo</div>
+</div>
+<script>
+const d = JSON.parse(decodeURIComponent(location.hash.slice(1)));
+cat.textContent = d.cat; title.textContent = d.title;
+stat.innerHTML = `<b>${d.stat}</b><span>${d.statLabel}</span>`;
+const max = Math.max(...d.bars.map(b => b[1]));
+if (d.code) bars.outerHTML = `<div class="term">${d.code}</div>`;
+else bars.innerHTML = (d.bars || []).map(([n, v, cls]) =>
+  `<div class="bar"><em>${n}</em><i class="${cls||''}" style="width:${Math.max(6, v / max * 330)}px"></i>${v}${d.unit||''}</div>`).join('');
+</script></body></html>
