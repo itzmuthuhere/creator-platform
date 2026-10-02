@@ -10,6 +10,12 @@
 #
 # Substitutions to set when triggering (see the runbook):
 #   _REGION, _ARTIFACT_REPO, _CLOUD_RUN_SERVICE
+#
+# _REGION is where Artifact Registry and the publish-run-tier job live
+# (asia-south1). The web service runs in _SERVICE_REGION instead
+# (asia-southeast1, next to Neon in Singapore) because that region supports
+# free Cloud Run domain mappings — asia-south1 needed a Global HTTPS Load
+# Balancer, which bills ~$0.025/hr (~INR 1,500/month) even at zero traffic.
 
 steps:
   - id: build
@@ -42,7 +48,7 @@ steps:
       - |
         gcloud run deploy "${_CLOUD_RUN_SERVICE}" \
           --image="$(cat /workspace/image.txt)" \
-          --region="${_REGION}" \
+          --region="${_SERVICE_REGION}" \
           --quiet
 
   - id: deploy-job
@@ -60,6 +66,9 @@ availableSecrets:
   secretManager:
     - versionName: projects/$PROJECT_ID/secrets/DATABASE_URL/versions/latest
       env: DATABASE_URL
+
+substitutions:
+  _SERVICE_REGION: asia-southeast1
 
 options:
   logging: CLOUD_LOGGING_ONLY

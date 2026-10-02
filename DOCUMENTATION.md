@@ -37,7 +37,7 @@
 |------|-------|
 | Site Name | Techpulzo |
 | Live URL | https://techpulzo.in |
-| Hosting | **Google Cloud Run** (project `creator-platform-prod`, service `creator-platform`, region `asia-south1`) — see §17 |
+| Hosting | **Google Cloud Run** (project `creator-platform-prod`, service `creator-platform`, region `asia-southeast1`) — see §17 |
 | GitHub | https://github.com/itzmuthuhere/creator-platform |
 | Local path | D:\creator-platform |
 | Builder | Muthu Raja (Muthuraja), 26, Java Dev at Bank of America |
@@ -92,7 +92,7 @@
 `NEXTAUTH_SECRET`, `CLOUDINARY_API_SECRET`, `RESEND_API_KEY`, `CRON_SECRET` (`gcloud secrets list`
 / `gcloud secrets versions access latest --secret=NAME` from an authenticated shell). Everything
 else is a plain env var set directly on the Cloud Run service (`gcloud run services describe
-creator-platform --region=asia-south1 --format=yaml` shows the full set, or the Cloud Run console
+creator-platform --region=asia-southeast1 --format=yaml` shows the full set, or the Cloud Run console
 → service → Edit & Deploy New Revision → Variables & Secrets tab).
 `vercel env ls` will show a similar-looking list on the `creator-platform` **Vercel** project —
 that project is a leftover/unused deployment target for the same GitHub repo (Vercel still
@@ -606,7 +606,7 @@ content (5 on the homepage, 6–7 on a single article) — a strong low-value /
 ad-heavy signal to AdSense reviewers, and a likely contributor to repeated
 rejection. Leave `NEXT_PUBLIC_ADS_LIVE` unset/`false` until **both** of these
 are true, then flip it to `"true"` on the Cloud Run service (`gcloud run services update
-creator-platform --region=asia-south1 --update-env-vars=NEXT_PUBLIC_ADS_LIVE=true`, or via the
+creator-platform --region=asia-southeast1 --update-env-vars=NEXT_PUBLIC_ADS_LIVE=true`, or via the
 Cloud Run console → service → Edit & Deploy New Revision → Variables & Secrets):
 1. AdSense account is approved
 2. Every placeholder slot ID below has been replaced with a real one
@@ -810,8 +810,18 @@ Full PostEditor with:
 ## 17. Deployment
 
 **Platform**: Google Cloud Run (project `creator-platform-prod`, service `creator-platform`,
-region `asia-south1`). techpulzo.in reaches it through a Global External HTTPS Load Balancer
-(Cloud Run's direct `domain-mappings` API isn't available in `asia-south1`) — see §18.
+region `asia-southeast1` / Singapore — same city as Neon). techpulzo.in reaches it through free
+Cloud Run domain mappings — see §18. Artifact Registry and the `publish-run-tier` job remain in
+`asia-south1`; `cloudbuild.yaml` deploys the service to `_SERVICE_REGION` (default
+`asia-southeast1`) and the job to `_REGION`.
+
+**Why not asia-south1 + load balancer (Oct 2, 2026)**: the service originally ran in
+`asia-south1`, which doesn't support domain mappings, so techpulzo.in went through a Global
+External HTTPS Load Balancer. Its forwarding rules bill ~$0.025/hr (~₹50/day, ~₹1,500/month)
+regardless of traffic — the first GCP bill after migration was ₹435 for ~8 days, almost all LB.
+Firebase Hosting was ruled out because it strips every request cookie except `__session`, which
+breaks next-auth admin login. Moving the service to `asia-southeast1` allows free domain mappings
+and puts it in the same region as Neon.
 
 **Migration history**: this app ran on Railway (project `humorous-commitment`) from launch until
 it was migrated to Google Cloud Run + Neon on **Sep 24–26, 2026**, to cut hosting cost — Railway's
@@ -885,7 +895,7 @@ Docker directly, then `gcloud run deploy`:
 docker build --build-arg DATABASE_URL="<neon connection string>" \
   -t asia-south1-docker.pkg.dev/creator-platform-prod/creator-platform/creator-platform:manual .
 docker push asia-south1-docker.pkg.dev/creator-platform-prod/creator-platform/creator-platform:manual
-gcloud run deploy creator-platform --image=...:manual --region=asia-south1
+gcloud run deploy creator-platform --image=...:manual --region=asia-southeast1
 ```
 
 ---
@@ -897,13 +907,13 @@ gcloud run deploy creator-platform --image=...:manual --region=asia-south1
 | Domain | techpulzo.in |
 | Registrar | GoDaddy |
 | Nameservers | ns1.vercel-dns.com, ns2.vercel-dns.com (still accurate — verified `nslookup -type=NS techpulzo.in`, Aug 2, 2026) |
-| DNS records managed in | Vercel's DNS panel (via nameserver delegation) — the `A` records for `techpulzo.in` and `www.techpulzo.in` both point at the GCP Load Balancer's static IP `136.82.10.1`, not at the Vercel app |
-| Actual hosting/SSL | Google Cloud — Global External HTTPS Load Balancer in front of Cloud Run (see §17) |
+| DNS records managed in | Vercel's DNS panel (via nameserver delegation) — apex `techpulzo.in` has `A` records `216.239.32.21`, `216.239.34.21`, `216.239.36.21`, `216.239.38.21` (optional `AAAA` records `2001:4860:4802:{32,34,36,38}::15` not added); `www` is a `CNAME` → `ghs.googlehosted.com.` |
+| Actual hosting/SSL | Google Cloud — Cloud Run domain mappings (`gcloud beta run domain-mappings list --region=asia-southeast1`), Google-managed certs (see §17) |
 | Domain expires | Jun 28, 2027 |
 | KYC status | Verified |
 
-**Load balancer setup** (`asia-south1` doesn't support Cloud Run's direct `domain-mappings` API,
-so this is the manual-but-standard path): Serverless NEG `creator-platform-neg` → backend service
+**Former load balancer setup** (removed Oct 2026 — see §17 for why; kept for the record):
+Serverless NEG `creator-platform-neg` → backend service
 `creator-platform-backend` → URL map `creator-platform-lb` → target HTTPS proxy
 `creator-platform-https-proxy` (two Google-managed SSL certs attached — `creator-platform-cert`
 for the apex domain, `creator-platform-www-cert` for `www`) → global forwarding rule on the static
@@ -912,9 +922,8 @@ IP `creator-platform-ip` (`136.82.10.1`). A parallel HTTP→HTTPS redirect uses 
 activate after DNS starts pointing at the IP — check status with `gcloud compute
 ssl-certificates describe creator-platform-cert --global --format="value(managed.status)"`.
 
-**www redirect**: `www.techpulzo.in` → same load balancer → app-level 308 redirect (in
-`next.config.ts`) → `techpulzo.in`. DNS-wise `www` is now its own `A` record at the same IP,
-not a CNAME to a hosting-platform hostname like it was on Railway.
+**www redirect**: `www.techpulzo.in` → its own domain mapping to the same service → app-level
+308 redirect (in `next.config.ts`) → `techpulzo.in`.
 
 **Vestigial Railway records**: `_railway-verify` and `_railway-verify.www` TXT records, and one
 leftover Vercel-auto-managed apex `ALIAS` record (→ `cname.vercel-dns-017.com.`, sitting alongside
