@@ -1,0 +1,89 @@
+{
+  "title": "How to read an internet speed test: ping, jitter, upload and what matters",
+  "seoTitle": "Internet Speed Test Explained: Ping, Jitter, Upload",
+  "h1": "How to read an internet speed test: ping, jitter, upload and what matters",
+  "slug": "internet-speed-test-ping-jitter-explained",
+  "metaDescription": "Internet speed test ping, jitter and upload explained: what each number means, why loaded latency matters for calls and games, and how to test and fix issues.",
+  "excerpt": "Download speed isn't the whole story. What ping, jitter, upload and loaded latency mean, why a slower line can feel better on calls, and how to test properly in India.",
+  "primaryKeyword": "internet speed test ping jitter",
+  "secondaryKeywords": [
+    "what is a good ping",
+    "what is jitter",
+    "mbps vs MBps",
+    "loaded latency",
+    "bufferbloat test"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Home broadband and mobile users reading speed test results",
+  "category": "tech",
+  "tags": [
+    "internet",
+    "broadband",
+    "Wi-Fi",
+    "speed test",
+    "networking"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=l-j5jJy81js",
+  "sourceVideoTitle": "What Your Speed Test Really Means: Download, Upload, Ping, and Wi‑Fi Issues",
+  "sourceChannel": "Vibrant Broadband",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:39:43.610Z",
+  "updatedAt": "2026-10-03T01:40:54.118Z",
+  "wordCount": 1245,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/why-video-calls-lag-even-with-fast-internet",
+    "https://techpulzo.in/why-your-wifi-feels-slow-in-certain-rooms-router-placement"
+  ],
+  "faq": [
+    {
+      "question": "What is a good ping for internet?",
+      "answer": "For browsing and streaming, almost anything under 100 ms is fine. For video calls and gaming, lower and steadier is better: around 20–50 ms to a nearby server feels instant. What matters even more is that ping stays low when the connection is busy."
+    },
+    {
+      "question": "What is jitter in a speed test?",
+      "answer": "Jitter is how much your ping varies from moment to moment. Low jitter means packets arrive in a steady rhythm, which video calls and games need. High jitter makes audio choppy and games feel inconsistent even when the average ping looks fine."
+    },
+    {
+      "question": "Why is my download speed lower than my plan?",
+      "answer": "Common reasons are testing over Wi-Fi rather than a cable, other devices using the connection, an older device or router, or evening congestion. Test on a cable with other devices paused, repeat a few times, and then compare with your plan."
+    },
+    {
+      "question": "Is 100 Mbps the same as 100 MB per second?",
+      "answer": "No. Speed tests use megabits; file downloads use megabytes. Divide Mbps by 8: 100 Mbps is about 12.5 MB per second at most."
+    },
+    {
+      "question": "What is loaded latency or bufferbloat?",
+      "answer": "Loaded latency is your ping while the connection is busy. If it rises sharply compared with idle ping, data is queuing in your router or modem, a problem called bufferbloat. It causes laggy calls and games during downloads and can often be fixed with a router's smart queue management setting."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:40:54.118Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=HbhzrmdPz2s",
+      "title": "Every Type of Latency Factor in 7 Minutes (Ping, Jitter)",
+      "channel": "Your internet speed expert",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DHa9gxRfAmM",
+      "title": "Internet Bandwidth (speed) Explained",
+      "channel": "PowerCert Animated Videos",
+      "hasTranscript": true
+    }
+  ]
+}

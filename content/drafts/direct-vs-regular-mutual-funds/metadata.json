@@ -1,0 +1,96 @@
+{
+  "title": "Direct vs regular mutual funds: what the commission costs you, and how to switch",
+  "seoTitle": "Direct vs Regular Mutual Fund: Real Cost and How to Switch",
+  "h1": "Direct vs regular mutual funds: what the commission costs you, and how to switch",
+  "slug": "direct-vs-regular-mutual-funds",
+  "metaDescription": "Direct vs regular mutual fund, measured: this month's expense ratio gap by category, what it costs over 20 years, and how to switch with little tax.",
+  "excerpt": "Same fund, same manager, different cost. We measured the regular-plan commission across every scheme in AMFI's September 2026 data, priced it in rupees, and worked out a staged switch that keeps the tax bill small.",
+  "primaryKeyword": "direct vs regular mutual fund",
+  "secondaryKeywords": [
+    "direct vs regular mutual fund expense ratio difference",
+    "regular to direct mutual fund switch",
+    "regular to direct switch tax",
+    "how to check if mutual fund is direct or regular",
+    "is direct mutual fund safe",
+    "direct vs regular mutual fund returns comparison"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian salaried investors who hold or are about to start mutual fund SIPs",
+  "category": "finance",
+  "tags": [
+    "mutual funds",
+    "expense ratio",
+    "SIP",
+    "capital gains tax",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=e4dsD-0w3qM",
+  "sourceVideoTitle": "Direct vs Regular Mutual funds: How expense ratios impact returns",
+  "sourceChannel": "Zerodha",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T06:57:59.638Z",
+  "updatedAt": "2026-10-02T07:58:35.297Z",
+  "wordCount": 2744,
+  "readingTimeMinutes": 14,
+  "screenshots": [
+    {
+      "file": "screenshots/01-amfi-ter-disclosure-notes.png",
+      "alt": "AMFI's notes on the TER disclosure, listing the base expense ratio, brokerage, transaction cost and statutory levies, and stating that a direct plan's base expense ratio excludes distribution commission",
+      "caption": "The notes under AMFI's TER lookup. Point 6 is the rule that separates the two plans. Source: amfiindia.com"
+    }
+  ],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-read-a-loan-apr-instead-of-just-the-emi",
+    "https://techpulzo.in/sip-vs-lump-sum-how-to-actually-decide-where-to-put-your-money"
+  ],
+  "faq": [
+    {
+      "question": "Is a direct mutual fund safe?",
+      "answer": "It is exactly as safe as the regular plan of the same scheme, because both are the same pool of money with the same holdings, custodian and fund manager. Your units are registered in your name with the fund's registrar, whichever app or website you used to buy them. \"Direct\" only describes how you bought them and what you pay; it says nothing about the fund's risk. A small-cap fund is as volatile in its direct plan as in its regular plan."
+    },
+    {
+      "question": "Can I switch from regular to direct if I invested through a bank?",
+      "answer": "Yes. The units belong to you, not to the bank, so you can switch them through the fund house's site, MF Central or the registrar's portal without asking the bank. You will need your PAN and the mobile number or email registered with the fund."
+    },
+    {
+      "question": "Do I lose my investment history when I switch?",
+      "answer": "Your old regular units are redeemed and new direct units are bought, so the direct folio starts with a fresh purchase date and cost. For tax, that new date matters: the direct units need another 12 months to count as long-term. Your past returns aren't lost; they are realised as a gain at the switch, which is why staging the switch around the ₹1.25 lakh exemption is worth the effort."
+    },
+    {
+      "question": "Should a beginner start with a regular plan?",
+      "answer": "Only if the person selling it will advise you properly over the years. If what you need is a simple start, an index fund or a flexi-cap fund in its direct plan, through a single SIP, needs very little ongoing decision-making. If you want someone to plan with you, a one-time session with a fee-only registered adviser costs a known amount instead of a percentage that grows every year."
+    },
+    {
+      "question": "Does a direct plan always give higher returns than its regular plan?",
+      "answer": "Yes, for the same scheme over the same period, by roughly the difference in expense ratio each year. Both plans own the same portfolio, so the direct plan's lower cost is the only thing separating their returns. It doesn't mean every direct fund beats every regular fund: a well-chosen regular plan can still beat a poorly chosen direct one. The plan decides the cost; the fund decides the returns."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T07:58:35.297Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=tmHJEUo68ro",
+      "title": "How to Switch from Regular to Direct Funds | Mutual Funds Investing | Sanjay Kathuria",
+      "channel": "Sanjay Kathuria",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DPh9Apfj4yU",
+      "title": "Direct vs Regular Mutual Funds | Explainer | How to earn better returns from Mutual Funds",
+      "channel": "Value Research",
+      "hasTranscript": true
+    }
+  ]
+}

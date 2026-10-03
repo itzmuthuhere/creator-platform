@@ -1,0 +1,88 @@
+{
+  "title": "ITR-U updated return: how to fix a missed or wrong return years later",
+  "seoTitle": "ITR-U Updated Return: Open Years, Extra Tax, How to File",
+  "h1": "ITR-U updated return: how to fix a missed or wrong return years later",
+  "slug": "itr-u-updated-return-how-to-file",
+  "metaDescription": "ITR-U updated return explained: which years are open in October 2026, the 25–70% extra tax, how to file on the portal, and what to do if you're owed a refund.",
+  "excerpt": "Missed income or a whole return? Which years ITR-U still covers, what the extra charge costs, how to file it, and why it can't get you a refund.",
+  "primaryKeyword": "itr-u updated return",
+  "secondaryKeywords": [
+    "how to file itr-u",
+    "updated return additional tax",
+    "itr-u last date",
+    "itr-u refund",
+    "updated return after notice"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian taxpayers who missed income or a return in an earlier year",
+  "category": "finance",
+  "tags": [
+    "income tax",
+    "ITR",
+    "ITR-U",
+    "tax filing",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=-Ocb_VJdpWA",
+  "sourceVideoTitle": "❌ Don't file Updated Return (ITR-U) | How to file updated return | How to file ITR 2026",
+  "sourceChannel": "CA Guru Ji",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T06:44:11.813Z",
+  "updatedAt": "2026-10-03T06:45:42.497Z",
+  "wordCount": 1381,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs"
+  ],
+  "faq": [
+    {
+      "question": "Who can file an updated return?",
+      "answer": "Anyone who wants to report more income or correct a return for an open year, whether or not they filed a return for that year. It's not allowed if it would lower your tax, increase a refund or loss, if you've already filed an updated return for that year, or if a search or survey has started."
+    },
+    {
+      "question": "How many years back can I file ITR-U?",
+      "answer": "Up to 48 months from the end of the relevant assessment year. As of October 2026 that covers FY 2021-22 to FY 2024-25. FY 2021-22 closes on 31 March 2027."
+    },
+    {
+      "question": "How much extra tax do I pay with ITR-U?",
+      "answer": "25% of the tax plus interest if you file within 12 months of the end of the assessment year, 50% within 24 months, 60% within 36 months and 70% within 48 months. After a reassessment notice, another 10% is added."
+    },
+    {
+      "question": "Can I claim a refund through ITR-U?",
+      "answer": "No. An updated return can't create or increase a refund. If you're owed money for a year you didn't file, apply for condonation of delay through the e-filing portal instead."
+    },
+    {
+      "question": "Can I file ITR-U for FY 2025-26?",
+      "answer": "You don't need to yet. A belated or revised return for FY 2025-26 (AY 2026-27) can be filed until 31 December 2026, and it costs a late fee and interest rather than the extra ITR-U charge."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T06:45:42.497Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=9d_1CCeT9fU",
+      "title": "ITR-U Filing 2026 | खुद File करना सीखे 💻 | u/s 139(8A) Step by Step Process",
+      "channel": "CA Puneet Jain",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zCeKUZ3k-a4",
+      "title": "ITR-U 2026 Guide | Updated Return Deadlines, How to File & Penalty Explained (FY20-21 to FY24-25)",
+      "channel": "Tax2win",
+      "hasTranscript": true
+    }
+  ]
+}

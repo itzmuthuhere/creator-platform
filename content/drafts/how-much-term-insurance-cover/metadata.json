@@ -1,0 +1,90 @@
+{
+  "title": "How much term insurance cover you need, worked out",
+  "seoTitle": "How Much Term Insurance Cover Do You Need? Worked Out",
+  "h1": "How much term insurance cover you need, worked out",
+  "slug": "how-much-term-insurance-cover",
+  "metaDescription": "How much term insurance cover do you need? A step-by-step needs calculation for an Indian family, why 10x and 25x rules disagree, and IRDAI's claim rules.",
+  "excerpt": "The rules of thumb give a ₹18 lakh earner anything from ₹1.8 crore to ₹4.5 crore. A fifteen-minute needs calculation lands at about ₹2.4 crore, and shows why a level cover bought young still fits later.",
+  "primaryKeyword": "how much term insurance cover",
+  "secondaryKeywords": [
+    "term insurance cover calculator",
+    "how much life insurance do I need India",
+    "term insurance 10 times income",
+    "human life value",
+    "term insurance till what age",
+    "is group term insurance enough"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian earners with dependents choosing a term plan's sum assured",
+  "category": "finance",
+  "tags": [
+    "term insurance",
+    "life insurance",
+    "IRDAI",
+    "financial planning",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=zYu-fO9wwm0",
+  "sourceVideoTitle": "Don’t Buy Term Life Insurance Before Watching This | Ultimate Guide to Term Insurance | Ditto",
+  "sourceChannel": "Ditto Insurance",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T13:06:06.590Z",
+  "updatedAt": "2026-10-02T13:09:35.940Z",
+  "wordCount": 1737,
+  "readingTimeMinutes": 9,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/zero-based-budgeting-how-to-build-a-budget-that-actually-works",
+    "https://techpulzo.in/how-much-home-loan-you-can-actually-afford"
+  ],
+  "faq": [
+    {
+      "question": "Is ₹1 crore term insurance enough?",
+      "answer": "For a single person without dependents, or a high-earning household with large savings, possibly. For most young families with a home loan and children, no. In our example a ₹18 lakh earner needed about ₹2.4 crore. Run the seven steps above with your own spending, loans and goals, and get quotes for the number you arrive at."
+    },
+    {
+      "question": "What's the difference between this method and human life value?",
+      "answer": "Human life value (HLV) estimates your future income's worth to your family: the present value of what you'd earn, minus your own consumption. The method here works from the other side, starting from what your family would spend, owe and need for goals. The expense-based version is easier to check, because you can see every line."
+    },
+    {
+      "question": "Should I subtract my employer's group insurance?",
+      "answer": "No. Group cover usually ends when you change jobs or are laid off, which is exactly when your family is most exposed. Count only policies you own and pay for yourself. If your employer cover is large, treat it as extra protection while it lasts."
+    },
+    {
+      "question": "Should I buy one big policy or two smaller ones?",
+      "answer": "One level policy sized for your needs is simplest and usually adequate, for the reasons above. Some people split it, for example one policy to 60 and a second, shorter one that ends when the home loan or children's dependence ends, to cut premiums. That works if you set it up deliberately; get quotes for both structures and compare the total premium."
+    },
+    {
+      "question": "Until what age should my term cover run?",
+      "answer": "Until the people who depend on you no longer need your income: typically when your children are independent and your retirement savings could support your spouse, often around 60–65. Longer only if you have a lifelong dependent or expect to work much later."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T13:09:35.940Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=euQ-PRupOyY",
+      "title": "Term Insurance: How Much Coverage Do You Need at Every Age? ft. Manish Alagh",
+      "channel": "Smart Up",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=x2O_cXMoAEE",
+      "title": "Term Insurance | Term Life Insurance | Life Insurance",
+      "channel": "XY- Axis Education",
+      "hasTranscript": true
+    }
+  ]
+}

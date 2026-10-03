@@ -1,0 +1,95 @@
+{
+  "title": "Health insurance room rent limits, co-pay and sub-limits, explained",
+  "seoTitle": "Health Insurance Room Rent Limit, Co-pay & Sub-limits",
+  "h1": "Health insurance room rent limits, co-pay and sub-limits, explained",
+  "slug": "health-insurance-room-rent-copay-sublimits",
+  "metaDescription": "Health insurance room rent limit explained: what proportionate deduction can and can't cut under IRDAI rules, plus co-pay and sub-limits, with a worked claim.",
+  "excerpt": "Three clauses decide how much of a hospital bill your policy pays. Under IRDAI's 2020 rules, a costlier room can no longer cut your medicines, tests or ICU bill. A worked claim shows what an upgrade costs now.",
+  "primaryKeyword": "health insurance room rent limit",
+  "secondaryKeywords": [
+    "proportionate deduction health insurance",
+    "co-payment in health insurance",
+    "sub-limit in health insurance",
+    "room rent capping",
+    "Arogya Sanjeevani room rent",
+    "no room rent limit health insurance"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Indian health insurance buyers and policyholders checking their policy's fine print",
+  "category": "finance",
+  "tags": [
+    "health insurance",
+    "IRDAI",
+    "claims",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=lb47l_npCqY",
+  "sourceVideoTitle": "⛔️ AVOID This HIDDEN Trap | Room Rent Limit in Health Insurance | Insurance 101 | Ditto Insurance",
+  "sourceChannel": "Ditto Insurance",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T13:26:13.619Z",
+  "updatedAt": "2026-10-02T13:27:54.056Z",
+  "wordCount": 1660,
+  "readingTimeMinutes": 9,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/the-real-cost-of-buy-now-pay-later-what-the-fine-print-does-not-say",
+    "https://techpulzo.in/how-to-read-a-loan-apr-instead-of-just-the-emi"
+  ],
+  "faq": [
+    {
+      "question": "What is proportionate deduction in health insurance?",
+      "answer": "When you take a room costlier than your policy allows, the insurer pays room-linked charges, such as doctor visits, surgery and nursing, in the same ratio as your eligible room rent to the actual rent. Since IRDAI's 2020 norms, it can't be applied to medicines, consumables, implants, diagnostics or ICU charges, or at hospitals that don't vary their charges by room type."
+    },
+    {
+      "question": "Does the room rent limit apply to ICU?",
+      "answer": "Under IRDAI's 2020 norms, insurers can't apply proportionate deduction to ICU charges, because hospitals don't have different categories of ICU. Your policy may still cap the ICU daily charge itself, as Arogya Sanjeevani does at 5% of the sum insured or ₹10,000 a day. If the ICU costs more than that cap, you pay the difference, but other bill items aren't cut because of it."
+    },
+    {
+      "question": "Is a policy with no room rent limit worth the extra premium?",
+      "answer": "Often, yes. Check what a room you'd accept costs at hospitals near you. If a limit like 1% of a ₹3–5 lakh sum insured falls short of that, you'd pay the upgrade's room-linked charges every time you're admitted. If you live where hospital rooms are cheap and you're comfortable with a shared room, a capped policy can be adequate."
+    },
+    {
+      "question": "Does co-pay reduce my sum insured?",
+      "answer": "No, not the part you pay. Under standard policy wordings, the co-pay is your share of the admissible claim; only the amount the insurer actually pays is deducted from your sum insured. A ₹1 lakh admissible claim with 5% co-pay uses ₹95,000 of your cover, and you pay ₹5,000."
+    },
+    {
+      "question": "Can I remove a co-pay from my existing policy?",
+      "answer": "It depends on the type. Ask your insurer whether a voluntary co-pay can be dropped at renewal for a higher premium. A mandatory co-pay, such as one that starts at a certain age, is part of the product, so avoiding it usually means moving to a different policy. If you consider porting, check how much waiting-period credit carries over before you switch."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T13:27:54.056Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 4,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=2o1qqemylDU",
+      "title": "How I lost money due to room rent sub limit clause in health insurance",
+      "channel": "freefincal - Prudent DIY Investing (freefincal)",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=P35DgFxFiAI",
+      "title": "Room Rent Limit In Health Insurance- Room Rent Limit Kya Hai?",
+      "channel": "Niva Bupa Health Insurance",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6NSllnpDU8E",
+      "title": "Co-Payment in Health Insurance EXPLAINED | Health Insurance With/Without CO-PAY | Gurleen Kaur Tikku",
+      "channel": "Gurleen Kaur Tikku",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "01-sbi-home-loan-rate-card.png",
+    "sourceUrl": "https://sbi.bank.in/web/interest-rates/interest-rates/loan-schemes-interest-rates/home-loans-interest-rates-current",
+    "pageTitle": "Home Loans Interest Rates (Current) - Interest Rates",
+    "selector": "img[src*=\"RATE+OF+INTEREST\"]",
+    "crop": null,
+    "width": 1492,
+    "height": 1112,
+    "capturedAt": "2026-10-02T09:02:02.454Z",
+    "alt": "SBI's home loan interest rate card showing term loans at 7.25% to 8.55%, MaxGain overdraft loans at 7.75% to 9.05%, and an EBLR of 7.90%",
+    "caption": "SBI's current rate card, effective 20 May 2026. Your rate within the range depends on your credit score. Source: sbi.bank.in"
+  }
+]

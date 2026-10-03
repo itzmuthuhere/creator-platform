@@ -1,0 +1,14 @@
+[
+  {
+    "file": "01-sbi-fd-rates.png",
+    "sourceUrl": "https://sbi.bank.in/web/interest-rates/deposit-rates/retail-domestic-term-deposits",
+    "pageTitle": "Retail Domestic term deposits - Interest Rates",
+    "selector": "table.table-bordered",
+    "crop": null,
+    "width": 1492,
+    "height": 1029,
+    "capturedAt": "2026-10-02T12:53:26.252Z",
+    "alt": "SBI's retail fixed deposit interest rate table, showing 3.05% for 7 to 45 days, 4.90% for 46 to 179 days and 6.25% for one to two years for the general public",
+    "caption": "SBI's current FD rates, effective 15 December 2025. Money withdrawn early earns the rate for the time it stayed, less a penalty. Source: sbi.bank.in"
+  }
+]

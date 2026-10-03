@@ -1,0 +1,88 @@
+{
+  "title": "Repo rate hike or cut: what it does to your home loan EMI",
+  "seoTitle": "Repo Rate Hike and Your Home Loan EMI: What Changes",
+  "h1": "Repo rate hike or cut: what it does to your home loan EMI",
+  "slug": "repo-rate-change-home-loan-emi",
+  "metaDescription": "How a repo rate hike or cut reaches your home loan EMI: EBLR and spread, what 0.25% costs in rupees, why banks stretch the tenure, and your options at reset.",
+  "excerpt": "A 0.25% repo change adds about ₹775 a month to a ₹50 lakh loan, or a whole extra year if the bank stretches the tenure. How it works and what to ask for.",
+  "primaryKeyword": "repo rate hike emi",
+  "secondaryKeywords": [
+    "repo rate change home loan",
+    "eblr home loan",
+    "home loan spread",
+    "home loan tenure increased",
+    "rbi reset rules home loan"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Indian home loan borrowers on floating rates wondering how an RBI decision changes their EMI",
+  "category": "finance",
+  "tags": [
+    "home loan",
+    "repo rate",
+    "RBI",
+    "EMI",
+    "interest rates"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=gVSVMF8pouA",
+  "sourceVideoTitle": "Will Your Home Loan EMI Finally Reduce? 🚨 RBI Repo Rate Explained",
+  "sourceChannel": "Trade Neeti",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T06:52:19.877Z",
+  "updatedAt": "2026-10-03T06:53:50.534Z",
+  "wordCount": 1286,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-much-home-loan-you-can-actually-afford"
+  ],
+  "faq": [
+    {
+      "question": "How much will my EMI increase if the repo rate goes up by 0.25%?",
+      "answer": "On a ₹50 lakh, 20-year loan at 7.75%, by about ₹775 a month if the tenure stays the same. Later in the loan the increase is smaller. Many banks keep the EMI and add about a year to the tenure instead, which costs more in total interest."
+    },
+    {
+      "question": "When will a repo rate change affect my home loan?",
+      "answer": "At your loan's next reset date. Repo-linked loans must be reset at least once every three months, so the change usually reaches you within that period. Older MCLR or base-rate loans follow the bank's own benchmark and can lag further."
+    },
+    {
+      "question": "Why did my loan tenure increase instead of my EMI?",
+      "answer": "Banks often keep the EMI unchanged and extend the number of EMIs when rates rise. RBI rules let you choose a higher EMI, a longer tenure or a mix, so you can ask the bank to raise the EMI instead."
+    },
+    {
+      "question": "What is the spread on a home loan?",
+      "answer": "It's the part of your rate above the bank's benchmark, set mainly by your credit risk. It stays fixed for your loan unless your credit assessment changes substantially. A repo change moves the benchmark, not your spread."
+    },
+    {
+      "question": "Should I reduce my EMI or tenure when rates fall?",
+      "answer": "Keeping the EMI and shortening the tenure saves more interest. Lowering the EMI frees monthly cash. If you have no tight budget, keep the EMI."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T06:53:50.534Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=mN9p6Tb2cTY",
+      "title": "RBI slashes repo rate: How much can you save on your home loan? EMI vs Tenure explained",
+      "channel": "ET Digital",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rZBlRQn0Y64",
+      "title": "RBI Repo Rate Cut 2025 Explained |Full EMI, Savings & Loan Tenure Explained | Yuvarani",
+      "channel": "Yuvarani",
+      "hasTranscript": true
+    }
+  ]
+}

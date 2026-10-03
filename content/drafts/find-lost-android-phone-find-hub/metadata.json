@@ -1,0 +1,89 @@
+{
+  "title": "Lost your Android phone? Find My Device (now Find Hub) and what to do next",
+  "seoTitle": "Find My Device Android (Find Hub): Lost Phone Steps + CEIR",
+  "h1": "Lost your Android phone? Find My Device (now Find Hub) and what to do next",
+  "slug": "find-lost-android-phone-find-hub",
+  "metaDescription": "Find My Device for Android is now Find Hub. Settings to turn on today, the first-hour steps when a phone is lost, and how to block it in India through CEIR.",
+  "excerpt": "Locate, ring, lock or erase a lost Android phone with Google's Find Hub, then secure your accounts and block the handset on every Indian network through CEIR.",
+  "primaryKeyword": "find my device android",
+  "secondaryKeywords": [
+    "find hub google",
+    "how to find lost android phone",
+    "ceir block lost phone",
+    "sanchar saathi lost mobile",
+    "remote lock android"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian Android users who lost a phone or want to prepare",
+  "category": "tech",
+  "tags": [
+    "Android",
+    "Find Hub",
+    "lost phone",
+    "CEIR",
+    "security"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=U_Yq_8ionKI",
+  "sourceVideoTitle": "How to Find Your Lost Android Phone with Google Find Hub",
+  "sourceChannel": "Smartphones Made Easy",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:29:49.543Z",
+  "updatedAt": "2026-10-03T01:30:59.793Z",
+  "wordCount": 1232,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs",
+    "https://techpulzo.in/how-two-factor-authentication-actually-stops-account-hacks"
+  ],
+  "faq": [
+    {
+      "question": "Can I find my Android phone if it's switched off?",
+      "answer": "Not its current location. Find Hub can show the last known location from when the phone was last online, and if offline finding was enabled, nearby Android devices may have reported its location. Once it's off, your best protection is locking it and blocking it through CEIR."
+    },
+    {
+      "question": "How do I find my lost Android phone from another phone?",
+      "answer": "Open android.com/find in any browser, or the Find Hub app on another Android phone (use guest mode on a friend's device), and sign in with the Google account used on the lost phone. You'll see its location and can ring, lock or erase it."
+    },
+    {
+      "question": "What do I need to block a lost phone on CEIR?",
+      "answer": "A police complaint or FIR copy, a reissued SIM for your lost number (to receive the OTP), valid ID proof, and ideally the IMEI numbers and purchase invoice. Submit the request on the Sanchar Saathi portal and keep the request ID."
+    },
+    {
+      "question": "Should I erase my phone remotely?",
+      "answer": "Only if you don't expect to get it back and you're worried about your data. Erasing deletes everything, and Find Hub can't locate the phone afterwards. Lock it first and keep tracking while there's a chance of recovery."
+    },
+    {
+      "question": "Does Find Hub work without a SIM card?",
+      "answer": "Yes, if the phone has a Wi-Fi connection, or if offline finding is on and other Android devices are nearby. It needs the phone to be signed in to your Google account with Find Hub enabled."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:30:59.793Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=WVW8psrzBeI",
+      "title": "Find My Device (Google Find Hub): 5 Settings to Track a Lost Phone!",
+      "channel": "Mufungo Geeks Tech",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cWJh6w9JS1s",
+      "title": "😭மொபைல் தொலைந்து போச்சா? | How to find Lost Mobile | FIR | CEIR || இனி ஈசியா BLOCK பண்ணலாம்",
+      "channel": "Our Tech Tamil",
+      "hasTranscript": true
+    }
+  ]
+}

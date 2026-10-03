@@ -1,0 +1,89 @@
+{
+  "title": "How to port your mobile number to another network in India",
+  "seoTitle": "How to Port Your Mobile Number in India: UPC, Rules, Timing",
+  "h1": "How to port your mobile number to another network in India",
+  "slug": "port-mobile-number-mnp",
+  "metaDescription": "How to port your mobile number in India: TRAI's eligibility rules, getting a UPC from 1900, how long porting takes, why UPC requests fail, and how to cancel.",
+  "excerpt": "Send PORT and your number to 1900, take the 8-digit code to your new operator within four days, and switch in about three working days. TRAI's rules, step by step.",
+  "primaryKeyword": "port mobile number",
+  "secondaryKeywords": [
+    "upc code",
+    "mnp rules",
+    "how long does porting take",
+    "upc code not received",
+    "port jio to airtel"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian mobile users switching operator",
+  "category": "tech",
+  "tags": [
+    "mobile",
+    "MNP",
+    "TRAI",
+    "telecom",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=jQ8AGda21P0",
+  "sourceVideoTitle": "Sim Card Port Online New update | Jio MNP Online | Sim port online | Airtel to jio sim port online",
+  "sourceChannel": "IND Hindi Tech",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T21:24:00.947Z",
+  "updatedAt": "2026-10-02T21:25:31.742Z",
+  "wordCount": 1113,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-two-factor-authentication-actually-stops-account-hacks",
+    "https://techpulzo.in/prepaid-vs-postpaid-mobile-plans-which-actually-costs-less-over-a-year"
+  ],
+  "faq": [
+    {
+      "question": "How do I get a UPC code to port my number?",
+      "answer": "Send an SMS from the number you want to port to 1900 with the text PORT followed by a space and your ten-digit number. The 8-digit UPC arrives by SMS from 1901. You need an active plan that allows SMS."
+    },
+    {
+      "question": "How long does mobile number porting take?",
+      "answer": "Three working days within the same telecom circle, and five working days between circles or for corporate numbers. In Jammu and Kashmir, Assam and the North East it can take up to 15 working days. The final switch happens at night with up to four hours without service."
+    },
+    {
+      "question": "Why is my UPC request being rejected?",
+      "answer": "TRAI rejects a UPC request if postpaid dues are unpaid, the number has been on the current network for less than 90 days, a SIM swap or replacement happened in the last seven days, a change of ownership is in progress, contract obligations are pending, or porting is barred by a court. The rejection SMS states the reason."
+    },
+    {
+      "question": "Is there a fee for porting a mobile number?",
+      "answer": "TRAI caps the charge at ₹6.46 per porting request, payable only if the new operator asks for it. You'll also pay for the new plan you choose."
+    },
+    {
+      "question": "Can I cancel a porting request?",
+      "answer": "Yes, within 24 hours of submitting it. Send CANCEL followed by a space and your ten-digit number to 1900. The porting charge, if you paid one, isn't refunded."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T21:25:31.742Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 3,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=O13liV79OV8",
+      "title": "UPC Code Nahi Aa Raha? 🔥 100% Solution | How to Generate UPC Code 2026",
+      "channel": "Mr Zaman",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZcndBCQixL4",
+      "title": "Mobile number port kaise kare 2026 | sim card port kaise kare | jio airtel vi bsnl sim ko port kare",
+      "channel": "Flight Information",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "title": "How to calculate your electricity bill from appliance usage",
+  "seoTitle": "How to Calculate Your Electricity Bill (2026 Guide)",
+  "h1": "How to calculate your electricity bill from appliance usage",
+  "slug": "how-to-calculate-electricity-bill",
+  "metaDescription": "How to calculate your electricity bill: turn appliance watts into units, apply slab rates, and see Tamil Nadu's 2026 tariff and the 500-unit cliff worked out.",
+  "excerpt": "Units = watts × hours ÷ 1,000. A step-by-step method for any state, with a full Tamil Nadu household worked out under the May 2026 free-units scheme.",
+  "primaryKeyword": "how to calculate electricity bill",
+  "secondaryKeywords": [
+    "electricity bill calculation per unit",
+    "tneb bill calculation 2026",
+    "200 units free electricity tamil nadu",
+    "how many units does an ac consume",
+    "kwh calculation"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian households, with a Tamil Nadu worked example",
+  "category": "finance",
+  "tags": [
+    "electricity bill",
+    "TNEB",
+    "household budget",
+    "energy saving",
+    "Tamil Nadu"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=gZ1ACGmNhx8",
+  "sourceVideoTitle": "TNEB EB Bill Calculation 2026 | TNEB Bill அதிகமாக வருவதற்கான காரணங்கள் + தீர்வுகள் #ebbill #tneb",
+  "sourceChannel": "Stay Focus in Attitude - Karthikeyan Mani",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T20:55:26.501Z",
+  "updatedAt": "2026-10-02T20:56:58.805Z",
+  "wordCount": 1615,
+  "readingTimeMinutes": 9,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-turn-a-spreadsheet-into-a-simple-budget-tracker",
+    "https://techpulzo.in/zero-based-budgeting-how-to-build-a-budget-that-actually-works"
+  ],
+  "faq": [
+    {
+      "question": "How do I calculate electricity units from watts?",
+      "answer": "Multiply the appliance's power in watts by the hours it runs, then divide by 1,000. A 1,500-watt appliance running for 2 hours uses 1,500 × 2 ÷ 1,000 = 3 units (kWh). Add up all your appliances over the billing period to get your total units."
+    },
+    {
+      "question": "How much electricity does a 1.5-ton AC use?",
+      "answer": "It depends on the model, its star rating and the outside temperature. As a rough guide, an inverter AC averaging about 900 watts while running uses around 3.6 units in a 4-hour night, or about 108 units a month. Check the AC's BEE label for its rated yearly consumption, or measure it with your meter."
+    },
+    {
+      "question": "Who gets 200 free units of electricity in Tamil Nadu?",
+      "answer": "Domestic consumers who use 500 units or less in a two-month billing cycle, from 10 May 2026. If you use more than 500 units, you stay on the earlier structure with 100 free units and higher charges on the next 100 units."
+    },
+    {
+      "question": "Why did my TNEB bill jump when I used only a few more units?",
+      "answer": "If you crossed 500 units in the two-month cycle, you lost the extra 100 free units and moved to the higher slab structure. At 500 units the bill is ₹1,570; at 501 units it's ₹2,048.40, a jump of ₹478.40."
+    },
+    {
+      "question": "Does switching appliances off at the plug save electricity?",
+      "answer": "Yes, a little. Devices on standby draw a few watts each, all day. A router, set-top box and chargers drawing 30 watts between them use about 43 units over two months. Switching off what you don't need overnight trims that, though the AC and water heater matter far more."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T20:56:58.805Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0.06,
+      "longestCopiedRun": 8,
+      "runs": [
+        "if you use more than 500 units you"
+      ]
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=ct9BNGDUb8Y",
+      "title": "How to Calculate Electricity Usage & kWh Step by Step",
+      "channel": "ElectroDecoded",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JsA0DmBi-xs",
+      "title": "How to Calculate eb bill | Eb bill calculation 2026 | eb tariff | TN cm  has announced 200 units",
+      "channel": "startuponline",
+      "hasTranscript": true
+    }
+  ]
+}

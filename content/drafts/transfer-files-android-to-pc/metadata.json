@@ -1,0 +1,88 @@
+{
+  "title": "How to transfer files from Android to a PC: Quick Share, cable or cloud",
+  "seoTitle": "Transfer Files from Android to PC: Quick Share, USB, Cloud",
+  "h1": "How to transfer files from Android to a PC: Quick Share, cable or cloud",
+  "slug": "transfer-files-android-to-pc",
+  "metaDescription": "Transfer files from Android to PC the right way: Quick Share for a few files, USB for big batches, Phone Link drag and drop, or cloud, with fixes when it fails.",
+  "excerpt": "Four ways to move files from an Android phone to a Windows PC, which to use for which job, official requirements and limits, and fixes when nothing shows up.",
+  "primaryKeyword": "transfer files android to pc",
+  "secondaryKeywords": [
+    "quick share windows",
+    "android usb file transfer not working",
+    "phone link drag and drop",
+    "send files phone to laptop without cable"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Android phone users with a Windows PC",
+  "category": "tech",
+  "tags": [
+    "Android",
+    "Windows",
+    "Quick Share",
+    "file transfer",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=f_oU2v6m4aM",
+  "sourceVideoTitle": "How To Transfer Files Between Phone and PC | Using QuickShare",
+  "sourceChannel": "Tech is Easy",
+  "author": "Nithiyaraj",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:52:32.136Z",
+  "updatedAt": "2026-10-03T01:53:41.736Z",
+  "wordCount": 1163,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/what-end-to-end-encrypted-actually-means-for-an-app-you-use-daily",
+    "https://techpulzo.in/google-drive-vs-onedrive-vs-icloud-which-cloud-storage-to-use"
+  ],
+  "faq": [
+    {
+      "question": "How do I transfer files from Android to PC without a cable?",
+      "answer": "Use Quick Share: install the Quick Share app on your Windows PC, turn on Wi-Fi and Bluetooth on both devices, then share the files from your phone and accept them on the PC. Phone Link and cloud storage are the other wireless options."
+    },
+    {
+      "question": "Why does my PC only charge my phone and not show files?",
+      "answer": "The phone is in charging mode. Unlock it, tap the \"Charging this device via USB\" notification and choose File transfer. If that option doesn't appear, try another cable, since some cables only carry power."
+    },
+    {
+      "question": "Does Quick Share work on all Windows PCs?",
+      "answer": "It needs a 64-bit version of Windows 10 or later, or Windows 11 or later on ARM-based PCs, with Wi-Fi and Bluetooth. Samsung PCs should use Samsung's own Quick Share app from the Microsoft Store."
+    },
+    {
+      "question": "Where do Quick Share files go on my PC?",
+      "answer": "Usually to your Downloads folder; the Quick Share app shows the location after each transfer and lets you open the file from there."
+    },
+    {
+      "question": "What is the fastest way to move many photos from Android to PC?",
+      "answer": "A USB cable in File transfer mode. Open the phone's DCIM\\Camera folder in File Explorer and copy the files across. It's faster and more reliable than wireless methods for large batches."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:53:41.736Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 3,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=ewThGHLJEl8",
+      "title": "Fix Quick Share Not Working | Fix File Transfer Between Windows & Android",
+      "channel": "Glitch Guru",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=15NoRsIqWds",
+      "title": "Easiest Way to TRANSFER Files Between PC and Phone (Android & iPhone) 2026",
+      "channel": "Techno Uplift",
+      "hasTranscript": true
+    }
+  ]
+}

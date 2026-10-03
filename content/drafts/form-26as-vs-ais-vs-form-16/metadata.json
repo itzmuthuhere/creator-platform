@@ -1,0 +1,84 @@
+{
+  "title": "Form 26AS vs AIS vs Form 16: what each shows and how to check them",
+  "seoTitle": "Form 26AS vs AIS vs Form 16: What Each Shows",
+  "h1": "Form 26AS vs AIS vs Form 16: what each shows and how to check them",
+  "slug": "form-26as-vs-ais-vs-form-16",
+  "metaDescription": "Form 26AS vs AIS vs Form 16: who makes each, what it covers, how they connect to your ITR, a worked reconciliation, and when AIS feedback isn't enough.",
+  "excerpt": "Your employer, the TDS system and the department each keep a version of your income. What Form 16, Form 26AS and AIS show, how to reconcile them before filing, and why giving AIS feedback doesn't fix your return.",
+  "primaryKeyword": "form 26as vs ais",
+  "secondaryKeywords": [
+    "ais vs tis",
+    "form 16 part a and part b",
+    "how to download ais",
+    "ais feedback",
+    "ais mismatch notice",
+    "form 130 replaces form 16"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Indian taxpayers checking their income and TDS records before or after filing ITR",
+  "category": "finance",
+  "tags": [
+    "income tax",
+    "AIS",
+    "Form 26AS",
+    "Form 16",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=w2FQy22YIbc",
+  "sourceVideoTitle": "Form 16 vs 26AS vs AIS vs TIS: 5 Step Reconciliation Formula (2026)",
+  "sourceChannel": "NaNiMa Fisdom",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T17:03:46.705Z",
+  "updatedAt": "2026-10-02T17:05:18.344Z",
+  "wordCount": 1570,
+  "readingTimeMinutes": 8,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-get-a-duplicate-pan-card-online",
+    "https://techpulzo.in/the-real-difference-between-a-fixed-deposit-and-a-recurring-deposit"
+  ],
+  "faq": [
+    {
+      "question": "What is the difference between Form 26AS and AIS?",
+      "answer": "Form 26AS is a tax credit statement: since assessment year 2023-24 it shows only TDS and TCS against your PAN. AIS is much broader. It includes that TDS plus interest, dividends, securities and mutual fund transactions, large financial transactions, taxes paid and refunds. Use 26AS to check your TDS credits, and AIS to check that every income is in your return."
+    },
+    {
+      "question": "What is TIS in AIS?",
+      "answer": "TIS (Taxpayer Information Summary) is a category-wise summary of your AIS. It shows the value the system processed and the value after your feedback or the source's confirmation. That second figure is what pre-fills your income tax return, which is why giving feedback on wrong AIS entries before filing is useful."
+    },
+    {
+      "question": "Should I report income exactly as AIS shows it?",
+      "answer": "Report the correct income. Where AIS is right, include it. Where AIS is wrong (a duplicate, another person's transaction, a sale shown instead of the gain), give feedback in AIS and report the correct figure in your return. Don't copy AIS blindly, and don't ignore it either."
+    },
+    {
+      "question": "Why is TDS in my Form 16 more than in 26AS?",
+      "answer": "Usually because your employer deducted the TDS but filed its TDS return late or with an error, so it hasn't reached your PAN in 26AS. Ask the employer to correct its TDS return. Claim only what 26AS shows; once the correction appears, you can revise your return to claim the rest."
+    },
+    {
+      "question": "Will I still get Form 16 next year?",
+      "answer": "For salary earned up to March 2026, yes, by 15 June 2026. For salary earned from April 2026, employers issue Form 130 instead, under the new Income-tax Rules. It serves the same purpose with a slightly different layout."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T17:05:18.344Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 2,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=CL9UZSJzA8Y",
+      "title": "AIS TIS AUR 26AS में अलग FIGURES | ITR में क्या REPORT करें | एक गलती से आएगा INCOMETAX NOTICE",
+      "channel": "CA Anita Agrawal",
+      "hasTranscript": true
+    }
+  ]
+}

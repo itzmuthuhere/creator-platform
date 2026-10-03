@@ -1,0 +1,96 @@
+{
+  "title": "How to file ITR-1 online: a salaried person's guide (including late filing)",
+  "seoTitle": "How to File ITR-1 Online for Salaried (AY 2026-27)",
+  "h1": "How to file ITR-1 online: a salaried person's guide (including late filing)",
+  "slug": "file-itr-1-online-salaried",
+  "metaDescription": "How to file ITR-1 online for 2025-26: who can use it, belated returns until 31 December 2026, the documents to collect, each step, and fixing AIS mismatches.",
+  "excerpt": "Missed 31 July? You can still file ITR-1 for 2025-26 until 31 December 2026, with a late fee and the new regime. Eligibility, the four documents to collect, every step on the portal, and how to fix the mismatches that cause notices.",
+  "primaryKeyword": "how to file itr 1 online",
+  "secondaryKeywords": [
+    "belated return after due date 2026",
+    "itr 1 eligibility ay 2026-27",
+    "late fee 234f",
+    "e-verify itr aadhaar otp",
+    "form 16 itr 1 filing",
+    "ais 26as mismatch"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian salaried taxpayers filing their own return, including late filers before 31 December",
+  "category": "finance",
+  "tags": [
+    "income tax",
+    "ITR",
+    "Form 16",
+    "salary",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=OC4iEVs0jLk",
+  "sourceVideoTitle": "ITR Filing 2026-27 for Salary Person | Step by Step ITR-1 Return Filing AY 2026-27 (Live Demo)",
+  "sourceChannel": "FinTaxPro",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T16:23:22.065Z",
+  "updatedAt": "2026-10-02T16:25:20.281Z",
+  "wordCount": 1461,
+  "readingTimeMinutes": 8,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-get-a-duplicate-pan-card-online",
+    "https://techpulzo.in/how-two-factor-authentication-actually-stops-account-hacks"
+  ],
+  "faq": [
+    {
+      "question": "Can I still file ITR for 2025-26 after 31 July 2026?",
+      "answer": "Yes. You can file a belated return until 31 December 2026. You'll pay a late fee of ₹1,000 if your total income is up to ₹5 lakh, or ₹5,000 above that, plus interest on any unpaid tax. You'll be taxed under the new regime, and any capital losses can't be carried forward."
+    },
+    {
+      "question": "Is filing ITR mandatory if my employer already deducted TDS?",
+      "answer": "If your total income is above the basic exemption limit, yes. TDS doesn't replace the return. Filing is also how you get back any excess TDS, how lenders and embassies verify income, and it avoids a notice for not filing."
+    },
+    {
+      "question": "Can I file ITR-1 if I sold mutual funds?",
+      "answer": "Only if all your gains were long-term gains on equity funds or listed shares, up to ₹1.25 lakh in total. Any short-term capital gain, or long-term gains above ₹1.25 lakh, means you need ITR-2."
+    },
+    {
+      "question": "What happens if I don't e-verify my return?",
+      "answer": "Verification completes the filing, and the department's FAQ gives 30 days to do it. Don't leave it: an unverified return isn't processed, so any refund waits too. E-verifying with an Aadhaar OTP right after submitting takes a minute."
+    },
+    {
+      "question": "Can I switch to the old regime in a belated return?",
+      "answer": "No. The option to choose the old regime has to be exercised in a return filed by the due date. A belated return filed after 31 July is taxed under the new regime."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T16:25:20.281Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 4,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=1wAyr9zfd8o",
+      "title": "🔥How to File ITR-1 Online (AY 2026-27) | Live Practical Demo | Salaried, Pensioners, FD int & more |",
+      "channel": "CA Shweta Verma",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lFZbbgHQPTI",
+      "title": "File ITR after Due Date | Belated ITR Filing | AY 2026-27",
+      "channel": "ClearTax",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kmnr_G5pkjs",
+      "title": "ITR 1 & ITR 2 Filing 2026-27 after Due Date Without Late Fees U/S 234F |  Belated ITR",
+      "channel": "Tax Filing School",
+      "hasTranscript": true
+    }
+  ]
+}

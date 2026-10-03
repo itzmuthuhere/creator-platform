@@ -1,0 +1,32 @@
+{
+  "title": "Fastest DNS in India? I Timed 1,800 Lookups Against Google, Cloudflare, Quad9 and My ISP",
+  "subtitle": "Raw timing data from a home broadband connection, why the default resolver won, and when switching still makes sense",
+  "slug": "fastest-dns-server-in-india-tested",
+  "contentFile": "content.html",
+  "excerpt": "I timed six DNS resolvers from an ACT Fibernet home connection. The ISP's default beat every public option, Cloudflare was the best of the rest, and Quad9 was routed abroad. Full numbers, method, and how to test your own line.",
+  "seoTitle": "Fastest DNS Server in India: Google vs Cloudflare vs ISP Tested",
+  "metaDescription": "A real DNS speed test from an Indian home connection: ISP DNS vs Google 8.8.8.8, Cloudflare 1.1.1.1, Quad9, OpenDNS and AdGuard, with medians, slow-lookup rates and how to test your own.",
+  "keywords": ["fastest dns server india", "best dns for india", "cloudflare vs google dns", "1.1.1.1 vs 8.8.8.8", "change dns android private dns", "dns speed test"],
+  "category": "tech",
+  "tags": ["dns", "internet", "networking", "wi-fi"],
+  "author": "Muthu",
+  "status": "DRAFT",
+  "faq": [
+    {
+      "question": "Is 1.1.1.1 or 8.8.8.8 faster in India?",
+      "answer": "On the ACT Fibernet connection tested here, Cloudflare's 1.1.1.1 had a median lookup time of 8.2 ms against 29.7 ms for Google's 8.8.8.8, and fewer slow lookups (16% over 100 ms versus 29%). Results depend on how your ISP connects to each provider, so run the PowerShell test in the article on your own connection."
+    },
+    {
+      "question": "Will changing DNS make my internet faster?",
+      "answer": "Usually not by much. DNS only affects the moment a site's name is looked up, and devices cache answers. It can help if your current resolver is slow or unreliable, but it doesn't change your download speed."
+    },
+    {
+      "question": "Is my ISP's DNS safe to use?",
+      "answer": "It works fine for most people, but queries to it are unencrypted and the ISP can see which domains you look up. If that matters to you, use an encrypted option such as Android's Private DNS with one.one.one.one or dns.google."
+    },
+    {
+      "question": "Why was Quad9 so slow in this test?",
+      "answer": "A traceroute showed Quad9 traffic from this connection jumping by more than 200 ms at a single hop, which points to it being routed to a server outside India. On a different ISP it may route to a nearby server and perform normally."
+    }
+  ]
+}

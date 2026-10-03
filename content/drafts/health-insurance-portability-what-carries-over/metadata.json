@@ -1,0 +1,84 @@
+{
+  "title": "Health insurance portability: what carries over when you switch insurers",
+  "seoTitle": "Health Insurance Portability: What Carries Over in 2026",
+  "h1": "Health insurance portability: what carries over when you switch insurers",
+  "slug": "health-insurance-portability-what-carries-over",
+  "metaDescription": "Health insurance portability explained: which waiting periods, bonus and moratorium credits carry over under IRDAI rules, what doesn't, and when to apply.",
+  "excerpt": "Porting keeps your waiting-period and moratorium credits, but only up to your old cover. What transfers, a worked example, and how to switch without a gap.",
+  "primaryKeyword": "health insurance portability",
+  "secondaryKeywords": [
+    "port health insurance",
+    "waiting period after porting",
+    "health insurance migration vs portability",
+    "when to port health insurance"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian health insurance policyholders thinking of switching insurers",
+  "category": "finance",
+  "tags": [
+    "health insurance",
+    "portability",
+    "IRDAI",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=IzfTm-163pE",
+  "sourceVideoTitle": "Avoid these 5 Health Insurance PORTING MISTAKES! Health Insurance Porting | Ditto Insurance",
+  "sourceChannel": "Ditto Insurance",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T07:16:03.527Z",
+  "updatedAt": "2026-10-03T07:17:19.945Z",
+  "wordCount": 1084,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [],
+  "faq": [
+    {
+      "question": "What happens to waiting periods when I port my health insurance?",
+      "answer": "Waiting periods you've already served, including for pre-existing diseases and specific illnesses, carry over to the new insurer up to your previous sum insured. If you increase your cover, the extra amount has fresh waiting periods."
+    },
+    {
+      "question": "Does the five-year moratorium carry over when porting?",
+      "answer": "Yes. IRDAI's rules say time on ported and migrated policies counts towards the 60 months of continuous coverage after which a claim can't be contested for non-disclosure, except for established fraud."
+    },
+    {
+      "question": "When should I apply to port my health insurance?",
+      "answer": "Apply to the new insurer 45 to 60 days before your current policy's renewal date; insurers generally want at least 45 days. If the port isn't approved by renewal, renew your existing policy so there's no break in cover."
+    },
+    {
+      "question": "Can the new insurer reject my portability request?",
+      "answer": "Yes. The new insurer underwrites you afresh and can accept, reject, ask for medical tests or price the policy differently, based on your age, health and claim history. It must decide within five days of receiving your details from the old insurer."
+    },
+    {
+      "question": "Will I lose my no claim bonus if I port?",
+      "answer": "IRDAI's rules allow the no claim bonus to be carried over to the extent of the sum insured. Confirm with the new insurer exactly how your bonus will be credited before you switch."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T07:17:19.945Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 3,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=U_z31RrP4Z4",
+      "title": "Policy Porting vs. Migration Explained | Which is Right for Your Health Insurance? Ditto Insurance",
+      "channel": "Ditto Insurance",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UHRvtYBUUaM",
+      "title": "What is Health Insurance Portability - How to Port Health Insurance Policy",
+      "channel": "Niva Bupa Health Insurance",
+      "hasTranscript": true
+    }
+  ]
+}

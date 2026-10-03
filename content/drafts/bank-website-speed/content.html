@@ -1,0 +1,102 @@
+<p><em>Tested on 29 September 2026 with Google Lighthouse, each homepage run three times. The figures below are the median run.</em></p>
+
+<p>On a mid-range phone with a slow 4G signal, SBI's homepage took over 22 seconds for its main content to appear and downloaded 20 MB before it settled. That's the heaviest page among the 12 Indian bank homepages I tested, and SBI was not alone: eight of the twelve took longer than 10 seconds to show their main content under the same conditions.</p>
+
+<p>Bank homepages are what you land on when you search for your bank, reset a password, or check a rate, often on mobile data in a hurry. So I measured them the way Google measures page speed and compared the results.</p>
+
+<h2>How I Tested</h2>
+
+<p><a href="https://developer.chrome.com/docs/lighthouse/overview" rel="noopener" target="_blank">Lighthouse</a> is Google's open-source page-speed tool; it's what powers PageSpeed Insights. Its default mobile test simulates a mid-range Android phone on a slow 4G connection, which is deliberately harsher than a good Wi-Fi line. That makes it useful for comparison: every site gets identical conditions, and slow pages get exposed rather than hidden by a fast connection.</p>
+
+<ul>
+<li><strong>Banks:</strong> SBI, HDFC Bank, ICICI Bank, Axis Bank, Kotak Mahindra Bank, Punjab National Bank, Bank of Baroda, Canara Bank, Union Bank of India, IndusInd Bank, Yes Bank and IDFC FIRST Bank.</li>
+<li><strong>Pages:</strong> each bank's public homepage only, not net banking after login.</li>
+<li><strong>Runs:</strong> three per bank, keeping the median. Scores moved noticeably between runs for some banks (Yes Bank scored 5, 27 and 26), which is why a single run can't be trusted.</li>
+</ul>
+
+<p>One detail nearly skewed the whole test. Indian banks have moved to new <code>.bank.in</code> web addresses, so <code>sbi.co.in</code> now redirects to <code>sbi.bank.in</code>. My first round tested the old addresses, and SBI scored 99 out of 100, because Lighthouse was measuring a tiny redirect notice, not the homepage. I re-ran every bank at its final <code>.bank.in</code> address; all the numbers below come from that second round.</p>
+
+<h2>The Results</h2>
+
+<p>"Main content visible" is Largest Contentful Paint (LCP), the moment the biggest element on screen (usually the banner or hero image) finishes loading. Google considers under 2.5 seconds good and over 4 seconds poor. "Frozen" is Total Blocking Time: how long the page ignored taps and scrolling while its scripts ran.</p>
+
+<table>
+<thead>
+<tr><th>Bank</th><th>Lighthouse score</th><th>Main content visible</th><th>Frozen</th><th>Page weight</th><th>Requests</th></tr>
+</thead>
+<tbody>
+<tr><td>IndusInd Bank</td><td><strong>76</strong></td><td><strong>4.0 s</strong></td><td>0.16 s</td><td>4.6 MB</td><td>128</td></tr>
+<tr><td>ICICI Bank</td><td>68</td><td>7.1 s</td><td>0.15 s</td><td><strong>1.0 MB</strong></td><td><strong>112</strong></td></tr>
+<tr><td>IDFC FIRST Bank</td><td>64</td><td>6.9 s</td><td>0.39 s</td><td>2.2 MB</td><td>112</td></tr>
+<tr><td>Punjab National Bank</td><td>54</td><td>14.0 s</td><td>0.28 s</td><td>12.1 MB</td><td>231</td></tr>
+<tr><td>Axis Bank</td><td>52</td><td>21.1 s</td><td>0.28 s</td><td>4.2 MB</td><td>114</td></tr>
+<tr><td>Canara Bank</td><td>52</td><td>46.8 s</td><td><strong>0.03 s</strong></td><td>13.6 MB</td><td>257</td></tr>
+<tr><td>HDFC Bank</td><td>45</td><td>5.5 s</td><td>0.90 s</td><td>2.5 MB</td><td>160</td></tr>
+<tr><td>Bank of Baroda</td><td>42</td><td>26.2 s</td><td>0.70 s</td><td>4.3 MB</td><td>155</td></tr>
+<tr><td>Union Bank of India</td><td>37</td><td>15.2 s</td><td>0.19 s</td><td>6.8 MB</td><td>168</td></tr>
+<tr><td>Kotak Mahindra Bank</td><td>31</td><td>16.9 s</td><td>0.46 s</td><td>3.0 MB</td><td>241</td></tr>
+<tr><td>Yes Bank</td><td>26</td><td>15.8 s</td><td>3.11 s</td><td>4.2 MB</td><td>228</td></tr>
+<tr><td>SBI</td><td>9</td><td>22.5 s</td><td>1.94 s</td><td>20.3 MB</td><td>189</td></tr>
+</tbody>
+</table>
+
+<figure>
+<svg viewBox="0 0 640 400" role="img" aria-label="Time until main content is visible, by bank" style="width:100%;height:auto;font-family:system-ui,sans-serif">
+<text x="0" y="18" font-size="15" font-weight="600" fill="currentColor">Seconds until main content is visible (simulated slow 4G, lower is better)</text>
+<g font-size="13" fill="currentColor">
+<line x1="160" y1="30" x2="160" y2="386" stroke="currentColor" opacity="0.2"/>
+<text x="0" y="52">IndusInd</text><rect x="160" y="38" width="36" height="20" fill="#16a34a"/><text x="202" y="53">4.0</text>
+<text x="0" y="82">HDFC</text><rect x="160" y="68" width="49" height="20" fill="#2563eb"/><text x="215" y="83">5.5</text>
+<text x="0" y="112">IDFC FIRST</text><rect x="160" y="98" width="62" height="20" fill="#2563eb"/><text x="228" y="113">6.9</text>
+<text x="0" y="142">ICICI</text><rect x="160" y="128" width="64" height="20" fill="#2563eb"/><text x="230" y="143">7.1</text>
+<text x="0" y="172">PNB</text><rect x="160" y="158" width="126" height="20" fill="#2563eb"/><text x="292" y="173">14.0</text>
+<text x="0" y="202">Union Bank</text><rect x="160" y="188" width="137" height="20" fill="#2563eb"/><text x="303" y="203">15.2</text>
+<text x="0" y="232">Yes Bank</text><rect x="160" y="218" width="142" height="20" fill="#2563eb"/><text x="308" y="233">15.8</text>
+<text x="0" y="262">Kotak</text><rect x="160" y="248" width="152" height="20" fill="#2563eb"/><text x="318" y="263">16.9</text>
+<text x="0" y="292">Axis</text><rect x="160" y="278" width="190" height="20" fill="#2563eb"/><text x="356" y="293">21.1</text>
+<text x="0" y="322">SBI</text><rect x="160" y="308" width="203" height="20" fill="#dc2626"/><text x="369" y="323">22.5</text>
+<text x="0" y="352">Bank of Baroda</text><rect x="160" y="338" width="236" height="20" fill="#dc2626"/><text x="402" y="353">26.2</text>
+<text x="0" y="382">Canara</text><rect x="160" y="368" width="421" height="20" fill="#dc2626"/><text x="587" y="383">46.8</text>
+</g>
+</svg>
+<figcaption>Largest Contentful Paint, median of three Lighthouse mobile runs per bank, 29 September 2026.</figcaption>
+</figure>
+
+<h2>Why the Score and the Wait Don't Always Agree</h2>
+
+<p>Canara Bank's case shows why you shouldn't read the headline score alone. It scored a middling 52, yet its main content took almost 47 seconds to appear, the slowest in the test by a wide margin. The Lighthouse score is a weighted blend of five measurements, and the most heavily weighted one is how long the page freezes while its scripts run. Canara's page barely froze at all (0.03 seconds, the best in the test), so that part came out near-perfect and pulled the total up. The waiting is what a visitor notices, and on that measure Canara came last.</p>
+
+<p>HDFC shows the opposite pattern. Its main content appeared in 5.5 seconds, second fastest, but its scripts then kept the page unresponsive for almost a second, which cost it points. Yes Bank froze for over 3 seconds, the worst in the test: the page looks ready, but taps don't register.</p>
+
+<h2>What's Inside SBI's 20 MB Homepage</h2>
+
+<p>I ran one more detailed test on SBI's homepage to see where the weight comes from. Of the 20.3 MB it downloaded, 18.6 MB was images. Nineteen of them were over 500 KB each, adding up to 17.3 MB, and almost all were banners for the homepage carousel: a Ganpati festive campaign, a PM-Vidyalaxmi education loan offer, a CKYC awareness notice and, ironically, a 1.3 MB banner warning customers about fake investment schemes. They're stored at 1,820 pixels wide and several are PNG files as large as 1.8 MB, so a phone downloads desktop-sized pictures it can't even display at that size.</p>
+
+<p>The carousel shows one banner at a time, yet the page downloads all of them up front. Lighthouse's own estimate is that loading off-screen images only when they're needed would save about 16 MB, and serving them in a modern format like WebP would save about 15 MB on its own. The element that decided SBI's main-content time was one of those banners: a 1.26 MB festive campaign image.</p>
+
+<p>SBI's score also moved more than any other bank's between runs: 9, 9 and 23 in the three main runs, and 30 in this detailed one. When a page is this heavy, small differences in how quickly each image arrives change the result a lot, which is itself a sign of a fragile page.</p>
+
+
+<h2>What Makes a Bank Page Slow</h2>
+
+<p>The fast pages had a few things in common. ICICI delivered its whole homepage in about 1 MB, the lightest in the test, and tied with IDFC FIRST for the fewest requests. IndusInd showed its main content in 4 seconds, the only bank close to Google's "good" threshold under these harsh conditions. The slowest pages downloaded much more, and made more separate requests: 12 to 20 MB and over 180 requests for SBI, PNB and Canara, against 1 to 2.5 MB for ICICI, IDFC FIRST and HDFC.</p>
+
+<p>Every request is a separate trip to a server, and on a slow connection those trips add up even when each file is small. Large banner images, video backgrounds, several analytics and chat tools, and marketing pop-ups all add requests and weight, and a homepage is where banks tend to put all of them.</p>
+
+<h2>Does It Matter If You Use the App?</h2>
+
+<p>Less, but more than you'd think. The bank's app doesn't load this page. But you still land on the homepage when you search for your bank's IFSC code, a branch, an FD rate or a customer-care number, and on a weak mobile signal a 20 MB page can take long enough that you give up or tap on the first search result that loads instead.</p>
+
+<p>That second part is a real risk. Fake bank pages and fake customer-care numbers are a common route to UPI and card fraud, and they tend to load fast because they're simple.</p>
+
+<h2>Three Habits That Help</h2>
+
+<ol>
+<li><strong>Bookmark the exact net banking login page</strong>, not the homepage. Login pages are usually far lighter, and a bookmark means you never go through a search result to reach your bank.</li>
+<li><strong>Check for <code>.bank.in</code> in the address.</strong> Under the RBI's direction, Indian banks have moved their websites to the <code>.bank.in</code> domain, which is reserved for verified banks. Every bank in this test now redirects there. A page claiming to be your bank on any other address deserves suspicion.</li>
+<li><strong>Use the bank's official app for routine tasks</strong>, and the website for occasional things like downloading statements or checking rates. The app skips the heavy homepage entirely.</li>
+</ol>
+
+<h2>Speed Is a Design Choice</h2>
+
+<p>ICICI and IndusInd show that a bank homepage can carry rates, products, notices and login links and still be light. The same simulated phone and connection that took 22 seconds on SBI's homepage took 4 on IndusInd's. Nothing about banking requires a 20 MB front page; it comes down to how much each bank chooses to load before a customer can do anything.</p>

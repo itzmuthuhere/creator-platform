@@ -1,0 +1,89 @@
+{
+  "title": "How to back up a Windows 11 PC properly",
+  "seoTitle": "How to Back Up Windows 11 Properly (3 Built-in Tools)",
+  "h1": "How to back up a Windows 11 PC properly",
+  "slug": "backup-windows-11-pc",
+  "metaDescription": "How to back up Windows 11 properly: Windows Backup, File History and system images compared, the September 2026 File History bug, and how to test a restore.",
+  "excerpt": "Windows 11 has three backup tools that each protect something different. How to combine them, what each misses, and the 2026 bug that silently stopped File History.",
+  "primaryKeyword": "how to backup windows 11",
+  "secondaryKeywords": [
+    "windows backup app",
+    "file history windows 11",
+    "system image windows 11",
+    "backup to external hard drive",
+    "file history not working september 2026"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Windows 11 users protecting files and setups",
+  "category": "tech",
+  "tags": [
+    "Windows 11",
+    "backup",
+    "File History",
+    "OneDrive",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=lWuEIP2HShU",
+  "sourceVideoTitle": "Windows 11: Create Full Backup to External Hard Drive and Restore (2026)",
+  "sourceChannel": "Pureinfotech",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:50:13.076Z",
+  "updatedAt": "2026-10-03T01:51:36.959Z",
+  "wordCount": 1189,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/google-drive-vs-onedrive-vs-icloud-which-cloud-storage-to-use",
+    "https://techpulzo.in/ssd-vs-hdd-for-a-budget-laptop-where-the-money-should-actually-go"
+  ],
+  "faq": [
+    {
+      "question": "What is the best way to back up Windows 11?",
+      "answer": "Use more than one method: Windows Backup for settings and main folders, File History to an external drive for versions of your files, and an occasional system image for a full restore. Keep at least one copy away from the PC."
+    },
+    {
+      "question": "Does Windows Backup back up everything?",
+      "answer": "No. It saves selected folders, settings, credentials and your app list to OneDrive, limited by your OneDrive space (5 GB on a free account). It doesn't create a full copy of your PC, and many non-Store apps need reinstalling."
+    },
+    {
+      "question": "Why did File History stop working in September 2026?",
+      "answer": "A September 2026 Windows 11 update (KB5124008) broke File History on versions 24H2 and 25H2. Microsoft released an optional fix (KB5124010) on 23 September, with an automatic fix due in October's update. Install the optional update and check File History's last backup time."
+    },
+    {
+      "question": "Is a system image still available in Windows 11?",
+      "answer": "Yes. It's labelled a legacy, deprecated feature but still works from Control Panel's Backup and Restore (Windows 7). It's best for occasional full snapshots rather than daily backups."
+    },
+    {
+      "question": "Can I back up Windows 11 to a USB flash drive?",
+      "answer": "For File History and copying files, yes, if it's large enough. For a system image, you need an external hard drive or SSD rather than a flash drive."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:51:36.959Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=FJcPSUlxdlA",
+      "title": "Windows File History vs. Windows Backup and Restore File Level Backup Comparison",
+      "channel": "OnlineComputerTips",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UjneIBp3TOg",
+      "title": "HOW TO MAKE A WINDOWS BACKUP IMAGE 2026 | STEP BY STEP TUTORIAL | INFORMATRIX",
+      "channel": "𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐑𝐈𝐗",
+      "hasTranscript": true
+    }
+  ]
+}

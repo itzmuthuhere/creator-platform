@@ -1,0 +1,32 @@
+{
+  "title": "10 Beginner Python Programs With Real Output (and the 5 Errors You'll Hit First)",
+  "subtitle": "Every program run on Python 3.12, with the exact terminal output and real error messages to compare against",
+  "slug": "beginner-python-programs-with-output",
+  "contentFile": "content.html",
+  "excerpt": "Ten small, practical Python programs (bill splitting with GST, EMI, FD interest, an expense tracker) with the exact output each one prints, plus the five error messages beginners see first and how to read them.",
+  "seoTitle": "10 Python Programs for Beginners With Output and Common Errors",
+  "metaDescription": "Ten beginner Python programs with real, verified output: GST bill split, EMI calculator, FD interest, loops, dictionaries and CSV files, plus the five most common beginner errors explained.",
+  "keywords": ["python programs for beginners with output", "simple python programs", "python emi calculator", "python beginner errors", "typeerror can only concatenate str", "python practice programs"],
+  "category": "tech",
+  "tags": ["python", "coding", "programming"],
+  "author": "Muthu",
+  "status": "DRAFT",
+  "faq": [
+    {
+      "question": "Which Python version do these programs need?",
+      "answer": "They were run on Python 3.12. Any Python 3.8 or newer will run them, but the \"Did you mean\" hint in the NameError example and the ~~~^~~~ error markers only appear in recent versions."
+    },
+    {
+      "question": "Why does my output look different from the article?",
+      "answer": "Check for small differences in the code first, especially numbers and indentation. Program 7 only matches exactly if you keep the random.seed(42) line. Program 1 depends on what you type at the prompts."
+    },
+    {
+      "question": "Why does Python say it can't concatenate str and int?",
+      "answer": "input() always returns text, even when you type digits. Convert it before doing maths, for example age = int(input(\"Age: \"))."
+    },
+    {
+      "question": "Where is the CSV file saved in program 10?",
+      "answer": "In whatever folder your terminal was in when you ran the program. Open that folder and expenses.csv will be there; it opens in Excel or Google Sheets."
+    }
+  ]
+}

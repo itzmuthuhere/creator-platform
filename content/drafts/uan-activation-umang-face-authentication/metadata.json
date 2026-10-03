@@ -1,0 +1,89 @@
+{
+  "title": "UAN activation in 2026: how to do it with UMANG face authentication",
+  "seoTitle": "UAN Activation 2026: UMANG Face Authentication Steps",
+  "h1": "UAN activation in 2026: how to do it with UMANG face authentication",
+  "slug": "uan-activation-umang-face-authentication",
+  "metaDescription": "UAN activation now happens in the UMANG app with an Aadhaar face scan. What changed, what you need, each step, what to do after activating, and common fixes.",
+  "excerpt": "EPFO moved UAN activation and creation to UMANG's Aadhaar face authentication. The 2025–26 changes, step-by-step activation, new-employee UANs and fixes.",
+  "primaryKeyword": "uan activation",
+  "secondaryKeywords": [
+    "uan activation umang face authentication",
+    "aadhaar face rd app",
+    "uan activate without employer",
+    "uan activation not working",
+    "generate uan online"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian salaried employees with a new or inactive UAN",
+  "category": "finance",
+  "tags": [
+    "EPF",
+    "UAN",
+    "UMANG",
+    "Aadhaar",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=USsp_xXFLGo",
+  "sourceVideoTitle": "🔥UMANG App से Face Scan करके UAN Activate कैसे करें? | 5 मिनट में Complete Process | EPFO 2026",
+  "sourceChannel": "ONLINE BY VIKRAM",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T06:25:20.928Z",
+  "updatedAt": "2026-10-03T06:27:29.733Z",
+  "wordCount": 1049,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-set-up-a-password-manager-in-15-minutes",
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs"
+  ],
+  "faq": [
+    {
+      "question": "Can I activate my UAN on the EPFO website?",
+      "answer": "Not any more. Activation through the member portal with an Aadhaar OTP has been discontinued; activation now happens in the UMANG app using Aadhaar face authentication. UANs already activated keep working, and you still log in on EPFO's website afterwards."
+    },
+    {
+      "question": "Do I need my employer to activate my UAN?",
+      "answer": "No. You can activate an existing UAN yourself in UMANG. Since 1 August 2025, new UANs are also created by employees through UMANG's face authentication, except for international workers and Nepal and Bhutan citizens."
+    },
+    {
+      "question": "What is the Aadhaar FaceRD app?",
+      "answer": "It's UIDAI's app that captures your live face and checks it against your Aadhaar record. UMANG uses it during UAN activation; you don't need to open it separately."
+    },
+    {
+      "question": "What if my Aadhaar mobile number has changed?",
+      "answer": "Update the mobile number linked to your Aadhaar first, because the OTP goes to that number. Then activate your UAN in UMANG."
+    },
+    {
+      "question": "What should I do after activating my UAN?",
+      "answer": "Log in to EPFO's member website with the SMS password and change it, complete your bank, PAN and Aadhaar KYC, add a nominee, check your passbook, and transfer any older PF accounts to your current UAN."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T06:27:29.733Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 3,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=hR3jSjA2pso",
+      "title": "✅UAN Activation Through UMANG & AadhaarFaceRD Apps▶️ | Easy Steps to ACTIVATE👣 | EPFO New Update 🆕",
+      "channel": "MadhanTalks",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xgQm22GZ8as",
+      "title": "EPFO important update UAN Aadhaar face authentication update in umang app 2026 #epfo #pf #aadhaar",
+      "channel": "Gen Infopedia",
+      "hasTranscript": true
+    }
+  ]
+}

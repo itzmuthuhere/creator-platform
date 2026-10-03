@@ -1,0 +1,89 @@
+{
+  "title": "AC star rating and ISEER: what the numbers mean for your electricity bill",
+  "seoTitle": "AC Star Rating and ISEER Explained (2026)",
+  "h1": "AC star rating and ISEER: what the numbers mean for your electricity bill",
+  "slug": "ac-star-rating-iseer-explained",
+  "metaDescription": "AC star rating and ISEER explained: what the BEE label's numbers mean, why stars changed in 2026, and when a 5-star AC pays back at Indian electricity rates.",
+  "excerpt": "Look past the stars: ISEER, annual units and cooling watts on the BEE label tell you what an AC will cost to run. With 3-star vs 5-star payback worked out.",
+  "primaryKeyword": "ac star rating iseer",
+  "secondaryKeywords": [
+    "what is iseer",
+    "3 star vs 5 star ac",
+    "ac star rating 2026",
+    "1.5 ton ac units per hour",
+    "ac cooling capacity watts"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian buyers choosing a split AC",
+  "category": "reviews",
+  "tags": [
+    "air conditioner",
+    "BEE star rating",
+    "ISEER",
+    "electricity bill",
+    "buying guide"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=AnXo9f-5nu8",
+  "sourceVideoTitle": "Which AC Should You Buy In 2026 | 3 Star VS 5 Star",
+  "sourceChannel": "ClearBuy",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T20:59:47.792Z",
+  "updatedAt": "2026-10-02T21:01:15.175Z",
+  "wordCount": 1528,
+  "readingTimeMinutes": 8,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-read-a-loan-apr-instead-of-just-the-emi",
+    "https://techpulzo.in/how-to-turn-a-spreadsheet-into-a-simple-budget-tracker"
+  ],
+  "faq": [
+    {
+      "question": "What is a good ISEER rating for an inverter AC?",
+      "answer": "Higher is better, and the bands for each star were raised in January 2026. Rather than aiming for a number, compare the ISEER of the models you're considering: an AC with ISEER 5.5 uses roughly 10% less electricity than one with 5.0 for the same cooling."
+    },
+    {
+      "question": "How many units does a 1.5-ton AC use per hour?",
+      "answer": "It depends on the model, the outside temperature and your thermostat setting. On the label basis, a typical 3-star 1.5-ton split AC uses about 1,008 units over 1,600 hours, or about 0.63 units an hour; a 5-star about 0.46. In a hot city during peak summer, actual use is higher."
+    },
+    {
+      "question": "Is a 5-star AC worth it over a 3-star?",
+      "answer": "If you run the AC 8 hours or more a day for several months, usually yes: the extra cost typically pays back in four to seven years. For a few hours a day in a short summer, the savings are small and the payback can exceed a decade."
+    },
+    {
+      "question": "Why did my 5-star AC become 4-star?",
+      "answer": "It didn't change; the scale did. BEE raised the efficiency required for each star from 1 January 2026, so new labels award fewer stars for the same ISEER. Your AC uses the same electricity as before."
+    },
+    {
+      "question": "What is the difference between EER and ISEER?",
+      "answer": "EER measures efficiency at one fixed outdoor temperature. ISEER measures it across a range of Indian temperatures (24°C to 43°C), weighted by how often each occurs, which gives a fairer picture for inverter ACs that run at part load most of the time."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T21:01:15.175Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=YILZsm_A7V0",
+      "title": "BEE NEW STAR RATING 2026 ⚡️ FULL GUIDE FOR AC BUYERS IN INDIA | AC STAR RATING CHANGE INFORMATION",
+      "channel": "ELECTRO BY KESHAV",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XCxHyUTD_Hc",
+      "title": "What is ISEER? Difference between EER & ISEER  ll Star rating of A.C",
+      "channel": "Girish Shinde",
+      "hasTranscript": true
+    }
+  ]
+}

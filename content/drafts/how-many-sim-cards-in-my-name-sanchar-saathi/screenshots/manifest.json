@@ -1,0 +1,14 @@
+[
+  {
+    "file": "01-know-mobile-connections-login.png",
+    "sourceUrl": "https://tafcop.sancharsaathi.gov.in/telecomUser/",
+    "pageTitle": "TAFCOP",
+    "selector": null,
+    "crop": "cropped from a full-page capture (scale 1): login card and request counters; blank form, no personal data",
+    "width": 840,
+    "height": 705,
+    "capturedAt": "2026-09-29T18:05:00.000Z",
+    "alt": "Know Mobile Connections in Your Name login page on Sanchar Saathi with fields for a 10-digit mobile number, captcha and OTP, next to counters for requests received and resolved",
+    "caption": "The login page. The counters on the left were at 4,22,52,742 requests received and 3,98,56,550 resolved when we checked in September 2026. Source: sancharsaathi.gov.in"
+  }
+]

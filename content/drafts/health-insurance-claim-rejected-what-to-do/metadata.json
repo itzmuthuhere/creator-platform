@@ -1,0 +1,86 @@
+{
+  "title": "Health insurance claim rejected or cut? What to do next, step by step",
+  "seoTitle": "Health Insurance Claim Rejected? What to Do, Step by Step",
+  "h1": "Health insurance claim rejected or cut? What to do next, step by step",
+  "slug": "health-insurance-claim-rejected-what-to-do",
+  "metaDescription": "Health insurance claim rejected? The IRDAI rules to cite, the five-year moratorium, and how to escalate from insurer to Bima Bharosa to the free ombudsman.",
+  "excerpt": "A rejection isn't the end. How to read it, the IRDAI rules insurers must follow, and the free escalation path to the Insurance Ombudsman, with deadlines.",
+  "primaryKeyword": "health insurance claim rejected",
+  "secondaryKeywords": [
+    "insurance ombudsman complaint",
+    "bima bharosa complaint",
+    "health insurance moratorium period",
+    "claim partially settled",
+    "cashless denied"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian policyholders whose health insurance claim was rejected or partly paid",
+  "category": "finance",
+  "tags": [
+    "health insurance",
+    "claims",
+    "IRDAI",
+    "ombudsman",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=p9-3ut9ckGw",
+  "sourceVideoTitle": "Insurance Claim Rejected? How I Won My 10-Month Fight | Ombudsman India | Health / Travel Insurance",
+  "sourceChannel": "Aamir Iqubal",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T07:13:26.988Z",
+  "updatedAt": "2026-10-03T07:14:54.448Z",
+  "wordCount": 1388,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [],
+  "faq": [
+    {
+      "question": "What can I do if my health insurance claim is rejected?",
+      "answer": "Write to the insurer's grievance officer with the rejection letter, the policy clause and your reasons. If they don't resolve it within about 15 days, register it on IRDAI's Bima Bharosa portal, then take it to the Insurance Ombudsman, which is free for claims up to ₹50 lakh."
+    },
+    {
+      "question": "Can an insurer reject a claim for non-disclosure after five years?",
+      "answer": "No, except for established fraud. IRDAI's rules say that after 60 months of continuous coverage, a health policy or claim can't be contested for non-disclosure or misrepresentation. Time on ported or migrated policies counts toward the 60 months."
+    },
+    {
+      "question": "How long do I have to complain to the Insurance Ombudsman?",
+      "answer": "One year from the date the insurer rejected your complaint, or from the end of the one-month period if the insurer didn't reply. You must complain to the insurer first."
+    },
+    {
+      "question": "Does the Insurance Ombudsman charge a fee?",
+      "answer": "No. There's no fee to file, you don't need a lawyer, and hearings can be held online. The ombudsman handles claims up to ₹50 lakh and must pass an award within three months of receiving all the requirements."
+    },
+    {
+      "question": "Is a cashless denial the same as a claim rejection?",
+      "answer": "No. If cashless is refused, you can pay the hospital and claim reimbursement, and the insurer decides again on the full documents. Insurers must decide cashless requests within one hour under IRDAI's rules."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T07:14:54.448Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=5zt-c330iQs",
+      "title": "Health Insurance Claim Rejection OVERTURNED | WHAT TO DO If Claim Is REJECTED?",
+      "channel": "Ditto Insurance",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oZjFDZRrgaQ",
+      "title": "Why Health Insurance Claims Get Rejected in India | 12 Mistakes You Must Avoid",
+      "channel": "Deep Wealth Talks (English )",
+      "hasTranscript": true
+    }
+  ]
+}

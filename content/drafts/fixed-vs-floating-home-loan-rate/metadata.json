@@ -1,0 +1,81 @@
+{
+  "title": "Fixed vs floating home loan rates in India: which to choose in 2026",
+  "seoTitle": "Fixed vs Floating Home Loan in India: Which to Choose (2026)",
+  "h1": "Fixed vs floating home loan rates in India: which to choose in 2026",
+  "slug": "fixed-vs-floating-home-loan-rate",
+  "metaDescription": "Fixed vs floating home loan in 2026: what banks charge for each, a 20-year cost comparison, what 'fixed' means in the fine print, and when fixing makes sense.",
+  "excerpt": "Fixed home loans cost one to six points more than floating in 2026, and are often fixed only for a few years. The numbers, the fine print and when fixing pays.",
+  "primaryKeyword": "fixed vs floating home loan",
+  "secondaryKeywords": [
+    "fixed rate home loan india",
+    "floating rate home loan",
+    "hybrid home loan",
+    "switch floating to fixed home loan"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian home buyers choosing a loan type, and existing borrowers offered a switch",
+  "category": "finance",
+  "tags": [
+    "home loan",
+    "interest rates",
+    "fixed rate",
+    "floating rate",
+    "decision"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=3ch0G9JdqMA",
+  "sourceVideoTitle": "Fixed vs Floating Interest Rate: Home Loan Ke Liye Kaunsa Hai Best?",
+  "sourceChannel": "Moneyview",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T06:55:36.744Z",
+  "updatedAt": "2026-10-03T06:56:57.970Z",
+  "wordCount": 1239,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-much-home-loan-you-can-actually-afford"
+  ],
+  "faq": [
+    {
+      "question": "Is fixed or floating better for a home loan in India?",
+      "answer": "For most borrowers, floating. Fixed-rate home loans cost about 1 to 6 percentage points more depending on the bank, and on a ₹50 lakh, 20-year loan the floating rate would have to average about 1.75 points higher for the whole term before fixed came out cheaper."
+    },
+    {
+      "question": "Does a fixed home loan rate stay the same for the whole tenure?",
+      "answer": "Not always. Many products are fixed only for the first two to five years and then convert to floating, and some agreements allow the lender to reset the fixed rate. Check the period and any reset clause before signing."
+    },
+    {
+      "question": "Can I prepay a fixed-rate home loan without charges?",
+      "answer": "Not necessarily. The RBI's ban on prepayment charges covers floating-rate loans to individuals. Fixed-rate loans can carry a prepayment charge if it's disclosed in the loan documents."
+    },
+    {
+      "question": "Can I switch my floating home loan to a fixed rate?",
+      "answer": "If your lender offers it. RBI rules allow lenders to offer a switch at the time of a rate reset, and since October 2025 it's optional for them. A switching fee may apply."
+    },
+    {
+      "question": "Should I fix my home loan rate before the RBI raises rates?",
+      "answer": "Only if the fixed rate is close to your floating rate or your budget can't take any increase. A temporary rise of even 2.5 percentage points for a few years usually costs less than paying a fixed premium for 20 years."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T06:56:57.970Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 2,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=SwBSNfHYDWM",
+      "title": "Fixed or Floating, Flat or Reducing Interest rate.Home loan और car loan के लिए कोनसा Rate बहेतर।",
+      "channel": "CA Hardik K.Thacker",
+      "hasTranscript": true
+    }
+  ]
+}

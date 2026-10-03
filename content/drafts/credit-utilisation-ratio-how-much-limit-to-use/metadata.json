@@ -1,0 +1,80 @@
+{
+  "title": "Credit utilisation ratio: how much of your card limit to use, and when it's measured",
+  "seoTitle": "Credit Utilization Ratio: How Much of Your Card Limit to Use",
+  "h1": "Credit utilisation ratio: how much of your card limit to use, and when it's measured",
+  "slug": "credit-utilisation-ratio-how-much-limit-to-use",
+  "metaDescription": "Credit utilization ratio explained for India: the 30% guide, why paying in full can still show high use, fortnightly bureau reporting, and how to lower it.",
+  "excerpt": "The bureau sees your card balance on the 15th and at month-end, not your spending. How utilisation is measured and five ways to lower it without spending less.",
+  "primaryKeyword": "credit utilization ratio",
+  "secondaryKeywords": [
+    "credit utilisation ratio cibil",
+    "how much credit limit to use",
+    "credit card utilization 30 percent",
+    "does closing credit card affect cibil"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Indian credit card users who want a better credit score",
+  "category": "finance",
+  "tags": [
+    "credit score",
+    "CIBIL",
+    "credit card",
+    "utilisation"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=jXdKQY-sc_M",
+  "sourceVideoTitle": "Now No Need To Maintain 30% Credit Card Utilization😍🔥 - Good News - Must Watch",
+  "sourceChannel": "Utkarsh Ojha",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T06:58:51.199Z",
+  "updatedAt": "2026-10-03T07:00:01.047Z",
+  "wordCount": 1157,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/credit-score-in-india-how-it-works-and-how-to-fix-it"
+  ],
+  "faq": [
+    {
+      "question": "What is a good credit utilisation ratio in India?",
+      "answer": "TransUnion CIBIL describes keeping your overall credit card spend within 30% of your limit as healthy. Lower is better, as long as you pay every bill on time, which matters more than the ratio itself."
+    },
+    {
+      "question": "Is credit utilisation calculated per card or across all cards?",
+      "answer": "The headline ratio is across all your cards: total balances divided by total limits. Your credit report still shows each card's balance and limit separately, so a single card near its limit is visible to lenders."
+    },
+    {
+      "question": "Does paying my credit card bill in full keep utilisation low?",
+      "answer": "Not necessarily. Lenders report your balance to the bureaus as on the 15th and the last day of each month. If a large balance is outstanding on those dates, it shows as high utilisation even if you pay in full by the due date. Paying part of it earlier lowers what's reported."
+    },
+    {
+      "question": "Will increasing my credit limit improve my CIBIL score?",
+      "answer": "It can lower your utilisation ratio if your spending stays the same. Card issuers need your explicit consent to raise your limit. Don't apply for new cards just to add limit; each application adds an enquiry."
+    },
+    {
+      "question": "Does closing a credit card hurt my credit score?",
+      "answer": "It can raise your utilisation, because that card's limit no longer counts towards your total. If the card has no fee, keeping it open and occasionally using it is usually better for your ratio."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T07:00:01.047Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 3,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 2,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=sJfwGvrOxS8",
+      "title": "Credit Card Use करते हो तो Credit utilization Ratio को समझ लो | credit card utilization kya hota hai",
+      "channel": "IT Masti",
+      "hasTranscript": true
+    }
+  ]
+}

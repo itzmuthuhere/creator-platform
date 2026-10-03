@@ -1,0 +1,84 @@
+{
+  "title": "DICGC deposit insurance: is your money safe if your bank fails?",
+  "seoTitle": "DICGC Deposit Insurance: Is Your Money Safe If a Bank Fails?",
+  "h1": "DICGC deposit insurance: is your money safe if your bank fails?",
+  "slug": "dicgc-deposit-insurance-bank-fails",
+  "metaDescription": "DICGC deposit insurance covers ₹5 lakh per bank. How it's counted, how fast you're paid if a bank fails, and how to stay covered.",
+  "excerpt": "Your bank deposits are insured up to ₹5 lakh per bank, but interest, joint-account order and loans all change the count. How it works and how to stay covered.",
+  "primaryKeyword": "dicgc deposit insurance",
+  "secondaryKeywords": [
+    "bank deposit insurance 5 lakh",
+    "is fd safe in small finance bank",
+    "joint account dicgc",
+    "what happens if bank fails india"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Indian savers with FDs and savings in banks, including small finance and co-operative banks",
+  "category": "finance",
+  "tags": [
+    "banking",
+    "DICGC",
+    "fixed deposit",
+    "deposit insurance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=RVGDfA3w_9I",
+  "sourceVideoTitle": "Bank Closes? What Happens to Your ₹10 Lakh? 😱 | DICGC ₹5 Lakh Deposit Insurance Explained",
+  "sourceChannel": "Learn With Mahesh",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T07:08:32.365Z",
+  "updatedAt": "2026-10-03T07:09:47.450Z",
+  "wordCount": 1189,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [],
+  "faq": [
+    {
+      "question": "How much of my bank deposit is insured in India?",
+      "answer": "Up to ₹5 lakh per depositor per bank, covering principal and interest together across all your savings, current, fixed and recurring deposits held in the same capacity. The DICGC pays this if the bank fails."
+    },
+    {
+      "question": "Are FDs in small finance banks insured by DICGC?",
+      "answer": "Yes. Small finance banks are commercial banks and are covered up to ₹5 lakh per depositor, like any other bank. Deposits with NBFCs are not covered."
+    },
+    {
+      "question": "Is a joint account insured separately?",
+      "answer": "Sometimes. Accounts held by the same people in the same order count as one. If the names are in a different order or the group of holders is different, each is insured separately up to ₹5 lakh."
+    },
+    {
+      "question": "How long does DICGC take to pay?",
+      "answer": "For banks placed under All-Inclusive Directions, the law caps the process at 90 days from the date of the directions. For banks in liquidation, DICGC pays the liquidator within two months of getting the claim list."
+    },
+    {
+      "question": "Do I need to apply for DICGC insurance?",
+      "answer": "No. Every bank in India is covered automatically and the bank pays the premium. If your bank fails, you'll need to submit a willingness form to the bank so your claim can be passed to DICGC."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T07:09:47.450Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 3,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=wQw0qYX63Eo",
+      "title": "DICGC Insurance Explained | Bank बंद होने पर कौन देगा पैसा? ₹5 लाख की बैंक गारंटी कैसे मिलती है?",
+      "channel": "Money9",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2Dho-pRB2LU",
+      "title": "How to claim your Fixed Deposit if the bank fails.",
+      "channel": "Desi FIRE Podcast",
+      "hasTranscript": true
+    }
+  ]
+}

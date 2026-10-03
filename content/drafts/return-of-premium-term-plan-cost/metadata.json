@@ -1,0 +1,80 @@
+{
+  "title": "Return of premium term insurance: what the \"refund\" really costs you",
+  "seoTitle": "Return of Premium Term Insurance: Is the Refund Worth It?",
+  "h1": "Return of premium term insurance: what the \"refund\" really costs you",
+  "slug": "return-of-premium-term-plan-cost",
+  "metaDescription": "Return of premium term insurance costs 2–3x pure term. Using 2026 quotes, the extra premium earns about 2.5% a year. The maths, the catches and zero-cost plans.",
+  "excerpt": "TROP refunds your premiums, but the extra you pay earns only about 2.5% a year. The numbers from 2026 quotes, what stopping costs, and a cheaper alternative.",
+  "primaryKeyword": "return of premium term insurance",
+  "secondaryKeywords": [
+    "trop vs term plan",
+    "is trop worth it",
+    "zero cost term plan",
+    "term insurance refund of premium"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian term insurance buyers tempted by plans that refund premiums",
+  "category": "finance",
+  "tags": [
+    "term insurance",
+    "life insurance",
+    "TROP",
+    "decision"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=0kSKsG1Zb8A",
+  "sourceVideoTitle": "Term Life Insurance with REFUND OPTION | Everything You Need to Know | Zero Cost Term Plan | Ditto",
+  "sourceChannel": "Ditto Insurance",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T07:19:22.901Z",
+  "updatedAt": "2026-10-03T07:20:32.253Z",
+  "wordCount": 1043,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/zero-based-budgeting-how-to-build-a-budget-that-actually-works"
+  ],
+  "faq": [
+    {
+      "question": "Is return of premium term insurance worth it?",
+      "answer": "Usually not. In 2026 quotes for a ₹2 crore cover, the return of premium version costs 139–166% more than pure term, and the extra premium earns only about 2.5% a year through the refund. Investing the difference separately, even at a modest 6%, leaves you with roughly twice as much."
+    },
+    {
+      "question": "What do you get back in a return of premium term plan?",
+      "answer": "The total base premiums you paid, if you survive the policy term. Rider premiums and any extra premium charged for your health aren't refunded, and there's no interest or bonus."
+    },
+    {
+      "question": "Is GST refunded in a TROP plan?",
+      "answer": "GST no longer applies. Individual life insurance premiums have been exempt from GST since 22 September 2025, so premiums paid since then don't include it."
+    },
+    {
+      "question": "What is a zero-cost term plan?",
+      "answer": "A term plan with an exit option: at a set age or policy year you can end the cover and get your base premiums back. It's usually priced close to a normal term plan, but some require a longer policy term to qualify for the refund."
+    },
+    {
+      "question": "What happens if I stop paying a return of premium plan?",
+      "answer": "You get a surrender value or a reduced paid-up policy, depending on the plan, which is generally less than the premiums you paid, especially in the early years. A pure term plan simply ends."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T07:20:32.253Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 3,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 2,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=1-x5wIc-D5o",
+      "title": "Term Insurance With or Without RETURN OF PREMIUM ? 🤔 | With Excel Calculation | Gurleen Kaur Tikku",
+      "channel": "Gurleen Kaur Tikku",
+      "hasTranscript": true
+    }
+  ]
+}

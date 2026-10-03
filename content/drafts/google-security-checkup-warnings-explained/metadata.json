@@ -1,0 +1,90 @@
+{
+  "title": "Google Security Checkup: what each warning means and what to do",
+  "seoTitle": "Google Security Checkup: What Each Warning Means",
+  "h1": "Google Security Checkup: what each warning means and what to do",
+  "slug": "google-security-checkup-warnings-explained",
+  "metaDescription": "Google Security Checkup explained: what red, yellow and blue warnings mean, what to do about each one, and the steps to take if a sign-in or device isn't yours.",
+  "excerpt": "Decode every Google Security Checkup warning, from compromised passwords to third-party access, and follow a seven-step plan if you spot activity that isn't yours.",
+  "primaryKeyword": "google security checkup",
+  "secondaryKeywords": [
+    "google security checkup warning",
+    "compromised passwords google",
+    "recent security activity google",
+    "enhanced safe browsing",
+    "third party access google account"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Google account users who see security warnings",
+  "category": "tech",
+  "tags": [
+    "Google",
+    "security",
+    "Gmail",
+    "passwords",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=MGyjjtC4LLs",
+  "sourceVideoTitle": "How to Check If Your Gmail Account Is Secure | Complete Security Checkup",
+  "sourceChannel": "Tutorial Made Easy",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:33:38.895Z",
+  "updatedAt": "2026-10-03T01:34:44.793Z",
+  "wordCount": 1160,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/why-you-should-not-reuse-passwords-what-happens-when-one-site-gets-breached",
+    "https://techpulzo.in/how-to-set-up-a-password-manager-in-15-minutes",
+    "https://techpulzo.in/how-two-factor-authentication-actually-stops-account-hacks"
+  ],
+  "faq": [
+    {
+      "question": "What is Google Security Checkup?",
+      "answer": "It's a free page in your Google account (myaccount.google.com/security-checkup) that reviews your security in one place: saved passwords, signed-in devices, recent security activity, recovery options, two-step verification and apps with access to your account. It flags issues by colour, from red for urgent to blue for tips."
+    },
+    {
+      "question": "What does \"compromised password\" mean in Google?",
+      "answer": "One of your saved passwords has been found in a data breach on another website. Change it on that site immediately, and on any other site where you used the same password."
+    },
+    {
+      "question": "Should I remove third-party access from my Google account?",
+      "answer": "Remove any app or website you don't recognise or no longer use. Removing access doesn't delete your account with that service; it just stops it reading your Google data, and you can sign in again later if needed."
+    },
+    {
+      "question": "What should I do if I see a sign-in I don't recognise?",
+      "answer": "Change your Google password, sign out the unknown device, check that your recovery phone and email haven't been changed, look for unfamiliar Gmail forwarding rules or filters, and turn on 2-Step Verification."
+    },
+    {
+      "question": "Is Enhanced Safe Browsing worth turning on?",
+      "answer": "For most people, yes. It checks websites and downloads with Google in real time and, according to Google, makes users twice as safe from phishing as Standard protection. The trade-off is that more browsing data is sent to Google for checking."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:34:44.793Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=veAmeb2Zxpk",
+      "title": "Google Account Security Checkup 2026 | 7 Important Security Settings Har Android User Must Check",
+      "channel": "Tech Raj",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nt2S_hU24VE",
+      "title": "Don't Skip Google Security Checkup",
+      "channel": "CoolTechZone",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "DigiLocker: how to set it up, and where its documents count as originals",
+  "seoTitle": "DigiLocker: Setup and Where Documents Are Accepted (2026)",
+  "h1": "DigiLocker: how to set it up, and where its documents count as originals",
+  "slug": "digilocker-setup-where-accepted",
+  "metaDescription": "DigiLocker explained: set up your account, fetch your DL, RC, PAN and mark sheets, and see why only issued documents count as originals at checks and colleges.",
+  "excerpt": "DigiLocker documents count as originals at traffic checks, colleges and insurers, but only the issued ones. How to set it up, fetch documents and fix common errors.",
+  "primaryKeyword": "digilocker",
+  "secondaryKeywords": [
+    "digilocker driving licence valid",
+    "how to create digilocker account",
+    "digilocker issued vs uploaded documents",
+    "digilocker documents valid as original",
+    "digilocker marksheet download"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian residents who want digital copies of government documents",
+  "category": "tech",
+  "tags": [
+    "DigiLocker",
+    "government services",
+    "documents",
+    "driving licence",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=2rP3K1u1Rvc",
+  "sourceVideoTitle": "DigiLocker App Use Kaise Kare 2026 | DigiLocker Se Documents Download Kaise Kare | Full Guide",
+  "sourceChannel": "Tech With Smile",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T21:13:39.308Z",
+  "updatedAt": "2026-10-02T21:15:01.128Z",
+  "wordCount": 1346,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-two-factor-authentication-actually-stops-account-hacks",
+    "https://techpulzo.in/how-to-get-a-duplicate-pan-card-online"
+  ],
+  "faq": [
+    {
+      "question": "Is a driving licence in DigiLocker valid during a traffic check?",
+      "answer": "Yes, if it's in the Issued documents section. MoRTH has told all states that a driving licence or RC shown from DigiLocker's Issued section is legally equal to the original under the IT Act. A scanned photo uploaded to your Drive doesn't count."
+    },
+    {
+      "question": "What is the difference between issued and uploaded documents in DigiLocker?",
+      "answer": "Issued documents are fetched directly from the department that issued them and are digitally signed, so they can be verified. Uploaded documents are scans you add yourself; they're stored for convenience but carry no more weight than a photocopy."
+    },
+    {
+      "question": "Can I use DigiLocker without Aadhaar?",
+      "answer": "You can sign up with just a mobile number, but most issued documents, including your driving licence and PAN record, need your Aadhaar linked so DigiLocker can match your identity with the issuer's record."
+    },
+    {
+      "question": "Are DigiLocker mark sheets accepted for college admission?",
+      "answer": "UGC asked universities and colleges in January 2022 to accept degrees and mark sheets from DigiLocker's issued documents as valid. CBSE and many state boards and universities issue them there. Check that the document appears in your Issued section, not as an upload."
+    },
+    {
+      "question": "Is DigiLocker safe?",
+      "answer": "It requires an OTP and a security PIN to log in, shares documents only with your consent, and logs each share in your account. The main risks are on your side: sharing your OTP or PIN, or leaving your phone unlocked."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T21:15:01.128Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=xNanOWg49-E",
+      "title": "DigiLocker Explained | How to Use DigiLocker | Tamil Nadu Documents – Latest Updates (2026)",
+      "channel": "PIR Nexus Point",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Q4q9CqgEGz4",
+      "title": "Digilocker Account Kaise Banaye | How To Create Digilocker Account 2026",
+      "channel": "Sarkari DNA",
+      "hasTranscript": true
+    }
+  ]
+}

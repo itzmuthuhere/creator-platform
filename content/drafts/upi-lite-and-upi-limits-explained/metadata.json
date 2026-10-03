@@ -1,0 +1,89 @@
+{
+  "title": "UPI Lite and UPI limits explained: what changes in October 2026",
+  "seoTitle": "UPI Lite and UPI Limits 2026: Rules and the New MDR",
+  "h1": "UPI Lite and UPI limits explained: what changes in October 2026",
+  "slug": "upi-lite-and-upi-limits-explained",
+  "metaDescription": "UPI Lite explained: ₹1,000 per payment, ₹5,000 balance, no PIN. Plus every UPI limit for 2026 and what the merchant charge from 15 October means for you.",
+  "excerpt": "How UPI Lite works and when to use it, every UPI limit in one table, and why the new UPI charge from 15 October 2026 is the merchant's cost, not yours.",
+  "primaryKeyword": "upi lite",
+  "secondaryKeywords": [
+    "upi lite limit",
+    "upi transaction limit per day",
+    "upi charges from october 2026",
+    "upi mdr 2026",
+    "upi lite transfer to bank"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Indian UPI users",
+  "category": "finance",
+  "tags": [
+    "UPI",
+    "UPI Lite",
+    "payments",
+    "NPCI",
+    "digital payments"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=oJJiIVb2T6o",
+  "sourceVideoTitle": "New UPI Charges 2026 | UPI Transaction Limits & MDR Rules Explained",
+  "sourceChannel": "Asset Yogi",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T20:51:31.433Z",
+  "updatedAt": "2026-10-02T20:53:07.750Z",
+  "wordCount": 1542,
+  "readingTimeMinutes": 8,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/credit-card-vs-debit-card-for-everyday-spending-what-actually-saves-you-money",
+    "https://techpulzo.in/how-cashback-apps-actually-make-money-off-you"
+  ],
+  "faq": [
+    {
+      "question": "What is the UPI Lite limit?",
+      "answer": "You can pay up to ₹1,000 per transaction from it, and the balance can be up to ₹5,000 at any time. Adding money needs your UPI PIN; payments don't. These limits come from RBI's offline payments framework as updated in December 2024."
+    },
+    {
+      "question": "Can I move money from UPI Lite back to my bank account?",
+      "answer": "Yes. UPI apps offer a transfer-out option that moves the balance back to your linked bank account without switching the feature off. You can also disable it, which returns the balance to your bank."
+    },
+    {
+      "question": "Will I be charged for UPI payments from October 2026?",
+      "answer": "No. The charge that starts on 15 October 2026 is paid by merchants, only on merchant payments above ₹2,000, and NPCI's FAQs say merchants can't pass it on to customers. Sending money to friends and family stays free at any amount."
+    },
+    {
+      "question": "What is the UPI limit per day for sending money to someone?",
+      "answer": "₹1 lakh per day for person-to-person transfers under NPCI's limits. Your bank may set a lower limit, especially for a new payee or a newly registered phone. Higher limits of ₹5 lakh per transaction apply to some merchant categories, such as insurance premiums and investments."
+    },
+    {
+      "question": "Is UPI Lite safe if I lose my phone?",
+      "answer": "Anyone who can unlock your phone can spend the Lite balance without a PIN, which is why apps now require a screen or app lock. Keep the balance small, use a strong lock, and if you lose the phone, contact your bank and the app to block UPI."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T20:53:07.750Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=j_zh4tAA2GE",
+      "title": "UPI Lite Kya Hai? | What is UPI Lite in Hindi? | UPI Lite Features? | UPI Lite Explained in Hindi",
+      "channel": "Aadi Singh",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=PyiSze0WPYo",
+      "title": "UPI Lite Explained! 😳 No UPI PIN? Faster Payments, Hidden Features & Full Setup (2026)",
+      "channel": "Debdutta Tech",
+      "hasTranscript": true
+    }
+  ]
+}

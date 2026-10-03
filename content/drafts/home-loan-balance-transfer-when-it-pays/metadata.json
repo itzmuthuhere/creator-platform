@@ -1,0 +1,87 @@
+{
+  "title": "Home loan balance transfer: when switching lenders pays off, and when it doesn't",
+  "seoTitle": "Home Loan Balance Transfer: When It Pays, Costs, Steps",
+  "h1": "Home loan balance transfer: when switching lenders pays off, and when it doesn't",
+  "slug": "home-loan-balance-transfer-when-it-pays",
+  "metaDescription": "Is a home loan balance transfer worth it? Worked numbers, the costs, the tenure trap, asking your own bank first, and the steps to switch in 2026.",
+  "excerpt": "A 1% lower rate can save lakhs or cost you more if the tenure stretches. How to check whether a switch pays, what it costs, and the cheaper alternative.",
+  "primaryKeyword": "home loan balance transfer",
+  "secondaryKeywords": [
+    "home loan transfer charges",
+    "when to transfer home loan",
+    "home loan balance transfer process",
+    "home loan rate conversion fee"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian home loan borrowers paying a higher rate than new customers",
+  "category": "finance",
+  "tags": [
+    "home loan",
+    "balance transfer",
+    "interest rates",
+    "EMI",
+    "decision"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=YuWlLUTA5h8",
+  "sourceVideoTitle": "Home loan costs rising? Why a balance transfer could help you save big |  Paisabazaar CEO explains",
+  "sourceChannel": "The Hindu",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T06:48:08.332Z",
+  "updatedAt": "2026-10-03T06:49:53.685Z",
+  "wordCount": 1286,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/credit-score-in-india-how-it-works-and-how-to-fix-it"
+  ],
+  "faq": [
+    {
+      "question": "When should I transfer my home loan to another bank?",
+      "answer": "When the new rate is at least about 0.5 percentage points lower, you still have many years and a large balance left, and your own bank won't lower your rate for a small conversion fee. Check that the savings recover the switching costs within a year or two."
+    },
+    {
+      "question": "Is there a foreclosure charge on a home loan balance transfer?",
+      "answer": "Not on a floating-rate home loan taken by an individual. Banks have been barred from such charges since 2014, and the RBI's 2025 directions extend the rule to all regulated lenders for loans sanctioned or renewed from 2026. Fixed-rate loans can still carry a charge under the loan agreement."
+    },
+    {
+      "question": "What are the charges for a home loan balance transfer?",
+      "answer": "Mainly the new lender's processing fee (often 0.5–1% plus GST), legal and valuation fees, and state stamp duty on the new mortgage, plus small items such as CERSAI registration. On a ₹40 lakh loan these can add up to around ₹40,000 or more."
+    },
+    {
+      "question": "Does a balance transfer reduce my EMI or my tenure?",
+      "answer": "Either, depending on what you agree with the new lender. Keeping your current EMI at the lower rate saves the most interest. Accepting a longer tenure to cut the EMI can make the loan more expensive overall."
+    },
+    {
+      "question": "Can I ask my existing bank for a lower rate instead?",
+      "answer": "Yes. Many banks let existing borrowers switch to a lower rate for a conversion fee. HDFC Bank, for example, charges 0.25% of the outstanding or ₹5,000 plus taxes, whichever is lower. It's usually far cheaper than a transfer."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T06:49:53.685Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=SjfX5kL2uKs",
+      "title": "The BEST Way to Save BIG on Home Loan Transfer in 2026",
+      "channel": "Real Indian Money",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ysYQ2ho7rkc",
+      "title": "Home Loan Transfer to Other Bank | Home Loan Balance Transfer Process | 💰 Save Lakhs on Interest |",
+      "channel": "Desi Profit Talk",
+      "hasTranscript": true
+    }
+  ]
+}

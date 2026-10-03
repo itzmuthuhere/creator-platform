@@ -1,0 +1,140 @@
+<p>The DNS server my internet provider handed me by default beat Google, Cloudflare, Quad9, OpenDNS and AdGuard in a head-to-head timing test on my home connection. It wasn't close for most lookups, either. Half of its answers came back in under 5 milliseconds, while Google's median was 30 ms and Quad9's was over 300 ms.</p>
+
+<p>That runs against the most common advice on Indian tech forums, which is to switch to 8.8.8.8 or 1.1.1.1 the moment you set up a router. So below is exactly how I measured it, the full numbers, why the results came out this way, and when switching still makes sense.</p>
+
+<h2>How the Test Worked</h2>
+
+<p>I tested six resolvers from an ACT Fibernet home connection on the evening of 29 September 2026:</p>
+
+<ul>
+<li><strong>ACT Fibernet's own resolver</strong> (183.82.243.66, the one the router assigns automatically)</li>
+<li><strong>Google Public DNS</strong> (8.8.8.8)</li>
+<li><strong>Cloudflare</strong> (1.1.1.1)</li>
+<li><strong>Quad9</strong> (9.9.9.9)</li>
+<li><strong>OpenDNS</strong> (208.67.222.222)</li>
+<li><strong>AdGuard DNS</strong> (94.140.14.14)</li>
+</ul>
+
+<p>There were two rounds of lookups:</p>
+
+<ol>
+<li><strong>Popular sites:</strong> 25 domains most Indian users hit every week (Google, YouTube, Instagram, WhatsApp, Flipkart, Amazon.in, IRCTC, SBI, HDFC, Zomato, Swiggy, PhonePe, incometax.gov.in and similar), each looked up 10 times per resolver. That's 250 lookups per resolver.</li>
+<li><strong>Less popular sites:</strong> 50 smaller domains (regional banks, Tamil news sites, colleges, local businesses), each looked up once per resolver. These are the names a resolver is less likely to already have cached.</li>
+</ol>
+
+<p>The order of domains and resolvers was shuffled every round, so no resolver got a quieter moment on the network than the others. Every query had a 2-second timeout.</p>
+
+<h3>The mistake I made first</h3>
+
+<p>My first run used Node.js's built-in DNS module, and it reported that repeat lookups took 0 milliseconds. That's impossible over a network. It turned out the library keeps its own local cache, so after the first query it wasn't asking the resolver at all. I threw that data away and rewrote the test to build raw DNS packets and send them over UDP myself, so every single query left the machine. If you ever benchmark DNS, check that repeat queries aren't suspiciously fast; a local cache anywhere in the chain will make any resolver look instant.</p>
+
+<h2>The Results</h2>
+
+<p>Times are in milliseconds. "Median" is the typical lookup; the 90th percentile shows how bad the slowest one-in-ten lookups get, which is closer to what you feel as a page that hangs before loading.</p>
+
+<table>
+<thead>
+<tr><th>Resolver</th><th>Popular sites: median</th><th>Popular sites: 90th percentile</th><th>Lookups over 100 ms</th><th>Less popular sites: median</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>ACT Fibernet (ISP)</strong></td><td><strong>4.8</strong></td><td><strong>105</strong></td><td><strong>11%</strong></td><td><strong>5.5</strong></td></tr>
+<tr><td>Cloudflare 1.1.1.1</td><td>8.2</td><td>158</td><td>16%</td><td>72</td></tr>
+<tr><td>Google 8.8.8.8</td><td>29.7</td><td>196</td><td>29%</td><td>84</td></tr>
+<tr><td>OpenDNS</td><td>53.6</td><td>205</td><td>33%</td><td>93</td></tr>
+<tr><td>AdGuard DNS</td><td>119</td><td>255</td><td>66%</td><td>124</td></tr>
+<tr><td>Quad9 9.9.9.9</td><td>322</td><td>473</td><td>100%</td><td>307</td></tr>
+</tbody>
+</table>
+
+<figure>
+<svg viewBox="0 0 640 300" role="img" aria-label="Median DNS lookup time for popular sites by resolver" style="width:100%;height:auto;font-family:system-ui,sans-serif">
+<text x="0" y="18" font-size="15" font-weight="600" fill="currentColor">Median lookup time, popular sites (ms, lower is better)</text>
+<g font-size="13" fill="currentColor">
+<text x="0" y="58">ACT Fibernet</text><rect x="120" y="44" width="7" height="20" fill="#16a34a"/><text x="133" y="59">4.8</text>
+<text x="0" y="98">Cloudflare</text><rect x="120" y="84" width="12" height="20" fill="#2563eb"/><text x="138" y="99">8.2</text>
+<text x="0" y="138">Google</text><rect x="120" y="124" width="45" height="20" fill="#2563eb"/><text x="171" y="139">29.7</text>
+<text x="0" y="178">OpenDNS</text><rect x="120" y="164" width="81" height="20" fill="#2563eb"/><text x="207" y="179">53.6</text>
+<text x="0" y="218">AdGuard</text><rect x="120" y="204" width="178" height="20" fill="#2563eb"/><text x="304" y="219">119</text>
+<text x="0" y="258">Quad9</text><rect x="120" y="244" width="483" height="20" fill="#dc2626"/><text x="560" y="238">322</text>
+</g>
+</svg>
+<figcaption>Median of 250 lookups per resolver, ACT Fibernet home connection, 29 September 2026.</figcaption>
+</figure>
+
+<p>Out of the 25 popular domains, the ISP resolver had the fastest median on 14, Google on 6 and Cloudflare on 5. On the 50 less popular domains, the ISP resolver answered first on 41. Failures were rare for everyone: between zero and two timeouts out of 250 popular-site lookups for each resolver.</p>
+
+<h2>Why the Boring Default Won</h2>
+
+<p>Two things work in the ISP's favour, and neither is about the resolver software being better.</p>
+
+<p><strong>It's physically closer.</strong> The ISP's resolver sits inside its own network, a couple of hops from your router. Every public resolver, however well run, needs your query to leave the ISP's network first.</p>
+
+<p><strong>Its cache is shared with every other customer in the area.</strong> A resolver answers instantly when it already has the answer stored from a recent lookup. Thousands of ACT customers are looking up the same Tamil news sites, regional banks and college portals, so those names are almost always sitting in the ISP's cache. That's why its median for the "less popular" list (5.5 ms) was barely different from the popular list, while Google and Cloudflare jumped to 70–85 ms: for a name they don't have cached nearby, they have to go and ask the domain's own servers, which may be anywhere in the world.</p>
+
+<h2>What Went Wrong With Quad9</h2>
+
+<p>Quad9 runs servers in India, so a median of 322 ms looked like a routing problem rather than a slow service. A traceroute (a tool that lists every network hop between you and a destination) confirmed it:</p>
+
+<pre><code>Hop  Time      Address
+ 5    35 ms    172.25.154.193
+ 6   253 ms    199.184.181.110
+ 7   279 ms    9.9.9.9</code></pre>
+
+<p>Between hop 5 and hop 6 the time jumps by more than 200 ms. Distances inside India don't produce that kind of delay; it's what you see when traffic crosses an ocean. On this connection, Quad9 traffic was leaving the country to reach a server abroad. Compare Cloudflare on the same connection:</p>
+
+<pre><code>Hop  Time      Address
+ 5     3 ms    103.16.203.73
+ 6    10 ms    162.158.52.39
+ 7     2 ms    1.1.1.1</code></pre>
+
+<p>Cloudflare's server was reached in about 3 ms, so it's effectively in the same city. This is decided by how your ISP connects to each provider, not by the provider alone. On Jio, Airtel or BSNL, Quad9 could well route to a nearby server and perform fine. That's the main reason to test on your own connection instead of trusting anyone's leaderboard, including this one.</p>
+
+<h2>Does a 25 ms Difference Matter?</h2>
+
+<p>Less than DNS speed tests make it look. Your phone, laptop and browser all keep their own DNS cache, so a site you visited a minute ago doesn't need a new lookup. The typical 5 ms versus 30 ms gap won't be noticeable on its own.</p>
+
+<p>The slow tail matters more. A modern page often pulls from 20 or more different domains (fonts, images, analytics, ads), and the page can wait on the slowest of those lookups. That's where the "lookups over 100 ms" column counts: 11% for the ISP, 16% for Cloudflare, 29% for Google and every single lookup for Quad9 on this line.</p>
+
+<h2>When Switching Still Makes Sense</h2>
+
+<p>Speed isn't the only reason people change DNS. Switching is worth it when:</p>
+
+<ul>
+<li><strong>Your ISP's resolver is unreliable.</strong> If websites sometimes fail to load with "DNS_PROBE" or "server not found" errors while other apps keep working, the ISP resolver is a likely suspect, and a public one is a sensible fix.</li>
+<li><strong>You want encrypted DNS.</strong> Normal DNS queries travel unencrypted, so your ISP can see which sites you look up. Android's Private DNS setting and browsers' "secure DNS" options encrypt these queries, but they only work with providers that support it, such as Cloudflare and Google.</li>
+<li><strong>You want filtering.</strong> AdGuard blocks many ad and tracking domains at the DNS level, and Cloudflare's 1.1.1.3 blocks malware and adult content. That can be worth some extra milliseconds, especially on a child's device.</li>
+</ul>
+
+<p>If I were picking a public resolver for this connection, it would be Cloudflare: a median only 3.4 ms behind the ISP, the fewest slow lookups among the public options, and encrypted DNS support.</p>
+
+<h2>How to Change Your DNS</h2>
+
+<p>You can change it on one device or on the router for the whole house. Any of these is easy to undo: set it back to automatic and you're on the ISP's resolver again.</p>
+
+<h3>Android (encrypted, easiest)</h3>
+<ol>
+<li>Open <strong>Settings → Network &amp; internet → Private DNS</strong> (on some phones it's under Connection &amp; sharing or More connection settings).</li>
+<li>Choose <strong>Private DNS provider hostname</strong>.</li>
+<li>Enter <code>one.one.one.one</code> for Cloudflare or <code>dns.google</code> for Google, then save.</li>
+</ol>
+<p>This applies on both Wi-Fi and mobile data.</p>
+
+<h3>Windows 11</h3>
+<ol>
+<li>Open <strong>Settings → Network &amp; internet</strong>, then Wi-Fi or Ethernet, and click your connection's <strong>Hardware properties</strong>.</li>
+<li>Next to <strong>DNS server assignment</strong>, click <strong>Edit</strong> and switch to <strong>Manual</strong>.</li>
+<li>Turn on IPv4 and enter <code>1.1.1.1</code> as preferred and <code>1.0.0.1</code> as alternate (or <code>8.8.8.8</code> and <code>8.8.4.4</code>).</li>
+</ol>
+
+<h3>Router (every device at once)</h3>
+<p>Log in to your router's admin page (often 192.168.0.1 or 192.168.1.1), find the DHCP or WAN DNS setting, and replace the automatic servers. Every device on your Wi-Fi then uses the new resolver without per-device changes.</p>
+
+<h2>Test Before You Switch</h2>
+
+<p>You can run a small version of this test on any Windows PC in PowerShell. This times one lookup against Cloudflare:</p>
+
+<pre><code>Measure-Command { Resolve-DnsName flipkart.com -Server 1.1.1.1 -DnsOnly -Type A }</code></pre>
+
+<p>Ignore the first result; it includes PowerShell loading the DNS module and took about 600 ms on my machine. Run it five or six more times, then swap in <code>8.8.8.8</code> and your router's current DNS address (<code>ipconfig /all</code> lists it under "DNS Servers"). On my connection, the repeat runs against Cloudflare came back in 5–6 ms each, which matches the network round trip, so the command is asking the server every time and isn't reading a local cache.</p>
+
+<p>If your ISP's resolver comes out ahead, as mine did, the default is already the fastest choice and you only need to switch for privacy, filtering or reliability. If it's slow or flaky, Cloudflare is the one to try first.</p>

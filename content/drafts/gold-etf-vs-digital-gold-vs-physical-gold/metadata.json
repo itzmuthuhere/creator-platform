@@ -1,0 +1,89 @@
+{
+  "title": "Gold ETF vs digital gold vs physical gold: which to buy in 2026",
+  "seoTitle": "Gold ETF vs Digital Gold vs Physical Gold: 2026 Guide",
+  "h1": "Gold ETF vs digital gold vs physical gold: which to buy in 2026",
+  "slug": "gold-etf-vs-digital-gold-vs-physical-gold",
+  "metaDescription": "Gold ETF vs digital gold vs physical gold in 2026: SEBI's digital gold warning, 3% GST, ETF costs from AMFI data, tax rules and what replaced SGBs.",
+  "excerpt": "Digital gold costs about 3% in GST on day one and isn't regulated; gold ETFs charge about 0.5% a year. A 2026 comparison of costs, tax and safety, with SGBs gone.",
+  "primaryKeyword": "gold etf vs digital gold",
+  "secondaryKeywords": [
+    "is digital gold safe",
+    "sebi warning digital gold",
+    "gold etf tax 2026",
+    "gold mutual fund vs gold etf",
+    "sovereign gold bond 2026"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian investors deciding how to buy gold",
+  "category": "finance",
+  "tags": [
+    "gold",
+    "gold ETF",
+    "digital gold",
+    "investing",
+    "tax"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=syW84KpuLCg",
+  "sourceVideoTitle": "SEBI just warned investors about Digital Gold - Here’s why | The Daily Brief #348",
+  "sourceChannel": "Markets by Zerodha",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T20:46:49.774Z",
+  "updatedAt": "2026-10-02T20:48:48.385Z",
+  "wordCount": 1772,
+  "readingTimeMinutes": 9,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-cashback-apps-actually-make-money-off-you",
+    "https://techpulzo.in/sip-vs-lump-sum-how-to-actually-decide-where-to-put-your-money"
+  ],
+  "faq": [
+    {
+      "question": "Is digital gold safe?",
+      "answer": "It's not regulated by SEBI or RBI. SEBI's November 2025 caution says digital gold carries counterparty and operational risk and that none of the securities market's investor protections apply. Your rights depend on the platform's contract, not on securities law. A September 2026 proposal to regulate it is still at the consultation stage."
+    },
+    {
+      "question": "Is a gold ETF better than a gold mutual fund?",
+      "answer": "For someone with a demat account, usually yes: the total cost is lower, and gains become long-term after 12 months instead of 24. A gold mutual fund is the better fit if you don't have a demat account or want a simple monthly SIP."
+    },
+    {
+      "question": "Do I pay GST on gold ETFs?",
+      "answer": "No. GST of 3% applies to buying physical gold and digital gold, but not to gold ETFs, gold mutual funds or Sovereign Gold Bonds."
+    },
+    {
+      "question": "Can I still buy Sovereign Gold Bonds?",
+      "answer": "Not from the government: no new tranche has been issued since February 2024. You can buy existing bonds on the stock exchange, but trading is thin, and after Budget 2026 only original subscribers who hold to maturity get tax-free gains."
+    },
+    {
+      "question": "How long must I hold a gold ETF for long-term capital gains?",
+      "answer": "More than 12 months, for units bought from 1 April 2025. Gains are then taxed at 12.5% without indexation. If you sell within 12 months, the gain is added to your income and taxed at your slab rate."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T20:48:48.385Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=-QVmJ-KpE0Q",
+      "title": "Don't Buy Gold Until You Watch This: Physical vs ETF vs SGB | ft. Alok Jain",
+      "channel": "Moneytalks by Groww",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=e50lQ7YgbtA",
+      "title": "How To Invest In Gold - Physical Gold vs Digital vs Gold ETF vs Gold MF",
+      "channel": "XY- Axis Education",
+      "hasTranscript": true
+    }
+  ]
+}

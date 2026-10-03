@@ -1,0 +1,38 @@
+[
+  {
+    "file": "01-ceir-home-services.png",
+    "sourceUrl": "https://www.ceir.gov.in/Home/index.jsp",
+    "pageTitle": "CEIR",
+    "selector": null,
+    "crop": "cropped from a full-page capture (1265px wide, scale 1): y 650-950",
+    "width": 1265,
+    "height": 300,
+    "capturedAt": "2026-09-29T17:20:00.000Z",
+    "alt": "CEIR home page service buttons: Block Stolen/Lost Mobile, Un-Block Found Mobile, Check Request Status and Forgot Request ID, above the CEIR dashboard counts",
+    "caption": "The four CEIR services. Keep the request ID you get after blocking, because the other three depend on it. Source: ceir.gov.in"
+  },
+  {
+    "file": "02-ceir-block-prerequisites.png",
+    "sourceUrl": "https://www.ceir.gov.in/Request/CeirUserBlockRequestDirect.jsp",
+    "pageTitle": "CEIR User Direct Request Blocking Form",
+    "selector": null,
+    "crop": "cropped from a full-page capture: prerequisites pop-up that opens on page load",
+    "width": 500,
+    "height": 500,
+    "capturedAt": "2026-09-29T17:25:00.000Z",
+    "alt": "CEIR block request prerequisites pop-up listing police report or FIR copy, re-issued duplicate SIM, identity proof, optional invoice and IMEI numbers if available",
+    "caption": "The checklist the CEIR form shows before you start. Note that the IMEI is marked \"if available\". Source: ceir.gov.in"
+  },
+  {
+    "file": "03-ceir-block-form-lost-information.png",
+    "sourceUrl": "https://www.ceir.gov.in/Request/CeirUserBlockRequestDirect.jsp",
+    "pageTitle": "CEIR User Direct Request Blocking Form",
+    "selector": null,
+    "crop": "cropped from a full-page capture: Lost Information section (blank form, no personal data)",
+    "width": 1112,
+    "height": 332,
+    "capturedAt": "2026-09-29T17:25:00.000Z",
+    "alt": "CEIR form Lost Information section with fields for lost place, lost date and time, state, district, police station, police complaint number and complaint upload",
+    "caption": "Use the same place, date, time and police station that appear on your police complaint. Source: ceir.gov.in"
+  }
+]

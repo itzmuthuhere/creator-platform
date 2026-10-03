@@ -1,0 +1,93 @@
+{
+  "title": "Masked Aadhaar: What It Hides, How to Download It, and When to Use It",
+  "seoTitle": "Masked Aadhaar: Download, Password & When to Use It",
+  "h1": "Masked Aadhaar: What It Hides, How to Download It, and When to Use It",
+  "slug": "masked-aadhaar-download-and-when-to-use",
+  "metaDescription": "What masked Aadhaar hides and doesn't, how to download it, the e-Aadhaar password rule with examples, where to use it, and when VID or the app is better.",
+  "excerpt": "Masked Aadhaar hides eight digits, not your identity. How to download it, crack the password rule, where it works, and the newer UIDAI tools that protect you more.",
+  "primaryKeyword": "masked aadhaar",
+  "secondaryKeywords": [
+    "masked aadhaar download",
+    "e-aadhaar password",
+    "where to use masked aadhaar",
+    "aadhaar virtual id",
+    "aadhaar biometric lock"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Indians who share Aadhaar copies with hotels, employers, shops and apps",
+  "category": "tech",
+  "tags": [
+    "aadhaar",
+    "privacy",
+    "uidai",
+    "identity"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=KSQzxyNxGT0",
+  "sourceVideoTitle": "What is Masked Aadhaar Card and How to Download it?",
+  "sourceChannel": "Basic Gyaan",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-09-29T17:51:00.483Z",
+  "updatedAt": "2026-09-29T17:53:14.215Z",
+  "wordCount": 1336,
+  "readingTimeMinutes": 7,
+  "screenshots": [
+    {
+      "file": "screenshots/01-uidai-aadhaar-services.png",
+      "alt": "UIDAI website Access Aadhaar Services panel with tiles for Download Aadhaar, Address Update with a 75 rupee fee, Lock/Unlock Biometrics and Check Update Status",
+      "caption": "UIDAI's home page links straight to Download Aadhaar and to the biometric lock, both covered below. Source: uidai.gov.in"
+    }
+  ],
+  "internalLinks": [
+    "https://techpulzo.in/how-two-factor-authentication-actually-stops-account-hacks"
+  ],
+  "faq": [
+    {
+      "question": "Is a masked Aadhaar legally valid?",
+      "answer": "It's a UIDAI-issued e-Aadhaar, digitally signed, with only the number partly hidden. It works as proof of identity wherever the full number isn't needed. Where an organisation has to record or verify your full Aadhaar number, it can ask for the unmasked version or for authentication."
+    },
+    {
+      "question": "Can I download masked Aadhaar without my registered mobile number?",
+      "answer": "No. Downloading needs an OTP on the mobile number registered with Aadhaar. If that number has changed, update your mobile number first. The Aadhaar app can update it, or you can visit an Aadhaar Seva Kendra."
+    },
+    {
+      "question": "Why does my e-Aadhaar password not work?",
+      "answer": "Check that you're using the first four characters of your name exactly as printed on the Aadhaar, in capitals (dots count, spaces don't), followed by your four-digit birth year. For \"P. KUMAR\" born in 1990, UIDAI's example password is P.KU1990."
+    },
+    {
+      "question": "Should I use a VID or a masked Aadhaar?",
+      "answer": "They do different jobs. A masked Aadhaar is a document to show. A VID is a number to authenticate with, for e-KYC or OTP-based verification. Use the masked copy when someone wants a printout, and the VID when a service lets you enter a number for authentication."
+    },
+    {
+      "question": "Does the QR code on my e-Aadhaar still work?",
+      "answer": "Yes. UIDAI says QR codes on PVC cards and e-Aadhaar continue to work, and can be scanned with the Aadhaar app or UIDAI's QR code scanner for identity verification."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-09-29T17:53:14.215Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=k0s5TVh8rCU",
+      "title": "Masked Aadhaar Card क्या है ? जानें कब और कहां-कहां इसका कर सकते हैं इस्तेमाल",
+      "channel": "Times Now Navbharat",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fz_v2M1jeQ8",
+      "title": "mask aadhar card kaha use hota hai | where to use masked aadhaar | mask aadhaar kaha valid nhi hai",
+      "channel": "B Visitor",
+      "hasTranscript": true
+    }
+  ]
+}

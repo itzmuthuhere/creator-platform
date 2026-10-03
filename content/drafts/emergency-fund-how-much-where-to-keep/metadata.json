@@ -1,0 +1,101 @@
+{
+  "title": "How big your emergency fund should be, and where to keep it",
+  "seoTitle": "Emergency Fund: How Much You Need and Where to Keep It",
+  "h1": "How big your emergency fund should be, and where to keep it",
+  "slug": "emergency-fund-how-much-where-to-keep",
+  "metaDescription": "Emergency fund how much: size it on essentials, EMIs and premiums, pick months by earners and dependents, then split it into savings, sweep FD and liquid funds.",
+  "excerpt": "Six months of expenses is the usual answer, and often the wrong one. Size the fund on what you'd still have to pay, choose the months by how many earners you have, then hold it in three tiers with real access rules and current returns.",
+  "primaryKeyword": "emergency fund how much",
+  "secondaryKeywords": [
+    "where to keep emergency fund in India",
+    "emergency fund in liquid fund or FD",
+    "sweep-in FD for emergency fund",
+    "how many months emergency fund",
+    "emergency fund for single income family"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian salaried earners building or resizing an emergency fund",
+  "category": "finance",
+  "tags": [
+    "emergency fund",
+    "liquid funds",
+    "fixed deposit",
+    "savings",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=ZNuuVJ37j2s",
+  "sourceVideoTitle": "Modern Approach For Emergency Fund Planning || How Much And Where To Invest Emergency Fund",
+  "sourceChannel": "Rahul Jain",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T12:50:21.330Z",
+  "updatedAt": "2026-10-02T12:56:08.870Z",
+  "wordCount": 1995,
+  "readingTimeMinutes": 10,
+  "screenshots": [
+    {
+      "file": "screenshots/01-sbi-fd-rates.png",
+      "alt": "SBI's retail fixed deposit interest rate table, showing 3.05% for 7 to 45 days, 4.90% for 46 to 179 days and 6.25% for one to two years for the general public",
+      "caption": "SBI's current FD rates, effective 15 December 2025. Money withdrawn early earns the rate for the time it stayed, less a penalty. Source: sbi.bank.in"
+    }
+  ],
+  "internalLinks": [
+    "https://techpulzo.in/zero-based-budgeting-how-to-build-a-budget-that-actually-works",
+    "https://techpulzo.in/the-real-difference-between-a-fixed-deposit-and-a-recurring-deposit"
+  ],
+  "faq": [
+    {
+      "question": "Should I keep my emergency fund in a savings account or an FD?",
+      "answer": "A mix works better than either alone. Keep about a month of essentials in savings for instant access, and the next few months in an auto-sweep FD, which earns FD rates but releases money automatically when your savings balance runs short. Separate FDs are fine too, but split them into several smaller ones so you never break the whole amount for a small need."
+    },
+    {
+      "question": "Is a liquid fund safe enough for an emergency fund?",
+      "answer": "Large liquid funds are very low-risk because they hold high-quality debt maturing within 91 days, and their NAVs rarely fall. They are not bank deposits, though, and aren't covered by deposit insurance. That's a reason to keep the first few months in a bank and use liquid funds for the rest, and to choose large, well-known funds rather than the one with the highest recent return."
+    },
+    {
+      "question": "How quickly can I get money out of a liquid fund?",
+      "answer": "Normally on the next working day after you redeem. Many funds also offer instant redemption: up to ₹50,000 or 90% of your holding, whichever is lower, per scheme per day, paid by IMPS within about 30 minutes, even at night or on holidays. Holding two or three schemes raises how much you can get instantly. Units held in a demat account aren't eligible."
+    },
+    {
+      "question": "Do I need an emergency fund if I have health insurance?",
+      "answer": "Yes, but it can be smaller. Insurance covers the hospital bill, not the income you lose while you recover, your EMIs, or the deposit a non-network hospital may ask for before a reimbursement claim. Size the fund for those, and for non-medical emergencies like job loss, which no insurance covers."
+    },
+    {
+      "question": "Should I stop my SIPs to build an emergency fund?",
+      "answer": "If you have nothing set aside, pausing or reducing SIPs for a while to build the first few months is reasonable. Without a fund, the first emergency often forces you to sell investments at a bad time anyway. Once you have three months of essentials in place, you can resume SIPs and build the rest of the fund alongside them."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T12:56:08.870Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 4,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=vaxRsYGdIus",
+      "title": "How much Emergency Fund do you need? | Is 6x of your expenses Enough? | Basic Finance - Class 3",
+      "channel": "Zerodha Varsity",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=GndemHAAECA",
+      "title": "Building an Emergency Fund in 2026 || How Much and Where to Invest?",
+      "channel": "bekifaayati",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kKg6MgYmiwQ",
+      "title": "Emergency Funds Explained: The Smartest Way To Utilise Your Emergency Funds",
+      "channel": "NDTV Profit",
+      "hasTranscript": true
+    }
+  ]
+}

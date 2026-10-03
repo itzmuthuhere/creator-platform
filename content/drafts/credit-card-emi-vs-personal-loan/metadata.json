@@ -1,0 +1,81 @@
+{
+  "title": "Credit card EMI vs personal loan: which is cheaper for a big bill?",
+  "seoTitle": "Credit Card EMI vs Personal Loan: Which Is Cheaper?",
+  "h1": "Credit card EMI vs personal loan: which is cheaper for a big bill?",
+  "slug": "credit-card-emi-vs-personal-loan",
+  "metaDescription": "Credit card EMI vs personal loan compared with real 2026 bank rates: average costs, GST, the blocked card limit, and where each one wins on total cost.",
+  "excerpt": "One bank's published averages: 18.2% for card EMIs, 10.89% for personal loans. Hidden costs, two worked amounts, and when the card EMI still wins.",
+  "primaryKeyword": "credit card emi vs personal loan",
+  "secondaryKeywords": [
+    "convert credit card bill to emi",
+    "credit card emi interest rate",
+    "gst on credit card emi",
+    "personal loan to pay credit card"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian credit card users facing a large bill they can't pay in full",
+  "category": "finance",
+  "tags": [
+    "credit card",
+    "personal loan",
+    "EMI",
+    "decision"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=WM5SmG0nNu8",
+  "sourceVideoTitle": "Credit Card Loan Vs Personal Loan | Which one should you choose? | Advantages & Disadvantages",
+  "sourceChannel": "BankBazaar - Credit Cards & Free Credit Score",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T07:01:31.851Z",
+  "updatedAt": "2026-10-03T07:03:35.379Z",
+  "wordCount": 1254,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/credit-card-vs-debit-card-for-everyday-spending-what-actually-saves-you-money",
+    "https://techpulzo.in/credit-score-in-india-how-it-works-and-how-to-fix-it"
+  ],
+  "faq": [
+    {
+      "question": "Is credit card EMI cheaper than a personal loan?",
+      "answer": "Usually not for larger amounts. HDFC Bank's published averages are 18.2% for card EMIs against 10.89% for personal loans, and card EMIs also attract GST on the interest. For small amounts over a few months, a card EMI can be cheaper because personal loans carry higher processing fees."
+    },
+    {
+      "question": "Is GST charged on credit card EMI?",
+      "answer": "Yes. Banks add GST at 18% to the interest on card EMIs; HDFC's SmartEMI page says each repayment is the EMI plus GST. GST is also charged on processing fees for both card EMIs and personal loans."
+    },
+    {
+      "question": "Does a credit card EMI affect my credit limit?",
+      "answer": "Yes. The full EMI amount is blocked against your credit limit and released as you repay, which reduces your available limit and raises your credit utilisation."
+    },
+    {
+      "question": "Can I use a personal loan to pay off my credit card bill?",
+      "answer": "Yes, and it's often cheaper than a card EMI for larger balances. Make sure the loan's total cost, including the processing fee, is lower, and don't run the card balance up again afterwards."
+    },
+    {
+      "question": "What is better than both?",
+      "answer": "Paying the bill in full. If that's impossible this month, either option is far cheaper than paying the minimum due and carrying the rest at the card's revolving rate."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T07:03:35.379Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 2,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=DKPnLGNqi8s",
+      "title": "क्रेडिट कार्ड EMI और पर्सनल लोन में से बेहतर क्या है? Credit Card | EMIs",
+      "channel": "Money9",
+      "hasTranscript": true
+    }
+  ]
+}

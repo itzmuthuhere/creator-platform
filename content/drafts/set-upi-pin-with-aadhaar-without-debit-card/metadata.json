@@ -1,0 +1,94 @@
+{
+  "title": "How to Set or Reset Your UPI PIN with Aadhaar (No Debit Card Needed)",
+  "seoTitle": "Set UPI PIN with Aadhaar Without a Debit Card",
+  "h1": "How to Set or Reset Your UPI PIN with Aadhaar (No Debit Card Needed)",
+  "slug": "set-upi-pin-with-aadhaar-without-debit-card",
+  "metaDescription": "Set or reset your UPI PIN with Aadhaar: the four checks that fix \"OTP not received\", the steps, the new face-authentication option, and a troubleshooting table.",
+  "excerpt": "The Aadhaar route fails most often because the OTPs go to phones you don't have. Check the numbers first, then it takes six steps. Also covers face authentication and fixes.",
+  "primaryKeyword": "set upi pin with aadhaar",
+  "secondaryKeywords": [
+    "upi pin without debit card",
+    "reset upi pin aadhaar otp",
+    "aadhaar otp not received upi",
+    "upi pin face authentication"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "UPI users without a debit card, or who forgot their PIN",
+  "category": "finance",
+  "tags": [
+    "upi",
+    "aadhaar",
+    "payments",
+    "troubleshooting"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=bNgNYi8bwvs",
+  "sourceVideoTitle": "Phonepe me aadhaar card se upi pin set karte time aadhaar otp nahi aa raha kiya kare",
+  "sourceChannel": "Official Sonu TC",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-09-29T17:59:11.932Z",
+  "updatedAt": "2026-09-29T18:00:36.150Z",
+  "wordCount": 1310,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs"
+  ],
+  "faq": [
+    {
+      "question": "Can I reset my UPI PIN with Aadhaar even if I have a debit card?",
+      "answer": "Yes. Aadhaar is an alternative, not a replacement, so you can pick either option on the reset screen. If you have the card and the Aadhaar OTP isn't arriving, the card route is usually quicker."
+    },
+    {
+      "question": "Why does it ask for only the first six digits of my Aadhaar?",
+      "answer": "That's how the app flow is designed. The six digits identify you for the OTP request, and the OTPs do the actual verification. Only enter them inside your UPI or bank app, never in a link or on a call."
+    },
+    {
+      "question": "My Aadhaar is linked to an old number I no longer have. What now?",
+      "answer": "Update the mobile number on your Aadhaar through UIDAI (the Aadhaar app or an Aadhaar Seva Kendra), then retry. Or use your debit card, or face authentication where your app offers it."
+    },
+    {
+      "question": "Is the UPI PIN 4 or 6 digits?",
+      "answer": "It depends on your bank. The app shows how many digits to enter when you set it."
+    },
+    {
+      "question": "I forgot my PIN and entered it wrong three times. Can I still reset it?",
+      "answer": "Yes. The 24-hour block is on payments, not on resetting. Reset the PIN with Aadhaar or your debit card and carry on."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-09-29T18:00:36.150Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 4,
+      "overlapPct": 0.08,
+      "longestCopiedRun": 8,
+      "runs": [
+        "to the mobile number linked to your aadhaar"
+      ]
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=7DkqLeOWOyI",
+      "title": "boi aadhaar otp problem | bank of india aadhaar upi pin set | phonepe aadhar card otp not received",
+      "channel": "Yah Kaise",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KxeaMzqInhU",
+      "title": "bina atm card ke upi pin kaise banaye | how to set upi pin without debit card | with aadhar card",
+      "channel": "Yashpal Yadav | Finance & Tech",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=W9inBeR_k3I",
+      "title": "UPI PIN Reset Without ATM Card | UPI PIN Reset Using Aadhar | Phonepe UPI PIN Change Tamil",
+      "channel": "SUBARAJ TECH",
+      "hasTranscript": true
+    }
+  ]
+}

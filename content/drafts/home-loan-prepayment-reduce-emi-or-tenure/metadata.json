@@ -1,0 +1,102 @@
+{
+  "title": "Home loan prepayment: reduce the EMI or the tenure?",
+  "seoTitle": "Home Loan Prepayment: Reduce EMI or Tenure? (2026 Maths)",
+  "h1": "Home loan prepayment: reduce the EMI or the tenure?",
+  "slug": "home-loan-prepayment-reduce-emi-or-tenure",
+  "metaDescription": "Home loan prepayment, reduce EMI or tenure? Worked numbers on a ₹50 lakh loan, why the gap is a habit, and RBI, tax and rate-hike rules for 2026.",
+  "excerpt": "Cutting the tenure saves ₹13.7 lakh on our example loan, cutting the EMI only ₹4.6 lakh. But give the EMI-cutter the same discipline and the results match to the month. Here's how to choose, plus the RBI, tax and rate-hike rules that matter in 2026.",
+  "primaryKeyword": "home loan prepayment reduce emi or tenure",
+  "secondaryKeywords": [
+    "reduce emi or tenure which is better",
+    "home loan part payment",
+    "home loan prepayment calculator",
+    "prepay home loan or invest",
+    "home loan prepayment charges",
+    "home loan tenure increased after rate hike"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian home-loan borrowers with a bonus or surplus to prepay",
+  "category": "finance",
+  "tags": [
+    "home loan",
+    "EMI",
+    "prepayment",
+    "RBI",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=GYSDiqLGJ0w",
+  "sourceVideoTitle": "Home Loan Prepayment Reduce EMI or Tenure? Calculation Method EXPLAINED",
+  "sourceChannel": "FinCalC TV",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T08:52:22.951Z",
+  "updatedAt": "2026-10-02T09:05:26.671Z",
+  "wordCount": 2393,
+  "readingTimeMinutes": 12,
+  "screenshots": [
+    {
+      "file": "screenshots/01-sbi-home-loan-rate-card.png",
+      "alt": "SBI's home loan interest rate card showing term loans at 7.25% to 8.55%, MaxGain overdraft loans at 7.75% to 9.05%, and an EBLR of 7.90%",
+      "caption": "SBI's current rate card, effective 20 May 2026. Your rate within the range depends on your credit score. Source: sbi.bank.in"
+    }
+  ],
+  "internalLinks": [
+    "https://techpulzo.in/credit-score-in-india-how-it-works-and-how-to-fix-it",
+    "https://techpulzo.in/how-much-home-loan-you-can-actually-afford"
+  ],
+  "faq": [
+    {
+      "question": "Is it better to prepay the home loan or invest the money?",
+      "answer": "It depends on your loan rate and how certain you need the outcome to be. Prepaying a 7.75% loan earns you a guaranteed 7.75%, and interest you avoid paying isn't taxed. An equity investment may earn more over 10+ years but can also be down when you need it. Many people split a bonus: enough prepayment to keep the EMI comfortable, the rest invested. Zerodha Varsity's explainer makes the point that costly loans, such as those from NBFCs and small finance banks, are the strongest case for prepaying."
+    },
+    {
+      "question": "Can I choose to reduce the EMI and the tenure together?",
+      "answer": "HDFC Bank's online form, for example, asks you to pick one for each prepayment, but you can mix them across prepayments, or ask the bank to reduce the EMI and then pay a voluntary extra amount each month, which shortens the tenure as well. RBI's reset rules explicitly allow a combination of a higher EMI and a longer tenure when rates change, so ask your lender what it offers for prepayments too."
+    },
+    {
+      "question": "Does prepaying affect my credit score?",
+      "answer": "A part-prepayment isn't a negative mark on your credit report; the loan simply shows a lower balance. What does hurt is missing EMIs, which is one reason to prefer a lower EMI if your income is uncertain."
+    },
+    {
+      "question": "Should I prepay a home loan in the last few years?",
+      "answer": "Usually it makes little difference. Late in the loan most of each EMI is principal, so there's not much interest left to save: on our example, ₹5 lakh prepaid in year 15 saves about ₹2 lakh. If you're on the old tax regime and the yearly interest has dropped below ₹2 lakh, prepaying also reduces your deduction. The money may do more in an emergency fund or an investment."
+    },
+    {
+      "question": "My bank increased my tenure after a rate hike. Can I reverse it?",
+      "answer": "Usually, yes. RBI's 2023 reset rules require lenders to offer the choice of a higher EMI instead of a longer tenure, so ask for it in writing, or make a part-prepayment and ask for it to be applied to the tenure. Check your quarterly statement for the number of EMIs left to see whether your tenure has already been extended."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T09:05:26.671Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 4,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=Ekh34kPrbt0",
+      "title": "Should You Prepay Your Loan or Invest Instead? (Real Math Explained)",
+      "channel": "Zerodha Varsity",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3Ptpi3GjP9I",
+      "title": "Save LAKHS while paying off LOANS! | Ankur Warikoo Hindi",
+      "channel": "warikoo",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4Bmazu6hVF0",
+      "title": "Save 18 Lakh on Home Loan! Reduce EMI vs Reduce Tenure? | Yuvarani",
+      "channel": "Yuvarani",
+      "hasTranscript": true
+    }
+  ]
+}

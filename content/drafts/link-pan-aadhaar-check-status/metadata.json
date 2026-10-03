@@ -1,0 +1,106 @@
+{
+  "title": "How to Check Your PAN-Aadhaar Link Status, and Link Them if They Aren't",
+  "seoTitle": "PAN-Aadhaar Link Status: Check, Pay ₹1,000 & Link",
+  "h1": "How to Check Your PAN-Aadhaar Link Status, and Link Them if They Aren't",
+  "slug": "link-pan-aadhaar-check-status",
+  "metaDescription": "Check your PAN-Aadhaar link status without login, see who is exempt, pay the ₹1,000 fee and link in the right order, and use the TDS relief window.",
+  "excerpt": "Check first; most people are already linked. If you aren't, here is the order that avoids wasting the ₹1,000 fee, the official waiting period, and what an inoperative PAN costs you.",
+  "primaryKeyword": "pan aadhaar link status",
+  "secondaryKeywords": [
+    "link pan with aadhaar",
+    "pan inoperative",
+    "pan aadhaar link fee 1000",
+    "make inoperative pan operative",
+    "pan aadhaar link status check online"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian PAN holders checking whether PAN is linked, or fixing an inoperative PAN",
+  "category": "finance",
+  "tags": [
+    "pan",
+    "aadhaar",
+    "income tax",
+    "tds"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=YSvNdbGWdPE",
+  "sourceVideoTitle": "Aadhar PAN Card Link Kaise Kare 2026 | Inoperative PAN Card Fix Online",
+  "sourceChannel": "Sarkari DNA",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-09-29T17:44:29.292Z",
+  "updatedAt": "2026-09-29T17:47:23.025Z",
+  "wordCount": 1636,
+  "readingTimeMinutes": 9,
+  "screenshots": [
+    {
+      "file": "screenshots/01-efiling-quick-links-link-aadhaar.png",
+      "alt": "Income Tax e-Filing portal Quick Links grid including Link Aadhaar/View Status, e-Pay Tax, Verify PAN Status and Know Your JAO",
+      "caption": "Everything in this guide starts from these Quick Links: Link Aadhaar/View Status, e-Pay Tax for the fee, and Know Your JAO if your PAN is linked to the wrong Aadhaar. Source: incometax.gov.in"
+    }
+  ],
+  "internalLinks": [
+    "https://techpulzo.in/the-real-difference-between-a-fixed-deposit-and-a-recurring-deposit",
+    "https://techpulzo.in/sip-vs-lump-sum-how-to-actually-decide-where-to-put-your-money"
+  ],
+  "faq": [
+    {
+      "question": "How do I know if my PAN is inoperative?",
+      "answer": "Check the Link Aadhaar status as above. If it says your PAN isn't linked and you're not in an exempt category, treat it as inoperative. The Quick Links also have a Verify PAN Status service."
+    },
+    {
+      "question": "How long after linking does my PAN become operative again?",
+      "answer": "Once the link request is validated. The manual says a request may be pending with UIDAI for a while, so check the status after a few days rather than expecting it the same day."
+    },
+    {
+      "question": "Can I open a bank account or invest with an inoperative PAN?",
+      "answer": "The four official consequences are about refunds, refund interest, and higher TDS and TCS. A bank's account-opening KYC is a separate process, as the Easy Financial Express video points out. But financial institutions verify your PAN, and an inoperative one invites questions and delays, so link before you need these services. If you're planning to start investing, like the choices in our SIP vs lump sum guide, link first."
+    },
+    {
+      "question": "Do NRIs need to link PAN and Aadhaar?",
+      "answer": "Non-residents are in the exempt list, so linking isn't compulsory. If the portal still shows your PAN as inoperative, contact the e-filing helpdesk or your Jurisdictional Assessing Officer, and have proof of your residential status ready."
+    },
+    {
+      "question": "I paid the fee but made a mistake. Can I get a refund?",
+      "answer": "Don't count on it. The fee is for the delay in linking. That's why Step 2, matching your details before paying, matters."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-09-29T17:47:23.025Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 5,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=3hM6T8V-lIE",
+      "title": "PAN - Aadhar Link Status Check Online in Income Tax Portal Live Process",
+      "channel": "CA Sumit Sharma",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ojOGno01l3U",
+      "title": "PAN Inoperative & Higher TDS – Latest Income Tax Notification Explained",
+      "channel": "CA Monica",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=R47xeTh40dI",
+      "title": "PAN Aadhaar Link 2026 | PAN Inoperative If Not Linked? ₹1,000 Fee | How to Check & Link | Tamil",
+      "channel": "Easy Financial Express",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=M43LbzYHLRU",
+      "title": "Pan Aadhaar Link Online After 1st April 2026 ✅ | Pan Aadhaar Link Online ✅ | Pan Aadhaar Link ✅",
+      "channel": "Tech and Technics",
+      "hasTranscript": true
+    }
+  ]
+}

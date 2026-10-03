@@ -1,0 +1,88 @@
+{
+  "title": "EPF transfer from an old employer: how to move your PF online in 2026",
+  "seoTitle": "EPF Transfer From Old Employer: Online Steps (2026)",
+  "h1": "EPF transfer from an old employer: how to move your PF online in 2026",
+  "slug": "epf-transfer-old-employer-online",
+  "metaDescription": "How to do an EPF transfer from an old employer online: check what's due, fix the exit date, submit with an Aadhaar OTP, and why it saves tax later.",
+  "excerpt": "Most PF transfers no longer need employer approval. Check what's due, fix the date of exit, file with an Aadhaar OTP, and track it on the new portal.",
+  "primaryKeyword": "epf transfer old employer",
+  "secondaryKeywords": [
+    "pf transfer online",
+    "transfer pf without employer approval",
+    "pf transfer status",
+    "date of exit pf",
+    "form 13 pf transfer"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian salaried employees who changed jobs and have PF in an old account",
+  "category": "finance",
+  "tags": [
+    "EPF",
+    "PF transfer",
+    "UAN",
+    "tax",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=EDgMmdTFuXg",
+  "sourceVideoTitle": "PF Transfer New Process 2026 🔥 पुराने PF Account का पैसा नए PF Account में कैसे Transfer करें?",
+  "sourceChannel": "MY CHANNEL MY KNOWLEDGE",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T06:30:47.686Z",
+  "updatedAt": "2026-10-03T06:32:57.249Z",
+  "wordCount": 1416,
+  "readingTimeMinutes": 8,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs"
+  ],
+  "faq": [
+    {
+      "question": "Do I need my old employer's approval to transfer PF?",
+      "answer": "Usually not. Since January 2025, claims go directly to EPFO when your UAN was issued from October 2017 onwards and is Aadhaar-linked, or when an older UAN is Aadhaar-linked and your name, date of birth and gender match. Other cases still need an employer to attest."
+    },
+    {
+      "question": "How long does an EPF transfer take?",
+      "answer": "There's no fixed time. Since April 2025, the balance is credited as soon as the old EPF office approves the claim, but approval itself can take days or weeks, and EPFO warned of extra checks after its July 2026 portal upgrade."
+    },
+    {
+      "question": "Should I transfer or withdraw my old PF?",
+      "answer": "Transfer, unless you genuinely need the money. Withdrawing before five years of continuous service makes much of it taxable with 10% TDS above ₹50,000, while transferring keeps your service continuous and the balance earning interest."
+    },
+    {
+      "question": "Can I transfer more than one old PF account at once?",
+      "answer": "Yes. Enter your UAN on the transfer form, tap Get Details, and select every account listed as due for transfer before submitting with the OTP."
+    },
+    {
+      "question": "What if my old company has closed?",
+      "answer": "The claim can be attested by your current employer if one is needed. If your UAN is from October 2017 or later and Aadhaar-linked, no employer is involved at all."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T06:32:57.249Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=YJRbEZ0Wdws",
+      "title": "💰PF Transfer to Another PF Account Online 💰 PF Transfer kaise kare 2026 💰Online PF Transfer",
+      "channel": "Online PF Consultant",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XcF7JD9Dp4k",
+      "title": "PF Transfer to another PF account online | How To Transfer Old PF To New PF Account Online |  2026",
+      "channel": "MySimpleGuide",
+      "hasTranscript": true
+    }
+  ]
+}

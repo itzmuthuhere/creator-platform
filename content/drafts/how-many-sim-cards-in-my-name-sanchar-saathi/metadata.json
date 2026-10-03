@@ -1,0 +1,101 @@
+{
+  "title": "How Many SIM Cards Are in Your Name? How to Check and Close the Ones You Don't Use",
+  "seoTitle": "How Many SIM Cards Are on My Aadhaar? Check & Close",
+  "h1": "How Many SIM Cards Are in Your Name? How to Check and Close the Ones You Don't Use",
+  "slug": "how-many-sim-cards-in-my-name-sanchar-saathi",
+  "metaDescription": "Check how many SIM cards are on your Aadhaar with Sanchar Saathi, what Not my number and Not required do, the 9-SIM limit, and the real 30/45/60-day timeline.",
+  "excerpt": "The Sanchar Saathi check takes two minutes. Deciding what to do with each number, and knowing what really happens after you report one, is the harder part. Here is both, from the DoT's own rules.",
+  "primaryKeyword": "how many sim cards on my aadhaar",
+  "secondaryKeywords": [
+    "sanchar saathi sim check",
+    "know mobile connections in your name",
+    "tafcop portal",
+    "sim card limit per person india",
+    "not my number sanchar saathi",
+    "how to close sim in my name"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian mobile users who want to check for and close SIMs issued in their name",
+  "category": "tech",
+  "tags": [
+    "sanchar saathi",
+    "sim card",
+    "identity theft",
+    "telecom rules"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=QcLFgW3uka8",
+  "sourceVideoTitle": "How to find out how many SIM cards are registered in your name | Aadhaar Sim Check New Process 2026",
+  "sourceChannel": "Sarkari DNA",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-09-29T17:35:27.372Z",
+  "updatedAt": "2026-09-29T17:37:48.602Z",
+  "wordCount": 1844,
+  "readingTimeMinutes": 10,
+  "screenshots": [
+    {
+      "file": "screenshots/01-know-mobile-connections-login.png",
+      "alt": "Know Mobile Connections in Your Name login page on Sanchar Saathi with fields for a 10-digit mobile number, captcha and OTP, next to counters for requests received and resolved",
+      "caption": "The login page. The counters on the left were at 4,22,52,742 requests received and 3,98,56,550 resolved when we checked in September 2026. Source: sancharsaathi.gov.in"
+    }
+  ],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs",
+    "https://techpulzo.in/how-to-stop-spam-calls-and-sms-on-an-indian-sim-the-settings-that-actually-help"
+  ],
+  "faq": [
+    {
+      "question": "Does this only show SIMs linked to my Aadhaar?",
+      "answer": "The FAQ describes the list as mobile connections \"taken in your name\", across all operators. It's based on the identity records operators hold, which for most people include Aadhaar-based e-KYC. It isn't limited to one document type. The DoT doesn't publish exactly how it matches connections to a person, so if you've used different ID documents over the years, it's worth checking from more than one of your numbers."
+    },
+    {
+      "question": "How many SIM cards can I have in my name in India?",
+      "answer": "Nine in total across all operators, or six if you're in Jammu & Kashmir, Assam or the North-Eastern states. Since August 2026, operators have been told to suspend any new connection that takes someone over the limit."
+    },
+    {
+      "question": "How long does it take for a reported number to be closed?",
+      "answer": "Outgoing services are suspended within 30 days, incoming within 45, and the connection is disconnected within 60 days if re-verification fails. There's an extra 30 days per stage for people on international roaming, with a disability, or in hospital."
+    },
+    {
+      "question": "Can I close my own old SIM this way instead of visiting a store?",
+      "answer": "Yes. Marking it \"Not required\" flags it for re-verification, and since nobody will re-verify it, it goes through suspension and then disconnection. If you want it closed faster, or need a formal closure receipt, ask your operator to deactivate it."
+    },
+    {
+      "question": "Can someone be arrested for a SIM taken in my name?",
+      "answer": "The person who obtained it by fraud or impersonation is the one committing an offence under Section 42(3)(e) of the Telecommunications Act. Reporting the number, keeping your request ID, and filing a police complaint if you suspect forgery all create a record that you weren't involved."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-09-29T17:37:48.602Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 4,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=CUSCHO9XxqA",
+      "title": "आपके नाम पर कितने SIM चल रहे हैं? पता करें 1 मिनट में | how to check active sim at my aadhar card",
+      "channel": "SS Tech Knowledge",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4TBXNayRW1U",
+      "title": "How Many Sim Registered On My Aadhar Card ? Block SIM Card #SancharSaathi #tafcop #india",
+      "channel": "HOW TO - PC",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qmsKTx2jD7Q",
+      "title": "உங்க பெயரில் எத்தனை SIM இருக்கு 😱  LIVE - Check @thanthitv",
+      "channel": "Money Coach Tamil",
+      "hasTranscript": true
+    }
+  ]
+}

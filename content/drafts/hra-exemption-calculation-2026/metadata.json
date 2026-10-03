@@ -1,0 +1,88 @@
+{
+  "title": "HRA exemption calculation for 2026-27, worked out with real numbers",
+  "seoTitle": "HRA Exemption Calculation 2026-27: Formula and Examples",
+  "h1": "HRA exemption calculation for 2026-27, worked out with real numbers",
+  "slug": "hra-exemption-calculation-2026",
+  "metaDescription": "HRA exemption calculation with worked examples: the three-part formula, the 8 cities at 50% from April 2026, part-year rent, and Form 124 paperwork.",
+  "excerpt": "The HRA formula with real numbers: when the new 50% cities actually matter, how to handle part-year rent, and what Form 124 now asks about your landlord.",
+  "primaryKeyword": "hra exemption calculation",
+  "secondaryKeywords": [
+    "hra calculation formula",
+    "hra metro cities 2026",
+    "form 124 hra",
+    "landlord pan hra",
+    "rent paid to parents hra"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Salaried Indians who pay rent and are comparing or using the old tax regime",
+  "category": "finance",
+  "tags": [
+    "income tax",
+    "HRA",
+    "old regime",
+    "salary",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=h9n5UI6m_84",
+  "sourceVideoTitle": "New HRA Rules 2026: 4 New Cities Added to 50% Exemption List!",
+  "sourceChannel": "Taxation With Archit",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T06:39:58.373Z",
+  "updatedAt": "2026-10-03T06:41:22.876Z",
+  "wordCount": 1222,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-much-of-your-salary-should-actually-go-to-rent"
+  ],
+  "faq": [
+    {
+      "question": "How is HRA exemption calculated?",
+      "answer": "It's the lowest of three amounts: the HRA you received, 50% of salary (40% outside the eight listed cities), and rent paid minus 10% of salary. Salary means basic pay plus retirement-linked DA and fixed commission. The rest of the HRA is taxable."
+    },
+    {
+      "question": "Which cities get the 50% HRA limit from April 2026?",
+      "answer": "Delhi, Mumbai, Kolkata and Chennai, plus Bengaluru, Hyderabad, Pune and Ahmedabad, which were added by the Income-tax Rules 2026. Every other city uses 40%."
+    },
+    {
+      "question": "Can I claim HRA in the new tax regime?",
+      "answer": "No. HRA exemption is available only under the old regime. In the new regime the full allowance is taxable."
+    },
+    {
+      "question": "Do I need my landlord's PAN for HRA?",
+      "answer": "Yes, if the rent you pay is more than ₹1 lakh in the year. If you rent from a relative, you also need to declare the relationship in Form 124 under the 2026 rules."
+    },
+    {
+      "question": "What if I paid rent for only part of the year?",
+      "answer": "Calculate the exemption only for the months you rented, using the salary and HRA for those months. Calculating over the full year subtracts 10% of salary for months without rent and can understate the exemption."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T06:41:22.876Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=zIzjzAYKb9Y",
+      "title": "HRA Calculation in Excel | House Rent Allowance Calculation with Formula | HRA Exemption FY 2026-27",
+      "channel": "HR Payroll & Excel Academy",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=px_zEqB3E3Q",
+      "title": "HRA, House Rent Allowance, Exempted Income, house rent allowance calculation in income tax, sec. 10",
+      "channel": "DWIVEDI GUIDANCE",
+      "hasTranscript": true
+    }
+  ]
+}

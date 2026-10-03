@@ -1,0 +1,88 @@
+{
+  "title": "How to check laptop battery health on Windows 10 and 11",
+  "seoTitle": "How to Check Laptop Battery Health on Windows 10 and 11",
+  "h1": "How to check laptop battery health on Windows 10 and 11",
+  "slug": "check-laptop-battery-health-windows",
+  "metaDescription": "Check laptop battery health on Windows with one command: read the battery report, calculate health from design and full charge capacity, and slow down wear.",
+  "excerpt": "One command creates a battery report. How to read it, work out your health percentage, decide when to replace, and what actually wears laptop batteries out.",
+  "primaryKeyword": "check laptop battery health windows",
+  "secondaryKeywords": [
+    "powercfg batteryreport",
+    "design capacity vs full charge capacity",
+    "battery cycle count laptop",
+    "when to replace laptop battery"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Windows laptop owners",
+  "category": "tech",
+  "tags": [
+    "Windows",
+    "laptop",
+    "battery",
+    "how-to",
+    "maintenance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=Q8Cu_-yXlEk",
+  "sourceVideoTitle": "👉 Windows 11 Battery Health Check | Read Battery Report, Cycle Count & When to Replace Battery",
+  "sourceChannel": "CrackTheWindows",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:46:08.468Z",
+  "updatedAt": "2026-10-03T01:47:19.449Z",
+  "wordCount": 1129,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-often-you-should-actually-clean-your-laptop-fans",
+    "https://techpulzo.in/why-your-phone-battery-degrades-over-time-the-real-chemistry"
+  ],
+  "faq": [
+    {
+      "question": "How do I check my laptop battery health in Windows 11?",
+      "answer": "Open Command Prompt, type powercfg /batteryreport and press Enter. Open the HTML file it saves, then divide the Full Charge Capacity by the Design Capacity and multiply by 100. That percentage is your battery's health."
+    },
+    {
+      "question": "What is a good battery health percentage for a laptop?",
+      "answer": "Above 80% is healthy. Between 60% and 80%, runtime is noticeably shorter but the battery may still be fine for your use. Below 60%, or if the laptop shuts down unexpectedly, plan a replacement."
+    },
+    {
+      "question": "What is battery cycle count?",
+      "answer": "It's the number of full charge-discharge cycles the battery has gone through. One cycle is 100% worth of use, even if spread across several days. Many laptop batteries are rated for several hundred cycles before noticeable wear."
+    },
+    {
+      "question": "Is it bad to keep my laptop plugged in all the time?",
+      "answer": "Keeping a battery at 100% for long periods, especially when warm, speeds up wear. Most laptops have a charge-limit or battery-care setting in the manufacturer's app that stops charging below full; turn it on if your laptop is usually plugged in."
+    },
+    {
+      "question": "Why is my battery report's design capacity higher than full charge capacity?",
+      "answer": "Because batteries lose capacity as they age. Design capacity is what the battery held when new; full charge capacity is what it holds today. The gap is normal wear."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:47:19.449Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 3,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=pRnsFlh8hNw",
+      "title": "How to Check Battery Health on Windows 11 (The Tool Most Don't Know About)",
+      "channel": "Quick Tutorials",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fFCBvfO0k5w",
+      "title": "Check Your Laptop's Battery Health using CMD",
+      "channel": "Buzz2day Tech",
+      "hasTranscript": true
+    }
+  ]
+}

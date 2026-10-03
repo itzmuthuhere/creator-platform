@@ -1,0 +1,14 @@
+[
+  {
+    "file": "01-uidai-aadhaar-services.png",
+    "sourceUrl": "https://uidai.gov.in/en/",
+    "pageTitle": "Home - Unique Identification Authority of India",
+    "selector": null,
+    "crop": "cropped from a full-page capture (scale 1): Access Aadhaar Services panel",
+    "width": 1040,
+    "height": 350,
+    "capturedAt": "2026-09-29T19:40:00.000Z",
+    "alt": "UIDAI website Access Aadhaar Services panel with tiles for Download Aadhaar, Address Update with a 75 rupee fee, Lock/Unlock Biometrics and Check Update Status",
+    "caption": "UIDAI's home page links straight to Download Aadhaar and to the biometric lock, both covered below. Source: uidai.gov.in"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "title": "FD Interest Rates Compared Across 9 Indian Banks (September 2026)",
+  "subtitle": "1, 2, 3 and 5-year rates from each bank's own website, what the gap is worth in rupees, and the day-count traps that cost more than picking the wrong bank",
+  "slug": "fd-interest-rates-compared-indian-banks",
+  "contentFile": "content.html",
+  "excerpt": "One-year FD rates at big Indian banks are nearly identical. At three years the spread passes a full percentage point, and some of the best rates start one day after a round tenure. Rates from nine banks' official pages, checked 29 September 2026.",
+  "seoTitle": "FD Interest Rates Compared: SBI, HDFC, ICICI, Axis & More (Sep 2026)",
+  "metaDescription": "FD rates from SBI, HDFC, ICICI, Axis, Kotak, PNB, Bank of Baroda, IDFC FIRST and AU Small Finance Bank compared at 1, 2, 3 and 5 years, with maturity values and senior citizen rates.",
+  "keywords": ["fd interest rates comparison", "highest fd rates india", "sbi vs hdfc fd rates", "senior citizen fd rates", "best bank for fd 3 years", "small finance bank fd safe"],
+  "category": "finance",
+  "tags": ["fixed deposit", "savings", "banking", "interest rates"],
+  "author": "Muthu",
+  "status": "DRAFT",
+  "faq": [
+    {
+      "question": "Which bank gives the highest FD rate right now?",
+      "answer": "Among the nine banks checked on 29 September 2026, AU Small Finance Bank paid the most for 3 years (7.40%, or 7.90% for senior citizens) and IDFC FIRST Bank paid the most for 1 and 2 years (6.50% and 7.10%). Rates change often, so confirm on the bank's site before booking."
+    },
+    {
+      "question": "Are FDs in small finance banks safe?",
+      "answer": "Small finance banks are licensed and regulated by the RBI, and their deposits are insured by DICGC up to ₹5 lakh per depositor per bank, including interest. Keeping your total in any one bank within that limit keeps all of it insured."
+    },
+    {
+      "question": "Why is the rate for 3 years different from 3 years and 1 day?",
+      "answer": "Banks set rates in tenure buckets, and the boundaries don't always fall on round numbers. At HDFC and ICICI, exactly 3 years earns 6.45% while 3 years and 1 day earns 6.50%. At AU, exactly 12 months earns 6.35% while 12 months and 1 day earns 7.10%."
+    },
+    {
+      "question": "Is FD interest taxable?",
+      "answer": "Yes. It's added to your income and taxed at your slab rate, and the bank deducts TDS once your FD interest for the year crosses the threshold. In the 30% bracket, a 7.40% FD earns roughly 5.2% after tax."
+    }
+  ]
+}

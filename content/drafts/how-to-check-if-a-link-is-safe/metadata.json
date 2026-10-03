@@ -1,0 +1,90 @@
+{
+  "title": "How to check if a link is safe before you click it",
+  "seoTitle": "How to Check If a Link Is Safe Before You Click It",
+  "h1": "How to check if a link is safe before you click it",
+  "slug": "how-to-check-if-a-link-is-safe",
+  "metaDescription": "How to check if a link is safe: read the real domain, spot red flags in scam SMS and WhatsApp messages, use free checkers wisely, and what to do if you clicked.",
+  "excerpt": "A 30-second routine to check any link from SMS, WhatsApp or email: how to read the real domain, two free checkers and their limits, QR codes, and what to do after a click.",
+  "primaryKeyword": "how to check if a link is safe",
+  "secondaryKeywords": [
+    "check suspicious link",
+    "virustotal url scan",
+    "is this website safe",
+    "phishing link check",
+    "qr code scam"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Everyday users who get links by SMS, WhatsApp and email",
+  "category": "tech",
+  "tags": [
+    "phishing",
+    "scams",
+    "security",
+    "links",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=2UpiA-bPcPs",
+  "sourceVideoTitle": "How to Check If a Link Is Safe Before Clicking (Avoid Phishing & Scams) 😱",
+  "sourceChannel": "1 Minute Tech",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:35:26.873Z",
+  "updatedAt": "2026-10-03T01:36:38.873Z",
+  "wordCount": 1290,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs",
+    "https://techpulzo.in/how-two-factor-authentication-actually-stops-account-hacks",
+    "https://techpulzo.in/how-to-stop-spam-calls-and-sms-on-an-indian-sim-the-settings-that-actually-help"
+  ],
+  "faq": [
+    {
+      "question": "How can I check if a link is safe without clicking it?",
+      "answer": "On a phone, long-press the link and copy or preview it; on a computer, hover over it to see the real address. Check the domain (the part just before the first single slash) is exactly the official one. If unsure, paste it into Google's Safe Browsing status checker or VirusTotal."
+    },
+    {
+      "question": "Does HTTPS mean a website is safe?",
+      "answer": "No. HTTPS and the padlock only mean the connection is encrypted. Scam sites can get HTTPS certificates for free, so always check the domain name itself."
+    },
+    {
+      "question": "Is VirusTotal reliable for checking links?",
+      "answer": "It's a useful second opinion because it combines more than 70 security engines, but a clean result doesn't prove a link is safe, since new scam sites may not be flagged yet. Also avoid pasting links that contain personal information, because submissions are shared with the security community."
+    },
+    {
+      "question": "What should I do if I clicked a phishing link?",
+      "answer": "If you only opened it, close the page. If you entered a password, change it on the real site and enable two-factor authentication. If you entered bank or card details or an OTP, call your bank immediately and report the fraud on 1930 or cybercrime.gov.in."
+    },
+    {
+      "question": "How do I report a scam link in India?",
+      "answer": "Use Chakshu on the Sanchar Saathi portal to report suspected fraud SMS, calls and WhatsApp messages. If you've lost money, call 1930 or file a complaint at cybercrime.gov.in as soon as possible."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:36:38.873Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=PH7eXIrxPv4",
+      "title": "Email & URL Analysis | Detect Phishing Links Like a Cybersecurity Analyst",
+      "channel": "SYED FAYAJ",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Ey5wWreXXZQ",
+      "title": "Is This Link SAFE? How to Check Any URL, QR Code & Website Before Getting Hacked or Scammed (2026)",
+      "channel": "wizdom village",
+      "hasTranscript": true
+    }
+  ]
+}

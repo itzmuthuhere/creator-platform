@@ -1,0 +1,90 @@
+{
+  "title": "What paying only the credit card minimum due costs you",
+  "seoTitle": "Credit Card Minimum Due: What Paying Only It Costs You",
+  "h1": "What paying only the credit card minimum due costs you",
+  "slug": "credit-card-minimum-due-cost",
+  "metaDescription": "Credit card minimum due explained: how HDFC and SBI Card calculate it, why ₹1 lakh takes 16–22 years, and why paying 90% of a bill still costs you.",
+  "excerpt": "Paying the minimum on ₹1 lakh takes 16 to 22 years at today's 3.75% a month plus GST. Paying most of a bill isn't safe either: interest runs on the whole amount from each purchase date. The formulas, the costs and the way out.",
+  "primaryKeyword": "credit card minimum due",
+  "secondaryKeywords": [
+    "what happens if I pay minimum amount due",
+    "minimum amount due vs total amount due",
+    "credit card interest if not paid in full",
+    "does paying minimum due affect credit score",
+    "credit card interest free period",
+    "convert credit card outstanding to emi"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Indian credit card users who sometimes pay only the minimum amount due",
+  "category": "finance",
+  "tags": [
+    "credit cards",
+    "interest",
+    "debt",
+    "RBI",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=gunMbslFflQ",
+  "sourceVideoTitle": "सावधान! Credit Card का Minimum Due आपको कंगाल बना देगा! | Debt Trap | Zee Business",
+  "sourceChannel": "Zee Business",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T09:23:29.894Z",
+  "updatedAt": "2026-10-02T09:30:41.971Z",
+  "wordCount": 1933,
+  "readingTimeMinutes": 10,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/credit-score-in-india-how-it-works-and-how-to-fix-it",
+    "https://techpulzo.in/credit-card-vs-debit-card-for-everyday-spending-what-actually-saves-you-money"
+  ],
+  "faq": [
+    {
+      "question": "What happens if I pay only the minimum amount due?",
+      "answer": "You avoid the late fee and your account isn't reported as late, but everything you didn't pay is charged interest, about 3.75% a month plus GST at most issuers. You also lose the interest-free period: the unpaid bill is charged interest from each purchase date, and new purchases are charged from the day you make them until the balance is fully cleared."
+    },
+    {
+      "question": "Is it better to pay the minimum or nothing at all?",
+      "answer": "Always pay at least the minimum. Paying nothing adds a late fee (up to ₹1,300 at SBI Card), can get your account reported as past due once it's more than three days late, and moves you towards default. The interest on the unpaid amount is charged either way, so the minimum saves you money and protects your credit history."
+    },
+    {
+      "question": "Does paying the minimum due affect my credit score?",
+      "answer": "Not directly. Paying the minimum on time keeps the account current, so it isn't reported as late. But a large balance carried month to month raises your credit utilisation, the share of your limit in use, which lenders and bureaus watch. A high utilisation can lower your score even when every payment is on time."
+    },
+    {
+      "question": "If I pay the full amount next month, do I get my interest-free period back?",
+      "answer": "Yes, once the balance is cleared in full, new purchases get the normal interest-free days again. But the bill you clear will still include interest charged on the earlier balance and on purchases made while you were carrying it. The interest-free period returns only for spending after the slate is clean."
+    },
+    {
+      "question": "Why did my minimum amount due go up?",
+      "answer": "Usually because the issuer changed its formula or because your bill now includes EMIs, fees or interest that are included in full. SBI Card raised its minimum for many cardholders from 15 July 2025 by including 100% of interest and EMIs; HDFC Bank revised its formula from June 2025. Your card's MITC on the issuer's website shows the current formula."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T09:30:41.971Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=Sm4Bz8KK-94",
+      "title": "Minimum Due: The Credit Card Trap Jo Tumhe 20 Saal Karz Mein Rakhta Hai",
+      "channel": "Finance Samjho",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=biyG_Ius2tQ",
+      "title": "Credit Card - Minimum Amount Due Changed on SBI Cards | Tamil",
+      "channel": "Money & Banking",
+      "hasTranscript": true
+    }
+  ]
+}

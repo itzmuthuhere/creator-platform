@@ -1,0 +1,90 @@
+{
+  "title": "Rooftop solar subsidy under PM Surya Ghar: cost, size and payback in 2026",
+  "seoTitle": "Rooftop Solar Subsidy 2026: PM Surya Ghar Cost and Payback",
+  "h1": "Rooftop solar subsidy under PM Surya Ghar: cost, size and payback in 2026",
+  "slug": "rooftop-solar-subsidy-pm-surya-ghar",
+  "metaDescription": "Rooftop solar subsidy in 2026: ₹78,000 under PM Surya Ghar plus Tamil Nadu's ₹22,000 top-up. How to size a system and when it actually pays back.",
+  "excerpt": "Up to ₹1 lakh in subsidy in Tamil Nadu, but size matters more than subsidy. Worked examples show a 4-year payback for one home and 16+ years for another.",
+  "primaryKeyword": "rooftop solar subsidy",
+  "secondaryKeywords": [
+    "pm surya ghar subsidy",
+    "tamil nadu solar subsidy 2026",
+    "3kw solar system price with subsidy",
+    "rooftop solar payback india",
+    "dcr solar panel"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian homeowners considering rooftop solar, with a Tamil Nadu worked example",
+  "category": "finance",
+  "tags": [
+    "solar",
+    "PM Surya Ghar",
+    "subsidy",
+    "electricity bill",
+    "Tamil Nadu"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=Pf1S72U-7o8",
+  "sourceVideoTitle": "அரசு வழங்கும் ரூ.1 லட்சம் | Tamil Nadu Rooftop Solar Subsidy 2026 | TN Govt Solar Panel Subsidy 2026",
+  "sourceChannel": "Tamil Yojana",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T21:02:46.585Z",
+  "updatedAt": "2026-10-02T21:04:15.713Z",
+  "wordCount": 1555,
+  "readingTimeMinutes": 8,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-read-a-loan-apr-instead-of-just-the-emi"
+  ],
+  "faq": [
+    {
+      "question": "How much is the rooftop solar subsidy in 2026?",
+      "answer": "The central subsidy is ₹30,000 per kW for the first 2 kW and ₹18,000 for the third, up to ₹78,000. In Tamil Nadu, the state adds ₹5,000, ₹10,000 or ₹22,000 for 1, 2 or 3 kW, for a total of up to ₹1 lakh."
+    },
+    {
+      "question": "How many units does a 3 kW solar system produce?",
+      "answer": "About 4,200 units a year, or roughly 690 units every two months, in most of India. Actual output depends on your roof direction, shading, dust and season, and falls slightly as panels age."
+    },
+    {
+      "question": "Will my electricity bill become zero with solar?",
+      "answer": "It can if your system produces as much as your net use, but fixed or meter charges may remain. In Tamil Nadu, households using under 500 units every two months already get 200 units free, so they only need enough solar to cover the units above that."
+    },
+    {
+      "question": "Is rooftop solar worth it for a small household?",
+      "answer": "Often not, where low usage is already free or cheap. In our Tamil Nadu example, a 300-unit household would take about 16 years to recover the cost of even a 1 kW system after subsidies. Households with large bills recover the cost far faster."
+    },
+    {
+      "question": "Do I need DCR panels to get the subsidy?",
+      "answer": "Yes. The PM Surya Ghar subsidy applies to systems using domestically manufactured (DCR) panels installed by a registered vendor. Non-DCR systems can still be installed and net-metered, but without the subsidy."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T21:04:15.713Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0.06,
+      "longestCopiedRun": 8,
+      "runs": [
+        "up to 78 000 from the central government"
+      ]
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=R6SRu8ga_RI",
+      "title": "PM Surya Ghar 2.0 का सच: ₹78,000 सब्सिडी में ₹40,000 का खेल? 🤯 रुक जाओ!",
+      "channel": "Deepak chaudhary Nexus solar energy",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DRu6RIrtgU0",
+      "title": "3kW Solar System Cost vs Savings in India | 3kW Rooftop Solar System ROI Calculation",
+      "channel": "SolarSquare",
+      "hasTranscript": true
+    }
+  ]
+}

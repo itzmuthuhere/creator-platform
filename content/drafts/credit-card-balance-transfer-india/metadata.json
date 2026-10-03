@@ -1,0 +1,86 @@
+{
+  "title": "Credit card balance transfer in India: when it saves money, and the catch",
+  "seoTitle": "Credit Card Balance Transfer in India: Costs and the Catch",
+  "h1": "Credit card balance transfer in India: when it saves money, and the catch",
+  "slug": "credit-card-balance-transfer-india",
+  "metaDescription": "Credit card balance transfer in India: one-time vs BT on EMI, 2026 issuer terms, the interest-free-period catch, and what it saves against 45% card interest.",
+  "excerpt": "A balance transfer can cut card interest by more than half, but a one-time transfer can switch off the interest-free period on new purchases. How to choose.",
+  "primaryKeyword": "credit card balance transfer",
+  "secondaryKeywords": [
+    "balance transfer on emi",
+    "sbi card balance transfer",
+    "credit card balance transfer charges",
+    "balance transfer interest free period"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian credit card users carrying a balance at the revolving rate",
+  "category": "finance",
+  "tags": [
+    "credit card",
+    "balance transfer",
+    "debt",
+    "decision"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=AYoQLuktxQM",
+  "sourceVideoTitle": "Credit Card Balance Transfer | How To Transfer My Credit Card Balance | Credit Cards",
+  "sourceChannel": "BankBazaar - Credit Cards & Free Credit Score",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T07:05:01.056Z",
+  "updatedAt": "2026-10-03T07:06:57.805Z",
+  "wordCount": 1193,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/credit-score-in-india-how-it-works-and-how-to-fix-it"
+  ],
+  "faq": [
+    {
+      "question": "What is a credit card balance transfer?",
+      "answer": "It's shifting your outstanding dues from one bank's card to a card from another bank, at a lower interest rate or 0% for a limited period. The new card pays the old one directly, and you repay the new card."
+    },
+    {
+      "question": "Is a credit card balance transfer worth it?",
+      "answer": "Yes, if you're paying the revolving rate (up to 3.75% a month), you can clear the transferred amount within the offer period, and you stop adding new debt. A six-month BT on EMI can cut the cost of a ₹1 lakh balance by more than half."
+    },
+    {
+      "question": "Do I lose the interest-free period after a balance transfer?",
+      "answer": "With a one-time balance transfer, often yes. SBI Card's terms say new purchases are charged interest from the purchase date while the transfer is outstanding. Its BT on EMI keeps the interest-free period, so check which type you're booking."
+    },
+    {
+      "question": "How much can I transfer?",
+      "answer": "It depends on the issuer and your available limit. SBI Card allows from ₹5,000 up to 75% of your available credit limit on the receiving card."
+    },
+    {
+      "question": "Does a balance transfer affect my credit score?",
+      "answer": "Indirectly. It uses up part of the new card's limit, raising utilisation until you repay, and missing a payment on the new card hurts your score like any other missed payment. Paying it off on time helps."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T07:06:57.805Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 3,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=86Dbx4KITjM",
+      "title": "How Credit Card Balance Transfer Works | Explainer | Money9 English",
+      "channel": "Money9 English",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7eJxomiP3v4",
+      "title": "Credit Card Balance Transfer In Free Reality - कभी नहीं करोगे!",
+      "channel": "Card Buddhi",
+      "hasTranscript": true
+    }
+  ]
+}

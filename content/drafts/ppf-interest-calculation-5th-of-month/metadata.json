@@ -1,0 +1,89 @@
+{
+  "title": "How PPF interest is calculated, and why the 5th matters",
+  "seoTitle": "PPF Interest Calculation: The 5th-of-Month Rule Explained",
+  "h1": "How PPF interest is calculated, and why the 5th matters",
+  "slug": "ppf-interest-calculation-5th-of-month",
+  "metaDescription": "PPF interest calculation explained: the lowest-balance rule after the 5th, what missing it costs, and why depositing in April beats March by ₹2.7 lakh.",
+  "excerpt": "Depositing after the 5th costs one month's interest, about ₹887 on ₹1.5 lakh. Depositing in March instead of April costs ₹2.7 lakh over 15 years. How PPF interest really works, with five deposit patterns compared.",
+  "primaryKeyword": "ppf interest calculation",
+  "secondaryKeywords": [
+    "ppf 5th of month rule",
+    "best time to deposit in ppf",
+    "ppf interest rate 2026",
+    "ppf monthly vs lump sum",
+    "ppf maturity amount 1.5 lakh 15 years"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Indian PPF account holders deciding when to deposit",
+  "category": "finance",
+  "tags": [
+    "PPF",
+    "small savings",
+    "interest",
+    "tax saving",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=eABhECddNo8",
+  "sourceVideoTitle": "How PPF Interest is Calculated | Best time to invest money in PPF account",
+  "sourceChannel": "BiRaJ Ki BaAtEiN",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T13:47:58.535Z",
+  "updatedAt": "2026-10-02T13:49:51.633Z",
+  "wordCount": 1402,
+  "readingTimeMinutes": 8,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/sip-vs-lump-sum-how-to-actually-decide-where-to-put-your-money",
+    "https://techpulzo.in/the-real-difference-between-a-fixed-deposit-and-a-recurring-deposit"
+  ],
+  "faq": [
+    {
+      "question": "What happens if I deposit in PPF on the 5th of the month?",
+      "answer": "It counts. The rule looks at the lowest balance from the close of the 5th to the end of the month, so a deposit credited to your PPF account on or before the 5th earns interest for that whole month. Make sure the money reaches the account by then: an online transfer started late on the 5th may post on the 6th."
+    },
+    {
+      "question": "Is it better to invest in PPF monthly or in a lump sum?",
+      "answer": "If you have the full amount at the start of the financial year, a lump sum between 1 and 5 April gives the highest maturity: about ₹1.2 lakh more over 15 years than ₹12,500 a month, at 7.1%. If you're investing from monthly salary, monthly deposits on or before the 5th are the next best choice. The worst pattern is waiting until March."
+    },
+    {
+      "question": "How is PPF interest calculated for a year?",
+      "answer": "Each month, the bank takes the lowest balance between the 5th and the month end and multiplies it by the annual rate divided by 12. The twelve monthly amounts are added up and credited to the account on 31 March. Next year, interest is calculated on the balance including that credited interest, which is how it compounds."
+    },
+    {
+      "question": "Is there a limit on how many times I can deposit in PPF in a year?",
+      "answer": "No. The 2019 scheme removed the old limit of 12 deposits a year. You can deposit any number of times, in multiples of ₹50, as long as you deposit at least ₹500 and no more than ₹1.5 lakh in the financial year."
+    },
+    {
+      "question": "Does depositing late affect my tax deduction?",
+      "answer": "No. Under the old tax regime, PPF deposits count towards the deduction in the financial year they're made, up to ₹1.5 lakh, whatever the month. Timing affects only the interest you earn."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T13:49:51.633Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=YvUqQRLgRow",
+      "title": "PPF Interest Calculation, Public Provident Fund (PPF) में ब्याज की गणना कैसे की जाती है",
+      "channel": "CA Rahul Agarwal",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FydkDqMDFc8",
+      "title": "Complete PPF Guide 2026- Public Provident Fund (PPF) Account Benefits, Withdrawal Rules, Calculator",
+      "channel": "Asset Yogi",
+      "hasTranscript": true
+    }
+  ]
+}

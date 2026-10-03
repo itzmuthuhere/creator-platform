@@ -1,0 +1,88 @@
+{
+  "title": "FASTag annual pass, KYV and recharge: what car owners need to know in 2026",
+  "seoTitle": "FASTag Annual Pass 2026: Price, Rules and Is It Worth It",
+  "h1": "FASTag annual pass, KYV and recharge: what car owners need to know in 2026",
+  "slug": "fastag-annual-pass-kyv-recharge",
+  "metaDescription": "FASTag annual pass costs ₹3,075 in 2026-27 for 200 trips. Rules, break-even by toll amount, the end of routine KYV for cars, and tolls without FASTag.",
+  "excerpt": "The FASTag annual pass now costs ₹3,075, KYV is no longer routine for cars, and paying toll without FASTag costs 1.25× by UPI. What each change means for you.",
+  "primaryKeyword": "fastag annual pass",
+  "secondaryKeywords": [
+    "fastag annual pass price 2026",
+    "fastag kyv",
+    "fastag annual pass worth it",
+    "toll without fastag upi",
+    "fastag recharge"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian private car owners who drive on national highways",
+  "category": "finance",
+  "tags": [
+    "FASTag",
+    "toll",
+    "NHAI",
+    "highways",
+    "car"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=zHfBGhJlrdQ",
+  "sourceVideoTitle": "FASTag Annual Pass Explained: Step-by-Step Guide to Benefits, Features & How to Buy",
+  "sourceChannel": "moneycontrol",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T21:06:12.037Z",
+  "updatedAt": "2026-10-02T21:07:40.013Z",
+  "wordCount": 1412,
+  "readingTimeMinutes": 8,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/credit-card-vs-debit-card-for-everyday-spending-what-actually-saves-you-money"
+  ],
+  "faq": [
+    {
+      "question": "What is the FASTag annual pass price in 2026?",
+      "answer": "₹3,075 for the 2026-27 financial year, up from ₹3,000 when the pass launched in August 2025. It covers one year or 200 trips, whichever ends first, at national highway and national expressway fee plazas."
+    },
+    {
+      "question": "Does the FASTag annual pass work on state highways?",
+      "answer": "No. It's valid only at fee plazas on National Highways and National Expressways. On state highways, state-run expressways, local tolls and parking lots, your FASTag works as normal and the toll is deducted from your balance."
+    },
+    {
+      "question": "How are trips counted on the annual pass?",
+      "answer": "At a normal toll plaza, every crossing counts as one trip, so a return journey through one plaza uses two. On closed-tolling expressways, where toll depends on distance, one entry and exit together counts as a single trip."
+    },
+    {
+      "question": "Do I need to do KYV for my FASTag in 2026?",
+      "answer": "Not for a car, in most cases. NHAI stopped routine KYV for cars on new FASTags from 1 February 2026, and existing car tags need it only if there's a complaint, such as a loose tag or misuse. New tags are verified against VAHAN before activation."
+    },
+    {
+      "question": "What happens if I cross a toll without a working FASTag?",
+      "answer": "At national highway plazas, you pay 1.25 times the toll if you pay by UPI, or twice the toll in cash. This rule has applied since 15 November 2025."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T21:07:40.013Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=J0ygm19WqXY",
+      "title": "NHAI Toll Plaza Frauds🤦‍♂️ | FASTag Annual Pass Explained | Fastag 3000 Pass | Kanavu Payanam",
+      "channel": "Kanavu Payanam",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=K23Pc85wbPE",
+      "title": "Fast Tag new Update 2026 | fastag kyv update online",
+      "channel": "Ganga info",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+<p><em>Tested on 29 September 2026. Homepages only, loaded without clicking anything or accepting any cookie prompt.</em></p>
+
+<p>Open Flipkart's homepage and your browser talks to Flipkart and not much else: in my test it contacted no outside advertising or analytics companies at all. Open Amazon.in's homepage and, within seconds, your browser has been introduced to 29 other companies, most of them ad exchanges you've probably never heard of. Two shopping sites people use for the same things, with completely different approaches to what happens behind the page.</p>
+
+<p>I checked the homepages of twelve of India's biggest shopping sites to see which outside companies each one brings in. Here's what loaded, what those companies do, and what you can switch off.</p>
+
+<h2>How I Measured It</h2>
+
+<p>Each homepage was loaded in Chrome through <a href="https://developer.chrome.com/docs/lighthouse/overview" rel="noopener" target="_blank">Lighthouse</a>, Google's page-testing tool, which records every single network request a page makes, including requests from ad frames embedded inside it. Nothing was clicked, no pop-up was accepted, and no account was logged in.</p>
+
+<p>Every request to a domain outside the shop's own was then matched against <a href="https://github.com/patrickhulce/third-party-web" rel="noopener" target="_blank">third-party-web</a>, an open database of thousands of third-party scripts that Lighthouse itself uses to label them. It records who owns each domain and what it does (advertising, analytics, social media and so on).</p>
+
+<p>Counting rules, so the numbers mean something:</p>
+<ul>
+<li><strong>Counted:</strong> advertising, analytics, social media and marketing companies.</li>
+<li><strong>Not counted:</strong> the shop's own domains and image servers, payment gateways like Razorpay, tag managers (tools like Google Tag Manager that only load other scripts; whatever they load is counted instead), and performance monitors like Akamai mPulse or New Relic, which measure page speed rather than people.</li>
+<li><strong>A company counts once</strong>, however many of its domains appear.</li>
+</ul>
+
+<h3>Two things that went wrong along the way</h3>
+
+<p>Lighthouse normally identifies itself as "Chrome-Lighthouse", and some sites block that outright. My first round used the default and I switched to a normal Chrome identity for the round reported here. Most numbers didn't change; the one that did was AJIO, which also shows how much ad traffic varies from load to load (more on that below).</p>
+
+<p>Meesho couldn't be measured this way at all. Its bot protection served automated browsers a stripped-down page with no outside requests, even with a visible Chrome window. So I opened it in an ordinary browser session and read the page's own request log instead. That log can't see inside embedded frames, which makes Meesho's figure below a minimum rather than a full count.</p>
+
+<h2>The Results</h2>
+
+<table>
+<thead>
+<tr><th>Site</th><th>Outside ad, analytics &amp; social companies</th><th>Outside domains contacted</th><th>Includes Facebook and Google ad tracking</th></tr>
+</thead>
+<tbody>
+<tr><td>Amazon.in</td><td><strong>29</strong></td><td>44</td><td>Google only</td></tr>
+<tr><td>Tata CLiQ</td><td><strong>26–27</strong></td><td>78</td><td>Both</td></tr>
+<tr><td>Croma</td><td><strong>24–25</strong></td><td>65</td><td>Both</td></tr>
+<tr><td>AJIO</td><td>13–31</td><td>41</td><td>Both</td></tr>
+<tr><td>Nykaa</td><td>9</td><td>31</td><td>Both</td></tr>
+<tr><td>Reliance Digital</td><td>7</td><td>30</td><td>Both</td></tr>
+<tr><td>Myntra</td><td>6</td><td>20</td><td>Both</td></tr>
+<tr><td>JioMart</td><td>6</td><td>30</td><td>Both</td></tr>
+<tr><td>BigBasket</td><td>5</td><td>19</td><td>Both</td></tr>
+<tr><td>Meesho</td><td>at least 3</td><td>at least 7</td><td>Google only (minimum)</td></tr>
+<tr><td>Snapdeal</td><td>1</td><td>11</td><td>Neither</td></tr>
+<tr><td>Flipkart</td><td><strong>0</strong></td><td>5</td><td>Neither</td></tr>
+</tbody>
+</table>
+
+<p>Ranges show the two test rounds where they differed. JioMart redirected to a location-specific page for Mumbai; that's the page it served, so that's what was measured.</p>
+
+<figure>
+<svg viewBox="0 0 640 400" role="img" aria-label="Outside advertising, analytics and social companies contacted by each shopping homepage" style="width:100%;height:auto;font-family:system-ui,sans-serif">
+<text x="0" y="18" font-size="15" font-weight="600" fill="currentColor">Outside ad, analytics &amp; social companies on the homepage</text>
+<g font-size="13" fill="currentColor">
+<text x="0" y="52">Amazon.in</text><rect x="130" y="38" width="435" height="20" fill="#dc2626"/><text x="571" y="53">29</text>
+<text x="0" y="82">Tata CLiQ</text><rect x="130" y="68" width="390" height="20" fill="#dc2626"/><text x="526" y="83">26</text>
+<text x="0" y="112">Croma</text><rect x="130" y="98" width="360" height="20" fill="#dc2626"/><text x="496" y="113">24</text>
+<text x="0" y="142">AJIO</text><rect x="130" y="128" width="195" height="20" fill="#2563eb"/><text x="331" y="143">13–31</text>
+<text x="0" y="172">Nykaa</text><rect x="130" y="158" width="135" height="20" fill="#2563eb"/><text x="271" y="173">9</text>
+<text x="0" y="202">Reliance Digital</text><rect x="130" y="188" width="105" height="20" fill="#2563eb"/><text x="241" y="203">7</text>
+<text x="0" y="232">Myntra</text><rect x="130" y="218" width="90" height="20" fill="#2563eb"/><text x="226" y="233">6</text>
+<text x="0" y="262">JioMart</text><rect x="130" y="248" width="90" height="20" fill="#2563eb"/><text x="226" y="263">6</text>
+<text x="0" y="292">BigBasket</text><rect x="130" y="278" width="75" height="20" fill="#2563eb"/><text x="211" y="293">5</text>
+<text x="0" y="322">Meesho</text><rect x="130" y="308" width="45" height="20" fill="#2563eb" opacity="0.6"/><text x="181" y="323">3+</text>
+<text x="0" y="352">Snapdeal</text><rect x="130" y="338" width="15" height="20" fill="#16a34a"/><text x="151" y="353">1</text>
+<text x="0" y="382">Flipkart</text><rect x="130" y="368" width="3" height="20" fill="#16a34a"/><text x="139" y="383">0</text>
+</g>
+</svg>
+<figcaption>Lower of the two runs shown for AJIO. Meesho is a minimum (see method). Tested 29 September 2026.</figcaption>
+</figure>
+
+<h2>Why Amazon's Own Homepage Talks to 27 Ad Companies</h2>
+
+<p>This looked odd at first, since Amazon runs its own ad business. The request log explains it. The requests start at Amazon's ad server (<code>aax-eu.amazon-adsystem.com</code>) and bounce to a long list of ad exchanges (AppNexus, PubMatic, Index Exchange, OpenX, Rubicon Project and others), each with an address containing words like <code>setuid</code>, <code>match</code> or <code>usersync</code>.</p>
+
+<p>This is called <strong>cookie syncing</strong>. Each ad company gives your browser its own ID. When one company sends your browser to another with its ID in the address, the second company can link the two IDs, so both know that visitor X in one system is visitor Y in the other. It lets advertisers recognise the same person across different sites and ad networks. On Amazon's homepage this happened 45 times across 27 ad companies. The files themselves were tiny, about 17 KB in total, so you'd never notice it in page speed.</p>
+
+<h2>What the Other Companies Do</h2>
+
+<p>Across the twelve sites, the same few names came up again and again. Google's ad network (DoubleClick) and Google Analytics were each on 9 of the 11 sites Lighthouse could measure, and Facebook's tracking pixel on 8. The companies fall into a few groups:</p>
+
+<ul>
+<li><strong>Advertising pixels</strong> (Facebook, Google Ads, Bing Ads, Snapchat, Pinterest, Criteo, RTB House): record that you visited, so the shop can show you its ads later on other sites and apps. This is why a product you looked at follows you around Instagram.</li>
+<li><strong>Analytics</strong> (Google Analytics, Mixpanel, Amplitude, Segment, CleverTap): count visits and track what people click, mostly for the shop's own use.</li>
+<li><strong>Session recording</strong> (FullStory on BigBasket and Croma, Hotjar on Croma, Contentsquare on Myntra): record how you move, scroll and click on the page so it can be replayed later. They're used to find confusing designs, and reputable tools mask what you type in forms, but it's the most detailed kind of observation on this list.</li>
+<li><strong>Identity and data companies</strong> (LiveRamp on Tata CLiQ and Croma, Tapad on Myntra and Reliance Digital, ID5 and Zeotap on Amazon): specialise in linking the same person across devices and websites. These are the least visible and the most far-reaching.</li>
+</ul>
+
+<p>Three Tata-owned sites also shared the group's own login and data systems (<code>tatadigital.com</code>), and the Reliance-owned sites shared Reliance's. Those weren't counted, since they're the same corporate family.</p>
+
+<h2>The Flipkart Exception</h2>
+
+<p>Flipkart's homepage made 161 requests, and almost all went to Flipkart's own servers (<code>flixcart.com</code> for images and scripts). The only outside services were New Relic, a performance-monitoring tool, and Akamai's content-delivery network. That doesn't mean Flipkart collects less about you; it very likely does its tracking and advertising with its own systems instead of handing visitors to outside companies. From a privacy angle that's a real difference, though: your visit stays with one company rather than being shared out to dozens.</p>
+
+<p>Snapdeal was close behind, with only Google Analytics and Google Tag Manager, plus Razorpay's payment scripts loading in advance.</p>
+
+<h2>What You Can Do</h2>
+
+<ul>
+<li><strong>Use a browser with tracking protection on by default.</strong> Firefox's Enhanced Tracking Protection and Brave both block most of the advertising and cookie-syncing requests described above. Chrome doesn't block them by default.</li>
+<li><strong>Use DNS-level blocking on your phone.</strong> Setting Android's Private DNS to a filtering service such as AdGuard DNS blocks many tracking domains in every app and browser. It's slower than a plain resolver; the numbers are in our <a href="/fastest-dns-server-in-india-tested">DNS speed test</a>.</li>
+<li><strong>Clear or block third-party cookies</strong> in your browser settings. Cookie syncing depends on them.</li>
+<li><strong>Read cookie pop-ups before accepting.</strong> India's Digital Personal Data Protection Act makes consent the basis for processing personal data, with its rules being phased in. As sites adopt consent banners, choosing "reject" or "necessary only" should stop most of what's counted here.</li>
+</ul>
+
+<h2>Same Products, Different Trade-offs</h2>
+
+<p>Every site in this test sells roughly the same things, and every one loaded its homepage properly. What differed was how many companies got a look at you in the process: none for Flipkart, one for Snapdeal, and between 24 and 29 for Amazon, Tata CLiQ and Croma. None of that is visible on the page itself. The only way to see it is to look at the requests, which is exactly why it's worth doing once for the sites you use every day.</p>

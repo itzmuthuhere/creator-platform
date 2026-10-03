@@ -23,7 +23,9 @@
 //   "category": "tech",              // must match an existing Category.slug
 //   "tags": ["tag-name", "..."],      // reused by name (case-insensitive) or created
 //   "author": "Muthu",                // must match an existing User.name
-//   "faq": [{ "question": "...", "answer": "..." }]   // goes in faqItems, NOT inline in content
+//   "faq": [{ "question": "...", "answer": "..." }],  // goes in faqItems, NOT inline in content
+//   "status": "DRAFT",                // optional; default PUBLISHED. DRAFT keeps it off the site for review
+//   "coverImage": "https://..."       // optional
 // }
 
 const { Client } = require('pg');
@@ -93,23 +95,29 @@ async function main() {
     const id = cuid();
     const now = new Date();
     const faqItems = Array.isArray(spec.faq) ? spec.faq : [spec.faq];
+    const status = spec.status || 'PUBLISHED';
+    if (!['PUBLISHED', 'DRAFT'].includes(status)) {
+      console.error(`status must be PUBLISHED or DRAFT, got "${status}"`);
+      process.exit(1);
+    }
 
     await c.query(
       `INSERT INTO "Post" (
         id, title, subtitle, slug, content, excerpt, status, featured, sponsored,
         "publishedAt", "createdAt", "updatedAt", "readingTime", "viewCount",
         "reactLike", "reactFire", "reactBulb", "seoTitle", "metaDescription", keywords,
-        "faqItems", locale, "authorId", "categoryId", images
+        "faqItems", locale, "authorId", "categoryId", images, "coverImage"
       ) VALUES (
-        $1, $2, $3, $4, $5, $6, 'PUBLISHED', false, false,
-        $7, $7, $7, $8, 0,
+        $1, $2, $3, $4, $5, $6, $15, false, false,
+        $16, $7, $7, $8, 0,
         0, 0, 0, $9, $10, $11,
-        $12, 'en', $13, $14, ARRAY[]::text[]
+        $12, 'en', $13, $14, ARRAY[]::text[], $17
       )`,
       [
         id, spec.title, spec.subtitle || null, spec.slug, content, spec.excerpt,
         now, readingTime, spec.seoTitle || spec.title, spec.metaDescription || spec.excerpt,
         spec.keywords || [], JSON.stringify(faqItems), authorId, categoryId,
+        status, status === 'PUBLISHED' ? now : null, spec.coverImage || null,
       ]
     );
 
@@ -126,6 +134,10 @@ async function main() {
       await c.query('INSERT INTO "_PostToTag" ("A", "B") VALUES ($1, $2) ON CONFLICT DO NOTHING', [id, tagId]);
     }
 
+    if (status === 'DRAFT') {
+      console.log(`Saved as DRAFT: ${spec.slug} (${words} words, ${readingTime} min read) -- not visible on the site`);
+      return;
+    }
     console.log(`Published: ${spec.slug} (${words} words, ${readingTime} min read)`);
     console.log(`Live at: https://techpulzo.in/${spec.slug}`);
     console.log('Note: ISR caching means the first request right after this may still show a 404 or stale page -- request the URL twice, a few seconds apart, before concluding something is wrong.');

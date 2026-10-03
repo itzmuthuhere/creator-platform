@@ -1,0 +1,89 @@
+{
+  "title": "Android storage full? How to free space without deleting your photos",
+  "seoTitle": "Android Storage Full? Free Space Without Deleting Photos",
+  "h1": "Android storage full? How to free space without deleting your photos",
+  "slug": "android-storage-full-free-space",
+  "metaDescription": "Android storage full? Keep your photos in Google Photos and free the phone copies, archive unused apps, clear caches safely and skip the tips that lose data.",
+  "excerpt": "Free gigabytes on an Android phone without losing photos: Photos' Free up space, app archiving, safe cache clearing, WhatsApp media and the bin, plus tips to avoid.",
+  "primaryKeyword": "android storage full",
+  "secondaryKeywords": [
+    "free up space android",
+    "clear cache android",
+    "google photos free up space",
+    "archive apps android",
+    "whatsapp storage full"
+  ],
+  "searchIntent": "troubleshooting",
+  "targetAudience": "Android phone users running out of internal storage",
+  "category": "tech",
+  "tags": [
+    "Android",
+    "storage",
+    "Google Photos",
+    "how-to",
+    "smartphones"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=1PokGP-1yyY",
+  "sourceVideoTitle": "How to Clear Android Storage (Without Deleting Photos)",
+  "sourceChannel": "Device Guardian",
+  "author": "Nithiyaraj",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:27:08.213Z",
+  "updatedAt": "2026-10-03T01:28:22.506Z",
+  "wordCount": 1182,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/google-drive-vs-onedrive-vs-icloud-which-cloud-storage-to-use",
+    "https://techpulzo.in/top-5-budget-smartphones-of-2026-full-buying-guide"
+  ],
+  "faq": [
+    {
+      "question": "How do I free up space on Android without deleting photos?",
+      "answer": "Back your photos up to Google Photos, then use its Free up space option to remove only the copies on your phone. Then archive apps you rarely use, clear app caches, delete large WhatsApp media and old downloads, and empty your Files app's bin."
+    },
+    {
+      "question": "Is it safe to clear cache on Android?",
+      "answer": "Yes. The cache holds temporary files that apps rebuild when needed. Clearing it doesn't sign you out or delete your data. Clearing storage or data is different: it resets the app completely."
+    },
+    {
+      "question": "What does archiving an app do?",
+      "answer": "It removes most of the app's files but keeps your data and the icon on your home screen, with a small cloud on it. Tapping the icon downloads the app again and you carry on where you left off. Google says it frees up to about 60% of the app's space."
+    },
+    {
+      "question": "Why is my storage still full after deleting files?",
+      "answer": "Your Files or Gallery app probably moved them to a bin, where they still take space for a period, often 30 days. Empty the bin to free the space immediately."
+    },
+    {
+      "question": "Will Google Photos \"Free up space\" delete my photos?",
+      "answer": "Only the copies on your phone, and only for items already backed up. They stay in Google Photos and at photos.google.com. Check that backup is complete before you use it, and remember they won't show in your phone's built-in gallery app."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:28:22.506Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=6MjUJCLE3o0",
+      "title": "How to Clean Internal Storage in Android Phone 2026 | Fix Storage Problem 2026",
+      "channel": "RaRe iTech",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zVNwer3Cvhc",
+      "title": "Storage Full Problem | 3 Settings to Fix Storage Problem | No App | Storage Space Running Out",
+      "channel": "Tippu Tech",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "01-ceir-know-genuineness-kym.png",
+    "sourceUrl": "https://www.ceir.gov.in/Home/index.jsp",
+    "pageTitle": "CEIR",
+    "selector": null,
+    "crop": "cropped from a full-page capture (scale 1): 'Know Genuineness of Your Mobile Handset' box",
+    "width": 1112,
+    "height": 460,
+    "capturedAt": "2026-09-29T17:20:00.000Z",
+    "alt": "CEIR Know Genuineness of Your Mobile Handset box explaining the two ways to check an IMEI: sending KYM followed by the 15-digit IMEI by SMS to 14422, or using the web portal",
+    "caption": "The official instructions on the CEIR site, including the advice to avoid buying a phone that shows as black-listed, duplicate or already in use. Source: ceir.gov.in"
+  },
+  {
+    "file": "02-ceir-imei-verification-form.png",
+    "sourceUrl": "https://www.ceir.gov.in/Device/CeirImeiVerification.jsp",
+    "pageTitle": "CEIR IMEI Verification",
+    "selector": null,
+    "crop": "cropped from a viewport capture (scale 1): blank form, no personal data",
+    "width": 1140,
+    "height": 418,
+    "capturedAt": "2026-09-29T18:40:00.000Z",
+    "alt": "CEIR IMEI Verification web form with a captcha, a mobile number field for the OTP, a Get OTP button and a Submit button",
+    "caption": "The verification form asks for a captcha and an OTP to any mobile number before it shows the IMEI field. Source: ceir.gov.in"
+  }
+]

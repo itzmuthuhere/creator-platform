@@ -1,0 +1,89 @@
+{
+  "title": "How to withdraw PF online in 2026, and which form to use",
+  "seoTitle": "PF Withdrawal Online 2026: Which Form and How Much",
+  "h1": "How to withdraw PF online in 2026, and which form to use",
+  "slug": "pf-withdrawal-online-which-form",
+  "metaDescription": "PF withdrawal online under the 2026 EPF rules: Form 31, 19, 10C or 10D, the 25% minimum balance, 12- and 36-month waits, TDS and Form 121, step by step.",
+  "excerpt": "The EPF Scheme, 2026 changed withdrawals from 29 June: a 25% floor, broader reasons, and 12- and 36-month waits after leaving a job. Which form fits your situation, how much you can take out, when TDS applies, and the online steps.",
+  "primaryKeyword": "pf withdrawal online",
+  "secondaryKeywords": [
+    "pf withdrawal form 31 19 10c",
+    "pf withdrawal new rules 2026",
+    "pf withdrawal after leaving job",
+    "pf advance for illness",
+    "tds on pf withdrawal form 121"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian EPF members who want to withdraw part or all of their PF",
+  "category": "finance",
+  "tags": [
+    "EPF",
+    "EPFO",
+    "PF withdrawal",
+    "tax",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=oC-Qoef04R4",
+  "sourceVideoTitle": "EPFO 3.0 Portal: PF and EPS Withdrawal 2026 New rules explained | Form 19, Form 10C and Form 31 rule",
+  "sourceChannel": "eLearningGang",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T15:36:24.053Z",
+  "updatedAt": "2026-10-02T15:38:55.137Z",
+  "wordCount": 1761,
+  "readingTimeMinutes": 9,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-much-home-loan-you-can-actually-afford",
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs"
+  ],
+  "faq": [
+    {
+      "question": "Can I withdraw 100% of my PF while still working?",
+      "answer": "No. Under the 2026 scheme you must keep 25% of your eligible balance in the account, so a partial withdrawal can take at most what's left after that. The \"100%\" in news reports refers to 100% of the eligible balance, which already excludes the 25%. The full balance is paid only at final settlement, for example on retirement."
+    },
+    {
+      "question": "How soon after leaving a job can I withdraw my full PF?",
+      "answer": "Under the board decision now in force, a full settlement of the PF balance is allowed after 12 months without a job, and the pension (EPS) amount after 36 months. Before that, consider transferring the account to a new employer instead. The member portal shows what you're currently eligible to claim."
+    },
+    {
+      "question": "Do I need to give a reason for a PF advance?",
+      "answer": "You choose a purpose on Form 31: illness, education, marriage, housing or special circumstances. Under special circumstances, DD News reports that no further explanation is required, though that category is limited to twice a financial year. You need at least 12 months of membership for any partial withdrawal."
+    },
+    {
+      "question": "Is PF withdrawal taxable?",
+      "answer": "Not if you have five or more years of continuous service; earlier withdrawals of ₹50,000 or more face TDS. Even with TDS, the money is only taxed if your total income is taxable; you can file a return to claim a refund. Transfers between employers aren't taxable."
+    },
+    {
+      "question": "Which is better after leaving a job: withdraw or transfer?",
+      "answer": "Transfer, unless you need the money. Transferring keeps your service continuous, which protects you from TDS at the five-year mark and counts towards the ten years needed for an EPS pension. It also keeps earning interest: 8.25% for 2025–26."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T15:38:55.137Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=hh0j1qr6jbQ",
+      "title": "PF Withdrawal Process Online | How To Withdraw PF Online | Form 31 | Mobile | New Process 2026",
+      "channel": "MySimpleGuide",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XPOEUKJD6Qs",
+      "title": "EPFO 3.0🔥 Full PF Withdrawal New Process ✅ | Withdrawal Full Pension+Employer+Employee+Interest 💯",
+      "channel": "Som Techinfo",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "What are passkeys? A plain explanation, and how to set one up",
+  "seoTitle": "What Are Passkeys? How They Work and How to Set One Up",
+  "h1": "What are passkeys? A plain explanation, and how to set one up",
+  "slug": "passkeys-explained-how-to-set-up",
+  "metaDescription": "What are passkeys? How they replace passwords, why phishing fails against them, how to set one up on Google, lost-phone steps and the 2026 caveats.",
+  "excerpt": "A passkey replaces your password with a key on your device, unlocked by your fingerprint. How it works, how to set one up, cross-device sign-in, and its limits.",
+  "primaryKeyword": "what are passkeys",
+  "secondaryKeywords": [
+    "how to set up passkey google",
+    "passkey vs password",
+    "are passkeys safe",
+    "passkey lost phone"
+  ],
+  "searchIntent": "informational",
+  "targetAudience": "Everyday internet users who want safer, simpler logins",
+  "category": "tech",
+  "tags": [
+    "passkeys",
+    "security",
+    "passwords",
+    "Google",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=ckvrKdFNF78",
+  "sourceVideoTitle": "Google Passkeys Tutorial | Step by Step Guide to Set Up Google Passkeys",
+  "sourceChannel": "Jason Rebholz",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:31:46.551Z",
+  "updatedAt": "2026-10-03T01:32:54.176Z",
+  "wordCount": 1204,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/why-you-should-not-reuse-passwords-what-happens-when-one-site-gets-breached",
+    "https://techpulzo.in/how-to-set-up-a-password-manager-in-15-minutes",
+    "https://techpulzo.in/how-two-factor-authentication-actually-stops-account-hacks"
+  ],
+  "faq": [
+    {
+      "question": "What is a passkey in simple terms?",
+      "answer": "It's a login stored on your phone or computer and unlocked with your fingerprint, face or screen PIN. You don't type anything; your device proves to the website that it's you using a key that never leaves your device or your encrypted sync."
+    },
+    {
+      "question": "Are passkeys safer than passwords?",
+      "answer": "Yes, against the most common attacks. A fake website can't use your passkey because your browser only offers it on the real site, and a website breach doesn't expose anything usable because the site only stores a public key. Research in 2026 showed attacks that needed malware already on the computer, so keep your devices clean and updated."
+    },
+    {
+      "question": "What happens to my passkey if I lose my phone?",
+      "answer": "Remove the lost phone's passkey from your account's security settings. If your passkeys are synced through Google Password Manager or iCloud Keychain, they'll be available again when you sign in on a new device. Keeping a passkey on a second device or a security key avoids being locked out."
+    },
+    {
+      "question": "Can I still use my password after creating a passkey?",
+      "answer": "On Google, yes. Your password remains as a backup, and you can choose whether Google should skip the password when a passkey is available."
+    },
+    {
+      "question": "Does a passkey send my fingerprint to Google?",
+      "answer": "No. Your fingerprint or face only unlocks the passkey on your device. Google says biometric data stays on your device and is never sent to it."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:32:54.176Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=SOtdmwHqeLA",
+      "title": "Using Google Passkeys? You Need to Check This",
+      "channel": "The Phone Guardian",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cxq8cWS5lDs",
+      "title": "How to use Google Passkeys - Login to your Google, Gmail Account not entering password everytime!",
+      "channel": "TechNtech",
+      "hasTranscript": true
+    }
+  ]
+}

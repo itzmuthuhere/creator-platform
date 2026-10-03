@@ -1,0 +1,89 @@
+{
+  "title": "How to read a mutual fund factsheet: a 10-minute walkthrough",
+  "seoTitle": "How to Read a Mutual Fund Factsheet (With a Real Example)",
+  "h1": "How to read a mutual fund factsheet: a 10-minute walkthrough",
+  "slug": "how-to-read-mutual-fund-factsheet",
+  "metaDescription": "How to read a mutual fund factsheet in 10 minutes: costs, returns vs benchmark, holdings and risk ratios, walked through on a real August 2026 factsheet.",
+  "excerpt": "Ten numbers on a mutual fund factsheet matter, and three traps catch most readers. A step-by-step walkthrough of a real August 2026 factsheet.",
+  "primaryKeyword": "mutual fund factsheet",
+  "secondaryKeywords": [
+    "how to read mutual fund factsheet",
+    "sharpe ratio in mutual fund factsheet",
+    "portfolio turnover ratio meaning",
+    "information ratio mutual fund",
+    "base expense ratio vs TER"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian mutual fund investors comparing or reviewing a fund",
+  "category": "finance",
+  "tags": [
+    "mutual funds",
+    "factsheet",
+    "investing",
+    "expense ratio",
+    "risk ratios"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=y_ZqDr_1yQM",
+  "sourceVideoTitle": "How to Read a PPFAS Mutual Fund Factsheet | Key Terms Explained Simply",
+  "sourceChannel": "PPFAS",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T20:42:40.944Z",
+  "updatedAt": "2026-10-02T20:44:46.394Z",
+  "wordCount": 2232,
+  "readingTimeMinutes": 12,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-read-a-loan-apr-instead-of-just-the-emi",
+    "https://techpulzo.in/sip-vs-lump-sum-how-to-actually-decide-where-to-put-your-money"
+  ],
+  "faq": [
+    {
+      "question": "Where can I download a mutual fund factsheet?",
+      "answer": "From the fund house's website, usually under a \"Downloads\", \"Factsheets\" or \"Scheme documents\" section. Most AMCs publish one PDF each month covering all their schemes. Fund platforms and apps often link to the latest one from each scheme's page."
+    },
+    {
+      "question": "Is the expense ratio on the factsheet the one I pay?",
+      "answer": "Not always. Many factsheets show the base expense ratio, which leaves out charges such as GST on the management fee. For Parag Parikh Flexi Cap, the factsheet's 0.53% base figure for the direct plan compares with a total TER of 0.69% in AMFI's September 2026 data. Use the total TER from the AMC's statutory disclosures or AMFI."
+    },
+    {
+      "question": "What is a good Sharpe ratio for a mutual fund?",
+      "answer": "There's no fixed good number, because it depends on the period and the risk-free rate used. Compare a fund's Sharpe ratio with funds in the same category, calculated over the same period. Higher means more return for each unit of volatility."
+    },
+    {
+      "question": "What does the information ratio show?",
+      "answer": "It measures how much a fund beat its benchmark, divided by how much its returns strayed from the benchmark. SEBI has required equity-oriented schemes to disclose it daily since its January 2025 circular, using a standard formula, so you can compare funds on AMFI's website."
+    },
+    {
+      "question": "Why do direct and regular plans show different returns?",
+      "answer": "They hold the same portfolio but charge different expenses. The regular plan includes distributor commission, so its expense ratio is higher and its returns are lower by roughly that difference each year."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T20:44:46.394Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=95Pm0mKE45s",
+      "title": "How to read Mutual Fund Factsheets? | Mutual Fund Fact Sheet Analysis",
+      "channel": "Mutual Funds with Groww",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UTLKiS3avK4",
+      "title": "How to read the Factsheet",
+      "channel": "SBI Mutual Fund",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "How to update your address in Aadhaar online in 2026",
+  "seoTitle": "Aadhaar Address Update Online 2026: Fee, Steps, Documents",
+  "h1": "How to update your address in Aadhaar online in 2026",
+  "slug": "aadhaar-address-update-online",
+  "metaDescription": "Aadhaar address update online costs ₹75 in 2026. Two routes, your own proof or a family member's Aadhaar, plus accepted documents and why requests get rejected.",
+  "excerpt": "Change your Aadhaar address online for ₹75 using your own document or a family member's Aadhaar. Steps, accepted proofs, and the free 'document update' that isn't an address change.",
+  "primaryKeyword": "aadhaar address update online",
+  "secondaryKeywords": [
+    "aadhaar address change fee 2026",
+    "aadhaar address update without proof",
+    "head of family aadhaar address update",
+    "myaadhaar document update free",
+    "aadhaar app address update"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian residents who moved house or need to correct their Aadhaar address",
+  "category": "tech",
+  "tags": [
+    "Aadhaar",
+    "UIDAI",
+    "address update",
+    "government services",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=dMgLZXo3jms",
+  "sourceVideoTitle": "Wife के Aadhaar Card में Address Change करें बिना Address Proof | Online Aadhaar Address Update ₹75",
+  "sourceChannel": "Smart Shop",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T21:10:02.899Z",
+  "updatedAt": "2026-10-02T21:11:29.616Z",
+  "wordCount": 1345,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-get-a-duplicate-pan-card-online",
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs"
+  ],
+  "faq": [
+    {
+      "question": "Is Aadhaar address update free in 2026?",
+      "answer": "No. Changing your address costs ₹75, online or at a centre. What's free until 14 June 2027 is a \"document update\" on the myAadhaar portal, which refreshes the proof documents behind your existing details but doesn't change them."
+    },
+    {
+      "question": "Can I update my Aadhaar address without address proof?",
+      "answer": "Yes, if you live with a family member who has the address on their Aadhaar. Use the Head of Family option, upload a proof of relationship such as a marriage certificate or ration card, and the family member approves the request with their OTP within 30 days."
+    },
+    {
+      "question": "What happens if the Head of Family doesn't approve the request?",
+      "answer": "The request closes after 30 days, or immediately if they reject it, and the ₹75 fee isn't refunded. Make sure the family member knows to expect the SMS and can log in with their own OTP."
+    },
+    {
+      "question": "Is a rent agreement valid proof of address for Aadhaar?",
+      "answer": "Yes. UIDAI accepts registered or unregistered rent, lease, and leave-and-licence agreements. Utility bills are accepted too, but only if they're not older than three months."
+    },
+    {
+      "question": "Do I need my registered mobile number to update my address online?",
+      "answer": "Yes. Every online update uses an OTP sent to the mobile number linked to your Aadhaar. If that number has changed, update it first, either through the Aadhaar app with face authentication or at an Aadhaar centre."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T21:11:29.616Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=rzzYnY-O8Sg",
+      "title": "Aadhaar Address Update in Just 5 Minutes – No Documents Needed! (Tamil) | ஆதார் முகவரி மாற்றம் 2026",
+      "channel": "Rajayugitha",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qedcY1Oh2Po",
+      "title": "New Aadhaar App Explained in 2026 - Mobile and Address Change at Home | UIDAI App | Madhumitha",
+      "channel": "Boss Wallah Daily Tamil",
+      "hasTranscript": true
+    }
+  ]
+}

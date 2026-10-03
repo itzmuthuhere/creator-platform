@@ -1,0 +1,83 @@
+{
+  "title": "Old vs new tax regime for 2026-27: how to choose for your salary",
+  "seoTitle": "Old vs New Tax Regime 2026-27: Break-even by Salary",
+  "h1": "Old vs new tax regime for 2026-27: how to choose for your salary",
+  "slug": "old-vs-new-tax-regime-2026-27",
+  "metaDescription": "Old vs new tax regime for 2026-27: the deductions you need at each salary for the old regime to win, and how the 2026 HRA and allowance changes shift it.",
+  "excerpt": "One number decides it: your total deductions and exemptions. A break-even table by salary, the Income-tax Rules 2026 changes that only help the old regime, and two Bengaluru renters for whom the answer differs.",
+  "primaryKeyword": "old vs new tax regime",
+  "secondaryKeywords": [
+    "which tax regime is better for 15 lakh salary",
+    "old vs new tax regime 2026-27",
+    "HRA 50% Bengaluru Pune Hyderabad",
+    "break-even deductions old regime",
+    "can I switch tax regime every year"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian salaried employees choosing a tax regime for 2026-27",
+  "category": "finance",
+  "tags": [
+    "income tax",
+    "tax regime",
+    "HRA",
+    "salary",
+    "personal finance"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=q22QzNEdMHM",
+  "sourceVideoTitle": "Income Tax Rules 2026: Is the Old Regime More Attractive Now?",
+  "sourceChannel": "ET Money",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T15:51:36.665Z",
+  "updatedAt": "2026-10-02T15:53:16.971Z",
+  "wordCount": 1551,
+  "readingTimeMinutes": 8,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-much-of-your-salary-should-actually-go-to-rent",
+    "https://techpulzo.in/how-much-home-loan-you-can-actually-afford"
+  ],
+  "faq": [
+    {
+      "question": "Which tax regime is better for a ₹15 lakh salary?",
+      "answer": "At ₹15 lakh the new regime charges ₹97,500 including cess. The old regime only matches that if you have about ₹5.44 lakh in deductions and exemptions beyond the standard deduction, typically a large HRA plus the ₹1.5 lakh investment deduction and health insurance, or a home loan. Without rent or a home loan, the new regime usually wins."
+    },
+    {
+      "question": "Is the new regime always better below ₹12.75 lakh?",
+      "answer": "Almost always. A salary up to ₹12.75 lakh pays no tax in the new regime, thanks to the ₹75,000 standard deduction and the rebate up to ₹12 lakh of taxable income. To pay zero under the old regime you'd need deductions of ₹4.5 lakh at ₹10 lakh and over ₹7 lakh at ₹12.75 lakh."
+    },
+    {
+      "question": "Does the 50% HRA rule apply in the new regime?",
+      "answer": "No. HRA exemption, including the higher 50% rate now available in Bengaluru, Hyderabad, Pune and Ahmedabad, is available only under the old regime. The same goes for the higher meal, education and hostel allowance limits from April 2026."
+    },
+    {
+      "question": "Can I switch regimes every year?",
+      "answer": "If you have no business income, yes: you can choose the regime each year, and the final choice is made when you file your return. Different rules apply if you have business income, so check those separately. Tell your employer your choice at the start of the year so the right amount of TDS is deducted."
+    },
+    {
+      "question": "What if my deductions are close to the break-even?",
+      "answer": "Then the difference in tax is small, and other factors matter more: the new regime needs no investment proofs and draws less scrutiny of HRA claims. Run the numbers with your actual figures, and if the old regime saves only a few thousand rupees, many people reasonably choose the simpler option."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T15:53:16.971Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 2,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=-0Fnlbtfydw",
+      "title": "Old vs New Tax Regime 2026: Which Saves You More Money? Income Tax Changes!",
+      "channel": "Unacademy IAS: English",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "title": "How to Check a Used Phone's IMEI Before You Buy It (and What the Result Means)",
+  "seoTitle": "Check if a Used Phone Is Stolen: IMEI Check India",
+  "h1": "How to Check a Used Phone's IMEI Before You Buy It (and What the Result Means)",
+  "slug": "check-used-phone-imei-before-buying",
+  "metaDescription": "Check if a second-hand phone is stolen in India with the DoT IMEI check (KYM, SMS to 14422), read the result, and avoid Activation Lock and FRP traps.",
+  "excerpt": "A one-minute government check tells you whether a used phone is blacklisted. Here is how to get the right IMEI, read the result, and cover what the check can't catch, like Activation Lock and Google FRP.",
+  "primaryKeyword": "check imei stolen phone india",
+  "secondaryKeywords": [
+    "kym 14422",
+    "imei blacklist check india",
+    "ceir imei verification",
+    "second hand phone checklist",
+    "is my phone stolen check"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indians buying a second-hand phone from a person, shop or marketplace",
+  "category": "tech",
+  "tags": [
+    "imei",
+    "used phones",
+    "sanchar saathi",
+    "buying guide"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=txFS9Dhyzbo",
+  "sourceVideoTitle": "Mobile Chori ka hai Ya nahi kaise Pata kre ! मोबाइल फोन चोरी का है या नहीं कैसे पता करें Full Detail",
+  "sourceChannel": "CyberSafe Rajasthan",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-09-29T17:39:29.113Z",
+  "updatedAt": "2026-09-29T17:41:32.374Z",
+  "wordCount": 1781,
+  "readingTimeMinutes": 9,
+  "screenshots": [
+    {
+      "file": "screenshots/01-ceir-know-genuineness-kym.png",
+      "alt": "CEIR Know Genuineness of Your Mobile Handset box explaining the two ways to check an IMEI: sending KYM followed by the 15-digit IMEI by SMS to 14422, or using the web portal",
+      "caption": "The official instructions on the CEIR site, including the advice to avoid buying a phone that shows as black-listed, duplicate or already in use. Source: ceir.gov.in"
+    },
+    {
+      "file": "screenshots/02-ceir-imei-verification-form.png",
+      "alt": "CEIR IMEI Verification web form with a captcha, a mobile number field for the OTP, a Get OTP button and a Submit button",
+      "caption": "The verification form asks for a captcha and an OTP to any mobile number before it shows the IMEI field. Source: ceir.gov.in"
+    }
+  ],
+  "internalLinks": [
+    "https://techpulzo.in/why-your-phone-battery-degrades-over-time-the-real-chemistry",
+    "https://techpulzo.in/top-5-budget-smartphones-of-2026-full-buying-guide",
+    "https://techpulzo.in/best-time-of-year-to-buy-electronics-in-india-what-the-sales-calendar-shows"
+  ],
+  "faq": [
+    {
+      "question": "Is the KYM check free?",
+      "answer": "The web portal and the Sanchar Saathi app don't charge anything; all you need is an OTP. The SMS option is sent from your own number like any other text."
+    },
+    {
+      "question": "Can I check an IMEI without the seller's mobile number?",
+      "answer": "Yes. The OTP on the verification page goes to whichever number you enter, which can be your own. Only the IMEI needs to come from the phone you're buying."
+    },
+    {
+      "question": "The IMEI shows as valid. Is the phone definitely not stolen?",
+      "answer": "Not definitely. It means no lost or stolen report has been registered against that IMEI, or none has been processed yet. A phone stolen yesterday may not be blocked until the owner files a report. That's another reason to insist on the bill or a signed sale note, and to be wary of a price that seems too good."
+    },
+    {
+      "question": "What if the seller says the phone lost its IMEI after a repair?",
+      "answer": "Walk away. Phones with blank or invalid IMEIs aren't allowed on Indian networks, and changing an IMEI is an offence under the Telecommunications Act. A genuine motherboard replacement at an authorised service centre comes with paperwork."
+    },
+    {
+      "question": "Does this work for iPhones?",
+      "answer": "Yes. The KYM check works on any phone's IMEI. For iPhones, also check Activation Lock as described above. That is the most common reason a \"clean\" used iPhone turns out to be unusable."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-09-29T17:41:32.374Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 4,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=dCiPijT4t9E",
+      "title": "चोरी का Mobile Repair किया तो Technician पर भी Case? 😱 | IMEI Blacklist Check | Sanchar Saathi",
+      "channel": "Repair My Mobile",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2bLvpsaB3r0",
+      "title": "MUST DO Checklist Before Buying Used Phones!",
+      "channel": "Serg Tech",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nlFErav8_n8",
+      "title": "Used Phones Buying Guide - இனிமே நீங்க ஏமாறமாடீங்க!",
+      "channel": "Trakin Tech Tamil",
+      "hasTranscript": true
+    }
+  ]
+}

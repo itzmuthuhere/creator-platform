@@ -1,0 +1,89 @@
+{
+  "title": "eSIM activation in India: how to switch on Jio, Airtel or Vi",
+  "seoTitle": "eSIM Activation in India: Jio, Airtel and Vi Steps (2026)",
+  "h1": "eSIM activation in India: how to switch on Jio, Airtel or Vi",
+  "slug": "switch-to-esim-jio-airtel-vi",
+  "metaDescription": "eSIM activation in India for Jio (MyJio), Airtel (SMS to 121) and Vi (SMS to 199): what you need, each step, and planning around the 24-hour SMS and OTP bar.",
+  "excerpt": "Convert your number to an eSIM without a store visit: Jio via MyJio, Airtel and Vi by SMS. Official steps for each, the EID, and the 24-hour OTP bar to plan around.",
+  "primaryKeyword": "esim activation india",
+  "secondaryKeywords": [
+    "jio esim activation",
+    "airtel esim",
+    "vi esim",
+    "what is eid",
+    "esim sms not working 24 hours"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian smartphone users switching a physical SIM to eSIM",
+  "category": "tech",
+  "tags": [
+    "eSIM",
+    "Jio",
+    "Airtel",
+    "Vi",
+    "smartphones"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=mK83YjNXocI",
+  "sourceVideoTitle": "Switch to eSIM via MyJio App in 3 Steps | JioCare",
+  "sourceChannel": "Jio",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T21:26:19.123Z",
+  "updatedAt": "2026-10-02T21:27:40.206Z",
+  "wordCount": 1224,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs",
+    "https://techpulzo.in/prepaid-vs-postpaid-mobile-plans-which-actually-costs-less-over-a-year"
+  ],
+  "faq": [
+    {
+      "question": "How do I activate an eSIM on Airtel?",
+      "answer": "Send an SMS to 121 from your Airtel number with the word eSIM, a space and your registered email address. Reply 1 to confirm, give consent on the call you receive, then scan the QR code sent to your email. Activation takes about two hours."
+    },
+    {
+      "question": "What is the EID and where do I find it?",
+      "answer": "The EID is the 32-digit identifier of your phone's built-in eSIM chip. You'll find it in Settings under About phone on Android, or General About on an iPhone. Vi needs it in the activation SMS, and Jio asks for it in the MyJio app."
+    },
+    {
+      "question": "Why am I not getting OTPs after switching to eSIM?",
+      "answer": "SMS is blocked for 24 hours after eSIM activation under government rules, as Jio and Vi both state. Calls and data work normally. OTPs will arrive again once the 24 hours have passed."
+    },
+    {
+      "question": "Will my number or plan change when I switch to eSIM?",
+      "answer": "No. Your number, plan and balance stay the same. Only the SIM changes from a physical card to a profile stored in your phone."
+    },
+    {
+      "question": "Can I move my eSIM to a new phone?",
+      "answer": "Not by moving a card. Request a new eSIM for the new phone (Jio lets you enter the new phone's EID in the app), or use your phone's transfer feature where your operator supports it. Don't delete the old profile until the new one works."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T21:27:40.206Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=8hzs4iNOe0A",
+      "title": "Get  Jio eSIM Online with Self-KYC (sKYC) or Port your Existing Number using MyJio App",
+      "channel": "Jio",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1M898JAdPUE",
+      "title": "Jio, Airtel, Vi யூசர்கள் கவனத்திற்கு! 'eSIM' மாறுவது லாபமா? நஷ்டமா?",
+      "channel": "Sathiyam News",
+      "hasTranscript": true
+    }
+  ]
+}

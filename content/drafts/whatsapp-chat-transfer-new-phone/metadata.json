@@ -1,0 +1,88 @@
+{
+  "title": "WhatsApp chat transfer to a new phone: the right method for Android and iPhone",
+  "seoTitle": "WhatsApp Chat Transfer to a New Phone: Android and iPhone",
+  "h1": "WhatsApp chat transfer to a new phone: the right method for Android and iPhone",
+  "slug": "whatsapp-chat-transfer-new-phone",
+  "metaDescription": "WhatsApp chat transfer to a new phone for every case: QR transfer on the same OS, Move to iOS for Android to iPhone, and iPhone to Android, with no paid apps.",
+  "excerpt": "Free, official ways to move WhatsApp between Android and iPhone in any direction, what each needs, what doesn't transfer, and the backup storage catch.",
+  "primaryKeyword": "whatsapp chat transfer to new phone",
+  "secondaryKeywords": [
+    "transfer whatsapp android to iphone",
+    "whatsapp iphone to android",
+    "whatsapp transfer chats qr code",
+    "whatsapp backup google drive storage"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "WhatsApp users moving to a new phone",
+  "category": "tech",
+  "tags": [
+    "WhatsApp",
+    "Android",
+    "iPhone",
+    "backup",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=YLvPI_qAjbA",
+  "sourceVideoTitle": "How to Transfer WhatsApp chats from old phone to new phone | WhatsApp Data transfer",
+  "sourceChannel": "Hindi Android Tips",
+  "author": "Nithiyaraj",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:22:38.413Z",
+  "updatedAt": "2026-10-03T01:23:52.277Z",
+  "wordCount": 1374,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/google-drive-vs-onedrive-vs-icloud-which-cloud-storage-to-use",
+    "https://techpulzo.in/what-end-to-end-encrypted-actually-means-for-an-app-you-use-daily"
+  ],
+  "faq": [
+    {
+      "question": "How do I transfer WhatsApp chats from my old Android phone to a new one?",
+      "answer": "Put both phones on the same Wi-Fi network. On the old phone, open WhatsApp's chat settings and choose the option to transfer chats. Install WhatsApp on the new phone with the same number and scan the QR code when prompted. The transfer happens directly between the phones over your network."
+    },
+    {
+      "question": "Can I move WhatsApp from Android to an iPhone that's already set up?",
+      "answer": "Not with the official method. Move to iOS only works while setting up an iPhone, so the iPhone has to be new or factory reset. If you've already set it up, you'd need to reset it and do the transfer during setup."
+    },
+    {
+      "question": "Does WhatsApp chat transfer need internet?",
+      "answer": "The same-platform transfer needs both phones on the same Wi-Fi network; WhatsApp says the data goes directly between them over that local network. You'll still need a connection to download and register WhatsApp on the new phone."
+    },
+    {
+      "question": "Will I lose my call history when switching from Android to iPhone?",
+      "answer": "Yes. WhatsApp says call history, your display name and media received in Channels can't be transferred from Android to iPhone. Chats, groups, media and settings do transfer."
+    },
+    {
+      "question": "Do I need a third-party app to transfer WhatsApp between Android and iPhone?",
+      "answer": "No. Apple's Move to iOS handles Android to iPhone, and WhatsApp's own transfer option or Android's setup copy step handles iPhone to Android. Paid third-party tools aren't needed for a normal switch."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:23:52.277Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=xbHun6ljDW4",
+      "title": "How To Transfer WhatsApp Chats From iPhone To Android (2026)",
+      "channel": "Techno Window",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rOmVz5US0Jg",
+      "title": "How to Transfer WhatsApp Data From Android to iPhone (2026) | WhatsApp chat from android to iPhone",
+      "channel": "Iphone by Shubham Kanda",
+      "hasTranscript": true
+    }
+  ]
+}

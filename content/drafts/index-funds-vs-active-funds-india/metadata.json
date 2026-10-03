@@ -1,0 +1,83 @@
+{
+  "title": "Index funds vs active funds in India: what the 2026 data says",
+  "seoTitle": "Index Fund vs Active Fund in India: 2026 Data and Costs",
+  "h1": "Index funds vs active funds in India: what the 2026 data says",
+  "slug": "index-funds-vs-active-funds-india",
+  "metaDescription": "Index fund vs active fund in India: 74% of large-cap funds trailed their benchmark over 10 years (SPIVA 2026), and active funds cost ~0.8% more a year.",
+  "excerpt": "Most active funds in India lag their index over ten years, and they cost about 0.8 points a year more. The SPIVA 2026 data, the rupee cost, and when active still makes sense.",
+  "primaryKeyword": "index fund vs active fund",
+  "secondaryKeywords": [
+    "spiva india 2026",
+    "do active funds beat the index in india",
+    "nifty 50 index fund expense ratio",
+    "index fund vs etf",
+    "midcap index fund vs active midcap"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian mutual fund investors choosing between index and actively managed funds",
+  "category": "finance",
+  "tags": [
+    "mutual funds",
+    "index funds",
+    "investing",
+    "SIP",
+    "expense ratio"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=KwmoMrRAHvc",
+  "sourceVideoTitle": "Should You Choose Nifty Midcap150 Index or Active Midcap Funds? (6-Year Data)",
+  "sourceChannel": "moniwise",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T20:36:46.412Z",
+  "updatedAt": "2026-10-02T20:39:48.276Z",
+  "wordCount": 1816,
+  "readingTimeMinutes": 10,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-read-a-loan-apr-instead-of-just-the-emi",
+    "https://techpulzo.in/sip-vs-lump-sum-how-to-actually-decide-where-to-put-your-money"
+  ],
+  "faq": [
+    {
+      "question": "Do active mutual funds beat index funds in India?",
+      "answer": "Most don't over long periods. The SPIVA India mid-year 2026 report found that 74% of large-cap funds, 80% of ELSS funds and 82% of mid/small-cap funds trailed their benchmarks over ten years to June 2026. Over three to five years, mid and small caps were closer to an even contest."
+    },
+    {
+      "question": "Why are index funds cheaper?",
+      "answer": "There's no stock-picking team to pay and little trading, because the fund simply holds the index. In September 2026, the median direct-plan Nifty 50 index fund charged 0.25% a year, against 1.06% for the median active large-cap fund, according to AMFI data."
+    },
+    {
+      "question": "Which index fund is best for a beginner?",
+      "answer": "A low-cost Nifty 50 or Sensex index fund in the direct plan is the simplest start. Compare expense ratios and tracking error among funds on the same index, and choose a reasonably large fund. If you want wider coverage, a Nifty 500 or Total Market index fund adds mid and small caps in one holding."
+    },
+    {
+      "question": "Are index funds safer than active funds?",
+      "answer": "No. An index fund falls as much as the market does, and there's no manager trying to cushion it. It removes the risk of picking the wrong fund manager, not the risk of the market itself."
+    },
+    {
+      "question": "Should I switch my existing active funds to index funds?",
+      "answer": "Not necessarily all at once. Selling equity units can trigger capital gains tax and, for recent purchases, an exit load. A common approach is to direct new SIPs into index funds and review the old holdings against their benchmark over five years."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T20:39:48.276Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 2,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=gHnWZn5wY1o",
+      "title": "Active MF vs Passive MF vs Both - Which should I choose? | M Pattabiraman  | freefincal",
+      "channel": "freefincal - Prudent DIY Investing (freefincal)",
+      "hasTranscript": true
+    }
+  ]
+}

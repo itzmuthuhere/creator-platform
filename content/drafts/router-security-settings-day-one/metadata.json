@@ -1,0 +1,92 @@
+{
+  "title": "Router security settings to change on day one",
+  "seoTitle": "Router Security Settings to Change on Day One",
+  "h1": "Router security settings to change on day one",
+  "slug": "router-security-settings-day-one",
+  "metaDescription": "Router security settings to change on day one: admin password, WPA3, WPS, remote management, UPnP and firmware, plus what to do if your ISP supplied the router.",
+  "excerpt": "Six router settings, about 15 minutes: admin password, WPA3, WPS off, remote management off, UPnP off and firmware updates. Why each matters, and two that don't help.",
+  "primaryKeyword": "router security settings",
+  "secondaryKeywords": [
+    "change router admin password",
+    "disable wps",
+    "disable upnp",
+    "wpa3 vs wpa2",
+    "router firmware update"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Home broadband users in India with a new or ISP-supplied router",
+  "category": "tech",
+  "tags": [
+    "Wi-Fi",
+    "router",
+    "security",
+    "home network",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=HLoWEsFAEzA",
+  "sourceVideoTitle": "8 Steps to Securing Your Router",
+  "sourceChannel": "Ask Leo!",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:41:39.041Z",
+  "updatedAt": "2026-10-03T01:42:51.203Z",
+  "wordCount": 1092,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-set-up-a-password-manager-in-15-minutes",
+    "https://techpulzo.in/how-to-set-up-a-home-wi-fi-guest-network-and-why-you-should",
+    "https://techpulzo.in/why-your-wifi-feels-slow-in-certain-rooms-router-placement"
+  ],
+  "faq": [
+    {
+      "question": "What router settings should I change for security?",
+      "answer": "Change the admin password, use WPA3 or WPA2-AES with a strong Wi-Fi password, turn off WPS, turn off remote management, turn off UPnP if you don't need it, and update the firmware with automatic updates on. Those six cover the most common attacks."
+    },
+    {
+      "question": "Should I use WPA3 or WPA2?",
+      "answer": "Use WPA3-Personal if all your devices support it. If some older devices can't connect, use the WPA2/WPA3 mixed mode, or WPA2-AES. Avoid WEP and plain WPA, which are easy to break."
+    },
+    {
+      "question": "Is it safe to turn off UPnP?",
+      "answer": "Yes, for most homes. A few games consoles or apps use it to open ports automatically; if one stops working, forward only the ports that device needs instead of turning UPnP back on for everything."
+    },
+    {
+      "question": "Does hiding my Wi-Fi network make it more secure?",
+      "answer": "Not really. Hidden networks can still be detected with common tools, and hiding can cause connection problems for your own devices. A strong WPA2 or WPA3 password protects you far more."
+    },
+    {
+      "question": "How often should I update my router's firmware?",
+      "answer": "Turn on automatic updates if your router offers them, and check manually every few months otherwise. When the manufacturer stops releasing updates for your model, plan to replace it."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:42:51.203Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0.18,
+      "longestCopiedRun": 9,
+      "runs": [
+        "192 168 1 1 or 192 168 0 1"
+      ]
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=mJnIgjyjEtc",
+      "title": "5 Router Settings You Should Change Now!",
+      "channel": "ThioJoe",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rKsXrbu3z_w",
+      "title": "How to Stop Hackers from Entering Through Your Router",
+      "channel": "Shannon Morse",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Google storage full? What's using your 15 GB and how to free it",
+  "seoTitle": "Google Storage Full? What Uses Your 15 GB and How to Fix It",
+  "h1": "Google storage full? What's using your 15 GB and how to free it",
+  "slug": "google-storage-full-free-up-space",
+  "metaDescription": "Google storage full? See what counts toward your 15 GB, including WhatsApp and phone backups, clean up in the right order, and when Google One is worth it.",
+  "excerpt": "When Google storage is full, Gmail stops receiving mail. What uses the 15 GB, a six-step clean-up in order of payoff, and what Google One costs per GB in India.",
+  "primaryKeyword": "google storage full",
+  "secondaryKeywords": [
+    "gmail storage full",
+    "google photos storage full",
+    "free up google storage",
+    "google one plans india",
+    "what counts toward google storage"
+  ],
+  "searchIntent": "troubleshooting",
+  "targetAudience": "Indian Google account users who hit the 15 GB limit",
+  "category": "tech",
+  "tags": [
+    "Google",
+    "Gmail",
+    "Google Photos",
+    "storage",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=_lUlMBUp-f4",
+  "sourceVideoTitle": "Gmail Storage Full? 😱 1 क्लिक में 15GB खाली करें! | How to Clear Google Storage",
+  "sourceChannel": "Bijay Tech Skills",
+  "author": "Nithiyaraj",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:25:04.145Z",
+  "updatedAt": "2026-10-03T01:26:18.517Z",
+  "wordCount": 1142,
+  "readingTimeMinutes": 6,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/google-drive-vs-onedrive-vs-icloud-which-cloud-storage-to-use",
+    "https://techpulzo.in/how-two-factor-authentication-actually-stops-account-hacks"
+  ],
+  "faq": [
+    {
+      "question": "Why is my Google storage full when I hardly use Drive?",
+      "answer": "Because the 15 GB is shared. Gmail (including Spam and Trash), Google Photos, WhatsApp backups on Android and Android phone backups all count. Open the storage manager at one.google.com/storage/management to see which service is using the space."
+    },
+    {
+      "question": "What happens if my Google storage stays full?",
+      "answer": "You can't receive or send Gmail, upload to Drive or back up to Photos. If you stay over the limit for two years, Google may delete your content across Gmail, Drive and Photos."
+    },
+    {
+      "question": "Does emptying Gmail's trash free up storage?",
+      "answer": "Yes. Emails in Trash and Spam count towards your storage until they're permanently deleted. Emptying both folders, along with Drive's trash and the Photos bin, is the quickest way to recover space."
+    },
+    {
+      "question": "Do WhatsApp backups use my Google storage?",
+      "answer": "Yes, on Android. WhatsApp backups started counting towards your Google storage during 2024. Turning off \"Include videos\" in WhatsApp's chat backup settings keeps the backup much smaller."
+    },
+    {
+      "question": "How do I find large emails in Gmail?",
+      "answer": "Search has:attachment larger:10M in Gmail to list emails with attachments bigger than 10 MB. Change the number to find smaller or larger ones, download what you need and delete the rest."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:26:18.517Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 3,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=A_B57DDyQDw",
+      "title": "Google Storage Full? 15GB से 500GB Storage कैसे बढ़ाएं | Google Storage Problem Fix 2026",
+      "channel": "Dynamic Techno",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=TmXTBgBnl6g",
+      "title": "Google Photos Storage Full Problem Solved | Gmail Storage Full Problem | Clean Up Gmail Storage",
+      "channel": "Tippu Tech",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "title": "EPS pension withdrawal, scheme certificate or monthly pension: what to choose in 2026",
+  "seoTitle": "EPS Pension Withdrawal 2026: Form 10C, 10D, Certificate",
+  "h1": "EPS pension withdrawal, scheme certificate or monthly pension: what to choose in 2026",
+  "slug": "eps-pension-withdrawal-scheme-certificate",
+  "metaDescription": "EPS pension withdrawal now has a 36-month wait. How Form 10C, the scheme certificate and the Form 10D pension work, with the formula and a way to decide.",
+  "excerpt": "The new EPS 2026 adds a three-year wait before pension withdrawal. What the withdrawal benefit, scheme certificate and monthly pension are worth, and which to choose.",
+  "primaryKeyword": "eps pension withdrawal",
+  "secondaryKeywords": [
+    "form 10c",
+    "eps scheme certificate",
+    "form 10d",
+    "eps pension calculation",
+    "eps 36 months rule"
+  ],
+  "searchIntent": "decision",
+  "targetAudience": "Indian salaried employees leaving a job or changing jobs who must decide what to do with their EPS pension",
+  "category": "finance",
+  "tags": [
+    "EPF",
+    "EPS",
+    "pension",
+    "Form 10C",
+    "decision"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=UFTYbUeCiy4",
+  "sourceVideoTitle": "EPS Pension Withdrawal 2026 Form 10C 🔥 EPFO 3.0 Portal New Process | EPS Withdrawal without Error",
+  "sourceChannel": "eLearningGang",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T06:36:39.822Z",
+  "updatedAt": "2026-10-03T06:38:14.034Z",
+  "wordCount": 1500,
+  "readingTimeMinutes": 8,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs"
+  ],
+  "faq": [
+    {
+      "question": "Can I withdraw my EPS pension amount immediately after leaving a job?",
+      "answer": "Not any more. Under the Employees' Pension Scheme 2026, the withdrawal benefit is payable only 36 months after your last contribution was due, or at superannuation age if earlier. Previously it was two months."
+    },
+    {
+      "question": "What is the difference between Form 10C and Form 10D?",
+      "answer": "Form 10C is for members with less than 10 years of service: it claims either the lump-sum withdrawal benefit or a scheme certificate. Form 10D claims the monthly pension once you have 10 or more years of service and have reached 50 (reduced) or 58 (full)."
+    },
+    {
+      "question": "Do I need a scheme certificate when I change jobs?",
+      "answer": "Usually not. If your new employer is covered by EPF and you transfer your old account under the same UAN, your EPS service moves with it. A certificate helps when you leave covered employment for a period and settle your PF."
+    },
+    {
+      "question": "How much EPS pension will I get?",
+      "answer": "Pensionable salary × years of service ÷ 70. At a ₹15,000 salary and 10 years that's about ₹2,143 a month; at 20 years about ₹4,714, including the two-year bonus. Service after 17 September 2026 counts wages up to ₹25,000."
+    },
+    {
+      "question": "Is the EPS withdrawal amount the same as what my employer contributed?",
+      "answer": "No. It's calculated from your pensionable salary and months of service using a table in the scheme, not from the contributions plus interest. In Upstox's 36-month example, the payout of ₹42,300 is less than the ₹45,000 that went in at ₹1,250 a month."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T06:38:14.034Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=keQ6Ll3AmgU",
+      "title": "PF Scheme Certificate vs Form 10C – आखिर अंतर क्या है",
+      "channel": "HR Wale Bhaiya",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ufOpvFythNQ",
+      "title": "🚨 बदल गया! Pension Rule! EPFO Form-10C New Process 2026! Pension Withdrawal Benefit Claim Kaise Kare",
+      "channel": "Tech Career",
+      "hasTranscript": true
+    }
+  ]
+}

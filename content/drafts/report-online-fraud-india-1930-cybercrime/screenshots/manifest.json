@@ -1,0 +1,26 @@
+[
+  {
+    "file": "01-ncrp-complaint-categories.png",
+    "sourceUrl": "https://cybercrime.gov.in/",
+    "pageTitle": "Cyber Crime Portal",
+    "selector": null,
+    "crop": "cropped from a full-page capture (scale 1): the three complaint categories only (banner with photographs excluded)",
+    "width": 912,
+    "height": 310,
+    "capturedAt": "2026-09-29T20:30:00.000Z",
+    "alt": "National Cyber Crime Reporting Portal home page with three sections: Women/Children Related Crime, Financial Fraud, and Other Cyber Crime, each with a Register button",
+    "caption": "Money lost to a scam goes under Financial Fraud; hacked accounts and impersonation go under Other Cyber Crime. Source: cybercrime.gov.in"
+  },
+  {
+    "file": "02-mrm-how-to-apply.png",
+    "sourceUrl": "https://mrm-ncrp.mha.gov.in/public-info",
+    "pageTitle": "Money Restoration",
+    "selector": null,
+    "crop": "cropped from a full-page capture (scale 1): How to Apply for Money Restoration panel",
+    "width": 1200,
+    "height": 670,
+    "capturedAt": "2026-09-29T20:30:00.000Z",
+    "alt": "NCRP Money Restoration Portal instructions: raise refund request with the 14-digit acknowledgement ID and OTP, verify refund account details, upload PAN card, submit, and receive a request ID",
+    "caption": "The five steps to request a refund of held money. You need the acknowledgement number from your original complaint. Source: mrm-ncrp.mha.gov.in"
+  }
+]

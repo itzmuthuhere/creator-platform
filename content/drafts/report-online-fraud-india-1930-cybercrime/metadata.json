@@ -1,0 +1,110 @@
+{
+  "title": "Lost Money to an Online Scam? How to Report It in India and Get It Back",
+  "seoTitle": "How to Report Cyber Fraud in India: 1930 & Refunds",
+  "h1": "Lost Money to an Online Scam? How to Report It in India and Get It Back",
+  "slug": "report-online-fraud-india-1930-cybercrime",
+  "metaDescription": "How to report cyber fraud in India via 1930 and cybercrime.gov.in, what your bank owes you now and from 2027, and how to get frozen money back.",
+  "excerpt": "Report to 1930 and your bank on the same day. Here is the first-hour checklist, the RBI liability rules before and after 1 January 2027, and the new routes for getting frozen money back.",
+  "primaryKeyword": "how to report cyber fraud india",
+  "secondaryKeywords": [
+    "1930 helpline",
+    "cybercrime.gov.in complaint",
+    "online fraud money recovery",
+    "rbi zero liability fraud",
+    "money restoration module"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indians who just lost money to an online scam or unauthorised transaction",
+  "category": "finance",
+  "tags": [
+    "cyber fraud",
+    "upi",
+    "rbi",
+    "banking"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=HMHeP5QWFFg",
+  "sourceVideoTitle": "How to File a Cybercrime Complaint Online in India?",
+  "sourceChannel": "Kaustav Chowdhury",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-09-29T18:02:54.974Z",
+  "updatedAt": "2026-09-29T18:05:22.541Z",
+  "wordCount": 1711,
+  "readingTimeMinutes": 9,
+  "screenshots": [
+    {
+      "file": "screenshots/01-ncrp-complaint-categories.png",
+      "alt": "National Cyber Crime Reporting Portal home page with three sections: Women/Children Related Crime, Financial Fraud, and Other Cyber Crime, each with a Register button",
+      "caption": "Money lost to a scam goes under Financial Fraud; hacked accounts and impersonation go under Other Cyber Crime. Source: cybercrime.gov.in"
+    },
+    {
+      "file": "screenshots/02-mrm-how-to-apply.png",
+      "alt": "NCRP Money Restoration Portal instructions: raise refund request with the 14-digit acknowledgement ID and OTP, verify refund account details, upload PAN card, submit, and receive a request ID",
+      "caption": "The five steps to request a refund of held money. You need the acknowledgement number from your original complaint. Source: mrm-ncrp.mha.gov.in"
+    }
+  ],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs"
+  ],
+  "faq": [
+    {
+      "question": "Is 1930 the same as the police?",
+      "answer": "1930 is the national helpline for financial cyber fraud, run under the Ministry of Home Affairs' cybercrime system. It records your complaint and starts the process of holding the money. The complaint is then typically passed to the cyber police in your state, who may contact you for a statement."
+    },
+    {
+      "question": "How much time do I have to report to my bank?",
+      "answer": "For transactions before 1 January 2027, report within 3 working days for zero liability in third-party fraud (4–7 working days gets you limited liability). From 1 January 2027, the zero-liability window is 5 calendar days. Report the same day if you can."
+    },
+    {
+      "question": "I shared my OTP. Do I get nothing back?",
+      "answer": "Under the current rules, a loss caused by your own negligence is yours until you report it, and the bank covers anything after that. But the freeze through 1930 can still recover money, whoever was at fault. And from 2027, losses up to ₹50,000 involving customer negligence can qualify for one-time compensation if reported to both the bank and the portal within 5 days."
+    },
+    {
+      "question": "How long does a refund take?",
+      "answer": "It depends on how quickly the money was frozen and on the amount. Under the January 2026 SOP, amounts below ₹50,000 don't need a court order. Larger ones may. Use the MRM portal to request and track the refund."
+    },
+    {
+      "question": "Can I file a complaint if I didn't lose money?",
+      "answer": "Yes. Hacked accounts, impersonation and harassment go under \"Other Cyber Crime\". You can also report a suspicious number, UPI ID or website through \"Report Suspect\"."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-09-29T18:05:22.541Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 5,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=IXssQBjAXVs",
+      "title": "ऑनलाइन फ्रॉड में कटे हुए पैसे वापस पाए||Cyber Crime ||1930",
+      "channel": "CopShashank17",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5XBi_B5kfAI",
+      "title": "Cyber Crime Complaint Kaise kare । cyber crime पर रिपोर्ट कैसे करे । 1930 Cyber Crime Portal ।",
+      "channel": "Cyber Helper",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=okmUYP92Sqk",
+      "title": "How To Recover Cyber Fraud Amount | File Cyber Crime Complaint | Bank Account Unfreeze Court Order",
+      "channel": "Online Legal Center",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HQlmnRX64rQ",
+      "title": "Online Fraud में कट गए पैसे? ये है पैसे वापस पाने का तरीका...| Cyber Crime | RBI | Tech News",
+      "channel": "Aaj Tak",
+      "hasTranscript": true
+    }
+  ]
+}

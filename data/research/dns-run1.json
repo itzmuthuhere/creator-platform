@@ -1,0 +1,12405 @@
+{
+ "label": "run1",
+ "startedAt": "2026-09-29T16:51:24.220Z",
+ "resolvers": {
+  "ISP (ACT Fibernet)": "183.82.243.66",
+  "Google": "8.8.8.8",
+  "Cloudflare": "1.1.1.1",
+  "Quad9": "9.9.9.9",
+  "OpenDNS": "208.67.222.222",
+  "AdGuard": "94.140.14.14"
+ },
+ "ping": {
+  "ISP (ACT Fibernet)": 92,
+  "Google": 80,
+  "Cloudflare": 82,
+  "Quad9": 394,
+  "OpenDNS": 90,
+  "AdGuard": 169
+ },
+ "warm": {
+  "ISP (ACT Fibernet)": [
+   {
+    "host": "wikipedia.org",
+    "round": 0,
+    "ms": 4.1891,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 0,
+    "ms": 2.4062,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 0,
+    "ms": 16.6135,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 0,
+    "ms": 29.0037,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 0,
+    "ms": 166.9332,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 0,
+    "ms": 1.8485,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 0,
+    "ms": 6.1397,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 0,
+    "ms": 8.1608,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 0,
+    "ms": 21.1289,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 0,
+    "ms": 2.7251,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 0,
+    "ms": 2.9983,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 0,
+    "ms": 2.7677,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 0,
+    "ms": 14.5758,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 0,
+    "ms": 102.5497,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 0,
+    "ms": 5.3078,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 0,
+    "ms": 61.0274,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 0,
+    "ms": 80.8065,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 0,
+    "ms": 196.9911,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 0,
+    "ms": 8.6262,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 0,
+    "ms": 73.7723,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 0,
+    "ms": 44.5412,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 0,
+    "ms": 6.5522,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 0,
+    "ms": 131.4066,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 0,
+    "ms": 2.6992,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 0,
+    "ms": 3.6745,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 1,
+    "ms": 55.239,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 1,
+    "ms": 2.562,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 1,
+    "ms": 2.7227,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 1,
+    "ms": 4.187,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 1,
+    "ms": 4.6152,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 1,
+    "ms": 3.182,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 1,
+    "ms": 3.6068,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 1,
+    "ms": 98.7795,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 1,
+    "ms": 2.7141,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 1,
+    "ms": 2.6849,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 1,
+    "ms": 4.055,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 1,
+    "ms": 2.7928,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 1,
+    "ms": 2.912,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 1,
+    "ms": 90.0299,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 1,
+    "ms": 2.9264,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 1,
+    "ms": 46.7364,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 1,
+    "ms": 34.4696,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 1,
+    "ms": 2.5813,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 1,
+    "ms": 359.1446,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 1,
+    "ms": 3.4976,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 1,
+    "ms": 5.988,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 1,
+    "ms": 2.6043,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 1,
+    "ms": 2.7099,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 1,
+    "ms": 93.3139,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 1,
+    "ms": 4.1705,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 2,
+    "ms": 7.738,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 2,
+    "ms": 93.3329,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 2,
+    "ms": 2.7949,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 2,
+    "ms": 2.03,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 2,
+    "ms": 66.8575,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 2,
+    "ms": 3.2149,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 2,
+    "ms": 3.1783,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 2,
+    "ms": 1.9027,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 2,
+    "ms": 3.7419,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 2,
+    "ms": 184.8386,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 2,
+    "ms": 2.4014,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 2,
+    "ms": 174.8213,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 2,
+    "ms": 181.7855,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 2,
+    "ms": 55.642,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 2,
+    "ms": 18.8106,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 2,
+    "ms": 6.4569,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 2,
+    "ms": 2.9499,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 2,
+    "ms": 2.8034,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 2,
+    "ms": 51.4848,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 2,
+    "ms": 65.1755,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 2,
+    "ms": 3.1284,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 2,
+    "ms": 6.9045,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 2,
+    "ms": 3.3809,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 2,
+    "ms": 6.9357,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 2,
+    "ms": 3.0871,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 3,
+    "ms": 47.2772,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 3,
+    "ms": 2.9207,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 3,
+    "ms": 5.7082,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 3,
+    "ms": 22.0026,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 3,
+    "ms": 2.8607,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 3,
+    "ms": 24.5137,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 3,
+    "ms": 74.3881,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 3,
+    "ms": 2.5978,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 3,
+    "ms": 2.3799,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 3,
+    "ms": 2.4427,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 3,
+    "ms": 117.0913,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 3,
+    "ms": 54.6592,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 3,
+    "ms": 2.3866,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 3,
+    "ms": 3.5866,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 3,
+    "ms": 2.9769,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 3,
+    "ms": 289.1311,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 3,
+    "ms": 2.5791,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 3,
+    "ms": 1.8304,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 3,
+    "ms": 2.6114,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 3,
+    "ms": 16.4444,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 3,
+    "ms": 3.1925,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 3,
+    "ms": 4.0178,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 3,
+    "ms": 167.1088,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 3,
+    "ms": 4.7079,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 3,
+    "ms": 3.8741,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 4,
+    "ms": 3.276,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 4,
+    "ms": 68.2166,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 4,
+    "ms": 10.5197,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 4,
+    "ms": 206.1056,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 4,
+    "ms": 99.8643,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 4,
+    "ms": 3.4597,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 4,
+    "ms": 64.0707,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 4,
+    "ms": 68.6733,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 4,
+    "ms": 2.6511,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 4,
+    "ms": 3.4325,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 4,
+    "ms": 3.0326,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 4,
+    "ms": 2.9603,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 4,
+    "ms": 3.6471,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 4,
+    "ms": 2.5907,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 4,
+    "ms": 3.8619,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 4,
+    "ms": 4.9636,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 4,
+    "ms": 68.1313,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 4,
+    "ms": 5.1922,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 4,
+    "ms": 19.7769,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 4,
+    "ms": 7.0274,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 4,
+    "ms": 1.9329,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 4,
+    "ms": 3.0998,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 4,
+    "ms": 2.7354,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 4,
+    "ms": 4.56,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 4,
+    "ms": 15.1074,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 5,
+    "ms": 2.8681,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 5,
+    "ms": 72.1067,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 5,
+    "ms": 3.4487,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 5,
+    "ms": 3.1025,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 5,
+    "ms": 32.9962,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 5,
+    "ms": 5.3112,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 5,
+    "ms": 2.0241,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 5,
+    "ms": 3.6707,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 5,
+    "ms": 3.9203,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 5,
+    "ms": 2.7968,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 5,
+    "ms": 37.2513,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 5,
+    "ms": 2.872,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 5,
+    "ms": 3.7068,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 5,
+    "ms": 9.1679,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 5,
+    "ms": 4.9203,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 5,
+    "ms": 2.5719,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 5,
+    "ms": 7.7782,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 5,
+    "ms": 2.4069,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 5,
+    "ms": 3.2683,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 5,
+    "ms": 3.513,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 5,
+    "ms": 2.5637,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 5,
+    "ms": 4.4321,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 5,
+    "ms": 3.0691,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 5,
+    "ms": 2.6854,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 5,
+    "ms": 15.0634,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 6,
+    "ms": 5.2446,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 6,
+    "ms": 8.1072,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 6,
+    "ms": 12.5919,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 6,
+    "ms": 3.7013,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 6,
+    "ms": 6.6052,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 6,
+    "ms": 2.5926,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 6,
+    "ms": 2.7241,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 6,
+    "ms": 6.3909,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 6,
+    "ms": 5.9282,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 6,
+    "ms": 5.4113,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 6,
+    "ms": 3.4319,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 6,
+    "ms": 3.728,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 6,
+    "ms": 2.935,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 6,
+    "ms": 143.8037,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 6,
+    "ms": 177.7058,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 6,
+    "ms": 79.587,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 6,
+    "ms": 74.8254,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 6,
+    "ms": 21.1856,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 6,
+    "ms": 3.24,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 6,
+    "ms": 160.1636,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 6,
+    "ms": 10.4602,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 6,
+    "ms": 5.3752,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 6,
+    "ms": 3.122,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 6,
+    "ms": 73.8885,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 6,
+    "ms": 2.3153,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 7,
+    "ms": 50.007,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 7,
+    "ms": 2.8996,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 7,
+    "ms": 7.2317,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 7,
+    "ms": 171.5864,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 7,
+    "ms": 2.9244,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 7,
+    "ms": 4.8409,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 7,
+    "ms": 2.6189,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 7,
+    "ms": 149.779,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 7,
+    "ms": 2.6922,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 7,
+    "ms": 19.9005,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 7,
+    "ms": 2.5747,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 7,
+    "ms": 3.6958,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 7,
+    "ms": 77.7629,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 7,
+    "ms": 3.0806,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 7,
+    "ms": 2.5117,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 7,
+    "ms": 25.5739,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 7,
+    "ms": 3.9297,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 7,
+    "ms": 63.7561,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 7,
+    "ms": 2.7829,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 7,
+    "ms": 2.888,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 7,
+    "ms": 2.4143,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 7,
+    "ms": 102.5759,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 7,
+    "ms": 4.305,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 7,
+    "ms": 5.8978,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 7,
+    "ms": 104.8815,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 8,
+    "ms": 3.421,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 8,
+    "ms": 3.6385,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 8,
+    "ms": 3.8586,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 8,
+    "ms": 3.2027,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 8,
+    "ms": 47.2424,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 8,
+    "ms": 84.4887,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 8,
+    "ms": 82.2359,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 8,
+    "ms": 65.3275,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 8,
+    "ms": 36.8952,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 8,
+    "ms": 298.9844,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 8,
+    "ms": 2.9896,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 8,
+    "ms": 315.9226,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 8,
+    "ms": 3.4857,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 8,
+    "ms": 338.5931,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 8,
+    "ms": 12.4582,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 8,
+    "ms": 4.3583,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 8,
+    "ms": 70.51,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 8,
+    "ms": 118.4636,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 8,
+    "ms": 93.6592,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 8,
+    "ms": 3.8151,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 8,
+    "ms": 5.5071,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 8,
+    "ms": 8.3661,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 8,
+    "ms": 9.4522,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 8,
+    "ms": 2.6494,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 8,
+    "ms": 280.2312,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 9,
+    "ms": 73.419,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 9,
+    "ms": 4.3296,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 9,
+    "ms": 2.7279,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 9,
+    "ms": 6.9729,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 9,
+    "ms": 4.9664,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 9,
+    "ms": 1.94,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 9,
+    "ms": 5.3118,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 9,
+    "ms": 2.9165,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 9,
+    "ms": 10.5888,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 9,
+    "ms": 87.3283,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 9,
+    "ms": 3.8389,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 9,
+    "ms": 3.4587,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 9,
+    "ms": 2.9391,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 9,
+    "ms": 111.3677,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 9,
+    "ms": 12.9014,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 9,
+    "ms": 3.2347,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 9,
+    "ms": 3.5245,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 9,
+    "ms": 2.0839,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 9,
+    "ms": 79.6441,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 9,
+    "ms": 109.356,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 9,
+    "ms": 207.5532,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 9,
+    "ms": 52.8301,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 9,
+    "ms": 2.0762,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 9,
+    "ms": 3.5482,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 9,
+    "ms": 8.9483,
+    "ok": true,
+    "rcode": 0
+   }
+  ],
+  "Google": [
+   {
+    "host": "wikipedia.org",
+    "round": 0,
+    "ms": 42.9502,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 0,
+    "ms": 6.068,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 0,
+    "ms": 98.276,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 0,
+    "ms": 186.3499,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 0,
+    "ms": 3.664,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 0,
+    "ms": 157.2601,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 0,
+    "ms": 4.1581,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 0,
+    "ms": 81.4342,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 0,
+    "ms": 5.2858,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 0,
+    "ms": 149.5149,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 0,
+    "ms": 134.2274,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 0,
+    "ms": 29.6063,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 0,
+    "ms": 29.6525,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 0,
+    "ms": 21.8682,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 0,
+    "ms": 73.3233,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 0,
+    "ms": 293.9515,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 0,
+    "ms": 5.4908,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 0,
+    "ms": 392.4615,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 0,
+    "ms": 24.6787,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 0,
+    "ms": 27.4409,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 0,
+    "ms": 5.6745,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 0,
+    "ms": 90.5342,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 0,
+    "ms": 73.4221,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 0,
+    "ms": 120.9148,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 0,
+    "ms": 3.4277,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 1,
+    "ms": 190.5274,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 1,
+    "ms": 25.4247,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 1,
+    "ms": 310.7524,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 1,
+    "ms": 3.3243,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 1,
+    "ms": 3.5495,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 1,
+    "ms": 95.9567,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 1,
+    "ms": 79.4353,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 1,
+    "ms": 8.0399,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 1,
+    "ms": 3.2697,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 1,
+    "ms": 7.8635,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 1,
+    "ms": 3.5075,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 1,
+    "ms": 100.4276,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 1,
+    "ms": 4.092,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 1,
+    "ms": 91.8676,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 1,
+    "ms": 4.3411,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 1,
+    "ms": 84.2767,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 1,
+    "ms": 70.5664,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 1,
+    "ms": 27.2746,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 1,
+    "ms": 74.7737,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 1,
+    "ms": 209.6913,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 1,
+    "ms": 24.8602,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 1,
+    "ms": 3.0156,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 1,
+    "ms": 99.2074,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 1,
+    "ms": 267.177,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 1,
+    "ms": 169.5843,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 2,
+    "ms": 95.0639,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 2,
+    "ms": 88.8399,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 2,
+    "ms": 3.8501,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 2,
+    "ms": 3.7033,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 2,
+    "ms": 98.8817,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 2,
+    "ms": 81.5572,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 2,
+    "ms": 21.107,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 2,
+    "ms": 4.2942,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 2,
+    "ms": 296.6354,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 2,
+    "ms": 4.061,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 2,
+    "ms": 7.0029,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 2,
+    "ms": 3.7327,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 2,
+    "ms": 80.5528,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 2,
+    "ms": 72.1824,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 2,
+    "ms": 57.6535,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 2,
+    "ms": 85.4438,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 2,
+    "ms": 103.3225,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 2,
+    "ms": 62.6697,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 2,
+    "ms": 302.2366,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 2,
+    "ms": 3.6934,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 2,
+    "ms": 93.7309,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 2,
+    "ms": 188.2478,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 2,
+    "ms": 4.9313,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 2,
+    "ms": 135.3695,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 2,
+    "ms": 3.6208,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 3,
+    "ms": 21.4402,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 3,
+    "ms": 121.5274,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 3,
+    "ms": 112.205,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 3,
+    "ms": 316.3061,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 3,
+    "ms": 86.9433,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 3,
+    "ms": 5.2917,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 3,
+    "ms": 4.0055,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 3,
+    "ms": 95.1842,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 3,
+    "ms": 4.211,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 3,
+    "ms": 111.6997,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 3,
+    "ms": 167.7053,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 3,
+    "ms": 102.8821,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 3,
+    "ms": 281.2142,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 3,
+    "ms": 191.8047,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 3,
+    "ms": 3.5485,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 3,
+    "ms": 10.1974,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 3,
+    "ms": 4.6873,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 3,
+    "ms": 3.1501,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 3,
+    "ms": 3.6214,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 3,
+    "ms": 190.0529,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 3,
+    "ms": 191.1133,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 3,
+    "ms": 3.0531,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 3,
+    "ms": 164.1451,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 3,
+    "ms": 107.7166,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 3,
+    "ms": 8.0767,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 4,
+    "ms": 69.7314,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 4,
+    "ms": 182.891,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 4,
+    "ms": 21.4867,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 4,
+    "ms": 298.0677,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 4,
+    "ms": 195.6431,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 4,
+    "ms": 2.777,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 4,
+    "ms": 193.7408,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 4,
+    "ms": 7.3593,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 4,
+    "ms": 104.0213,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 4,
+    "ms": 186.2357,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 4,
+    "ms": 3.6201,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 4,
+    "ms": 5.6317,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 4,
+    "ms": 3.6763,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 4,
+    "ms": 61.2212,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 4,
+    "ms": 112.7549,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 4,
+    "ms": 26.7508,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 4,
+    "ms": 77.9577,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 4,
+    "ms": 3.5719,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 4,
+    "ms": 24.3473,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 4,
+    "ms": 4.3922,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 4,
+    "ms": 213.653,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 4,
+    "ms": 105.1431,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 4,
+    "ms": 98.3322,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 4,
+    "ms": 298.2456,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 4,
+    "ms": 409.6204,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 5,
+    "ms": 121.4478,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 5,
+    "ms": 203.7618,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 5,
+    "ms": 4.218,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 5,
+    "ms": 3.7357,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 5,
+    "ms": 5.0415,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 5,
+    "ms": 167.1741,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 5,
+    "ms": 5.1031,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 5,
+    "ms": 3.6398,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 5,
+    "ms": 3.6201,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 5,
+    "ms": 28.247,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 5,
+    "ms": 21.6527,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 5,
+    "ms": 4.4487,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 5,
+    "ms": 18.9575,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 5,
+    "ms": 21.6011,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 5,
+    "ms": 5.2805,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 5,
+    "ms": 35.9922,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 5,
+    "ms": 20.6676,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 5,
+    "ms": 4.5473,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 5,
+    "ms": 4.935,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 5,
+    "ms": 7.3894,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 5,
+    "ms": 2.3842,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 5,
+    "ms": 3.8643,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 5,
+    "ms": 3.6791,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 5,
+    "ms": 10.058,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 5,
+    "ms": 26.8281,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 6,
+    "ms": 5.1251,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 6,
+    "ms": 24.5361,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 6,
+    "ms": 7.2717,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 6,
+    "ms": 32.0596,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 6,
+    "ms": 26.9184,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 6,
+    "ms": 6.9081,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 6,
+    "ms": 29.5401,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 6,
+    "ms": 23.6389,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 6,
+    "ms": 80.9393,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 6,
+    "ms": 3.9113,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 6,
+    "ms": 52.5777,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 6,
+    "ms": 5.5647,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 6,
+    "ms": 3.5706,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 6,
+    "ms": 70.8502,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 6,
+    "ms": 3.2437,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 6,
+    "ms": 4.2848,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 6,
+    "ms": 172.4108,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 6,
+    "ms": 9.0051,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 6,
+    "ms": 218.3338,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 6,
+    "ms": 7.4669,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 6,
+    "ms": 98.2316,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 6,
+    "ms": 3.8272,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 6,
+    "ms": 63.2786,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 6,
+    "ms": 3.2003,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 6,
+    "ms": 54.4791,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 7,
+    "ms": 97.1359,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 7,
+    "ms": 3.8345,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 7,
+    "ms": 3.186,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 7,
+    "ms": 68.1672,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 7,
+    "ms": 99.9347,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 7,
+    "ms": 164.8715,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 7,
+    "ms": 459.3377,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 7,
+    "ms": 276.1554,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 7,
+    "ms": 50.8058,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 7,
+    "ms": 206.2114,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 7,
+    "ms": 3.8392,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 7,
+    "ms": 4.721,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 7,
+    "ms": 193.1608,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 7,
+    "ms": 63.2121,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 7,
+    "ms": 94.3637,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 7,
+    "ms": 3.8346,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 7,
+    "ms": 75.0831,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 7,
+    "ms": 4.5162,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 7,
+    "ms": 4.9182,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 7,
+    "ms": 4.3343,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 7,
+    "ms": 3.7773,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 7,
+    "ms": 3.0493,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 7,
+    "ms": 99.9769,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 7,
+    "ms": 203.4626,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 7,
+    "ms": 100.7002,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 8,
+    "ms": 100.1068,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 8,
+    "ms": 7.6904,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 8,
+    "ms": 60.8972,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 8,
+    "ms": 95.8805,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 8,
+    "ms": 3.1718,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 8,
+    "ms": 85.6503,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 8,
+    "ms": 101.0419,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 8,
+    "ms": 3.2595,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 8,
+    "ms": 182.8272,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 8,
+    "ms": 21.7643,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 8,
+    "ms": 9.6075,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 8,
+    "ms": 3.9605,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 8,
+    "ms": 163.6168,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 8,
+    "ms": 176.7979,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 8,
+    "ms": 202.7694,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 8,
+    "ms": 8.8611,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 8,
+    "ms": 83.5745,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 8,
+    "ms": 102.4611,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 8,
+    "ms": 89.6709,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 8,
+    "ms": 4.2716,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 8,
+    "ms": 23.4209,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 8,
+    "ms": 5.7092,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 8,
+    "ms": 21.3459,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 8,
+    "ms": 20.7502,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 8,
+    "ms": 75.0557,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 9,
+    "ms": 30.1117,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 9,
+    "ms": 20.496,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 9,
+    "ms": 7.5584,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 9,
+    "ms": 27.6194,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 9,
+    "ms": 210.8112,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 9,
+    "ms": 9.6816,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 9,
+    "ms": 5.6405,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 9,
+    "ms": 3.6463,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 9,
+    "ms": 133.7859,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 9,
+    "ms": 3.3952,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 9,
+    "ms": 2000,
+    "ok": false,
+    "err": "TIMEOUT"
+   },
+   {
+    "host": "github.com",
+    "round": 9,
+    "ms": 102.101,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 9,
+    "ms": 3.2347,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 9,
+    "ms": 195.0003,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 9,
+    "ms": 201.0113,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 9,
+    "ms": 8.0094,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 9,
+    "ms": 5.7557,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 9,
+    "ms": 90.0499,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 9,
+    "ms": 3.8154,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 9,
+    "ms": 294.3285,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 9,
+    "ms": 187.0289,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 9,
+    "ms": 126.1506,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 9,
+    "ms": 141.8219,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 9,
+    "ms": 104.0935,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 9,
+    "ms": 204.3663,
+    "ok": true,
+    "rcode": 0
+   }
+  ],
+  "Cloudflare": [
+   {
+    "host": "wikipedia.org",
+    "round": 0,
+    "ms": 4.7323,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 0,
+    "ms": 8.3028,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 0,
+    "ms": 84.6523,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 0,
+    "ms": 5.4549,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 0,
+    "ms": 7.5969,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 0,
+    "ms": 4.8321,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 0,
+    "ms": 67.1573,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 0,
+    "ms": 83.3394,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 0,
+    "ms": 74.6962,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 0,
+    "ms": 100.6766,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 0,
+    "ms": 71.4494,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 0,
+    "ms": 31.0764,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 0,
+    "ms": 100.0959,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 0,
+    "ms": 26.3672,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 0,
+    "ms": 7.2866,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 0,
+    "ms": 7.9305,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 0,
+    "ms": 395.5783,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 0,
+    "ms": 73.37,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 0,
+    "ms": 25.9181,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 0,
+    "ms": 19.8811,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 0,
+    "ms": 1736.0021,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 0,
+    "ms": 153.3448,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 0,
+    "ms": 93.4327,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 0,
+    "ms": 212.5921,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 0,
+    "ms": 62.0302,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 1,
+    "ms": 27.6465,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 1,
+    "ms": 160.2596,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 1,
+    "ms": 6.3491,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 1,
+    "ms": 4.6048,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 1,
+    "ms": 4.1576,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 1,
+    "ms": 10.8543,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 1,
+    "ms": 5.2272,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 1,
+    "ms": 4.8818,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 1,
+    "ms": 8.5731,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 1,
+    "ms": 83.0765,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 1,
+    "ms": 4.0527,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 1,
+    "ms": 78.3852,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 1,
+    "ms": 4.3953,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 1,
+    "ms": 5.0677,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 1,
+    "ms": 86.8937,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 1,
+    "ms": 77.973,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 1,
+    "ms": 5.7077,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 1,
+    "ms": 201.0442,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 1,
+    "ms": 6.6478,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 1,
+    "ms": 144.4864,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 1,
+    "ms": 63.2266,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 1,
+    "ms": 7.1002,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 1,
+    "ms": 4.8105,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 1,
+    "ms": 6.3041,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 1,
+    "ms": 8.2898,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 2,
+    "ms": 5.1422,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 2,
+    "ms": 217.3966,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 2,
+    "ms": 96.5093,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 2,
+    "ms": 59.0565,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 2,
+    "ms": 38.7887,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 2,
+    "ms": 4.3615,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 2,
+    "ms": 177.0292,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 2,
+    "ms": 4.507,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 2,
+    "ms": 3.774,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 2,
+    "ms": 4.8015,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 2,
+    "ms": 6.3584,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 2,
+    "ms": 177.9089,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 2,
+    "ms": 70.4992,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 2,
+    "ms": 4.8096,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 2,
+    "ms": 19.2591,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 2,
+    "ms": 4.7246,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 2,
+    "ms": 4.4947,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 2,
+    "ms": 5.6178,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 2,
+    "ms": 7.1819,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 2,
+    "ms": 90.0575,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 2,
+    "ms": 143.4802,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 2,
+    "ms": 288.28,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 2,
+    "ms": 5.2468,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 2,
+    "ms": 102.7267,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 2,
+    "ms": 4.3565,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 3,
+    "ms": 96.805,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 3,
+    "ms": 44.8961,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 3,
+    "ms": 5.1172,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 3,
+    "ms": 272.6165,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 3,
+    "ms": 3.9204,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 3,
+    "ms": 181.6336,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 3,
+    "ms": 36.53,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 3,
+    "ms": 4.8802,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 3,
+    "ms": 3.5756,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 3,
+    "ms": 100.5191,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 3,
+    "ms": 23.2482,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 3,
+    "ms": 8.0327,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 3,
+    "ms": 5.074,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 3,
+    "ms": 1619.2216,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 3,
+    "ms": 77.496,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 3,
+    "ms": 4.9636,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 3,
+    "ms": 4.7618,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 3,
+    "ms": 7.1094,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 3,
+    "ms": 94.3744,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 3,
+    "ms": 88.8842,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 3,
+    "ms": 5.2952,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 3,
+    "ms": 4.1837,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 3,
+    "ms": 9.4274,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 3,
+    "ms": 83.0743,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 3,
+    "ms": 4.1547,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 4,
+    "ms": 88.296,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 4,
+    "ms": 72.0542,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 4,
+    "ms": 6.5715,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 4,
+    "ms": 92.7909,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 4,
+    "ms": 5.7867,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 4,
+    "ms": 6.4989,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 4,
+    "ms": 14.6835,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 4,
+    "ms": 5.6855,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 4,
+    "ms": 70.5597,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 4,
+    "ms": 10.4256,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 4,
+    "ms": 5.12,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 4,
+    "ms": 93.2135,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 4,
+    "ms": 96.282,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 4,
+    "ms": 7.2566,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 4,
+    "ms": 27.8602,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 4,
+    "ms": 7.6486,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 4,
+    "ms": 5.134,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 4,
+    "ms": 5.1826,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 4,
+    "ms": 80.2143,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 4,
+    "ms": 5.4446,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 4,
+    "ms": 4.6521,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 4,
+    "ms": 19.6577,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 4,
+    "ms": 4.2357,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 4,
+    "ms": 89.4387,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 4,
+    "ms": 23.4427,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 5,
+    "ms": 5.0352,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 5,
+    "ms": 4.0289,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 5,
+    "ms": 21.5806,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 5,
+    "ms": 5.3703,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 5,
+    "ms": 7.3817,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 5,
+    "ms": 5.3553,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 5,
+    "ms": 7.1417,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 5,
+    "ms": 10.8033,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 5,
+    "ms": 11.5969,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 5,
+    "ms": 4.4256,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 5,
+    "ms": 28.1433,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 5,
+    "ms": 15.9489,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 5,
+    "ms": 5.7334,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 5,
+    "ms": 5.2516,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 5,
+    "ms": 7.7038,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 5,
+    "ms": 6.93,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 5,
+    "ms": 8.0314,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 5,
+    "ms": 4.3918,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 5,
+    "ms": 4.332,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 5,
+    "ms": 7.3384,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 5,
+    "ms": 6.4457,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 5,
+    "ms": 4.9583,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 5,
+    "ms": 10.5895,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 5,
+    "ms": 15.7825,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 5,
+    "ms": 19.0045,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 6,
+    "ms": 9.567,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 6,
+    "ms": 5.8702,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 6,
+    "ms": 10.2518,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 6,
+    "ms": 24.4225,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 6,
+    "ms": 6.9874,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 6,
+    "ms": 9.0243,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 6,
+    "ms": 5.9395,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 6,
+    "ms": 7.2737,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 6,
+    "ms": 6.1585,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 6,
+    "ms": 4.9019,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 6,
+    "ms": 6.5598,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 6,
+    "ms": 8.1427,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 6,
+    "ms": 4.9877,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 6,
+    "ms": 9.042,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 6,
+    "ms": 4.1592,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 6,
+    "ms": 1759.739,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 6,
+    "ms": 5.2727,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 6,
+    "ms": 5.4046,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 6,
+    "ms": 5.2808,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 6,
+    "ms": 145.8964,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 6,
+    "ms": 100.3189,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 6,
+    "ms": 6.2949,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 6,
+    "ms": 7.6426,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 6,
+    "ms": 109.5552,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 6,
+    "ms": 5.5107,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 7,
+    "ms": 87.6563,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 7,
+    "ms": 5.2315,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 7,
+    "ms": 3.9994,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 7,
+    "ms": 5.6972,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 7,
+    "ms": 5.2298,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 7,
+    "ms": 4.093,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 7,
+    "ms": 7.7212,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 7,
+    "ms": 306.3359,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 7,
+    "ms": 4.4326,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 7,
+    "ms": 193.5523,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 7,
+    "ms": 3.4697,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 7,
+    "ms": 4.4111,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 7,
+    "ms": 105.6766,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 7,
+    "ms": 81.9103,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 7,
+    "ms": 95.8655,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 7,
+    "ms": 4.8662,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 7,
+    "ms": 5.3874,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 7,
+    "ms": 7.6671,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 7,
+    "ms": 5.5732,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 7,
+    "ms": 86.0794,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 7,
+    "ms": 157.9995,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 7,
+    "ms": 88.6169,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 7,
+    "ms": 5.6106,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 7,
+    "ms": 5.4352,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 7,
+    "ms": 79.9116,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 8,
+    "ms": 205.5179,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 8,
+    "ms": 103.1324,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 8,
+    "ms": 6.3928,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 8,
+    "ms": 7.3449,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 8,
+    "ms": 181.6611,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 8,
+    "ms": 82.0191,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 8,
+    "ms": 82.7143,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 8,
+    "ms": 4.2012,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 8,
+    "ms": 125.0334,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 8,
+    "ms": 4.9203,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 8,
+    "ms": 79.6936,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 8,
+    "ms": 186.3135,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 8,
+    "ms": 6.3146,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 8,
+    "ms": 5.1635,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 8,
+    "ms": 5.5846,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 8,
+    "ms": 65.4947,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 8,
+    "ms": 44.5038,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 8,
+    "ms": 11.9064,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 8,
+    "ms": 4.6216,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 8,
+    "ms": 10.8009,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 8,
+    "ms": 28.2522,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 8,
+    "ms": 7.1482,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 8,
+    "ms": 412.9021,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 8,
+    "ms": 5.2747,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 8,
+    "ms": 272.2492,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 9,
+    "ms": 265.3767,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 9,
+    "ms": 4.5593,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 9,
+    "ms": 1300.4517,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 9,
+    "ms": 5.7305,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 9,
+    "ms": 83.1993,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 9,
+    "ms": 5.2037,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 9,
+    "ms": 8.1722,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 9,
+    "ms": 5.1054,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 9,
+    "ms": 5.5329,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 9,
+    "ms": 12.6996,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 9,
+    "ms": 420.6203,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 9,
+    "ms": 7.5093,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 9,
+    "ms": 5.4301,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 9,
+    "ms": 5.4967,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 9,
+    "ms": 8.5413,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 9,
+    "ms": 73.7156,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 9,
+    "ms": 65.3802,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 9,
+    "ms": 3.9212,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 9,
+    "ms": 183.5869,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 9,
+    "ms": 57.8033,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 9,
+    "ms": 5.5337,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 9,
+    "ms": 67.9051,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 9,
+    "ms": 8.9528,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 9,
+    "ms": 6.5611,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 9,
+    "ms": 100.399,
+    "ok": true,
+    "rcode": 0
+   }
+  ],
+  "Quad9": [
+   {
+    "host": "wikipedia.org",
+    "round": 0,
+    "ms": 277.7219,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 0,
+    "ms": 296.9758,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 0,
+    "ms": 433.2144,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 0,
+    "ms": 395.1968,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 0,
+    "ms": 538.6524,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 0,
+    "ms": 366.7555,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 0,
+    "ms": 313.4215,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 0,
+    "ms": 459.3762,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 0,
+    "ms": 295.0652,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 0,
+    "ms": 518.7449,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 0,
+    "ms": 337.3569,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 0,
+    "ms": 279.2403,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 0,
+    "ms": 324.7661,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 0,
+    "ms": 422.211,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 0,
+    "ms": 401.3223,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 0,
+    "ms": 430.3935,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 0,
+    "ms": 320.8379,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 0,
+    "ms": 454.1606,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 0,
+    "ms": 398.6044,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 0,
+    "ms": 306.5341,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 0,
+    "ms": 396.1509,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 0,
+    "ms": 312.5907,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 0,
+    "ms": 287.2365,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 0,
+    "ms": 507.4992,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 0,
+    "ms": 342.2304,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 1,
+    "ms": 346.4229,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 1,
+    "ms": 346.1819,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 1,
+    "ms": 307.7803,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 1,
+    "ms": 399.6552,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 1,
+    "ms": 334.5751,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 1,
+    "ms": 311.9118,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 1,
+    "ms": 548.2173,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 1,
+    "ms": 320.1181,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 1,
+    "ms": 383.1038,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 1,
+    "ms": 334.9302,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 1,
+    "ms": 315.3334,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 1,
+    "ms": 336.1257,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 1,
+    "ms": 380.6276,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 1,
+    "ms": 308.9079,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 1,
+    "ms": 354.6474,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 1,
+    "ms": 298.6803,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 1,
+    "ms": 446.004,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 1,
+    "ms": 357.4966,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 1,
+    "ms": 660.9188,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 1,
+    "ms": 327.7558,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 1,
+    "ms": 257.5391,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 1,
+    "ms": 293.8319,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 1,
+    "ms": 302.8034,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 1,
+    "ms": 341.1288,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 1,
+    "ms": 462.0085,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 2,
+    "ms": 310.5719,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 2,
+    "ms": 305.3987,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 2,
+    "ms": 320.3844,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 2,
+    "ms": 295.2403,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 2,
+    "ms": 376.3176,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 2,
+    "ms": 309.0926,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 2,
+    "ms": 308.1307,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 2,
+    "ms": 554.3647,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 2,
+    "ms": 411.039,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 2,
+    "ms": 300.3953,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 2,
+    "ms": 465.7645,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 2,
+    "ms": 314.6985,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 2,
+    "ms": 420.9485,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 2,
+    "ms": 347.926,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 2,
+    "ms": 386.1634,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 2,
+    "ms": 262.1094,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 2,
+    "ms": 304.4587,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 2,
+    "ms": 280.431,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 2,
+    "ms": 408.1379,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 2,
+    "ms": 290.7418,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 2,
+    "ms": 353.2067,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 2,
+    "ms": 367.0379,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 2,
+    "ms": 284.5708,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 2,
+    "ms": 293.6733,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 2,
+    "ms": 275.1006,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 3,
+    "ms": 308.5357,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 3,
+    "ms": 520.6395,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 3,
+    "ms": 323.8142,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 3,
+    "ms": 376.4134,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 3,
+    "ms": 325.4669,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 3,
+    "ms": 406.2789,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 3,
+    "ms": 424.0626,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 3,
+    "ms": 299.2454,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 3,
+    "ms": 284.6771,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 3,
+    "ms": 471.252,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 3,
+    "ms": 419.1866,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 3,
+    "ms": 303.2343,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 3,
+    "ms": 382.612,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 3,
+    "ms": 429.2604,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 3,
+    "ms": 293.1574,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 3,
+    "ms": 286.7955,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 3,
+    "ms": 441.7069,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 3,
+    "ms": 425.1336,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 3,
+    "ms": 313.8806,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 3,
+    "ms": 326.4738,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 3,
+    "ms": 416.2024,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 3,
+    "ms": 508.149,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 3,
+    "ms": 423.2019,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 3,
+    "ms": 299.6874,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 3,
+    "ms": 506.8856,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 4,
+    "ms": 341.0784,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 4,
+    "ms": 484.5224,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 4,
+    "ms": 276.3116,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 4,
+    "ms": 423.8275,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 4,
+    "ms": 339.6465,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 4,
+    "ms": 384.9545,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 4,
+    "ms": 290.1557,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 4,
+    "ms": 330.1087,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 4,
+    "ms": 407.3757,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 4,
+    "ms": 431.4642,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 4,
+    "ms": 322.2437,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 4,
+    "ms": 313.7025,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 4,
+    "ms": 289.8019,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 4,
+    "ms": 627.836,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 4,
+    "ms": 482.1022,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 4,
+    "ms": 282.2863,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 4,
+    "ms": 547.0666,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 4,
+    "ms": 310.734,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 4,
+    "ms": 283.2599,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 4,
+    "ms": 272.9726,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 4,
+    "ms": 293.5538,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 4,
+    "ms": 306.1494,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 4,
+    "ms": 472.6288,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 4,
+    "ms": 518.5615,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 4,
+    "ms": 282.1834,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 5,
+    "ms": 271.5849,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 5,
+    "ms": 730.7981,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 5,
+    "ms": 307.6459,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 5,
+    "ms": 298.8239,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 5,
+    "ms": 305.2036,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 5,
+    "ms": 409.7304,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 5,
+    "ms": 264.4653,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 5,
+    "ms": 254.4108,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 5,
+    "ms": 274.3766,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 5,
+    "ms": 290.2368,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 5,
+    "ms": 312.6294,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 5,
+    "ms": 282.8136,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 5,
+    "ms": 264.2088,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 5,
+    "ms": 281.0401,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 5,
+    "ms": 281.903,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 5,
+    "ms": 265.3738,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 5,
+    "ms": 271.3998,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 5,
+    "ms": 258.9868,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 5,
+    "ms": 254.2852,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 5,
+    "ms": 270.7061,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 5,
+    "ms": 286.0015,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 5,
+    "ms": 252.3691,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 5,
+    "ms": 269.8891,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 5,
+    "ms": 294.7887,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 5,
+    "ms": 292.7645,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 6,
+    "ms": 292.6803,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 6,
+    "ms": 256.8721,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 6,
+    "ms": 254.6188,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 6,
+    "ms": 271.0538,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 6,
+    "ms": 273.05,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 6,
+    "ms": 301.2739,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 6,
+    "ms": 269.0491,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 6,
+    "ms": 252.1425,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 6,
+    "ms": 321.6663,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 6,
+    "ms": 270.943,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 6,
+    "ms": 257.5615,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 6,
+    "ms": 260.0015,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 6,
+    "ms": 324.9461,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 6,
+    "ms": 367.237,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 6,
+    "ms": 313.0628,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 6,
+    "ms": 313.6606,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 6,
+    "ms": 433.7957,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 6,
+    "ms": 322.5938,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 6,
+    "ms": 292.8296,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 6,
+    "ms": 305.8669,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 6,
+    "ms": 355.9637,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 6,
+    "ms": 276.5362,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 6,
+    "ms": 553.7343,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 6,
+    "ms": 342.6968,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 6,
+    "ms": 512.9585,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 7,
+    "ms": 344.7992,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 7,
+    "ms": 351.92,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 7,
+    "ms": 301.3794,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 7,
+    "ms": 280.2521,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 7,
+    "ms": 510.7078,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 7,
+    "ms": 347.4897,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 7,
+    "ms": 303.373,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 7,
+    "ms": 521.5758,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 7,
+    "ms": 257.3562,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 7,
+    "ms": 307.9799,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 7,
+    "ms": 511.3867,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 7,
+    "ms": 306.8743,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 7,
+    "ms": 330.8165,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 7,
+    "ms": 402.0278,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 7,
+    "ms": 297.5426,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 7,
+    "ms": 283.4317,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 7,
+    "ms": 324.8004,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 7,
+    "ms": 349.7781,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 7,
+    "ms": 307.5769,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 7,
+    "ms": 312.8738,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 7,
+    "ms": 450.5462,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 7,
+    "ms": 279.6561,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 7,
+    "ms": 365.5156,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 7,
+    "ms": 298.9243,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 7,
+    "ms": 303.0261,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 8,
+    "ms": 415.2119,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 8,
+    "ms": 276.1937,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 8,
+    "ms": 303.187,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 8,
+    "ms": 397.9182,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 8,
+    "ms": 421.198,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 8,
+    "ms": 301.3148,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 8,
+    "ms": 321.3816,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 8,
+    "ms": 332.4915,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 8,
+    "ms": 346.0436,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 8,
+    "ms": 292.0013,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 8,
+    "ms": 410.3144,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 8,
+    "ms": 426.533,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 8,
+    "ms": 347.8541,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 8,
+    "ms": 513.9502,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 8,
+    "ms": 403.2517,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 8,
+    "ms": 327.1513,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 8,
+    "ms": 325.7516,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 8,
+    "ms": 288.7976,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 8,
+    "ms": 433.4962,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 8,
+    "ms": 401.514,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 8,
+    "ms": 286.3098,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 8,
+    "ms": 290.8889,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 8,
+    "ms": 305.2395,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 8,
+    "ms": 508.632,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 8,
+    "ms": 555.3182,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 9,
+    "ms": 382.1263,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 9,
+    "ms": 263.1633,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 9,
+    "ms": 303.7231,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 9,
+    "ms": 506.6415,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 9,
+    "ms": 392.5699,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 9,
+    "ms": 323.3691,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 9,
+    "ms": 346.8842,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 9,
+    "ms": 307.4866,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 9,
+    "ms": 298.7773,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 9,
+    "ms": 292.6481,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 9,
+    "ms": 2000,
+    "ok": false,
+    "err": "TIMEOUT"
+   },
+   {
+    "host": "github.com",
+    "round": 9,
+    "ms": 306.2058,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 9,
+    "ms": 302.5372,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 9,
+    "ms": 406.3972,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 9,
+    "ms": 374.7756,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 9,
+    "ms": 318.1909,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 9,
+    "ms": 250.8333,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 9,
+    "ms": 2000,
+    "ok": false,
+    "err": "TIMEOUT"
+   },
+   {
+    "host": "paytm.com",
+    "round": 9,
+    "ms": 323.509,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 9,
+    "ms": 310.1839,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 9,
+    "ms": 454.1801,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 9,
+    "ms": 351.959,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 9,
+    "ms": 315.2975,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 9,
+    "ms": 400.4666,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 9,
+    "ms": 336.6029,
+    "ok": true,
+    "rcode": 0
+   }
+  ],
+  "OpenDNS": [
+   {
+    "host": "wikipedia.org",
+    "round": 0,
+    "ms": 32.887,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 0,
+    "ms": 173.3408,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 0,
+    "ms": 10.381,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 0,
+    "ms": 15.5147,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 0,
+    "ms": 9.5717,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 0,
+    "ms": 270.7885,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 0,
+    "ms": 165.8322,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 0,
+    "ms": 106.8808,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 0,
+    "ms": 4.8086,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 0,
+    "ms": 101.5256,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 0,
+    "ms": 5.9346,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 0,
+    "ms": 202.6258,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 0,
+    "ms": 58.542,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 0,
+    "ms": 101.766,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 0,
+    "ms": 199.2688,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 0,
+    "ms": 109.2485,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 0,
+    "ms": 6.4989,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 0,
+    "ms": 82.2842,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 0,
+    "ms": 305.3279,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 0,
+    "ms": 208.5204,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 0,
+    "ms": 148.3751,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 0,
+    "ms": 51.9632,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 0,
+    "ms": 221.7197,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 0,
+    "ms": 190.3323,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 0,
+    "ms": 9.0496,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 1,
+    "ms": 208.8593,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 1,
+    "ms": 112.7217,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 1,
+    "ms": 76.0367,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 1,
+    "ms": 4.784,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 1,
+    "ms": 104.9283,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 1,
+    "ms": 93.9358,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 1,
+    "ms": 9.9355,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 1,
+    "ms": 4.4371,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 1,
+    "ms": 4.2493,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 1,
+    "ms": 10.0097,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 1,
+    "ms": 5.8601,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 1,
+    "ms": 100.7558,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 1,
+    "ms": 5.4032,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 1,
+    "ms": 4.9661,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 1,
+    "ms": 104.2307,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 1,
+    "ms": 131.0278,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 1,
+    "ms": 41.6471,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 1,
+    "ms": 48.9999,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 1,
+    "ms": 89.8191,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 1,
+    "ms": 53.9008,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 1,
+    "ms": 46.3907,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 1,
+    "ms": 5.3041,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 1,
+    "ms": 11.9415,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 1,
+    "ms": 7.7193,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 1,
+    "ms": 5.2836,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 2,
+    "ms": 108.5847,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 2,
+    "ms": 107.3409,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 2,
+    "ms": 4.8607,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 2,
+    "ms": 4.4642,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 2,
+    "ms": 141.8551,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 2,
+    "ms": 5.6753,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 2,
+    "ms": 14.8158,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 2,
+    "ms": 85.3193,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 2,
+    "ms": 204.8839,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 2,
+    "ms": 106.3542,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 2,
+    "ms": 335.4492,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 2,
+    "ms": 88.6043,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 2,
+    "ms": 29.7387,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 2,
+    "ms": 151.8234,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 2,
+    "ms": 36.8744,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 2,
+    "ms": 7.9928,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 2,
+    "ms": 4.5984,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 2,
+    "ms": 58.8362,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 2,
+    "ms": 6.0944,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 2,
+    "ms": 25.9998,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 2,
+    "ms": 233.8414,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 2,
+    "ms": 34.4781,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 2,
+    "ms": 89.3536,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 2,
+    "ms": 17.4007,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 2,
+    "ms": 4.3318,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 3,
+    "ms": 184.7502,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 3,
+    "ms": 15.2062,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 3,
+    "ms": 11.5639,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 3,
+    "ms": 106.447,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 3,
+    "ms": 17.8838,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 3,
+    "ms": 18.5205,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 3,
+    "ms": 314.6044,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 3,
+    "ms": 103.4989,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 3,
+    "ms": 4.3649,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 3,
+    "ms": 201.4531,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 3,
+    "ms": 112.8383,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 3,
+    "ms": 50.6423,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 3,
+    "ms": 23.4592,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 3,
+    "ms": 5.6461,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 3,
+    "ms": 423.0175,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 3,
+    "ms": 218.9758,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 3,
+    "ms": 4.6833,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 3,
+    "ms": 93.4098,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 3,
+    "ms": 4.085,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 3,
+    "ms": 58.1055,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 3,
+    "ms": 11.6791,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 3,
+    "ms": 90.5242,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 3,
+    "ms": 139.1382,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 3,
+    "ms": 117.4972,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 3,
+    "ms": 5.5171,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 4,
+    "ms": 48.2759,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 4,
+    "ms": 34.3441,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 4,
+    "ms": 201.2031,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 4,
+    "ms": 106.2869,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 4,
+    "ms": 167.0304,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 4,
+    "ms": 53.5536,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 4,
+    "ms": 9.2736,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 4,
+    "ms": 89.1878,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 4,
+    "ms": 5.0657,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 4,
+    "ms": 89.624,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 4,
+    "ms": 107.6332,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 4,
+    "ms": 4.3771,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 4,
+    "ms": 94.4506,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 4,
+    "ms": 3.2823,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 4,
+    "ms": 102.7672,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 4,
+    "ms": 202.722,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 4,
+    "ms": 55.458,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 4,
+    "ms": 173.7789,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 4,
+    "ms": 5.2044,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 4,
+    "ms": 112.5872,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 4,
+    "ms": 5.0568,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 4,
+    "ms": 124.1024,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 4,
+    "ms": 79.3151,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 4,
+    "ms": 6,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 4,
+    "ms": 11.5539,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 5,
+    "ms": 111.0204,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 5,
+    "ms": 106.188,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 5,
+    "ms": 73.026,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 5,
+    "ms": 7.0362,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 5,
+    "ms": 70.6598,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 5,
+    "ms": 4.7493,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 5,
+    "ms": 30.8139,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 5,
+    "ms": 9.1384,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 5,
+    "ms": 25.9927,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 5,
+    "ms": 5.4314,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 5,
+    "ms": 51.1511,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 5,
+    "ms": 73.9599,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 5,
+    "ms": 5.2988,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 5,
+    "ms": 35.6062,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 5,
+    "ms": 10.7217,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 5,
+    "ms": 23.8977,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 5,
+    "ms": 14.1204,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 5,
+    "ms": 5.958,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 5,
+    "ms": 44.8306,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 5,
+    "ms": 5.807,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 5,
+    "ms": 9.5564,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 5,
+    "ms": 7.6916,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 5,
+    "ms": 240.6027,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 5,
+    "ms": 7.8457,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 5,
+    "ms": 36.1866,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 6,
+    "ms": 10.7372,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 6,
+    "ms": 30.796,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 6,
+    "ms": 8.0212,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 6,
+    "ms": 50.5756,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 6,
+    "ms": 9.1641,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 6,
+    "ms": 37.9935,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 6,
+    "ms": 46.9375,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 6,
+    "ms": 46.6752,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 6,
+    "ms": 52.4441,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 6,
+    "ms": 12.3788,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 6,
+    "ms": 4.6689,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 6,
+    "ms": 16.5195,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 6,
+    "ms": 142.0597,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 6,
+    "ms": 244.3568,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 6,
+    "ms": 9.1204,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 6,
+    "ms": 5.0943,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 6,
+    "ms": 33.0476,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 6,
+    "ms": 16.8071,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 6,
+    "ms": 6.7955,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 6,
+    "ms": 121.9937,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 6,
+    "ms": 61.0259,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 6,
+    "ms": 7.5672,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 6,
+    "ms": 14.2701,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 6,
+    "ms": 72.4574,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 6,
+    "ms": 90.7303,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 7,
+    "ms": 111.1498,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 7,
+    "ms": 65.5479,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 7,
+    "ms": 5.1229,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 7,
+    "ms": 272.371,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 7,
+    "ms": 190.3955,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 7,
+    "ms": 205.3999,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 7,
+    "ms": 24.2584,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 7,
+    "ms": 229.268,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 7,
+    "ms": 157.1883,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 7,
+    "ms": 306.1699,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 7,
+    "ms": 105.7742,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 7,
+    "ms": 77.4983,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 7,
+    "ms": 5.3327,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 7,
+    "ms": 266.0065,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 7,
+    "ms": 109.3664,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 7,
+    "ms": 82.2408,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 7,
+    "ms": 162.0999,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 7,
+    "ms": 5.6677,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 7,
+    "ms": 6.0602,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 7,
+    "ms": 79.4948,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 7,
+    "ms": 8.9668,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 7,
+    "ms": 111.5169,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 7,
+    "ms": 115.3464,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 7,
+    "ms": 4.2602,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 7,
+    "ms": 110.0646,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 8,
+    "ms": 109.6443,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 8,
+    "ms": 37.9224,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 8,
+    "ms": 20.6775,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 8,
+    "ms": 4.7547,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 8,
+    "ms": 224.5036,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 8,
+    "ms": 92.8791,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 8,
+    "ms": 6,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 8,
+    "ms": 302.2898,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 8,
+    "ms": 82.7015,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 8,
+    "ms": 14.1671,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 8,
+    "ms": 803.7422,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 8,
+    "ms": 315.2449,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 8,
+    "ms": 9.9691,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 8,
+    "ms": 89.9175,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 8,
+    "ms": 10.8371,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 8,
+    "ms": 307.8647,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 8,
+    "ms": 36.0632,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 8,
+    "ms": 86.3742,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 8,
+    "ms": 110.1373,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 8,
+    "ms": 5.0122,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 8,
+    "ms": 88.427,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 8,
+    "ms": 224.6064,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 8,
+    "ms": 83.34,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 8,
+    "ms": 44.6254,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 8,
+    "ms": 7.6045,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 9,
+    "ms": 33.5389,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 9,
+    "ms": 29.29,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 9,
+    "ms": 4.7711,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 9,
+    "ms": 98.0808,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 9,
+    "ms": 113.8144,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 9,
+    "ms": 16.7528,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 9,
+    "ms": 104.081,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 9,
+    "ms": 208.5871,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 9,
+    "ms": 88.7553,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 9,
+    "ms": 11.7966,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 9,
+    "ms": 54.6547,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 9,
+    "ms": 71.8076,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 9,
+    "ms": 99.1834,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 9,
+    "ms": 310.1444,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 9,
+    "ms": 159.5463,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 9,
+    "ms": 70.095,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 9,
+    "ms": 46.984,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 9,
+    "ms": 13.4844,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 9,
+    "ms": 5.3402,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 9,
+    "ms": 115.0425,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 9,
+    "ms": 15.2355,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 9,
+    "ms": 79.9339,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 9,
+    "ms": 110.5491,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 9,
+    "ms": 4.5474,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 9,
+    "ms": 73.7282,
+    "ok": true,
+    "rcode": 0
+   }
+  ],
+  "AdGuard": [
+   {
+    "host": "wikipedia.org",
+    "round": 0,
+    "ms": 55.6803,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 0,
+    "ms": 83.9996,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 0,
+    "ms": 97.3496,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 0,
+    "ms": 58.9056,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 0,
+    "ms": 227.9415,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 0,
+    "ms": 230.7152,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 0,
+    "ms": 100.2528,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 0,
+    "ms": 631.8068,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 0,
+    "ms": 209.7007,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 0,
+    "ms": 255.427,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 0,
+    "ms": 135.8343,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 0,
+    "ms": 204.0956,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 0,
+    "ms": 190.1363,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 0,
+    "ms": 74.3409,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 0,
+    "ms": 354.8756,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 0,
+    "ms": 222.6039,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 0,
+    "ms": 313.9854,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 0,
+    "ms": 110.8359,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 0,
+    "ms": 157.6379,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 0,
+    "ms": 216.8466,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 0,
+    "ms": 210.1311,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 0,
+    "ms": 106.9548,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 0,
+    "ms": 116.1166,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 0,
+    "ms": 108.6939,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 0,
+    "ms": 73.978,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 1,
+    "ms": 104.3608,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 1,
+    "ms": 279.7673,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 1,
+    "ms": 225.7723,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 1,
+    "ms": 90.326,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 1,
+    "ms": 105.6536,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 1,
+    "ms": 59.3966,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 1,
+    "ms": 67.8169,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 1,
+    "ms": 293.2666,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 1,
+    "ms": 103.3908,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 1,
+    "ms": 77.5779,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 1,
+    "ms": 168.5678,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 1,
+    "ms": 97.3868,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 1,
+    "ms": 131.7625,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 1,
+    "ms": 103.0217,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 1,
+    "ms": 195.0799,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 1,
+    "ms": 2000,
+    "ok": false,
+    "err": "TIMEOUT"
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 1,
+    "ms": 121.1735,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 1,
+    "ms": 205.7766,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 1,
+    "ms": 122.3151,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 1,
+    "ms": 115.0608,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 1,
+    "ms": 84.3667,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 1,
+    "ms": 96.7694,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 1,
+    "ms": 119.1113,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 1,
+    "ms": 86.1429,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 1,
+    "ms": 193.8917,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 2,
+    "ms": 64.0002,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 2,
+    "ms": 113.4696,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 2,
+    "ms": 222.4858,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 2,
+    "ms": 115.3921,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 2,
+    "ms": 188.5111,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 2,
+    "ms": 112.979,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 2,
+    "ms": 109.3158,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 2,
+    "ms": 265.0594,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 2,
+    "ms": 99.6419,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 2,
+    "ms": 225.6635,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 2,
+    "ms": 289.1675,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 2,
+    "ms": 86.8776,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 2,
+    "ms": 142.8109,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 2,
+    "ms": 124.4163,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 2,
+    "ms": 65.5747,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 2,
+    "ms": 132.315,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 2,
+    "ms": 113.0275,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 2,
+    "ms": 192.871,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 2,
+    "ms": 2000,
+    "ok": false,
+    "err": "TIMEOUT"
+   },
+   {
+    "host": "paytm.com",
+    "round": 2,
+    "ms": 241.4497,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 2,
+    "ms": 207.737,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 2,
+    "ms": 272.999,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 2,
+    "ms": 206.7682,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 2,
+    "ms": 295.3841,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 2,
+    "ms": 130.9333,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 3,
+    "ms": 59.4579,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 3,
+    "ms": 281.3615,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 3,
+    "ms": 91.0306,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 3,
+    "ms": 105.257,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 3,
+    "ms": 92.7993,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 3,
+    "ms": 149.3973,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 3,
+    "ms": 195.5158,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 3,
+    "ms": 109.7736,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 3,
+    "ms": 217.0041,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 3,
+    "ms": 236.1406,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 3,
+    "ms": 188.775,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 3,
+    "ms": 192.321,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 3,
+    "ms": 239.8917,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 3,
+    "ms": 119.5737,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 3,
+    "ms": 211.821,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 3,
+    "ms": 123.4115,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 3,
+    "ms": 171.7427,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 3,
+    "ms": 281.804,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 3,
+    "ms": 225.9385,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 3,
+    "ms": 409.7182,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 3,
+    "ms": 104.5691,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 3,
+    "ms": 236.168,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 3,
+    "ms": 89.6993,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 3,
+    "ms": 103.5206,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 3,
+    "ms": 101.0685,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 4,
+    "ms": 104.4209,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 4,
+    "ms": 166.9653,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 4,
+    "ms": 101.5511,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 4,
+    "ms": 83.3021,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 4,
+    "ms": 124.5856,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 4,
+    "ms": 104.6516,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 4,
+    "ms": 185.1586,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 4,
+    "ms": 231.2949,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 4,
+    "ms": 126.2654,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 4,
+    "ms": 200.4235,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 4,
+    "ms": 74.0456,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 4,
+    "ms": 206.8299,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 4,
+    "ms": 113.672,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 4,
+    "ms": 141.7176,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 4,
+    "ms": 83.265,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 4,
+    "ms": 74.4637,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 4,
+    "ms": 92.3317,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 4,
+    "ms": 97.9252,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 4,
+    "ms": 132.7908,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 4,
+    "ms": 188.9844,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 4,
+    "ms": 707.1999,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 4,
+    "ms": 90.2287,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 4,
+    "ms": 142.7518,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 4,
+    "ms": 206.0455,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 4,
+    "ms": 92.1336,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 5,
+    "ms": 224.4632,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 5,
+    "ms": 201.8137,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 5,
+    "ms": 202.9408,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 5,
+    "ms": 104.0216,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 5,
+    "ms": 176.5119,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 5,
+    "ms": 328.121,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 5,
+    "ms": 215.6867,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 5,
+    "ms": 42.2377,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 5,
+    "ms": 47.7163,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 5,
+    "ms": 43.2863,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 5,
+    "ms": 39.3887,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 5,
+    "ms": 45.9654,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 5,
+    "ms": 38.8248,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 5,
+    "ms": 80.8624,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 5,
+    "ms": 91.4241,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 5,
+    "ms": 254.3313,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 5,
+    "ms": 38.6982,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 5,
+    "ms": 43.364,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 5,
+    "ms": 41.7947,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 5,
+    "ms": 37.5462,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 5,
+    "ms": 37.3277,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 5,
+    "ms": 41.6671,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 5,
+    "ms": 46.8156,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 5,
+    "ms": 37.7645,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 5,
+    "ms": 38.1565,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 6,
+    "ms": 43.3209,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 6,
+    "ms": 37.7876,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 6,
+    "ms": 39.165,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 6,
+    "ms": 36.1059,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 6,
+    "ms": 42.1851,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 6,
+    "ms": 122.7391,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 6,
+    "ms": 37.9921,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 6,
+    "ms": 56.0261,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 6,
+    "ms": 37.9617,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 6,
+    "ms": 93.3913,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 6,
+    "ms": 59.5524,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 6,
+    "ms": 39.8971,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 6,
+    "ms": 87.1886,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 6,
+    "ms": 97.3505,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 6,
+    "ms": 94.9015,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 6,
+    "ms": 202.0767,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 6,
+    "ms": 85.1166,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 6,
+    "ms": 249.1335,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 6,
+    "ms": 193.2766,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 6,
+    "ms": 94.5468,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 6,
+    "ms": 186.3664,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 6,
+    "ms": 110.5902,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 6,
+    "ms": 89.5285,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 6,
+    "ms": 516.6502,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 6,
+    "ms": 254.8675,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 7,
+    "ms": 63.0275,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 7,
+    "ms": 154.1511,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 7,
+    "ms": 104.1874,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 7,
+    "ms": 206.6844,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 7,
+    "ms": 222.9829,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 7,
+    "ms": 231.8224,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 7,
+    "ms": 100.4103,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 7,
+    "ms": 147.3264,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 7,
+    "ms": 57.769,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 7,
+    "ms": 82.1718,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 7,
+    "ms": 103.3005,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 7,
+    "ms": 212.8018,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 7,
+    "ms": 201.8622,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 7,
+    "ms": 231.7479,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 7,
+    "ms": 100.1161,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 7,
+    "ms": 118.8003,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 7,
+    "ms": 245.4636,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 7,
+    "ms": 95.3915,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 7,
+    "ms": 202.9757,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 7,
+    "ms": 107.2183,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 7,
+    "ms": 104.1562,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 7,
+    "ms": 223.3334,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 7,
+    "ms": 269.8789,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 7,
+    "ms": 61.7244,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 7,
+    "ms": 120.566,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 8,
+    "ms": 102.5183,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 8,
+    "ms": 110.8127,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 8,
+    "ms": 79.4689,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 8,
+    "ms": 234.5297,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 8,
+    "ms": 177.2792,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 8,
+    "ms": 128.919,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 8,
+    "ms": 121.0622,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 8,
+    "ms": 345.0011,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 8,
+    "ms": 228.4877,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 8,
+    "ms": 329.8784,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 8,
+    "ms": 99.2309,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 8,
+    "ms": 330.04,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 8,
+    "ms": 171.4306,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 8,
+    "ms": 120.697,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 8,
+    "ms": 164.669,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 8,
+    "ms": 195.9437,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 8,
+    "ms": 270.8619,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 8,
+    "ms": 121.2503,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 8,
+    "ms": 84.636,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 8,
+    "ms": 200.1802,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 8,
+    "ms": 179.0359,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 8,
+    "ms": 489.1911,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 8,
+    "ms": 290.8887,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 8,
+    "ms": 758.4887,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 8,
+    "ms": 105.3925,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "phonepe.com",
+    "round": 9,
+    "ms": 51.5413,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "netflix.com",
+    "round": 9,
+    "ms": 51.3871,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "incometax.gov.in",
+    "round": 9,
+    "ms": 118.2787,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "irctc.co.in",
+    "round": 9,
+    "ms": 52.2705,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ndtv.com",
+    "round": 9,
+    "ms": 131.2351,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "uidai.gov.in",
+    "round": 9,
+    "ms": 90.4264,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zomato.com",
+    "round": 9,
+    "ms": 119.2406,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "flipkart.com",
+    "round": 9,
+    "ms": 75.6516,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "youtube.com",
+    "round": 9,
+    "ms": 81.5698,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "naukri.com",
+    "round": 9,
+    "ms": 219.4548,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cricbuzz.com",
+    "round": 9,
+    "ms": 235.9349,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "github.com",
+    "round": 9,
+    "ms": 96.8135,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "onlinesbi.sbi",
+    "round": 9,
+    "ms": 106.0815,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "wikipedia.org",
+    "round": 9,
+    "ms": 95.4384,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "swiggy.com",
+    "round": 9,
+    "ms": 59.3029,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "amazon.in",
+    "round": 9,
+    "ms": 120.5009,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "linkedin.com",
+    "round": 9,
+    "ms": 68.4665,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "makemytrip.com",
+    "round": 9,
+    "ms": 52.7908,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "paytm.com",
+    "round": 9,
+    "ms": 114.9753,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "myntra.com",
+    "round": 9,
+    "ms": 242.917,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "instagram.com",
+    "round": 9,
+    "ms": 196.0336,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hotstar.com",
+    "round": 9,
+    "ms": 196.2054,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "google.com",
+    "round": 9,
+    "ms": 148.5021,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "whatsapp.com",
+    "round": 9,
+    "ms": 110.1986,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "hdfcbank.com",
+    "round": 9,
+    "ms": 87.0291,
+    "ok": true,
+    "rcode": 0
+   }
+  ]
+ },
+ "cold": {
+  "ISP (ACT Fibernet)": [
+   {
+    "host": "dinamalar.com",
+    "ms": 67.101,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vikatan.com",
+    "ms": 6.4065,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "annauniv.edu",
+    "ms": 5.4888,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "murugappa.com",
+    "ms": 3.744,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaisilks.com",
+    "ms": 61.831,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "apollohospitals.com",
+    "ms": 3.7126,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cityunionbank.com",
+    "ms": 84.0691,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "adyarananda.com",
+    "ms": 3.3397,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "saravanabhavan.com",
+    "ms": 264.6559,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iitm.ac.in",
+    "ms": 25.8277,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaimetrorail.org",
+    "ms": 3.9444,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kseb.in",
+    "ms": 3.343,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tneb.in",
+    "ms": 4.9447,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zohocorp.com",
+    "ms": 4.0557,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "southindianbank.com",
+    "ms": 136.2819,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kmbl.co.in",
+    "ms": 3.5619,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "pothys.com",
+    "ms": 5.1034,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "federalbank.co.in",
+    "ms": 3.8689,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "grtjewels.com",
+    "ms": 5.6208,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iob.in",
+    "ms": 99.3508,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "aavin.tn.gov.in",
+    "ms": 3.4272,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "nitt.edu",
+    "ms": 69.8517,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tangedco.gov.in",
+    "ms": 2000,
+    "ok": false,
+    "err": "TIMEOUT"
+   },
+   {
+    "host": "srmist.edu.in",
+    "ms": 3.669,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ucobank.com",
+    "ms": 21.6965,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sathyam.tv",
+    "ms": 6.8656,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "maalaimalar.com",
+    "ms": 4.8963,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpds.gov.in",
+    "ms": 6.623,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnreginet.gov.in",
+    "ms": 4.7179,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnstc.in",
+    "ms": 3.1685,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dailythanthi.com",
+    "ms": 40.5848,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tmb.in",
+    "ms": 4.7523,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vit.ac.in",
+    "ms": 29.0845,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "puthiyathalaimurai.com",
+    "ms": 3.5364,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kauveryhospital.com",
+    "ms": 4.8845,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "eservices.tn.gov.in",
+    "ms": 8.0369,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "karnatakabank.com",
+    "ms": 4.7375,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kct.ac.in",
+    "ms": 2.8932,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tvsmotor.com",
+    "ms": 31.8721,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "freshworks.com",
+    "ms": 35.6224,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "psgtech.edu",
+    "ms": 184.8119,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sastra.edu",
+    "ms": 5.061,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dhanbank.com",
+    "ms": 264.2297,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cmcvellore.ac.in",
+    "ms": 88.7914,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "lalithaajewellery.com",
+    "ms": 18.7899,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chargebee.com",
+    "ms": 4.2214,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpsc.gov.in",
+    "ms": 3.8497,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "polimernews.com",
+    "ms": 2.9998,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ramraj.com",
+    "ms": 6.137,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "thehindubusinessline.com",
+    "ms": 75.0683,
+    "ok": true,
+    "rcode": 0
+   }
+  ],
+  "Google": [
+   {
+    "host": "dinamalar.com",
+    "ms": 68.7246,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vikatan.com",
+    "ms": 201.6095,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "annauniv.edu",
+    "ms": 22.37,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "murugappa.com",
+    "ms": 100.1526,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaisilks.com",
+    "ms": 269.9471,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "apollohospitals.com",
+    "ms": 406.0499,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cityunionbank.com",
+    "ms": 81.8196,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "adyarananda.com",
+    "ms": 293.5793,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "saravanabhavan.com",
+    "ms": 467.671,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iitm.ac.in",
+    "ms": 171.4634,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaimetrorail.org",
+    "ms": 84.1506,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kseb.in",
+    "ms": 4.0098,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tneb.in",
+    "ms": 208.4469,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zohocorp.com",
+    "ms": 13.2516,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "southindianbank.com",
+    "ms": 136.4956,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kmbl.co.in",
+    "ms": 96.8179,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "pothys.com",
+    "ms": 169.212,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "federalbank.co.in",
+    "ms": 89.328,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "grtjewels.com",
+    "ms": 25.6347,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iob.in",
+    "ms": 99.4903,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "aavin.tn.gov.in",
+    "ms": 52.4815,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "nitt.edu",
+    "ms": 67.8674,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tangedco.gov.in",
+    "ms": 2000,
+    "ok": false,
+    "err": "TIMEOUT"
+   },
+   {
+    "host": "srmist.edu.in",
+    "ms": 104.6719,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ucobank.com",
+    "ms": 56.5048,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sathyam.tv",
+    "ms": 96.5592,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "maalaimalar.com",
+    "ms": 30.0838,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpds.gov.in",
+    "ms": 30.383,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnreginet.gov.in",
+    "ms": 4.1724,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnstc.in",
+    "ms": 26.4225,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dailythanthi.com",
+    "ms": 40.7556,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tmb.in",
+    "ms": 87.2808,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vit.ac.in",
+    "ms": 20.8094,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "puthiyathalaimurai.com",
+    "ms": 35.8113,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kauveryhospital.com",
+    "ms": 30.3865,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "eservices.tn.gov.in",
+    "ms": 8.002,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "karnatakabank.com",
+    "ms": 26.8047,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kct.ac.in",
+    "ms": 37.5105,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tvsmotor.com",
+    "ms": 28.8858,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "freshworks.com",
+    "ms": 50.6655,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "psgtech.edu",
+    "ms": 185.1292,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sastra.edu",
+    "ms": 88.9186,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dhanbank.com",
+    "ms": 264.3872,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cmcvellore.ac.in",
+    "ms": 88.9766,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "lalithaajewellery.com",
+    "ms": 284.0809,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chargebee.com",
+    "ms": 228.6791,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpsc.gov.in",
+    "ms": 4.1166,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "polimernews.com",
+    "ms": 311.4328,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ramraj.com",
+    "ms": 209.01,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "thehindubusinessline.com",
+    "ms": 64.7952,
+    "ok": true,
+    "rcode": 0
+   }
+  ],
+  "Cloudflare": [
+   {
+    "host": "dinamalar.com",
+    "ms": 72.1475,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vikatan.com",
+    "ms": 201.4493,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "annauniv.edu",
+    "ms": 22.3139,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "murugappa.com",
+    "ms": 100.1954,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaisilks.com",
+    "ms": 270.0393,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "apollohospitals.com",
+    "ms": 8.4869,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cityunionbank.com",
+    "ms": 84.1193,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "adyarananda.com",
+    "ms": 294.2393,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "saravanabhavan.com",
+    "ms": 475.61,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iitm.ac.in",
+    "ms": 171.6526,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaimetrorail.org",
+    "ms": 86.7369,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kseb.in",
+    "ms": 4.0379,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tneb.in",
+    "ms": 208.746,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zohocorp.com",
+    "ms": 13.3211,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "southindianbank.com",
+    "ms": 136.486,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kmbl.co.in",
+    "ms": 7.0862,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "pothys.com",
+    "ms": 9.0648,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "federalbank.co.in",
+    "ms": 8.7021,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "grtjewels.com",
+    "ms": 8.8794,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iob.in",
+    "ms": 99.3614,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "aavin.tn.gov.in",
+    "ms": 21.4156,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "nitt.edu",
+    "ms": 70.0709,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tangedco.gov.in",
+    "ms": 214.5282,
+    "ok": false,
+    "rcode": 2
+   },
+   {
+    "host": "srmist.edu.in",
+    "ms": 106.4567,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ucobank.com",
+    "ms": 90.1318,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sathyam.tv",
+    "ms": 119.5366,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "maalaimalar.com",
+    "ms": 9.8971,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpds.gov.in",
+    "ms": 447.3491,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnreginet.gov.in",
+    "ms": 7.4199,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnstc.in",
+    "ms": 5.184,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dailythanthi.com",
+    "ms": 40.7996,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tmb.in",
+    "ms": 81.1595,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vit.ac.in",
+    "ms": 24.5609,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "puthiyathalaimurai.com",
+    "ms": 126.4526,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kauveryhospital.com",
+    "ms": 16.7599,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "eservices.tn.gov.in",
+    "ms": 8.0717,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "karnatakabank.com",
+    "ms": 8.0168,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kct.ac.in",
+    "ms": 8.2301,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tvsmotor.com",
+    "ms": 66.4439,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "freshworks.com",
+    "ms": 35.6016,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "psgtech.edu",
+    "ms": 184.9995,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sastra.edu",
+    "ms": 88.8283,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dhanbank.com",
+    "ms": 264.2967,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cmcvellore.ac.in",
+    "ms": 88.8394,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "lalithaajewellery.com",
+    "ms": 30.0865,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chargebee.com",
+    "ms": 8.5878,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpsc.gov.in",
+    "ms": 7.8893,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "polimernews.com",
+    "ms": 102.4447,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ramraj.com",
+    "ms": 209.1601,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "thehindubusinessline.com",
+    "ms": 75.1736,
+    "ok": true,
+    "rcode": 0
+   }
+  ],
+  "Quad9": [
+   {
+    "host": "dinamalar.com",
+    "ms": 262.2764,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vikatan.com",
+    "ms": 310.5076,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "annauniv.edu",
+    "ms": 298.6369,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "murugappa.com",
+    "ms": 346.1482,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaisilks.com",
+    "ms": 270.3691,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "apollohospitals.com",
+    "ms": 426.8591,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cityunionbank.com",
+    "ms": 301.5187,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "adyarananda.com",
+    "ms": 300.4886,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "saravanabhavan.com",
+    "ms": 818.4583,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iitm.ac.in",
+    "ms": 293.6881,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaimetrorail.org",
+    "ms": 295.6018,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kseb.in",
+    "ms": 308.3691,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tneb.in",
+    "ms": 306.2441,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zohocorp.com",
+    "ms": 288.2155,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "southindianbank.com",
+    "ms": 330.4682,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kmbl.co.in",
+    "ms": 336.3848,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "pothys.com",
+    "ms": 286.1305,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "federalbank.co.in",
+    "ms": 301.8844,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "grtjewels.com",
+    "ms": 308.233,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iob.in",
+    "ms": 415.5969,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "aavin.tn.gov.in",
+    "ms": 303.0466,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "nitt.edu",
+    "ms": 294.5281,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tangedco.gov.in",
+    "ms": 2000,
+    "ok": false,
+    "err": "TIMEOUT"
+   },
+   {
+    "host": "srmist.edu.in",
+    "ms": 355.4125,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ucobank.com",
+    "ms": 371.4391,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sathyam.tv",
+    "ms": 262.352,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "maalaimalar.com",
+    "ms": 604.8862,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpds.gov.in",
+    "ms": 344.9194,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnreginet.gov.in",
+    "ms": 250.0343,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnstc.in",
+    "ms": 259.6568,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dailythanthi.com",
+    "ms": 433.0876,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tmb.in",
+    "ms": 272.4749,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vit.ac.in",
+    "ms": 313.4532,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "puthiyathalaimurai.com",
+    "ms": 265.6484,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kauveryhospital.com",
+    "ms": 273.9316,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "eservices.tn.gov.in",
+    "ms": 273.7132,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "karnatakabank.com",
+    "ms": 261.1028,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kct.ac.in",
+    "ms": 870.4419,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tvsmotor.com",
+    "ms": 624.4667,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "freshworks.com",
+    "ms": 358.6103,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "psgtech.edu",
+    "ms": 433.1003,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sastra.edu",
+    "ms": 442.5299,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dhanbank.com",
+    "ms": 274.154,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cmcvellore.ac.in",
+    "ms": 320.4308,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "lalithaajewellery.com",
+    "ms": 292.7315,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chargebee.com",
+    "ms": 304.1005,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpsc.gov.in",
+    "ms": 496.1329,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "polimernews.com",
+    "ms": 307.3477,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ramraj.com",
+    "ms": 431.1433,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "thehindubusinessline.com",
+    "ms": 319.0698,
+    "ok": true,
+    "rcode": 0
+   }
+  ],
+  "OpenDNS": [
+   {
+    "host": "dinamalar.com",
+    "ms": 77.3269,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vikatan.com",
+    "ms": 222.2799,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "annauniv.edu",
+    "ms": 302.0827,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "murugappa.com",
+    "ms": 22.5949,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaisilks.com",
+    "ms": 270.0004,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "apollohospitals.com",
+    "ms": 6.6646,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cityunionbank.com",
+    "ms": 93.1971,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "adyarananda.com",
+    "ms": 299.6292,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "saravanabhavan.com",
+    "ms": 893.6229,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iitm.ac.in",
+    "ms": 175.0896,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaimetrorail.org",
+    "ms": 92.4188,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kseb.in",
+    "ms": 5.6724,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tneb.in",
+    "ms": 225.7027,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zohocorp.com",
+    "ms": 11.316,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "southindianbank.com",
+    "ms": 142.5055,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kmbl.co.in",
+    "ms": 101.7028,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "pothys.com",
+    "ms": 20.4778,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "federalbank.co.in",
+    "ms": 20.8609,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "grtjewels.com",
+    "ms": 20.6192,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iob.in",
+    "ms": 101.8688,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "aavin.tn.gov.in",
+    "ms": 195.6511,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "nitt.edu",
+    "ms": 140.8961,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tangedco.gov.in",
+    "ms": 2000,
+    "ok": false,
+    "err": "TIMEOUT"
+   },
+   {
+    "host": "srmist.edu.in",
+    "ms": 5.8355,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ucobank.com",
+    "ms": 178.9004,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sathyam.tv",
+    "ms": 126.1907,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "maalaimalar.com",
+    "ms": 28.3882,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpds.gov.in",
+    "ms": 109.118,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnreginet.gov.in",
+    "ms": 5.6479,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnstc.in",
+    "ms": 5.1263,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dailythanthi.com",
+    "ms": 56.6008,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tmb.in",
+    "ms": 50.2963,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vit.ac.in",
+    "ms": 6.2147,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "puthiyathalaimurai.com",
+    "ms": 164.5963,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kauveryhospital.com",
+    "ms": 53.1341,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "eservices.tn.gov.in",
+    "ms": 17.7044,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "karnatakabank.com",
+    "ms": 66.5506,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kct.ac.in",
+    "ms": 55.8396,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tvsmotor.com",
+    "ms": 83.2492,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "freshworks.com",
+    "ms": 159.8786,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "psgtech.edu",
+    "ms": 435.0331,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sastra.edu",
+    "ms": 395.4626,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dhanbank.com",
+    "ms": 274.7329,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cmcvellore.ac.in",
+    "ms": 105.9868,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "lalithaajewellery.com",
+    "ms": 83.824,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chargebee.com",
+    "ms": 228.9009,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpsc.gov.in",
+    "ms": 7.9487,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "polimernews.com",
+    "ms": 5.2983,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ramraj.com",
+    "ms": 261.1035,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "thehindubusinessline.com",
+    "ms": 109.8723,
+    "ok": true,
+    "rcode": 0
+   }
+  ],
+  "AdGuard": [
+   {
+    "host": "dinamalar.com",
+    "ms": 74.5127,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vikatan.com",
+    "ms": 222.5858,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "annauniv.edu",
+    "ms": 105.3189,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "murugappa.com",
+    "ms": 109.0246,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaisilks.com",
+    "ms": 64.8078,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "apollohospitals.com",
+    "ms": 427.0938,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cityunionbank.com",
+    "ms": 87.729,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "adyarananda.com",
+    "ms": 341.6274,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "saravanabhavan.com",
+    "ms": 1220.1231,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iitm.ac.in",
+    "ms": 177.8001,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chennaimetrorail.org",
+    "ms": 92.3319,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kseb.in",
+    "ms": 100.0917,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tneb.in",
+    "ms": 225.8591,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "zohocorp.com",
+    "ms": 100.2067,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "southindianbank.com",
+    "ms": 142.8425,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kmbl.co.in",
+    "ms": 101.5117,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "pothys.com",
+    "ms": 286.0077,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "federalbank.co.in",
+    "ms": 126.1623,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "grtjewels.com",
+    "ms": 613.8224,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "iob.in",
+    "ms": 102.3291,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "aavin.tn.gov.in",
+    "ms": 666.3562,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "nitt.edu",
+    "ms": 216.074,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tangedco.gov.in",
+    "ms": 2000,
+    "ok": false,
+    "err": "TIMEOUT"
+   },
+   {
+    "host": "srmist.edu.in",
+    "ms": 112.6739,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ucobank.com",
+    "ms": 90.3125,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "sathyam.tv",
+    "ms": 123.9387,
+    "ok": true,
+    "rcode": 3
+   },
+   {
+    "host": "maalaimalar.com",
+    "ms": 346.9577,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpds.gov.in",
+    "ms": 670.9585,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnreginet.gov.in",
+    "ms": 39.1352,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnstc.in",
+    "ms": 40.5474,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dailythanthi.com",
+    "ms": 150.4532,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tmb.in",
+    "ms": 46.4038,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "vit.ac.in",
+    "ms": 49.8091,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "puthiyathalaimurai.com",
+    "ms": 106.5631,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kauveryhospital.com",
+    "ms": 40.7316,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "eservices.tn.gov.in",
+    "ms": 62.7014,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "karnatakabank.com",
+    "ms": 37.3679,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "kct.ac.in",
+    "ms": 47.3275,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tvsmotor.com",
+    "ms": 78.2417,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "freshworks.com",
+    "ms": 358.8324,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "psgtech.edu",
+    "ms": 906.7765,
+    "ok": false,
+    "rcode": 2
+   },
+   {
+    "host": "sastra.edu",
+    "ms": 96.1644,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "dhanbank.com",
+    "ms": 274.2443,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "cmcvellore.ac.in",
+    "ms": 106.4834,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "lalithaajewellery.com",
+    "ms": 599.5573,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "chargebee.com",
+    "ms": 424.0224,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "tnpsc.gov.in",
+    "ms": 496.1231,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "polimernews.com",
+    "ms": 132.1459,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "ramraj.com",
+    "ms": 544.6117,
+    "ok": true,
+    "rcode": 0
+   },
+   {
+    "host": "thehindubusinessline.com",
+    "ms": 309.9222,
+    "ok": true,
+    "rcode": 0
+   }
+  ]
+ },
+ "finishedAt": "2026-09-29T16:56:02.348Z",
+ "summary": {
+  "ISP (ACT Fibernet)": {
+   "ping": 92,
+   "warmMedian": 4.8,
+   "warmP95": 174.8,
+   "warmFail": 0,
+   "coldMedian": 5.5,
+   "coldP95": 184.8,
+   "coldFail": 1
+  },
+  "Google": {
+   "ping": 80,
+   "warmMedian": 29.7,
+   "warmP95": 276.2,
+   "warmFail": 1,
+   "coldMedian": 84.2,
+   "coldP95": 311.4,
+   "coldFail": 1
+  },
+  "Cloudflare": {
+   "ping": 82,
+   "warmMedian": 8.2,
+   "warmP95": 217.4,
+   "warmFail": 0,
+   "coldMedian": 72.1,
+   "coldP95": 294.2,
+   "coldFail": 1
+  },
+  "Quad9": {
+   "ping": 394,
+   "warmMedian": 321.7,
+   "warmP95": 518.6,
+   "warmFail": 2,
+   "coldMedian": 307.3,
+   "coldP95": 624.5,
+   "coldFail": 1
+  },
+  "OpenDNS": {
+   "ping": 90,
+   "warmMedian": 53.6,
+   "warmP95": 266,
+   "warmFail": 0,
+   "coldMedian": 93.2,
+   "coldP95": 395.5,
+   "coldFail": 1
+  },
+  "AdGuard": {
+   "ping": 169,
+   "warmMedian": 119.1,
+   "warmP95": 295.4,
+   "warmFail": 2,
+   "coldMedian": 123.9,
+   "coldP95": 666.4,
+   "coldFail": 2
+  }
+ }
+}

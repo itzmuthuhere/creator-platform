@@ -1,0 +1,89 @@
+{
+  "title": "How to apply for a learner's licence online, and take the test from home",
+  "seoTitle": "Learner's Licence Apply Online: Fees, Test and Steps (2026)",
+  "h1": "How to apply for a learner's licence online, and take the test from home",
+  "slug": "learners-licence-apply-online",
+  "metaDescription": "Learner's licence apply online guide: Aadhaar-based application on Sarathi, central and state fees, the home LL test, and the 30-day to 6-month window.",
+  "excerpt": "Apply for a learner's licence on the Parivahan Sarathi portal with Aadhaar, take the test at home, and plan your driving test between day 30 and month six.",
+  "primaryKeyword": "learners licence apply online",
+  "secondaryKeywords": [
+    "ll test online",
+    "learner licence fee",
+    "learner licence validity",
+    "sarathi parivahan learner licence",
+    "learning licence test questions"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indians aged 16+ getting their first driving licence",
+  "category": "tech",
+  "tags": [
+    "driving licence",
+    "learner licence",
+    "Parivahan",
+    "RTO",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=hSiDHH2OAzI",
+  "sourceVideoTitle": "LL Test Online 2026 | Learner licence test | Without Visiting RTO Office | LL online test | LiveExam",
+  "sourceChannel": "Sarkari DNA",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T21:19:00.644Z",
+  "updatedAt": "2026-10-02T21:20:18.473Z",
+  "wordCount": 1230,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs",
+    "https://techpulzo.in/buying-vs-leasing-a-car-in-india-the-real-math"
+  ],
+  "faq": [
+    {
+      "question": "Can I take the learner's licence test from home?",
+      "answer": "Yes, in most states, if you apply with Aadhaar authentication. The test runs on a computer with a camera; you verify your identity with face authentication, and a recent walkthrough shows a Windows test application is now required rather than a phone. A few states may still ask you to visit the RTO."
+    },
+    {
+      "question": "What is the learner's licence fee?",
+      "answer": "The central fee is ₹150 per class of vehicle plus ₹50 for the test. States add service charges, so the total differs: Delhi charges ₹500 for one class, and in Tamil Nadu it's around ₹230–250."
+    },
+    {
+      "question": "How long is a learner's licence valid?",
+      "answer": "Six months. You must hold it for at least 30 days before taking the driving test for a permanent licence, so plan your driving test within that window."
+    },
+    {
+      "question": "Do I need a medical certificate for a learner's licence?",
+      "answer": "Only if you're 40 or older, or applying for a transport vehicle. Everyone else submits Form 1, a self-declaration of fitness, as part of the online application."
+    },
+    {
+      "question": "What happens if I fail the online LL test?",
+      "answer": "You can take it again after paying the retest fee (₹50 in Delhi). Use the practice test on the Sarathi portal before you try again."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T21:20:18.473Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=ZPLB-Tv_UGE",
+      "title": "Driving Licence Apply 2026 | முதலில் LLR Apply செய்யணும் | ₹230 மட்டும் | 10 Minutes-ல் Online Apply",
+      "channel": "Nel_AI",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RQmp6y4RmnU",
+      "title": "Apply for learner licence online 2026 | Learning Driving License Online Kaise Banaye|Driving License",
+      "channel": "Flight Information",
+      "hasTranscript": true
+    }
+  ]
+}

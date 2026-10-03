@@ -1,0 +1,269 @@
+<p>Most beginner Python lists show you the code and stop there. You copy it, run it, and something different appears on your screen, or an error you've never seen, and there's nothing to compare against. So for this list I ran every program on Python 3.12 and pasted the exact output underneath it. Then I broke five programs on purpose, because the error messages are where beginners actually get stuck.</p>
+
+<p>These are small, practical programs built around things you'd calculate anyway: splitting a restaurant bill with GST, working out a loan EMI, comparing FD interest. If you're following a longer plan like our <a href="/how-to-learn-python-in-30-days-complete-beginner-roadmap">30-day Python roadmap</a>, these fit around weeks one and two.</p>
+
+<h2>Before You Start</h2>
+
+<p>Install Python from <a href="https://www.python.org/downloads/" rel="noopener" target="_blank">python.org</a> (on Windows, tick "Add python.exe to PATH" in the installer). Save each program in a file such as <code>main.py</code> and run it from a terminal with:</p>
+
+<pre><code>python main.py</code></pre>
+
+<p>Each output block below is exactly what the terminal printed. Where a program asks for input, I've noted what I typed.</p>
+
+<h2>1. Ask a Question and Use the Answer</h2>
+
+<p>The first thing most people want to do is have the program talk back. <code>input()</code> shows a prompt and waits for you to type something.</p>
+
+<pre><code>name = input("What's your name? ")
+age = int(input("How old are you? "))
+print(f"Hi {name}! In 5 years you'll be {age + 5}.")</code></pre>
+
+<p>I typed <code>Muthu</code> and <code>29</code>. Output:</p>
+
+<pre><code>What's your name? How old are you? Hi Muthu! In 5 years you'll be 34.</code></pre>
+
+<p>Notice the <code>int(...)</code> around the second <code>input()</code>. Everything you type comes in as text, even digits. Without converting it to a number, <code>age + 5</code> fails; that's error #1 further down.</p>
+
+<h2>2. Split a Restaurant Bill With GST</h2>
+
+<pre><code>bill = 1840          # food total in rupees
+gst_rate = 0.05      # restaurant GST
+people = 4
+
+total = bill + bill * gst_rate
+share = total / people
+print(f"Total with GST: Rs {total:.2f}")
+print(f"Each person pays: Rs {share:.2f}")</code></pre>
+
+<pre><code>Total with GST: Rs 1932.00
+Each person pays: Rs 483.00</code></pre>
+
+<p><code>{total:.2f}</code> inside an f-string means "show this number with exactly two decimal places", which is what you want for money. To see why that matters, change <code>people</code> to 9. Without the formatting, Python prints <code>214.66666666666666</code>; with <code>:.2f</code> it prints <code>214.67</code>.</p>
+
+<h2>3. Loan EMI Calculator</h2>
+
+<p>This uses the standard reducing-balance EMI formula that banks use: EMI = P × r × (1+r)<sup>n</sup> ÷ ((1+r)<sup>n</sup> − 1), where r is the monthly interest rate and n is the number of months.</p>
+
+<pre><code>principal = 500000      # loan amount
+annual_rate = 10.5      # percent per year
+years = 5
+
+r = annual_rate / 12 / 100
+n = years * 12
+emi = principal * r * (1 + r) ** n / ((1 + r) ** n - 1)
+print(f"EMI: Rs {emi:,.0f} per month")
+print(f"Total paid: Rs {emi * n:,.0f}")
+print(f"Interest: Rs {emi * n - principal:,.0f}")</code></pre>
+
+<pre><code>EMI: Rs 10,747 per month
+Total paid: Rs 644,817
+Interest: Rs 144,817</code></pre>
+
+<p>For a ₹5 lakh loan at 10.5% over 5 years, the EMI comes to ₹10,747, which matches what bank EMI calculators show for the same inputs. The comma in <code>:,.0f</code> adds thousand separators. Python groups digits in threes (644,817), not the Indian lakh style (6,44,817); formatting in lakhs needs a little extra code.</p>
+
+<h2>4. Simple vs Compound Interest on an FD</h2>
+
+<pre><code>amount = 100000
+rate = 7.0
+years = 3
+
+simple = amount * rate * years / 100
+compound = amount * (1 + rate / 400) ** (4 * years) - amount   # quarterly, like most bank FDs
+print(f"Simple interest:   Rs {simple:,.0f}")
+print(f"Compound interest: Rs {compound:,.0f}")
+print(f"Difference:        Rs {compound - simple:,.0f}")</code></pre>
+
+<pre><code>Simple interest:   Rs 21,000
+Compound interest: Rs 23,144
+Difference:        Rs 2,144</code></pre>
+
+<p>Most Indian bank FDs compound quarterly, which is why the formula divides the rate by 400 (4 quarters × 100 for the percentage) and multiplies the years by 4. Over three years, compounding earns about ₹2,144 more on ₹1 lakh than simple interest would.</p>
+
+<h2>5. Leap Year Checker</h2>
+
+<pre><code>for year in [1900, 2000, 2024, 2025]:
+    if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+        print(year, "is a leap year")
+    else:
+        print(year, "is not a leap year")</code></pre>
+
+<pre><code>1900 is not a leap year
+2000 is a leap year
+2024 is a leap year
+2025 is not a leap year</code></pre>
+
+<p>This is the classic <code>if</code> / <code>else</code> exercise, and it has a trap: years divisible by 100 are not leap years unless they're also divisible by 400. That's why 1900 is out and 2000 is in. <code>%</code> gives the remainder of a division, so <code>year % 4 == 0</code> means "divides evenly by 4".</p>
+
+<h2>6. Multiplication Table With a Loop</h2>
+
+<pre><code>n = 7
+for i in range(1, 11):
+    print(f"{n} x {i:2} = {n * i}")</code></pre>
+
+<pre><code>7 x  1 = 7
+7 x  2 = 14
+7 x  3 = 21
+7 x  4 = 28
+7 x  5 = 35
+7 x  6 = 42
+7 x  7 = 49
+7 x  8 = 56
+7 x  9 = 63
+7 x 10 = 70</code></pre>
+
+<p><code>range(1, 11)</code> runs from 1 up to 10, not 11. The end number is always excluded, which trips up almost everyone at first. <code>{i:2}</code> pads the number to two characters so the equals signs line up.</p>
+
+<h2>7. Number Guessing Game</h2>
+
+<pre><code>import random
+random.seed(42)          # fixed seed so the output is repeatable
+secret = random.randint(1, 20)
+
+for guess in [10, 15, 3, secret]:
+    if guess &lt; secret:
+        print(guess, "-&gt; too low")
+    elif guess &gt; secret:
+        print(guess, "-&gt; too high")
+    else:
+        print(guess, "-&gt; correct!")</code></pre>
+
+<pre><code>10 -&gt; too high
+15 -&gt; too high
+3 -&gt; too low
+4 -&gt; correct!</code></pre>
+
+<p>A normal guessing game uses <code>input()</code> in a loop. Here the guesses are fixed and <code>random.seed(42)</code> makes the "random" number the same every run, so your output will match mine exactly. Delete the seed line and the secret number changes each time.</p>
+
+<h2>8. Count Words in a Sentence</h2>
+
+<pre><code>text = "the quick brown fox jumps over the lazy dog the fox"
+counts = {}
+for word in text.split():
+    counts[word] = counts.get(word, 0) + 1
+
+for word, c in sorted(counts.items(), key=lambda x: -x[1])[:3]:
+    print(word, c)</code></pre>
+
+<pre><code>the 3
+fox 2
+quick 1</code></pre>
+
+<p>This is your first dictionary: a set of key-value pairs, here word → count. <code>counts.get(word, 0)</code> returns the current count, or 0 if the word hasn't been seen yet, which avoids an error on the first occurrence. The <code>sorted(..., key=lambda x: -x[1])</code> line sorts by count, highest first.</p>
+
+<h2>9. Monthly Expense Summary by Category</h2>
+
+<pre><code>expenses = [
+    {"item": "Groceries", "cat": "Food", "amt": 2450},
+    {"item": "Swiggy", "cat": "Food", "amt": 680},
+    {"item": "Metro card", "cat": "Travel", "amt": 500},
+    {"item": "Electricity", "cat": "Bills", "amt": 1320},
+    {"item": "Petrol", "cat": "Travel", "amt": 1500},
+]
+totals = {}
+for e in expenses:
+    totals[e["cat"]] = totals.get(e["cat"], 0) + e["amt"]
+
+for cat, amt in totals.items():
+    print(f"{cat:&lt;7} Rs {amt:&gt;5}")
+print(f"{'Total':&lt;7} Rs {sum(totals.values()):&gt;5}")</code></pre>
+
+<pre><code>Food    Rs  3130
+Travel  Rs  2000
+Bills   Rs  1320
+Total   Rs  6450</code></pre>
+
+<p>A list of dictionaries is how most real data looks once it's loaded into Python: one dictionary per row. <code>{cat:&lt;7}</code> left-aligns text in 7 characters and <code>{amt:&gt;5}</code> right-aligns numbers, which gives you a tidy table without any library.</p>
+
+<h2>10. Save Expenses to a CSV File and Read Them Back</h2>
+
+<pre><code>import csv
+
+rows = [["date", "item", "amount"], ["2026-09-01", "Rent", 12000], ["2026-09-03", "Internet", 799]]
+with open("expenses.csv", "w", newline="") as f:
+    csv.writer(f).writerows(rows)
+
+with open("expenses.csv") as f:
+    reader = csv.DictReader(f)
+    total = 0
+    for row in reader:
+        print(row["date"], row["item"], row["amount"])
+        total += int(row["amount"])
+print("Total:", total)</code></pre>
+
+<pre><code>2026-09-01 Rent 12000
+2026-09-03 Internet 799
+Total: 12799</code></pre>
+
+<p>The file <code>expenses.csv</code> is created in the same folder you ran the program from, and it opens directly in Excel or Google Sheets. The <code>with open(...)</code> pattern closes the file automatically when the block ends. Notice <code>int(row["amount"])</code>: like <code>input()</code>, everything read from a CSV arrives as text.</p>
+
+<h2>The Five Errors You'll See First</h2>
+
+<p>I broke five small programs on purpose so you can see the real messages. The file path in each traceback is shortened to <code>main.py</code>; everything else is exactly as Python printed it. The line to read first is always the last one; it names the error type.</p>
+
+<h3>TypeError: adding text and a number</h3>
+
+<pre><code>age = input("Age: ")
+print(age + 5)</code></pre>
+
+<p>I typed <code>29</code> at the prompt:</p>
+
+<pre><code>Age: Traceback (most recent call last):
+  File "main.py", line 2, in &lt;module&gt;
+    print(age + 5)
+          ~~~~^~~
+TypeError: can only concatenate str (not "int") to str</code></pre>
+
+<p><code>input()</code> returned the text "29", and Python won't add text to a number. Fix: <code>age = int(input("Age: "))</code>. The <code>~~~~^~~~</code> markers under the line point at exactly which operation failed.</p>
+
+<h3>IndentationError: the missing spaces</h3>
+
+<pre><code>for i in range(3):
+print(i)</code></pre>
+
+<pre><code>  File "main.py", line 2
+    print(i)
+    ^
+IndentationError: expected an indented block after 'for' statement on line 1</code></pre>
+
+<p>Python uses indentation to know what belongs inside a loop or <code>if</code>. The line after a colon must be indented (four spaces is the convention). This error appears before the program runs at all, which is why there's no "Traceback" line.</p>
+
+<h3>NameError: a typo in a variable name</h3>
+
+<pre><code>total = 100
+print(totl)</code></pre>
+
+<pre><code>Traceback (most recent call last):
+  File "main.py", line 2, in &lt;module&gt;
+    print(totl)
+          ^^^^
+NameError: name 'totl' is not defined. Did you mean: 'total'?</code></pre>
+
+<p>Recent Python versions add "Did you mean" suggestions, which catch most typos like this one. Older tutorials and videos won't show this hint, so it's a good reason to install a current version.</p>
+
+<h3>ZeroDivisionError</h3>
+
+<pre><code>people = 0
+print(1840 / people)</code></pre>
+
+<pre><code>Traceback (most recent call last):
+  File "main.py", line 2, in &lt;module&gt;
+    print(1840 / people)
+          ~~~~~^~~~~~~~
+ZeroDivisionError: division by zero</code></pre>
+
+<p>Any division where the bottom number could be zero needs a check first, for example <code>if people &gt; 0:</code>. In the bill-splitting program, this happens as soon as someone enters 0 people.</p>
+
+<h3>FileNotFoundError</h3>
+
+<pre><code>open("expense.csv")</code></pre>
+
+<pre><code>Traceback (most recent call last):
+  File "main.py", line 1, in &lt;module&gt;
+    open("expense.csv")
+FileNotFoundError: [Errno 2] No such file or directory: 'expense.csv'</code></pre>
+
+<p>The file is called <code>expenses.csv</code> (from program 10) but the code asks for <code>expense.csv</code>. The other common cause is running the program from a different folder than the file is in, because Python looks relative to wherever the terminal currently is.</p>
+
+<h2>Where to Go From Here</h2>
+
+<p>Change one thing in each program and predict the output before running it: a different loan amount, a new expense category, a word list of your own. Predicting first and then checking is what turns reading code into understanding it. Once these feel easy, program 9 and program 10 combined are the start of a real expense tracker: read expenses from a CSV, total them by category, and write a summary file back out.</p>

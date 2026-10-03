@@ -1,0 +1,89 @@
+{
+  "title": "How to check and pay traffic challans online, and what changed in 2026",
+  "seoTitle": "Check Challan Online and Pay It: 2026 Rules and Fake SMS",
+  "h1": "How to check and pay traffic challans online, and what changed in 2026",
+  "slug": "check-pay-traffic-challan-online",
+  "metaDescription": "Check challan online on the official eChallan or NextGen portal, pay with no extra fee, contest within 45 days under the 2026 rules, and spot fake challan SMS.",
+  "excerpt": "Search your vehicle on the official eChallan portal, pay without middlemen, and know the 2026 rules: 45 days to pay or contest, and five violations a year can cost your licence.",
+  "primaryKeyword": "check challan online",
+  "secondaryKeywords": [
+    "pay challan online",
+    "echallan parivahan",
+    "challan not showing",
+    "fake e-challan sms",
+    "contest traffic challan"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian vehicle owners",
+  "category": "tech",
+  "tags": [
+    "traffic challan",
+    "eChallan",
+    "Parivahan",
+    "scams",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=3PEllw2o1QY",
+  "sourceVideoTitle": "Challan not showing Online | How to check and pay traffic challan | Challan not showing on Parivahan",
+  "sourceChannel": "Aman Tech Fix",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-02T21:21:55.453Z",
+  "updatedAt": "2026-10-02T21:23:15.814Z",
+  "wordCount": 1238,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs",
+    "https://techpulzo.in/how-to-stop-spam-calls-and-sms-on-an-indian-sim-the-settings-that-actually-help"
+  ],
+  "faq": [
+    {
+      "question": "How can I check if my vehicle has a challan?",
+      "answer": "Go to the official eChallan portal (echallan.parivahan.gov.in, or the NextGen portal at echallan.parivahan.nic.in if your state uses it) and search by vehicle number, driving licence number or challan number. You'll verify with an OTP sent to the registered mobile number. Delhi challans are on the Delhi Traffic Police website."
+    },
+    {
+      "question": "Why does the portal say \"no challan found\" when I got an SMS?",
+      "answer": "Usually because your state now uses the NextGen eChallan portal, so search there instead. It can also mean the challan went to court, was issued in Delhi, or that the SMS was fake. Never pay through a link in the message."
+    },
+    {
+      "question": "How many days do I have to pay a traffic challan?",
+      "answer": "Under the 2026 rules, you have 45 days from issue to pay or contest it on the portal. If you don't contest, it's treated as accepted and must be paid within the next 30 days. Unpaid challans can block licence and registration services."
+    },
+    {
+      "question": "Can I contest a traffic challan online?",
+      "answer": "Yes, where your state has enabled it. Within 45 days, raise a contest or grievance on the portal with supporting evidence. If it's rejected, you can pay within 30 days or approach the court after depositing 50% of the fine."
+    },
+    {
+      "question": "Is it safe to pay challans through apps like Paytm or car apps?",
+      "answer": "Some apps show challans correctly, but they may add a convenience fee, and lookalike apps exist. The safest route is the official eChallan portal or the mParivahan app, where you pay only the challan amount."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-02T21:23:15.814Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 2,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=-4wYvDGAcMQ",
+      "title": "E-Challan Scam 2026! 🚨 SMS par click karne se pehle ye dekhein | Fake vs Real Challan |",
+      "channel": "Law Talks with Advocate Prayansh",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ehRIltwccN0",
+      "title": "E challan parivahan new Portal | Challan Online kaise bhare 2026 | Challan Payment online |Parivahan",
+      "channel": "RK Consultancy",
+      "hasTranscript": true
+    }
+  ]
+}

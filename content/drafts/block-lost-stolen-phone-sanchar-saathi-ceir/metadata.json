@@ -1,0 +1,112 @@
+{
+  "title": "How to Block a Lost or Stolen Phone in India with Sanchar Saathi (CEIR)",
+  "seoTitle": "Block a Lost or Stolen Phone on CEIR (Sanchar Saathi)",
+  "h1": "How to Block a Lost or Stolen Phone in India with Sanchar Saathi (CEIR)",
+  "slug": "block-lost-stolen-phone-sanchar-saathi-ceir",
+  "metaDescription": "How to block a lost or stolen phone on the CEIR portal: the first hour, documents needed, the form step by step, unblocking, and your real recovery odds.",
+  "excerpt": "The order of steps after losing a phone matters. Here is the first-hour sequence, the CEIR blocking form section by section, how unblocking works, and what the official numbers say about getting your phone back.",
+  "primaryKeyword": "block lost phone ceir",
+  "secondaryKeywords": [
+    "sanchar saathi block mobile",
+    "ceir portal",
+    "block stolen phone imei india",
+    "unblock phone ceir",
+    "ceir request status",
+    "find imei without phone"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "Indian smartphone users whose phone was just lost or stolen",
+  "category": "tech",
+  "tags": [
+    "sanchar saathi",
+    "ceir",
+    "phone security",
+    "imei",
+    "lost phone"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=3P0pUVPIBBE",
+  "sourceVideoTitle": "Phone stolen? Do THIS Immediately! (Step-by-Step Guide )",
+  "sourceChannel": "Technoside",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-09-29T17:22:35.985Z",
+  "updatedAt": "2026-09-29T17:32:23.606Z",
+  "wordCount": 2792,
+  "readingTimeMinutes": 14,
+  "screenshots": [
+    {
+      "file": "screenshots/02-ceir-block-prerequisites.png",
+      "alt": "CEIR block request prerequisites pop-up listing police report or FIR copy, re-issued duplicate SIM, identity proof, optional invoice and IMEI numbers if available",
+      "caption": "The checklist the CEIR form shows before you start. Note that the IMEI is marked \"if available\". Source: ceir.gov.in"
+    },
+    {
+      "file": "screenshots/01-ceir-home-services.png",
+      "alt": "CEIR home page service buttons: Block Stolen/Lost Mobile, Un-Block Found Mobile, Check Request Status and Forgot Request ID, above the CEIR dashboard counts",
+      "caption": "The four CEIR services. Keep the request ID you get after blocking, because the other three depend on it. Source: ceir.gov.in"
+    },
+    {
+      "file": "screenshots/03-ceir-block-form-lost-information.png",
+      "alt": "CEIR form Lost Information section with fields for lost place, lost date and time, state, district, police station, police complaint number and complaint upload",
+      "caption": "Use the same place, date, time and police station that appear on your police complaint. Source: ceir.gov.in"
+    }
+  ],
+  "internalLinks": [
+    "https://techpulzo.in/how-upi-fraud-actually-happens-the-five-warning-signs",
+    "https://techpulzo.in/how-two-factor-authentication-actually-stops-account-hacks"
+  ],
+  "faq": [
+    {
+      "question": "Can I block my phone on CEIR without an FIR?",
+      "answer": "You need some police complaint with a number, because \"Police Complaint Number\" and \"Upload Police Complaint\" are mandatory fields on the form. The form doesn't insist on a theft FIR specifically. In the Technoside case described above, a station diary entry number was accepted. Several states issue lost reports online, which is the fastest route if yours does."
+    },
+    {
+      "question": "How long does it take for the phone to be blocked?",
+      "answer": "CEIR's FAQ says the phone is blocked within 24 hours of a successful request. The slower part is usually before you submit: getting the police report and waiting up to 24 hours for SMS to start working on the duplicate SIM, so the OTP can arrive."
+    },
+    {
+      "question": "Does blocking the IMEI help the police find my phone?",
+      "answer": "It can. A blocked phone can't be used with any SIM in India. When someone tries, the network records the attempt and CEIR passes it to the police. Nationally, about 62% of blocked phones have been traced. Recovery after tracing varies widely by state, from above 50% of traced phones in some states to under 10% in Delhi."
+    },
+    {
+      "question": "Does this work for iPhones?",
+      "answer": "Yes. CEIR works on the IMEI, which every phone has, whatever the brand. On an iPhone you can find the IMEI under Settings General About, or through your Apple Account device list if the phone is gone."
+    },
+    {
+      "question": "What happens if I get my phone back but it shows no network?",
+      "answer": "The IMEI is still blacklisted. Tell the police station that the phone has been found, then submit an unblock request on the portal with your original request ID, or through the police if they registered the block. Service returns once the unblock is processed across operators."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-09-29T17:32:23.606Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 4,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=765e2cYCQEY",
+      "title": "CEIR Portal से मोबाइल कैसे खोजें ? Step By Step Full Guide For Lost Mobile ! कैसे कार्य करता है ?",
+      "channel": "UPCOP Shashank",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nnymQpSBybk",
+      "title": "Lost/Stolen Phone? CEIR Portal Par Complaint Kaise Kare 2025 | CEIR Registration Process",
+      "channel": "infosuch",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=TFv2tE_2gik",
+      "title": "CEIR Traceability से Mobile मिला? CEIR Mobile Unblock Kaise Kare | CEIR Mobile Tracker by infosuch",
+      "channel": "infosuch",
+      "hasTranscript": true
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "title": "How to clean install Windows 11 from a USB drive",
+  "seoTitle": "Windows 11 Clean Install from USB: Step-by-Step (26H2)",
+  "h1": "How to clean install Windows 11 from a USB drive",
+  "slug": "windows-11-clean-install-usb",
+  "metaDescription": "Windows 11 clean install from USB: when you need it, what to back up, making the installer, deleting the right partitions, activation, drivers and fixes.",
+  "excerpt": "A careful Windows 11 clean install: decide if you need one, prepare (backup, edition, BitLocker key, drivers), make the USB, install, set up and troubleshoot.",
+  "primaryKeyword": "windows 11 clean install",
+  "secondaryKeywords": [
+    "windows 11 bootable usb",
+    "media creation tool",
+    "windows 11 26h2 download",
+    "windows 11 requirements tpm",
+    "activate windows after reinstall"
+  ],
+  "searchIntent": "how-to",
+  "targetAudience": "PC users reinstalling Windows 11 from scratch",
+  "category": "tech",
+  "tags": [
+    "Windows 11",
+    "installation",
+    "PC",
+    "USB",
+    "how-to"
+  ],
+  "sourceVideo": "https://www.youtube.com/watch?v=JGSeN0cZqno",
+  "sourceVideoTitle": "Windows 11 Clean Install from USB – ENTIRE PROCESS (Updated)",
+  "sourceChannel": "Pureinfotech",
+  "author": "Muthu",
+  "status": "DRAFT",
+  "createdAt": "2026-10-03T01:48:02.880Z",
+  "updatedAt": "2026-10-03T01:49:13.057Z",
+  "wordCount": 1308,
+  "readingTimeMinutes": 7,
+  "screenshots": [],
+  "internalLinks": [
+    "https://techpulzo.in/how-to-set-up-a-password-manager-in-15-minutes",
+    "https://techpulzo.in/how-much-ram-you-actually-need-in-a-laptop-in-2026",
+    "https://techpulzo.in/ssd-vs-hdd-for-a-budget-laptop-where-the-money-should-actually-go"
+  ],
+  "faq": [
+    {
+      "question": "Will a clean install delete all my files?",
+      "answer": "Yes, on the drive you install to. That's why you back up first. Partitions on other drives are left alone if you don't delete them during setup."
+    },
+    {
+      "question": "Do I need a product key to clean install Windows 11?",
+      "answer": "Not if the PC was activated before. Choose \"I don't have a product key\" during setup and install the same edition (Home or Pro); it will activate automatically once online. A new PC or new build needs a valid key."
+    },
+    {
+      "question": "How big does the USB drive need to be?",
+      "answer": "At least 8 GB, according to Microsoft. Everything on the USB is erased when the installer is created."
+    },
+    {
+      "question": "Can I install Windows 11 on a PC without TPM 2.0?",
+      "answer": "Microsoft lists TPM 2.0 as a requirement and says installing on unsupported hardware isn't recommended. Check in your BIOS first: many PCs have TPM (sometimes called fTPM or PTT) that is simply switched off."
+    },
+    {
+      "question": "Is Reset this PC the same as a clean install?",
+      "answer": "Not quite. Reset reinstalls Windows from within Windows and can keep your files, which is easier. A clean install from USB wipes the drive completely and is better for new drives, PCs that won't start, or removing all preinstalled software."
+    }
+  ],
+  "audit": {
+    "lastRunAt": "2026-10-03T01:49:13.057Z",
+    "result": "PASS_WITH_WARNINGS",
+    "fails": 0,
+    "warnings": 1,
+    "editorialChecklist": "27/27",
+    "originality": {
+      "transcriptsChecked": 3,
+      "overlapPct": 0,
+      "longestCopiedRun": 0,
+      "runs": []
+    }
+  },
+  "additionalVideos": [
+    {
+      "url": "https://www.youtube.com/watch?v=2NoKtdrHSb4",
+      "title": "How to Clean Install Windows 11 From USB (Step by Step)",
+      "channel": "Tech Made Visual",
+      "hasTranscript": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=uNlQDUw2yYI",
+      "title": "How to Install Windows 11 from USB Full Tutorial 2026 (Rufus Clean Install)",
+      "channel": "Istoryahe TV Vlogs",
+      "hasTranscript": true
+    }
+  ]
+}
